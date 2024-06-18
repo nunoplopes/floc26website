@@ -1,0 +1,6 @@
+{{ $htmlTable := .Inner | markdownify }}
+{{ $class := .Get 0 }}
+{{ $new := printf "<table class=\"%s\">" $class }}
+{{ $htmlTable := replace $htmlTable "<table>" $new }}
+{{ $htmlTable := replaceRE "<thead>(.|\n)*</thead>" "" $htmlTable }}
+{{ $htmlTable | safeHTML }}

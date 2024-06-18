@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'FLoC 2026'
 theme = 'hugo-universal-theme'
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 defaultContentLanguage = "en"
 
 [menu]
@@ -39,6 +42,3 @@ defaultContentLanguage = "en"
     address = """<p class="text-uppercase"><a href="mailto:webmaster@floc26.org" data-animate-hover="pulse"><i class="fas fa-envelope"></i> webmaster@floc26.org</a>
       </p>
       """
-
-[permalinks]
-    blog = "/blog/:year/:month/:day/:filename/"
