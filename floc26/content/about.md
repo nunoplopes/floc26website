@@ -2,8 +2,6 @@
 title = "About FLoC"
 +++
 
-# About FLoC
-
 During the past forty years, there has been extensive, continuous, and growing
 interaction between logic and computer science. In many respects, logic provides
 computer science with a unifying foundational framework and modeling tools.
