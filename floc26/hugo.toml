@@ -22,13 +22,13 @@ defaultContentLanguage = "en"
 
 [[menu.main]]
     name       = "About FLoC"
-    url        = "/about"
+    url        = "/about/"
     weight     = 1
     parent     = "menu.about"
 
 [[menu.main]]
     name       = "Committees"
-    url        = "/committees"
+    url        = "/committees/"
     weight     = 2
     parent     = "menu.about"
 

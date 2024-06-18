@@ -7,8 +7,8 @@ title = "FLoC Committees"
 {{<table "table table-striped table-bordered">}}
  &nbsp; | &nbsp;
 --------|-------
-**General chair**       | [Alexandra Silva](https://alexandrasilva.org), Cornell University
-**Co-Chair**            | [Rajeev Alur](https://www.cis.upenn.edu/~alur/), University of Pennsylvania
+**General Chair**       | [Rajeev Alur](https://www.cis.upenn.edu/~alur/), University of Pennsylvania
+**Advisory Chair**      | [Alexandra Silva](https://alexandrasilva.org), Cornell University
 **Organization Chair**  | [Nuno P. Lopes](https://web.ist.utl.pt/nuno.lopes/), University of Lisbon
 **Fundraising Chair**   | TBA
 **Workshops Co-Chairs** | [Alessandro Gianola](https://arsr.inesc-id.pt/~agianola/), University of Lisbon
