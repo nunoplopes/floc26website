@@ -15,6 +15,8 @@ title = "FLoC Committees"
 **Volunteers Chair**    | [José Fragoso Santos](https://web.ist.utl.pt/jose.fragoso/), University of Lisbon
 {{</table>}}
 
+<br>
+
 # Conference Committees
 
 {{<table "table table-striped table-bordered">}}
@@ -32,6 +34,7 @@ title = "FLoC Committees"
 **SAT Conference Chair**   | [Vasco Manquinho](https://sat.inesc-id.pt/~vmm/), University of Lisbon
 {{</table>}}
 
+<br>
 
 # Program Committees
 {{<table "table table-striped table-bordered">}}
