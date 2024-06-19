@@ -1,8 +1,8 @@
 +++
-title = "FLoC Committees"
+title = "FLoC 2026 Committees"
 +++
 
-# FLoC Organizers
+# FLoC'26 Organizers
 
 {{<table "table table-striped table-bordered">}}
  &nbsp; | &nbsp;
@@ -54,7 +54,7 @@ title = "FLoC Committees"
 
 <br>
 
-# Steering Committee
+# FLoC'26 Steering Committee
 {{<table "table table-striped table-bordered">}}
  &nbsp; | &nbsp;
 --------|-------
