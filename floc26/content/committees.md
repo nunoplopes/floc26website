@@ -51,3 +51,23 @@ title = "FLoC Committees"
 **LICS PC Chairs**  | [Claudia Faggian](https://www.irif.fr/~faggian/), CNRS<br>[Joost-Pieter Katoen](https://www-i2.informatik.rwth-aachen.de/~katoen/), RWTH Aachen University
 **SAT PC Chairs**   | TBA
 {{</table>}}
+
+<br>
+
+# Steering Committee
+{{<table "table table-striped table-bordered">}}
+ &nbsp; | &nbsp;
+--------|-------
+**General Chair**        | [Rajeev Alur](https://www.cis.upenn.edu/~alur/), University of Pennsylvania
+**Advisory Chair**       | [Alexandra Silva](https://alexandrasilva.org), Cornell University
+**CAV Representative**   | [Daniel Kröning](https://www.kroening.com), University of Oxford
+**CP Representative**    | [Hélène Verhaeghe](https://hverhaeghe.bitbucket.io), KU Leuven
+**CSF Representative**   | [Ante Đerek](https://www.fer.unizg.hr/ante.djerek), University of Zagreb
+**FSCD Representative**  | [Herman Geuvers](https://cs.ru.nl/~herman/), Radboud University
+**ICLP Representative**  | [Marco Gavanelli](https://docente.unife.it/docenti-en/marco.gavanelli?set_language=en), Università degli Studi di Ferrara
+**IJCAR Representative** | [Magnus Myreen](https://www.cse.chalmers.se/~myreen/), Chalmers University
+**ITP Representative**   | [Franz Baader](https://tu-dresden.de/ing/informatik/thi/lat/die-professur/franz-baader), TU Dresden
+**KR Representative**    | [Esra Erdem](https://people.sabanciuniv.edu/esraerdem/), Sabanci University
+**LICS Representative**  | [Igor Walukiewicz](https://www.labri.fr/perso/igw/), University of Bordeaux
+**SAT Representative**   | [Armin Biere](https://cca.informatik.uni-freiburg.de/biere/), University of Freiburg
+{{</table>}}
