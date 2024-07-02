@@ -49,7 +49,7 @@ title = "FLoC 2026 Committees"
 **ITP PC Chairs**   | TBA
 **KR PC Chairs**    | TBA
 **LICS PC Chairs**  | [Claudia Faggian](https://www.irif.fr/~faggian/), CNRS<br>[Joost-Pieter Katoen](https://www-i2.informatik.rwth-aachen.de/~katoen/), RWTH Aachen University
-**SAT PC Chairs**   | [Stefan Szeider](https://www.ac.tuwien.ac.at/people/szeider/)<br>[Alexey Ignatiev](https://alexeyignatiev.github.io)
+**SAT PC Chairs**   | [Stefan Szeider](https://www.ac.tuwien.ac.at/people/szeider/), TU Wien<br>[Alexey Ignatiev](https://alexeyignatiev.github.io), Monash University
 {{</table>}}
 
 <br>
