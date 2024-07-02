@@ -24,7 +24,7 @@ title = "FLoC 2026 Committees"
 --------|-------
 **CAV Conference Chair**   | [Philipp Ruemmer](http://www.philipp.ruemmer.org), University of Regensburg
 **CP Conference Chair**    | [Inês Lynce](https://sat.inesc-id.pt/~ines/), University of Lisbon
-**CSF Conference Chair**   | TBA
+**CSF Conference Chair**   | [Pedro Adão](https://www.math.tecnico.ulisboa.pt/~padao/), University of Lisbon
 **FSCD Conference Chair**  | [Sandra Alves](https://www.dcc.fc.up.pt/~sandra/Home/Home.html), University of Porto
 **ICLP Conference Chair**  | [Vítor Santos Costa](https://www.dcc.fc.up.pt/~vsc/), University of Porto
 **IJCAR Conference Chair** | [Carlos Caleiro](https://sqig.math.tecnico.ulisboa.pt/ccal), University of Lisbon
@@ -62,7 +62,7 @@ title = "FLoC 2026 Committees"
 **Advisory Chair**       | [Alexandra Silva](https://alexandrasilva.org), Cornell University
 **CAV Representative**   | [Daniel Kröning](https://www.kroening.com), University of Oxford
 **CP Representative**    | [Hélène Verhaeghe](https://hverhaeghe.bitbucket.io), KU Leuven
-**CSF Representative**   | [Ante Đerek](https://www.fer.unizg.hr/ante.djerek), University of Zagreb
+**CSF Representative**   | [Dominique Unruh](https://kodu.ut.ee/~unruh/), University of Tartu
 **FSCD Representative**  | [Herman Geuvers](https://cs.ru.nl/~herman/), Radboud University
 **ICLP Representative**  | [Marco Gavanelli](https://docente.unife.it/docenti-en/marco.gavanelli?set_language=en), Università degli Studi di Ferrara
 **IJCAR Representative** | [Magnus Myreen](https://www.cse.chalmers.se/~myreen/), Chalmers University
