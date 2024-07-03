@@ -11,7 +11,7 @@ title = "FLoC 2026 Committees"
 **Advisory Chair**      | [Alexandra Silva](https://alexandrasilva.org), Cornell University
 **Organization Chair**  | [Nuno P. Lopes](https://web.ist.utl.pt/nuno.lopes/), University of Lisbon
 **Fundraising Chair**   | TBA
-**Workshops Co-Chairs** | [Alessandro Gianola](https://arsr.inesc-id.pt/~agianola/), University of Lisbon
+**Workshops Co-Chairs** | [Alessandro Gianola](https://arsr.inesc-id.pt/~agianola/), University of Lisbon<br>[Bernd Finkbeiner](https://finkbeiner.groups.cispa.de/people/finkbeiner.html), Saarland University
 **Volunteers Chair**    | [José Fragoso Santos](https://web.ist.utl.pt/jose.fragoso/), University of Lisbon
 {{</table>}}
 
