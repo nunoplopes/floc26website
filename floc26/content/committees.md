@@ -11,7 +11,7 @@ title = "FLoC 2026 Committees"
 **Advisory Chair**      | [Alexandra Silva](https://alexandrasilva.org), Cornell University
 **Organization Chair**  | [Nuno P. Lopes](https://web.ist.utl.pt/nuno.lopes/), University of Lisbon
 **Fundraising Chair**   | TBA
-**Workshops Co-Chairs** | [Alessandro Gianola](https://arsr.inesc-id.pt/~agianola/), University of Lisbon<br>[Bernd Finkbeiner](https://finkbeiner.groups.cispa.de/people/finkbeiner.html), Saarland University
+**Workshops Co-Chairs** | [Alessandro Gianola](https://arsr.inesc-id.pt/~agianola/), University of Lisbon<br>[Bernd Finkbeiner](https://finkbeiner.groups.cispa.de/people/finkbeiner.html), CISPA Helmholtz Center for Information Security
 **Volunteers Chair**    | [José Fragoso Santos](https://web.ist.utl.pt/jose.fragoso/), University of Lisbon
 {{</table>}}
 
@@ -40,7 +40,7 @@ title = "FLoC 2026 Committees"
 {{<table "table table-striped table-bordered">}}
  &nbsp; | &nbsp;
 --------|-------
-**CAV PC Chairs**   | [Eva Darulova](https://malyzajko.github.io), Uppsala University<br>[Anthony W. Lin](https://anthonywlin.github.io), Technical University of Kaiserslautern<br>[Philipp Ruemmer](http://www.philipp.ruemmer.org), University of Regensburg
+**CAV PC Chairs**   | [Anthony W. Lin](https://anthonywlin.github.io), Technical University of Kaiserslautern<br>[Eva Darulova](https://malyzajko.github.io), Uppsala University<br>[Philipp Ruemmer](http://www.philipp.ruemmer.org), University of Regensburg
 **CP PC Chairs**    | TBA
 **CSF PC Chairs**   | TBA
 **FSCD PC Chairs**  | TBA
@@ -49,7 +49,7 @@ title = "FLoC 2026 Committees"
 **ITP PC Chairs**   | TBA
 **KR PC Chairs**    | TBA
 **LICS PC Chairs**  | [Claudia Faggian](https://www.irif.fr/~faggian/), CNRS<br>[Joost-Pieter Katoen](https://www-i2.informatik.rwth-aachen.de/~katoen/), RWTH Aachen University
-**SAT PC Chairs**   | [Stefan Szeider](https://www.ac.tuwien.ac.at/people/szeider/), TU Wien<br>[Alexey Ignatiev](https://alexeyignatiev.github.io), Monash University
+**SAT PC Chairs**   | [Alexey Ignatiev](https://alexeyignatiev.github.io), Monash University<br>[Stefan Szeider](https://www.ac.tuwien.ac.at/people/szeider/), TU Wien
 {{</table>}}
 
 <br>
