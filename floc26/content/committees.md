@@ -10,7 +10,7 @@ title = "FLoC 2026 Committees"
 **General Chair**         | [Rajeev Alur](https://www.cis.upenn.edu/~alur/), University of Pennsylvania
 **Advisory Chair**        | [Alexandra Silva](https://alexandrasilva.org), Cornell University
 **Organization Chair**    | [Nuno P. Lopes](https://web.ist.utl.pt/nuno.lopes/), University of Lisbon
-**Fundraising Co-Chairs** | [Aws Albarghouthi](https://pages.cs.wisc.edu/~aws/), UW–Madison<br>[Loris D'Antoni](https://cseweb.ucsd.edu/~ldantoni/), UC San Diego
+**Fundraising Co-Chairs** | [Aws Albarghouthi](https://pages.cs.wisc.edu/~aws/), UW–Madison<br>[Jules Villard](https://jvillard.net), Meta<br>[Loris D'Antoni](https://cseweb.ucsd.edu/~ldantoni/), UC San Diego
 **Workshops Co-Chairs**   | [Alessandro Gianola](https://arsr.inesc-id.pt/~agianola/), University of Lisbon<br>[Bernd Finkbeiner](https://finkbeiner.groups.cispa.de/people/finkbeiner.html), CISPA Helmholtz Center for Information Security
 **Volunteers Chair**      | [José Fragoso Santos](https://web.ist.utl.pt/jose.fragoso/), University of Lisbon
 {{</table>}}
