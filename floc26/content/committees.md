@@ -13,6 +13,7 @@ title = "FLoC 2026 Committees"
 **Fundraising Co-Chairs** | [Aws Albarghouthi](https://pages.cs.wisc.edu/~aws/), UW–Madison<br>[Jules Villard](https://jvillard.net), Meta<br>[Loris D'Antoni](https://cseweb.ucsd.edu/~ldantoni/), UC San Diego
 **Workshops Co-Chairs**   | [Alessandro Gianola](https://arsr.inesc-id.pt/~agianola/), University of Lisbon<br>[Bernd Finkbeiner](https://finkbeiner.groups.cispa.de/people/finkbeiner.html), CISPA Helmholtz Center for Information Security
 **Volunteers Chair**      | [José Fragoso Santos](https://web.ist.utl.pt/jose.fragoso/), University of Lisbon
+**Publicity Chair**       | [Caterina Urban](https://caterinaurban.github.io), INRIA / ENS
 {{</table>}}
 
 <br>
