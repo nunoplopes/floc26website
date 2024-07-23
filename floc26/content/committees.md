@@ -64,7 +64,7 @@ title = "FLoC 2026 Committees"
 **CAV Representative**   | [Daniel Kröning](https://www.kroening.com), University of Oxford
 **CP Representative**    | [Hélène Verhaeghe](https://hverhaeghe.bitbucket.io), KU Leuven
 **CSF Representative**   | [Dominique Unruh](https://kodu.ut.ee/~unruh/), University of Tartu
-**FSCD Representative**  | [Herman Geuvers](https://cs.ru.nl/~herman/), Radboud University
+**FSCD Representative**  | [Patrick Baillot](https://pro.univ-lille.fr/patrick-baillot/), CNRS/Université de Lille
 **ICLP Representative**  | [Marco Gavanelli](https://docente.unife.it/docenti-en/marco.gavanelli?set_language=en), Università degli Studi di Ferrara
 **IJCAR Representative** | [Magnus Myreen](https://www.cse.chalmers.se/~myreen/), Chalmers University
 **ITP Representative**   | [Franz Baader](https://tu-dresden.de/ing/informatik/thi/lat/die-professur/franz-baader), TU Dresden
