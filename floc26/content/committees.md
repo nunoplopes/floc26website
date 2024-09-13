@@ -45,7 +45,7 @@ title = "FLoC 2026 Committees"
 **CP PC Chairs**    | TBA
 **CSF PC Chairs**   | TBA
 **FSCD PC Chairs**  | TBA
-**ICLP PC Chairs**  | TBA
+**ICLP PC Chairs**  | [Laura Giordano](https://people.unipmn.it/laura.giordano/), Università del Piemonte Orientale
 **IJCAR PC Chairs** | [Armin Biere](https://cca.informatik.uni-freiburg.de/biere/), University of Freiburg<br>[Carsten Lutz](https://home.uni-leipzig.de/clu/), Universität Leipzig<br>[Sara Negri](https://sites.google.com/view/saranegri/home), Università degli Studi di Genova
 **ITP PC Chairs**   | TBA
 **KR PC Chairs**    | [Franz Baader](https://tu-dresden.de/ing/informatik/thi/lat/die-professur/franz-baader), TU Dresden<br>[Marie-Laure Mugnier](https://www.lirmm.fr/~mugnier/), University of Montpellier
