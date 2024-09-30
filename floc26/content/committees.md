@@ -66,8 +66,8 @@ title = "FLoC 2026 Committees"
 **CSF Representative**   | [Dominique Unruh](https://kodu.ut.ee/~unruh/), University of Tartu
 **FSCD Representative**  | [Patrick Baillot](https://pro.univ-lille.fr/patrick-baillot/), CNRS/Université de Lille
 **ICLP Representative**  | [Marco Gavanelli](https://docente.unife.it/docenti-en/marco.gavanelli?set_language=en), Università degli Studi di Ferrara
-**IJCAR Representative** | [Magnus Myreen](https://www.cse.chalmers.se/~myreen/), Chalmers University
-**ITP Representative**   | [Franz Baader](https://tu-dresden.de/ing/informatik/thi/lat/die-professur/franz-baader), TU Dresden
+**IJCAR Representative** | [Franz Baader](https://tu-dresden.de/ing/informatik/thi/lat/die-professur/franz-baader), TU Dresden
+**ITP Representative**   | [Magnus Myreen](https://www.cse.chalmers.se/~myreen/), Chalmers University
 **KR Representative**    | [Esra Erdem](https://people.sabanciuniv.edu/esraerdem/), Sabanci University
 **LICS Representative**  | [Igor Walukiewicz](https://www.labri.fr/perso/igw/), University of Bordeaux
 **SAT Representative**   | [Armin Biere](https://cca.informatik.uni-freiburg.de/biere/), University of Freiburg
