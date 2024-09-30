@@ -47,7 +47,7 @@ title = "FLoC 2026 Committees"
 **FSCD PC Chairs**  | TBA
 **ICLP PC Chairs**  | [Laura Giordano](https://people.unipmn.it/laura.giordano/), Università del Piemonte Orientale
 **IJCAR PC Chairs** | [Armin Biere](https://cca.informatik.uni-freiburg.de/biere/), University of Freiburg<br>[Carsten Lutz](https://home.uni-leipzig.de/clu/), Universität Leipzig<br>[Sara Negri](https://sites.google.com/view/saranegri/home), Università degli Studi di Genova
-**ITP PC Chairs**   | TBA
+**ITP PC Chairs**   | [Ekaterina Komendantskaya](https://www.macs.hw.ac.uk/~ek19/), Heriot-Watt University and University of Southampton<br>[Tobias Nipkow](https://www21.in.tum.de/~nipkow/), TU Munich
 **KR PC Chairs**    | [Franz Baader](https://tu-dresden.de/ing/informatik/thi/lat/die-professur/franz-baader), TU Dresden<br>[Marie-Laure Mugnier](https://www.lirmm.fr/~mugnier/), University of Montpellier
 **LICS PC Chairs**  | [Claudia Faggian](https://www.irif.fr/~faggian/), CNRS<br>[Joost-Pieter Katoen](https://www-i2.informatik.rwth-aachen.de/~katoen/), RWTH Aachen University
 **SAT PC Chairs**   | [Alexey Ignatiev](https://alexeyignatiev.github.io), Monash University<br>[Stefan Szeider](https://www.ac.tuwien.ac.at/people/szeider/), TU Wien
