@@ -23,16 +23,17 @@ title = "FLoC 2026 Committees"
 {{<table "table table-striped table-bordered">}}
  &nbsp; | &nbsp;
 --------|-------
-**CAV Conference Chair**   | [Philipp Ruemmer](http://www.philipp.ruemmer.org), University of Regensburg
-**CP Conference Chair**    | [Inês Lynce](https://sat.inesc-id.pt/~ines/), University of Lisbon
-**CSF Conference Chair**   | [Pedro Adão](https://www.math.tecnico.ulisboa.pt/~padao/), University of Lisbon
-**FSCD Conference Chair**  | [Sandra Alves](https://www.dcc.fc.up.pt/~sandra/Home/Home.html), University of Porto
-**ICLP Conference Chair**  | [Vítor Santos Costa](https://www.dcc.fc.up.pt/~vsc/), University of Porto
-**IJCAR Conference Chair** | [Carlos Caleiro](https://sqig.math.tecnico.ulisboa.pt/ccal), University of Lisbon
-**ITP Conference Chair**   | [João F. Ferreira](https://joaoff.com), University of Lisbon
-**KR Conference Chair**    | [João Leite](https://userweb.fct.unl.pt/~jleite/), NOVA University Lisbon
-**LICS Conference Chair**  | [Bernardo Toninho](http://ctp.di.fct.unl.pt/~btoninho/), NOVA University Lisbon
-**SAT Conference Chair**   | [Vasco Manquinho](https://sat.inesc-id.pt/~vmm/), University of Lisbon
+**CAV Local Chair**   | [Philipp Ruemmer](http://www.philipp.ruemmer.org), University of Regensburg
+**CP Local Chair**    | [Inês Lynce](https://sat.inesc-id.pt/~ines/), University of Lisbon
+**CSF Local Chair**   | [Pedro Adão](https://www.math.tecnico.ulisboa.pt/~padao/), University of Lisbon
+**DL Local Chair**    | [Mathias Knorr](https://userweb.fct.unl.pt/~mkn/), NOVA University Lisbon
+**FSCD Local Chair**  | [Sandra Alves](https://www.dcc.fc.up.pt/~sandra/Home/Home.html), University of Porto
+**ICLP Local Chair**  | [Vítor Santos Costa](https://www.dcc.fc.up.pt/~vsc/), University of Porto
+**IJCAR Local Chair** | [Carlos Caleiro](https://sqig.math.tecnico.ulisboa.pt/ccal), University of Lisbon
+**ITP Local Chair**   | [João F. Ferreira](https://joaoff.com), University of Lisbon
+**KR Local Chair**    | [João Leite](https://userweb.fct.unl.pt/~jleite/), NOVA University Lisbon
+**LICS Local Chair**  | [Bernardo Toninho](http://ctp.di.fct.unl.pt/~btoninho/), NOVA University Lisbon
+**SAT Local Chair**   | [Vasco Manquinho](https://sat.inesc-id.pt/~vmm/), University of Lisbon
 {{</table>}}
 
 <br>
@@ -44,6 +45,7 @@ title = "FLoC 2026 Committees"
 **CAV PC Chairs**   | [Anthony W. Lin](https://anthonywlin.github.io), Technical University of Kaiserslautern<br>[Eva Darulova](https://malyzajko.github.io), Uppsala University<br>[Philipp Ruemmer](http://www.philipp.ruemmer.org), University of Regensburg
 **CP PC Chairs**    | TBA
 **CSF PC Chairs**   | TBA
+**DL PC Chairs**    | TBA
 **FSCD PC Chairs**  | TBA
 **ICLP PC Chairs**  | [Laura Giordano](https://people.unipmn.it/laura.giordano/), Università del Piemonte Orientale
 **IJCAR PC Chairs** | [Armin Biere](https://cca.informatik.uni-freiburg.de/biere/), University of Freiburg<br>[Carsten Lutz](https://home.uni-leipzig.de/clu/), Universität Leipzig<br>[Sara Negri](https://sites.google.com/view/saranegri/home), Università degli Studi di Genova
