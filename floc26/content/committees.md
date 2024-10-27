@@ -26,7 +26,7 @@ title = "FLoC 2026 Committees"
 **CAV Conference Chair**   | [Philipp Ruemmer](http://www.philipp.ruemmer.org), University of Regensburg
 **CP Conference Chair**    | [Inês Lynce](https://sat.inesc-id.pt/~ines/), University of Lisbon
 **CSF Conference Chair**   | [Pedro Adão](https://www.math.tecnico.ulisboa.pt/~padao/), University of Lisbon
-**DL Conference Chair**    | [Mathias Knorr](https://userweb.fct.unl.pt/~mkn/), NOVA University Lisbon
+**DL Conference Chair**    | [Matthias Knorr](https://userweb.fct.unl.pt/~mkn/), NOVA University Lisbon
 **FSCD Conference Chair**  | [Sandra Alves](https://www.dcc.fc.up.pt/~sandra/Home/Home.html), University of Porto
 **ICLP Conference Chair**  | [Vítor Santos Costa](https://www.dcc.fc.up.pt/~vsc/), University of Porto
 **IJCAR Conference Chair** | [Carlos Caleiro](https://sqig.math.tecnico.ulisboa.pt/ccal), University of Lisbon
