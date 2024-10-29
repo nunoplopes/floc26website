@@ -33,6 +33,7 @@ title = "FLoC 2026 Committees"
 **ITP Conference Chair**   | [João F. Ferreira](https://joaoff.com), University of Lisbon
 **KR Conference Chair**    | [João Leite](https://userweb.fct.unl.pt/~jleite/), NOVA University Lisbon
 **LICS Conference Chair**  | [Bernardo Toninho](http://ctp.di.fct.unl.pt/~btoninho/), NOVA University Lisbon
+**NMR Conference Chair**   | [Ricardo Gonçalves](https://userweb.fct.unl.pt/~rjrg/), NOVA University Lisbon
 **SAT Conference Chair**   | [Vasco Manquinho](https://sat.inesc-id.pt/~vmm/), University of Lisbon
 {{</table>}}
 
@@ -72,5 +73,6 @@ title = "FLoC 2026 Committees"
 **ITP Representative**   | [Magnus Myreen](https://www.cse.chalmers.se/~myreen/), Chalmers University
 **KR Representative**    | [Esra Erdem](https://people.sabanciuniv.edu/esraerdem/), Sabanci University
 **LICS Representative**  | [Igor Walukiewicz](https://www.labri.fr/perso/igw/), University of Bordeaux
+**NMR Representative**   | [Ivan Varzinczak](https://ijv.ovh), Université Sorbonne Paris Nord
 **SAT Representative**   | [Armin Biere](https://cca.informatik.uni-freiburg.de/biere/), University of Freiburg
 {{</table>}}
