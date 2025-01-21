@@ -53,6 +53,7 @@ title = "FLoC 2026 Committees"
 **ITP PC Chairs**   | [Ekaterina Komendantskaya](https://www.macs.hw.ac.uk/~ek19/), Heriot-Watt University and University of Southampton<br>[Tobias Nipkow](https://www21.in.tum.de/~nipkow/), TU Munich
 **KR PC Chairs**    | [Franz Baader](https://tu-dresden.de/ing/informatik/thi/lat/die-professur/franz-baader), TU Dresden<br>[Marie-Laure Mugnier](https://www.lirmm.fr/~mugnier/), University of Montpellier
 **LICS PC Chairs**  | [Claudia Faggian](https://www.irif.fr/~faggian/), CNRS<br>[Joost-Pieter Katoen](https://www-i2.informatik.rwth-aachen.de/~katoen/), RWTH Aachen University
+**NMR PC Chairs**   | TBA
 **SAT PC Chairs**   | [Alexey Ignatiev](https://alexeyignatiev.github.io), Monash University<br>[Stefan Szeider](https://www.ac.tuwien.ac.at/people/szeider/), TU Wien
 {{</table>}}
 
@@ -73,6 +74,6 @@ title = "FLoC 2026 Committees"
 **ITP Representative**   | [Magnus Myreen](https://www.cse.chalmers.se/~myreen/), Chalmers University
 **KR Representative**    | [Esra Erdem](https://people.sabanciuniv.edu/esraerdem/), Sabanci University
 **LICS Representative**  | [Igor Walukiewicz](https://www.labri.fr/perso/igw/), University of Bordeaux
-**NMR Representative**   | [Ivan Varzinczak](https://ijv.ovh), Université Sorbonne Paris Nord
+**NMR Representative**   | [Matthias Thimm](https://www.mthimm.de), FernUniversität in Hagen
 **SAT Representative**   | [Armin Biere](https://cca.informatik.uni-freiburg.de/biere/), University of Freiburg
 {{</table>}}
