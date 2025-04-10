@@ -32,7 +32,7 @@ title = "FLoC 2026 Committees"
 **IJCAR Conference Chair** | [Carlos Caleiro](https://sqig.math.tecnico.ulisboa.pt/ccal), University of Lisbon
 **ITP Conference Chair**   | [João F. Ferreira](https://joaoff.com), University of Lisbon
 **KR Conference Chair**    | [João Leite](https://userweb.fct.unl.pt/~jleite/), NOVA University Lisbon
-**LICS Conference Chair**  | [Bernardo Toninho](http://ctp.di.fct.unl.pt/~btoninho/), NOVA University Lisbon
+**LICS Conference Chair**  | [Bernardo Toninho](https://web.tecnico.ulisboa.pt/bernardo.toninho/), University of Lisbon
 **NMR Conference Chair**   | [Ricardo Gonçalves](https://userweb.fct.unl.pt/~rjrg/), NOVA University Lisbon
 **SAT Conference Chair**   | [Vasco Manquinho](https://sat.inesc-id.pt/~vmm/), University of Lisbon
 {{</table>}}
