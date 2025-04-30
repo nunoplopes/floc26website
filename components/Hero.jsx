@@ -68,7 +68,7 @@ const Hero = () => {
             </ul>
           </div>
           <motion.button 
-            className='px-[3rem] py-2 text-neutral-50 rounded-full bg-green-500 hover:bg-red-700 transition-colors duration-300 text-base md:text-lg font-semibold mt-6 md:mt-8'
+            className='px-[3rem] py-2 text-neutral-50 rounded-full bg-blue-500 hover:bg-red-700 transition-colors duration-300 text-base md:text-lg font-semibold mt-6 md:mt-8'
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7, ease: "easeOut" }}
