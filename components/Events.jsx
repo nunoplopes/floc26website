@@ -1,9 +1,15 @@
 'use client'
 import React, { useState } from 'react'
 import { eventData } from '@/components/event data/event'
+import { AnimatePresence, motion } from 'framer-motion'
 
 const Events = () => {
     const [activeTab, setActiveTab] = useState('week1')
+    const tabVariants = {
+        initial: { opacity: 0, y: 10 },
+        animate: { opacity: 1, y: 0 },
+        exit: { opacity: 0, y: -10 },
+       };
 
   return (
     <section className=' font-bold'>
@@ -21,20 +27,36 @@ const Events = () => {
 
         {/* data result */}
         <div className="mt-4">
-            {activeTab === 'week1' && (
-            <ul>
-            {eventData.week1.map((conference, index) => (
-                <li key={index} className="py-2">{conference}</li>
-            ))}
-            </ul>
-            )}
-            {activeTab === 'week2' && (
-            <ul>
-            {eventData.week2.map((conference, index) => (
-                <li key={index} className="py-2">{conference}</li>
-            ))}
-            </ul>
-            )}
+            <AnimatePresence mode='wait'>
+                {activeTab === 'week1' && (
+                <motion.ul
+                key="week1"
+                variants={tabVariants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                className='border mx-2 md:mx-[15rem] rounded-lg'
+                >
+                {eventData.week1.map((conference, index) => (
+                    <li key={index} className=" text-center font-normal border-b py-4">{conference}</li>
+                ))}
+                </motion.ul>
+                )}
+                {activeTab === 'week2' && (
+                <motion.ul
+                key="week2"
+                variants={tabVariants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                className='border mx-2 md:mx-[15rem] rounded-lg'
+                >
+                {eventData.week2.map((conference, index) => (
+                    <li key={index} className="text-center font-bold border-b py-4 text-neutral-500">{conference}</li>
+                ))}
+                </motion.ul>
+                )}
+            </AnimatePresence>
         </div>
 
     </section>
