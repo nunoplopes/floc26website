@@ -1,8 +1,8 @@
-import { Montserrat } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
-const geistSans = Montserrat({
+const geistSans = Poppins({
   variable: "--font-geist-sans",
   subsets: ["latin"],
   weight: ['400']

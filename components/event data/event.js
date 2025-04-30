@@ -1,3 +1,7 @@
+import GIUSEPPE from '../../assets/images/giuseppe.jpg'; // Corrected import path
+import IMAGE2 from '@/assets/images/isil.jpg';     // Corrected import path
+import IMAGE3 from '@/assets/images/leonardo.jpg'; // Corrected import path
+
 export const eventData = {
     week1: [
         "32nd International Conference on Principles and Practice of Constraint Programming (CP)",
@@ -6,11 +10,32 @@ export const eventData = {
         "23th International Conference on Principles of Knowledge Representation and Reasoning (KR)",
         "41st Annual ACM/IEEE Symposium on Logic in Computer Science (LICS)",
         "29th International Conference on Theory and Applications of Satisfiability Testing (SAT)"
-      ],
-      week2: [
+    ],
+    week2: [
         "38th International Conference on Computer Aided Verification (CAV)",
         "39th IEEE Computer Security Foundations Symposium (CSF)",
         "13th International Joint Conference on Automated Reasoning (IJCAR)",
         "17th International Conference on Interactive Theorem Proving (ITP)"
-      ]
-}
+    ]
+};
+
+export const keyNoteSpeakers = [
+    {
+        id: 1,
+        name: "Giuseppe De Diacomo",
+        image: GIUSEPPE,
+        position: "",
+    },
+    {
+        id: 2,
+        name: "Isil Dilling",
+        image: IMAGE2,
+        position: "",
+    },
+    {
+        id: 3,
+        name: "Leonardo de Moura",
+        image: IMAGE3,
+        position: "",
+    },
+];
