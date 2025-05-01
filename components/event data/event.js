@@ -1,6 +1,3 @@
-import GIUSEPPE from '../../assets/images/giuseppe.jpg'; // Corrected import path
-import IMAGE2 from '@/assets/images/isil.jpg';     // Corrected import path
-import IMAGE3 from '@/assets/images/leonardo.jpg'; // Corrected import path
 
 export const eventData = {
     week1: [
@@ -19,23 +16,4 @@ export const eventData = {
     ]
 };
 
-export const keyNoteSpeakers = [
-    {
-        id: 1,
-        name: "Giuseppe De Diacomo",
-        image: GIUSEPPE,
-        position: "",
-    },
-    {
-        id: 2,
-        name: "Isil Dilling",
-        image: IMAGE2,
-        position: "",
-    },
-    {
-        id: 3,
-        name: "Leonardo de Moura",
-        image: IMAGE3,
-        position: "",
-    },
-];
+
