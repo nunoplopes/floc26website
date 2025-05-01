@@ -55,44 +55,44 @@ const Hero = () => {
           variants={containerVariants}
           className='text-white max-w-5xl text-center'
         >
-          <motion.div variants={itemVariants} className="mb-8">
-            <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight'>
+          <motion.div variants={itemVariants} className="mb-8 sm:mt-[14rem]">
+            <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight'>
               FEDERATION LOGIC
             </h1>
-            <h1 className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mt-2'>
+            <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight mt-2'>
               CONFE<span className='text-blue-500'>RENCE</span>
             </h1>
           </motion.div>
 
           <motion.p 
             variants={itemVariants}
-            className='text-lg sm:text-xl md:text-2xl text-neutral-200 mb-12 max-w-3xl mx-auto'
+            className='text-base sm:text-lg md:text-xl lg:text-2xl text-neutral-200 mb-8 sm:mb-12 max-w-3xl mx-auto px-4'
           >
             FLOC26 will be held in JULY IN LISBON, PORTUGAL.
           </motion.p>
 
           <motion.div 
             variants={itemVariants}
-            className='grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12'
+            className='grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-4xl mx-auto mb-8 sm:mb-12 px-4'
           >
-            <div className='bg-white/10 backdrop-blur-sm rounded-xl p-6 transform hover:scale-105 transition-transform duration-300'>
-              <h3 className='text-xl font-bold text-blue-400 mb-2'>SUMMER SCHOOL</h3>
-              <p className='text-2xl font-semibold'>13-17 JULY</p>
+            <div className='bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 transform hover:scale-105 transition-transform duration-300'>
+              <h3 className='text-lg sm:text-xl font-bold text-blue-400 mb-2'>SUMMER SCHOOL</h3>
+              <p className='text-xl sm:text-2xl font-semibold'>13-17 JULY</p>
             </div>
             
-            <div className='bg-white/10 backdrop-blur-sm rounded-xl p-6 transform hover:scale-105 transition-transform duration-300'>
-              <h3 className='text-xl font-bold text-blue-400 mb-2'>CONFERENCE</h3>
-              <p className='text-2xl font-semibold'>22-23 & 26-29 JULY</p>
+            <div className='bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 transform hover:scale-105 transition-transform duration-300'>
+              <h3 className='text-lg sm:text-xl font-bold text-blue-400 mb-2'>CONFERENCE</h3>
+              <p className='text-xl sm:text-2xl font-semibold'>22-23 & 26-29 JULY</p>
             </div>
 
-            <div className='bg-white/10 backdrop-blur-sm rounded-xl p-6 transform hover:scale-105 transition-transform duration-300'>
-              <h3 className='text-xl font-bold text-blue-400 mb-2'>WORKSHOP</h3>
-              <p className='text-2xl font-semibold'>18-19 & 24-25 JULY</p>
+            <div className='bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 transform hover:scale-105 transition-transform duration-300'>
+              <h3 className='text-lg sm:text-xl font-bold text-blue-400 mb-2'>WORKSHOP</h3>
+              <p className='text-xl sm:text-2xl font-semibold'>18-19 & 24-25 JULY</p>
             </div>
           </motion.div>
 
-          <motion.div variants={itemVariants}>
-            <button className='group relative px-8 py-4 text-xl font-semibold text-white bg-blue-600 rounded-full overflow-hidden transition-all duration-300 hover:bg-blue-700'>
+          <motion.div variants={itemVariants} className="px-4">
+            <button className='group relative px-6 sm:px-8 py-3 sm:py-4 text-lg sm:text-xl font-semibold text-white bg-blue-600 rounded-full overflow-hidden transition-all duration-300 hover:bg-blue-700'>
               <span className='relative z-10'>Sign up</span>
               <div className='absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300' />
             </button>

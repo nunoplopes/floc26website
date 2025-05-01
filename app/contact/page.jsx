@@ -2,6 +2,16 @@
 import React, { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { FiMail, FiPhone, FiMapPin, FiSend } from 'react-icons/fi'
+import contact from '@/assets/images/contact.jpg'
+
+export const metadata = {
+  title: 'Contact',
+  description: 'Get in touch with the FLoC 2026 team. Contact us for information about the conference, registration, or any other inquiries.',
+  openGraph: {
+    title: 'Contact FLoC 2026',
+    description: 'Get in touch with the FLoC 2026 team. Contact us for information about the conference, registration, or any other inquiries.',
+  },
+};
 
 const Contact = () => {
   const ref = useRef(null)
@@ -116,29 +126,42 @@ const Contact = () => {
   }
 
   return (
-    <div className="min-h-screen bg-neutral-50 py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-neutral-50">
+      {/* Hero Section */}
+      <div className="relative w-full h-[50vh] flex items-center justify-center">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${contact.src})`,
+            backgroundSize: 'cover',
+            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+            backgroundBlendMode: 'overlay',
+          }}
+        />
         <motion.div
           ref={ref}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
-          className="text-center mb-16"
+          className="relative z-10 text-center px-4"
         >
           <motion.h1 
             variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold text-neutral-800 mb-4"
+            className="text-4xl md:text-5xl font-bold text-white mb-4"
           >
             Get in Touch
           </motion.h1>
           <motion.p 
             variants={itemVariants}
-            className="text-lg text-neutral-600 max-w-2xl mx-auto"
+            className="text-lg text-white/90 max-w-2xl mx-auto"
           >
             Have questions about FLoC 2026? We're here to help. Reach out to us through any of the following channels.
           </motion.p>
         </motion.div>
+      </div>
 
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Information */}
           <motion.div

@@ -5,6 +5,15 @@ import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 
+export const metadata = {
+  title: 'About',
+  description: 'Learn about FLoC 2026 - The Federation of Logic Conference. Discover our mission, history, and the intersection of logic and computer science.',
+  openGraph: {
+    title: 'About FLoC 2026',
+    description: 'Learn about FLoC 2026 - The Federation of Logic Conference. Discover our mission, history, and the intersection of logic and computer science.',
+  },
+};
+
 const About = () => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.3 })
