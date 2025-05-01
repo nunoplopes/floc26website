@@ -55,7 +55,7 @@ const Hero = () => {
           variants={containerVariants}
           className='text-white max-w-5xl text-center'
         >
-          <motion.div variants={itemVariants} className="mb-8 sm:mt-[14rem]">
+          <motion.div variants={itemVariants} className="mb-8">
             <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight'>
               FEDERATION LOGIC
             </h1>

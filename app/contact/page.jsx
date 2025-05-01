@@ -4,16 +4,7 @@ import { motion, useInView } from 'framer-motion'
 import { FiMail, FiPhone, FiMapPin, FiSend } from 'react-icons/fi'
 import contact from '@/assets/images/contact.jpg'
 
-export const metadata = {
-  title: 'Contact',
-  description: 'Get in touch with the FLoC 2026 team. Contact us for information about the conference, registration, or any other inquiries.',
-  openGraph: {
-    title: 'Contact FLoC 2026',
-    description: 'Get in touch with the FLoC 2026 team. Contact us for information about the conference, registration, or any other inquiries.',
-  },
-};
-
-const Contact = () => {
+export default function Contact() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.3 })
 
@@ -371,6 +362,4 @@ const Contact = () => {
       </div>
     </div>
   )
-}
-
-export default Contact 
+} 
