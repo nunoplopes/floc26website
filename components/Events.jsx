@@ -2,6 +2,7 @@
 import React, { useState, useRef } from 'react'
 import { eventData } from '@/components/event data/event'
 import { AnimatePresence, motion, useInView } from 'framer-motion'
+import { FiCalendar, FiArrowRight } from 'react-icons/fi'
 
 const Events = () => {
     const [activeTab, setActiveTab] = useState('week1')
@@ -41,65 +42,147 @@ const Events = () => {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={containerVariants}
-            className='font-bold pb-10'
+            className='py-20 bg-neutral-50'
         >
-            {/* section title */}
-            <motion.div variants={itemVariants} className='text-center text-red-600 text-3xl mt-10'>
-                <h2>UpComing Event</h2>
-            </motion.div>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                {/* Section Title */}
+                <motion.div variants={itemVariants} className='text-center mb-12'>
+                    <h2 className="text-4xl font-bold text-neutral-900 mb-4">FLoC'26 Conferences</h2>
+                    <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                        Join us for a series of prestigious conferences bringing together researchers and practitioners in logic and computation.
+                    </p>
+                </motion.div>
 
-            <motion.div variants={itemVariants} className='flex items-center justify-center text-center mt-10'>
-                <ul className='flex items-center justify-center rounded-full border border-neutral-400'>
-                    <li onClick={() => setActiveTab('week1')} className={`py-2 px-7 rounded-l-full ${activeTab === 'week1' ? 'bg-red-700 text-neutral-50' : 'text-gray-700 hover:bg-gray-200'} font-semibold`}>Week 1</li>
-                    <li onClick={() => setActiveTab('week2')} className={`py-2 px-7 rounded-r-full ${activeTab === 'week2' ? 'bg-red-700 text-neutral-50' : 'text-gray-700 hover:bg-gray-200'} font-semibold`}>week 2</li>
-                </ul>
-            </motion.div>
+                {/* Week Tabs */}
+                <motion.div variants={itemVariants} className='flex items-center justify-center mb-12'>
+                    <div className='inline-flex rounded-full bg-white shadow-md p-1'>
+                        <button
+                            onClick={() => setActiveTab('week1')}
+                            className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+                                activeTab === 'week1' 
+                                ? 'bg-blue-600 text-white shadow-sm' 
+                                : 'text-neutral-600 hover:text-blue-600'
+                            }`}
+                        >
+                            Week 1 (July 22-26)
+                        </button>
+                        <button
+                            onClick={() => setActiveTab('week2')}
+                            className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
+                                activeTab === 'week2' 
+                                ? 'bg-blue-600 text-white shadow-sm' 
+                                : 'text-neutral-600 hover:text-blue-600'
+                            }`}
+                        >
+                            Week 2 (July 29-30)
+                        </button>
+                    </div>
+                </motion.div>
 
-            {/* data result */}
-            <motion.div variants={itemVariants} className="mt-4">
-                <AnimatePresence mode='wait'>
-                    {activeTab === 'week1' && (
-                    <motion.ul
-                    key="week1"
-                    variants={tabVariants}
-                    initial="initial"
-                    animate="animate"
-                    exit="exit"
-                    className='border mx-2 md:mx-[15rem] rounded-lg'
+                {/* Conferences List */}
+                <motion.div variants={itemVariants} className="mt-8">
+                    <AnimatePresence mode='wait'>
+                        {activeTab === 'week1' && (
+                            <motion.div
+                                key="week1"
+                                variants={tabVariants}
+                                initial="initial"
+                                animate="animate"
+                                exit="exit"
+                                className="bg-white rounded-2xl shadow-lg overflow-hidden"
+                            >
+                                <div className="overflow-x-auto">
+                                    <table className="w-full">
+                                        <thead>
+                                            <tr className="bg-neutral-50">
+                                                <th className="px-6 py-4 text-left text-sm font-semibold text-neutral-600">Conference</th>
+                                                <th className="px-6 py-4 text-left text-sm font-semibold text-neutral-600">Week</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody className="divide-y divide-neutral-200">
+                                            {eventData.week1.map((conference, index) => (
+                                                <motion.tr 
+                                                    key={index}
+                                                    variants={itemVariants}
+                                                    className="hover:bg-neutral-50 transition-colors duration-200"
+                                                >
+                                                    <td className="px-6 py-4">
+                                                        <div className="flex items-center space-x-3">
+                                                            <FiCalendar className="text-blue-500" />
+                                                            <span className="text-neutral-900">{conference}</span>
+                                                        </div>
+                                                    </td>
+                                                    <td className="px-6 py-4">
+                                                        <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+                                                            Week 1
+                                                        </span>
+                                                    </td>
+                                                </motion.tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </motion.div>
+                        )}
+                        {activeTab === 'week2' && (
+                            <motion.div
+                                key="week2"
+                                variants={tabVariants}
+                                initial="initial"
+                                animate="animate"
+                                exit="exit"
+                                className="bg-white rounded-2xl shadow-lg overflow-hidden"
+                            >
+                                <div className="overflow-x-auto">
+                                    <table className="w-full">
+                                        <thead>
+                                            <tr className="bg-neutral-50">
+                                                <th className="px-6 py-4 text-left text-sm font-semibold text-neutral-600">Conference</th>
+                                                <th className="px-6 py-4 text-left text-sm font-semibold text-neutral-600">Week</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody className="divide-y divide-neutral-200">
+                                            {eventData.week2.map((conference, index) => (
+                                                <motion.tr 
+                                                    key={index}
+                                                    variants={itemVariants}
+                                                    className="hover:bg-neutral-50 transition-colors duration-200"
+                                                >
+                                                    <td className="px-6 py-4">
+                                                        <div className="flex items-center space-x-3">
+                                                            <FiCalendar className="text-blue-500" />
+                                                            <span className="text-neutral-900">{conference}</span>
+                                                        </div>
+                                                    </td>
+                                                    <td className="px-6 py-4">
+                                                        <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+                                                            Week 2
+                                                        </span>
+                                                    </td>
+                                                </motion.tr>
+                                            ))}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
+                </motion.div>
+
+                {/* Call to Action */}
+                <motion.div 
+                    variants={itemVariants}
+                    className="mt-12 text-center"
+                >
+                    <a
+                        href="#"
+                        className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-semibold transition-colors duration-300"
                     >
-                    {eventData.week1.map((conference, index) => (
-                        <motion.li 
-                            key={index} 
-                            variants={itemVariants}
-                            className="text-center font-normal border-b py-4"
-                        >
-                            {conference}
-                        </motion.li>
-                    ))}
-                    </motion.ul>
-                    )}
-                    {activeTab === 'week2' && (
-                    <motion.ul
-                    key="week2"
-                    variants={tabVariants}
-                    initial="initial"
-                    animate="animate"
-                    exit="exit"
-                    className='border mx-2 md:mx-[15rem] rounded-lg'
-                    >
-                    {eventData.week2.map((conference, index) => (
-                        <motion.li 
-                            key={index} 
-                            variants={itemVariants}
-                            className="text-center font-bold border-b py-4 text-neutral-500"
-                        >
-                            {conference}
-                        </motion.li>
-                    ))}
-                    </motion.ul>
-                    )}
-                </AnimatePresence>
-            </motion.div>
+                        <span>View Full Schedule</span>
+                        <FiArrowRight className="w-4 h-4" />
+                    </a>
+                </motion.div>
+            </div>
         </motion.section>
     )
 }

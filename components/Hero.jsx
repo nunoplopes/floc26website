@@ -60,7 +60,7 @@ const Hero = () => {
               FEDERATION LOGIC
             </h1>
             <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight'>
-              CONFE<span className='text-blue-500'>RENCE</span>
+              CONFERENCE
             </h1>
           </motion.div>
 
@@ -89,13 +89,6 @@ const Hero = () => {
               <h3 className='text-lg sm:text-xl font-bold text-blue-400 mb-2'>WORKSHOP</h3>
               <p className='text-xl sm:text-2xl font-semibold'>18-19 & 24-25 JULY</p>
             </div>
-          </motion.div>
-
-          <motion.div variants={itemVariants} className="px-4">
-            <button className='group relative px-6 sm:px-8 py-3 sm:py-4 text-lg sm:text-xl font-semibold text-white bg-blue-600 rounded-full overflow-hidden transition-all duration-300 hover:bg-blue-700'>
-              <span className='relative z-10'>Sign up</span>
-              <div className='absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300' />
-            </button>
           </motion.div>
         </motion.div>
       </div>

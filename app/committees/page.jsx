@@ -5,6 +5,7 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { FiMail, FiUsers, FiAward, FiStar } from 'react-icons/fi'
 import { organizers, conferenceChairs, programChairs, steeringCommittee } from './data'
+import CommitteeMember from '@/components/CommitteeMember'
 import HERO2 from '@/assets/images/hero.jpg'
 
 export default function Committees() {
@@ -22,7 +23,7 @@ export default function Committees() {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
+        <div className="absolute inset-0 backdrop-blur-sm" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
@@ -40,10 +41,10 @@ export default function Committees() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="space-y-16">
           {/* Organizers Section */}
-          <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-neutral-200">
+          <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-neutral-200">
             <div className="flex items-center gap-4 mb-8">
-              <div className="bg-red-500/10 p-3 rounded-xl">
-                <FiUsers className="w-6 h-6 text-red-500" />
+              <div className="bg-blue-500/10 p-3 rounded-xl">
+                <FiUsers className="w-6 h-6 text-blue-500" />
               </div>
               <h2 className="text-3xl font-bold text-neutral-900">FLoC'26 Organizers</h2>
             </div>
@@ -51,7 +52,7 @@ export default function Committees() {
               {organizers.map((member, index) => (
                 <div 
                   key={index}
-                  className="bg-neutral-50 rounded-xl p-6 hover:bg-neutral-100 transition-all duration-300 border border-neutral-200"
+                  className="bg-neutral-50/80 backdrop-blur-sm rounded-xl p-6 hover:bg-neutral-100 transition-all duration-300 border border-neutral-200"
                 >
                   <h3 className="font-semibold text-neutral-900 mb-4 text-lg">{member.role}</h3>
                   <div className="space-y-3">
@@ -61,7 +62,7 @@ export default function Committees() {
                           href={person.link} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="hover:text-red-500 transition-colors duration-300 inline-flex items-center gap-2"
+                          className="hover:text-blue-500 transition-colors duration-300 inline-flex items-center gap-2"
                         >
                           {person.name}
                           <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -82,10 +83,10 @@ export default function Committees() {
           </div>
 
           {/* Conference Committees Section */}
-          <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-neutral-200">
+          <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-neutral-200">
             <div className="flex items-center gap-4 mb-8">
-              <div className="bg-red-500/10 p-3 rounded-xl">
-                <FiAward className="w-6 h-6 text-red-500" />
+              <div className="bg-blue-500/10 p-3 rounded-xl">
+                <FiAward className="w-6 h-6 text-blue-500" />
               </div>
               <h2 className="text-3xl font-bold text-neutral-900">Conference Committees</h2>
             </div>
@@ -93,7 +94,7 @@ export default function Committees() {
               {conferenceChairs.map((member, index) => (
                 <div 
                   key={index}
-                  className="bg-neutral-50 rounded-xl p-6 hover:bg-neutral-100 transition-all duration-300 border border-neutral-200"
+                  className="bg-neutral-50/80 backdrop-blur-sm rounded-xl p-6 hover:bg-neutral-100 transition-all duration-300 border border-neutral-200"
                 >
                   <h3 className="font-semibold text-neutral-900 mb-4 text-lg">{member.role}</h3>
                   <div className="space-y-3">
@@ -103,7 +104,7 @@ export default function Committees() {
                           href={person.link} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="hover:text-red-500 transition-colors duration-300 inline-flex items-center gap-2"
+                          className="hover:text-blue-500 transition-colors duration-300 inline-flex items-center gap-2"
                         >
                           {person.name}
                           <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -124,10 +125,10 @@ export default function Committees() {
           </div>
 
           {/* Program Committees Section */}
-          <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-neutral-200">
+          <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-neutral-200">
             <div className="flex items-center gap-4 mb-8">
-              <div className="bg-red-500/10 p-3 rounded-xl">
-                <FiStar className="w-6 h-6 text-red-500" />
+              <div className="bg-blue-500/10 p-3 rounded-xl">
+                <FiStar className="w-6 h-6 text-blue-500" />
               </div>
               <h2 className="text-3xl font-bold text-neutral-900">Program Committees</h2>
             </div>
@@ -135,7 +136,7 @@ export default function Committees() {
               {programChairs.map((member, index) => (
                 <div 
                   key={index}
-                  className="bg-neutral-50 rounded-xl p-6 hover:bg-neutral-100 transition-all duration-300 border border-neutral-200"
+                  className="bg-neutral-50/80 backdrop-blur-sm rounded-xl p-6 hover:bg-neutral-100 transition-all duration-300 border border-neutral-200"
                 >
                   <h3 className="font-semibold text-neutral-900 mb-4 text-lg">{member.role}</h3>
                   <div className="space-y-3">
@@ -145,7 +146,7 @@ export default function Committees() {
                           href={person.link} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="hover:text-red-500 transition-colors duration-300 inline-flex items-center gap-2"
+                          className="hover:text-blue-500 transition-colors duration-300 inline-flex items-center gap-2"
                         >
                           {person.name}
                           <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -166,10 +167,10 @@ export default function Committees() {
           </div>
 
           {/* Steering Committee Section */}
-          <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-neutral-200">
+          <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-neutral-200">
             <div className="flex items-center gap-4 mb-8">
-              <div className="bg-red-500/10 p-3 rounded-xl">
-                <FiUsers className="w-6 h-6 text-red-500" />
+              <div className="bg-blue-500/10 p-3 rounded-xl">
+                <FiUsers className="w-6 h-6 text-blue-500" />
               </div>
               <h2 className="text-3xl font-bold text-neutral-900">FLoC'26 Steering Committee</h2>
             </div>
@@ -177,7 +178,7 @@ export default function Committees() {
               {steeringCommittee.map((member, index) => (
                 <div 
                   key={index}
-                  className="bg-neutral-50 rounded-xl p-6 hover:bg-neutral-100 transition-all duration-300 border border-neutral-200"
+                  className="bg-neutral-50/80 backdrop-blur-sm rounded-xl p-6 hover:bg-neutral-100 transition-all duration-300 border border-neutral-200"
                 >
                   <h3 className="font-semibold text-neutral-900 mb-4 text-lg">{member.role}</h3>
                   <div className="space-y-3">
@@ -187,7 +188,7 @@ export default function Committees() {
                           href={person.link} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="hover:text-red-500 transition-colors duration-300 inline-flex items-center gap-2"
+                          className="hover:text-blue-500 transition-colors duration-300 inline-flex items-center gap-2"
                         >
                           {person.name}
                           <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -203,6 +204,66 @@ export default function Committees() {
                     ))}
                   </div>
                 </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Committee Images Section */}
+          <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-neutral-200">
+            <div className="flex items-center gap-4 mb-8">
+              <div className="bg-blue-500/10 p-3 rounded-xl">
+                <FiUsers className="w-6 h-6 text-blue-500" />
+              </div>
+              <h2 className="text-3xl font-bold text-neutral-900">Committee Members</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {organizers.map((member) => (
+                member.people.map((person, idx) => (
+                  <CommitteeMember
+                    key={`${member.role}-${idx}`}
+                    name={person.name}
+                    role={member.role}
+                    affiliation={person.affiliation}
+                    link={person.link}
+                  />
+                ))
+              ))}
+              {conferenceChairs.map((member) => (
+                member.people.map((person, idx) => (
+                  person.name !== "TBA" && (
+                    <CommitteeMember
+                      key={`${member.role}-${idx}`}
+                      name={person.name}
+                      role={member.role}
+                      affiliation={person.affiliation}
+                      link={person.link}
+                    />
+                  )
+                ))
+              ))}
+              {programChairs.map((member) => (
+                member.people.map((person, idx) => (
+                  person.name !== "TBA" && (
+                    <CommitteeMember
+                      key={`${member.role}-${idx}`}
+                      name={person.name}
+                      role={member.role}
+                      affiliation={person.affiliation}
+                      link={person.link}
+                    />
+                  )
+                ))
+              ))}
+              {steeringCommittee.map((member) => (
+                member.people.map((person, idx) => (
+                  <CommitteeMember
+                    key={`${member.role}-${idx}`}
+                    name={person.name}
+                    role={member.role}
+                    affiliation={person.affiliation}
+                    link={person.link}
+                  />
+                ))
               ))}
             </div>
           </div>
