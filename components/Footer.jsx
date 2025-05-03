@@ -1,21 +1,125 @@
-import Image from 'next/image'
+'use client'
 import React from 'react'
-import LOGO from '@/assets/images/logo-small.png'
+import Link from 'next/link'
+import { FiMail, FiTwitter, FiLinkedin, FiInstagram, FiGithub } from 'react-icons/fi'
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className='bg-neutral-800 w-full mt-auto'>
-        <div className='container mx-auto px-4 py-6'>
-            <div className='flex items-center justify-between'>
-                {/* logo */}
-                <div className='flex items-center'>
-                    <Image src={LOGO} alt='logo' width={50} height={50} />
-                    <p className='text-neutral-50 ml-5'>FEDERATION LOGIC CONFERENCE</p>
-                </div>
+    <footer className="bg-white border-t border-neutral-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* About Section */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold text-neutral-900">About FLoC 2026</h3>
+            <p className="text-neutral-600 text-sm">
+              The Federated Logic Conference (FLoC) brings together the world's leading researchers 
+              in logic and computer science.
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold text-neutral-900">Quick Links</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/committees" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
+                  Committees
+                </Link>
+              </li>
+              <li>
+                <Link href="/program" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
+                  Program
+                </Link>
+              </li>
+              <li>
+                <Link href="/registration" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
+                  Registration
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold text-neutral-900">Contact</h3>
+            <ul className="space-y-2">
+              <li className="flex items-center gap-2 text-neutral-600 text-sm">
+                <FiMail className="w-4 h-4 text-red-500" />
+                <a href="mailto:webmaster@floc26.org" className="hover:text-red-500 transition-colors duration-300">
+                  webmaster@floc26.org
+                </a>
+              </li>
+              <li className="text-neutral-600 text-sm">
+                FLoC 2026 Organizing Committee
+              </li>
+            </ul>
+          </div>
+
+          {/* Social Links */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold text-neutral-900">Follow Us</h3>
+            <div className="flex gap-4">
+              <a 
+                href="https://twitter.com/floc26" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-neutral-600 hover:text-red-500 transition-colors duration-300"
+              >
+                <FiTwitter className="w-5 h-5" />
+              </a>
+              <a 
+                href="https://linkedin.com/company/floc26" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-neutral-600 hover:text-red-500 transition-colors duration-300"
+              >
+                <FiLinkedin className="w-5 h-5" />
+              </a>
+              <a 
+                href="https://instagram.com/floc26" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-neutral-600 hover:text-red-500 transition-colors duration-300"
+              >
+                <FiInstagram className="w-5 h-5" />
+              </a>
+              <a 
+                href="https://github.com/floc26" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-neutral-600 hover:text-red-500 transition-colors duration-300"
+              >
+                <FiGithub className="w-5 h-5" />
+              </a>
             </div>
+          </div>
         </div>
+
+        {/* Bottom Bar */}
+        <div className="mt-12 pt-8 border-t border-neutral-200">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-neutral-600 text-sm">
+              © {new Date().getFullYear()} FLoC 2026. All rights reserved.
+            </p>
+            <div className="flex gap-6">
+              <Link href="/privacy" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
+                Privacy Policy
+              </Link>
+              <Link href="/terms" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
+                Terms of Service
+              </Link>
+              <Link href="/code-of-conduct" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
+                Code of Conduct
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   )
 }
-
-export default Footer

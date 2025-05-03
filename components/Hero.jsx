@@ -32,7 +32,7 @@ const Hero = () => {
   return (
     <section 
       ref={ref}
-      className='relative w-full h-screen overflow-hidden'
+      className='relative w-full pt-[5rem] pb-20'
       style={{
         backgroundImage: `url(${heroImage.src})`,
         backgroundSize: 'cover',
@@ -55,11 +55,11 @@ const Hero = () => {
           variants={containerVariants}
           className='text-white max-w-5xl text-center'
         >
-          <motion.div variants={itemVariants} className="mb-8">
+          <motion.div variants={itemVariants} className="mt-20">
             <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight'>
               FEDERATION LOGIC
             </h1>
-            <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight mt-2'>
+            <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight'>
               CONFE<span className='text-blue-500'>RENCE</span>
             </h1>
           </motion.div>
@@ -105,7 +105,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
-        className='absolute bottom-8 left-1/2 transform -translate-x-1/2'
+        className='absolute bottom-[1em] left-1/2 transform -translate-x-1/2 mt-[5rem]'
       >
         <div className='w-6 h-10 border-2 border-white/30 rounded-full flex justify-center'>
           <motion.div 
