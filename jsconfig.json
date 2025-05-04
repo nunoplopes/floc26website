@@ -6,7 +6,8 @@
       "@/assets/*": ["assets/*"],
       "@/styles/*": ["styles/*"],
       "@/utils/*": ["utils/*"],
-      "@/pages/*": ["pages/*"]
+      "@/pages/*": ["pages/*"],
+      "@/lib/*": ["lib/*"]
     },
     "jsx": "preserve",
     "target": "es5",

@@ -1,4 +1,4 @@
-import IMAGE1 from '@/assets/images/Giuseppe.jpg';
+import IMAGE1 from '@/assets/images/giuseppe.jpg';
 import IMAGE2 from '@/assets/images/isil.jpg';
 import IMAGE3 from '@/assets/images/leonardo.jpg';
 
