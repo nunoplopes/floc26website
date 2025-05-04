@@ -31,6 +31,15 @@ const Header = () => {
     };
   }, []);
 
+  const navLinks = [
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Speakers', href: '/speakers' },
+    { name: 'Committee', href: '/committee' },
+    { name: 'Events', href: '/events' },
+    { name: 'Contact', href: '/contact' },
+  ]
+
   return (
     <motion.header
       className={`flex justify-between items-center fixed w-full z-10 p-5 ${
@@ -108,7 +117,25 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Link href="/committees">Committees</Link>
+            <Link href="/speakers">Speakers</Link>
+          </motion.li>
+          <motion.li
+            className={`hover:text-gray-300 transition-colors duration-300 py-2 md:py-0 ${
+              isScrolled ? 'text-black' : 'text-neutral-100'
+            }`}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <Link href="/committee">Committee</Link>
+          </motion.li>
+          <motion.li
+            className={`hover:text-gray-300 transition-colors duration-300 py-2 md:py-0 ${
+              isScrolled ? 'text-black' : 'text-neutral-100'
+            }`}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <Link href="/events">Events</Link>
           </motion.li>
           <motion.li
             className={`hover:text-gray-300 transition-colors duration-300 py-2 md:py-0 ${
