@@ -16,7 +16,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 0) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -65,16 +65,16 @@ const Header = () => {
 
       {/* Mobile menu button */}
       <motion.button
-        className="md:hidden text-white text-xl z-10"
+        className="md:hidden text-neutral-800 text-2xl z-10"
         onClick={toggleMenu}
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
       >
         {isMenuOpen ? (
-          <HiX className="w-6 h-6 " />
+          <HiX className={`${isScrolled ? 'text-neutral-800' : 'text-neutral-50'}`} />
         ) : (
-          <HiMenu className="w-6 h-6" />
+          <HiMenu className={`${isScrolled ? 'text-neutral-800' : 'text-neutral-800'}`}/>
         )}
       </motion.button>
 
@@ -110,6 +110,8 @@ const Header = () => {
           >
             <Link href="/about">About</Link>
           </motion.li>
+
+          <Link href="/speakers">
           <motion.li
             className={`hover:text-gray-300 transition-colors duration-300 py-2 md:py-0 ${
               isScrolled ? 'text-black' : 'text-neutral-100'
@@ -117,8 +119,10 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Link href="/speakers">Speakers</Link>
+            Speakers
           </motion.li>
+          </Link>
+
           <motion.li
             className={`hover:text-gray-300 transition-colors duration-300 py-2 md:py-0 ${
               isScrolled ? 'text-black' : 'text-neutral-100'
@@ -127,15 +131,6 @@ const Header = () => {
             whileTap={{ scale: 0.95 }}
           >
             <Link href="/committee">Committee</Link>
-          </motion.li>
-          <motion.li
-            className={`hover:text-gray-300 transition-colors duration-300 py-2 md:py-0 ${
-              isScrolled ? 'text-black' : 'text-neutral-100'
-            }`}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <Link href="/events">Events</Link>
           </motion.li>
           <motion.li
             className={`hover:text-gray-300 transition-colors duration-300 py-2 md:py-0 ${

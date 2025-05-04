@@ -36,11 +36,6 @@ export default function Footer() {
                   Program
                 </Link>
               </li>
-              <li>
-                <Link href="/registration" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
-                  Registration
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -107,13 +102,13 @@ export default function Footer() {
               © {new Date().getFullYear()} FLoC 2026. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <Link href="/privacy" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
+              <Link href="/" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
+              <Link href="/" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
                 Terms of Service
               </Link>
-              <Link href="/code-of-conduct" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
+              <Link href="/" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
                 Code of Conduct
               </Link>
             </div>

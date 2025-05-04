@@ -5,6 +5,7 @@ import SpeakerCard from './SpeakerCard'
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
+import Link from 'next/link'
 
 const Speakers = () => {
   const ref = useRef(null)
@@ -32,7 +33,8 @@ const Speakers = () => {
   }
 
   return (
-    <section className='pb-[5rem] bg-neutral-50'>
+    <>
+    <section className='pb-[5rem] bg-neutral-50 pt-8'>
         {/* Our Speakers */}
         <motion.div 
           ref={ref}
@@ -54,11 +56,12 @@ const Speakers = () => {
         >
          {keyNoteSpeakers.map((speaker, id) =>(
             <motion.div key={speaker.id} variants={itemVariants}>
-              <SpeakerCard name={speaker.name} image={speaker.image} position={speaker.position}/>
+              <Link href={`/speakers/${speaker.id}`}><SpeakerCard name={speaker.name} image={speaker.image} position={speaker.position}/></Link>
             </motion.div>
          ))}   
         </motion.div>
     </section>
+  </>
   )
 }
 

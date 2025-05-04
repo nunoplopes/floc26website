@@ -3,6 +3,7 @@ import React from 'react'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card'
 import {motion} from 'framer-motion'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const SpeakerCard = ({name, image, position}) => {
  

@@ -42,7 +42,7 @@ const Events = () => {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={containerVariants}
-            className='py-20 bg-neutral-50'
+            className='py-20 bg-white'
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Title */}
