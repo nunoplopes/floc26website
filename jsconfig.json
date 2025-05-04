@@ -3,9 +3,10 @@
     "baseUrl": ".",
     "paths": {
       "@/components/*": ["components/*"],
+      "@/assets/*": ["assets/*"],
       "@/styles/*": ["styles/*"],
-      "@/pages/*": ["pages/*"],
-      "@/utils/*": ["utils/*"]
+      "@/utils/*": ["utils/*"],
+      "@/pages/*": ["pages/*"]
     },
     "jsx": "preserve",
     "target": "es5",
