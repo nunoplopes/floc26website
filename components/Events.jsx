@@ -1,11 +1,10 @@
 'use client'
-import React, { useState, useRef } from 'react'
+import React, { useRef } from 'react'
 import { eventData } from '@/components/event data/event'
-import { AnimatePresence, motion, useInView } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 import { FiCalendar, FiArrowRight } from 'react-icons/fi'
 
 const Events = () => {
-    const [activeTab, setActiveTab] = useState('week1')
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true, amount: 0.3 })
 
@@ -20,12 +19,6 @@ const Events = () => {
             }
         }
     }
-
-    const tabVariants = {
-        initial: { opacity: 0, y: 10 },
-        animate: { opacity: 1, y: 0 },
-        exit: { opacity: 0, y: -10 },
-    };
 
     const itemVariants = {
         hidden: { opacity: 0, y: 20 },
@@ -53,120 +46,80 @@ const Events = () => {
                     </p>
                 </motion.div>
 
-                {/* Week Tabs */}
-                <motion.div variants={itemVariants} className='flex items-center justify-center mb-12'>
-                    <div className='inline-flex rounded-full bg-white shadow-md p-1'>
-                        <button
-                            onClick={() => setActiveTab('week1')}
-                            className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
-                                activeTab === 'week1' 
-                                ? 'bg-blue-600 text-white shadow-sm' 
-                                : 'text-neutral-600 hover:text-blue-600'
-                            }`}
-                        >
-                            Week 1 (July 22-26)
-                        </button>
-                        <button
-                            onClick={() => setActiveTab('week2')}
-                            className={`px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
-                                activeTab === 'week2' 
-                                ? 'bg-blue-600 text-white shadow-sm' 
-                                : 'text-neutral-600 hover:text-blue-600'
-                            }`}
-                        >
-                            Week 2 (July 29-30)
-                        </button>
+                {/* Week 1 Section */}
+                <motion.div variants={itemVariants} className="mb-12">
+                    <h3 className="text-2xl font-bold text-neutral-900 mb-6">Week 1 (July 22-26)</h3>
+                    <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                        <div className="overflow-x-auto">
+                            <table className="w-full">
+                                <thead>
+                                    <tr className="bg-neutral-50">
+                                        <th className="px-6 py-4 text-left text-sm font-semibold text-neutral-600">Conference</th>
+                                        <th className="px-6 py-4 text-left text-sm font-semibold text-neutral-600">Week</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="divide-y divide-neutral-200">
+                                    {eventData.week1.map((conference, index) => (
+                                        <motion.tr 
+                                            key={index}
+                                            variants={itemVariants}
+                                            className="hover:bg-neutral-50 transition-colors duration-200"
+                                        >
+                                            <td className="px-6 py-4">
+                                                <div className="flex items-center space-x-3">
+                                                    <FiCalendar className="text-blue-500" />
+                                                    <span className="text-neutral-900">{conference}</span>
+                                                </div>
+                                            </td>
+                                            <td className="px-6 py-4">
+                                                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+                                                    Week 1
+                                                </span>
+                                            </td>
+                                        </motion.tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </motion.div>
 
-                {/* Conferences List */}
-                <motion.div variants={itemVariants} className="mt-8">
-                    <AnimatePresence mode='wait'>
-                        {activeTab === 'week1' && (
-                            <motion.div
-                                key="week1"
-                                variants={tabVariants}
-                                initial="initial"
-                                animate="animate"
-                                exit="exit"
-                                className="bg-white rounded-2xl shadow-lg overflow-hidden"
-                            >
-                                <div className="overflow-x-auto">
-                                    <table className="w-full">
-                                        <thead>
-                                            <tr className="bg-neutral-50">
-                                                <th className="px-6 py-4 text-left text-sm font-semibold text-neutral-600">Conference</th>
-                                                <th className="px-6 py-4 text-left text-sm font-semibold text-neutral-600">Week</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody className="divide-y divide-neutral-200">
-                                            {eventData.week1.map((conference, index) => (
-                                                <motion.tr 
-                                                    key={index}
-                                                    variants={itemVariants}
-                                                    className="hover:bg-neutral-50 transition-colors duration-200"
-                                                >
-                                                    <td className="px-6 py-4">
-                                                        <div className="flex items-center space-x-3">
-                                                            <FiCalendar className="text-blue-500" />
-                                                            <span className="text-neutral-900">{conference}</span>
-                                                        </div>
-                                                    </td>
-                                                    <td className="px-6 py-4">
-                                                        <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
-                                                            Week 1
-                                                        </span>
-                                                    </td>
-                                                </motion.tr>
-                                            ))}
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </motion.div>
-                        )}
-                        {activeTab === 'week2' && (
-                            <motion.div
-                                key="week2"
-                                variants={tabVariants}
-                                initial="initial"
-                                animate="animate"
-                                exit="exit"
-                                className="bg-white rounded-2xl shadow-lg overflow-hidden"
-                            >
-                                <div className="overflow-x-auto">
-                                    <table className="w-full">
-                                        <thead>
-                                            <tr className="bg-neutral-50">
-                                                <th className="px-6 py-4 text-left text-sm font-semibold text-neutral-600">Conference</th>
-                                                <th className="px-6 py-4 text-left text-sm font-semibold text-neutral-600">Week</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody className="divide-y divide-neutral-200">
-                                            {eventData.week2.map((conference, index) => (
-                                                <motion.tr 
-                                                    key={index}
-                                                    variants={itemVariants}
-                                                    className="hover:bg-neutral-50 transition-colors duration-200"
-                                                >
-                                                    <td className="px-6 py-4">
-                                                        <div className="flex items-center space-x-3">
-                                                            <FiCalendar className="text-blue-500" />
-                                                            <span className="text-neutral-900">{conference}</span>
-                                                        </div>
-                                                    </td>
-                                                    <td className="px-6 py-4">
-                                                        <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
-                                                            Week 2
-                                                        </span>
-                                                    </td>
-                                                </motion.tr>
-                                            ))}
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </motion.div>
-                        )}
-                    </AnimatePresence>
+                {/* Week 2 Section */}
+                <motion.div variants={itemVariants} className="mb-12">
+                    <h3 className="text-2xl font-bold text-neutral-900 mb-6">Week 2 (July 29-30)</h3>
+                    <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                        <div className="overflow-x-auto">
+                            <table className="w-full">
+                                <thead>
+                                    <tr className="bg-neutral-50">
+                                        <th className="px-6 py-4 text-left text-sm font-semibold text-neutral-600">Conference</th>
+                                        <th className="px-6 py-4 text-left text-sm font-semibold text-neutral-600">Week</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="divide-y divide-neutral-200">
+                                    {eventData.week2.map((conference, index) => (
+                                        <motion.tr 
+                                            key={index}
+                                            variants={itemVariants}
+                                            className="hover:bg-neutral-50 transition-colors duration-200"
+                                        >
+                                            <td className="px-6 py-4">
+                                                <div className="flex items-center space-x-3">
+                                                    <FiCalendar className="text-blue-500" />
+                                                    <span className="text-neutral-900">{conference}</span>
+                                                </div>
+                                            </td>
+                                            <td className="px-6 py-4">
+                                                <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+                                                    Week 2
+                                                </span>
+                                            </td>
+                                        </motion.tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </motion.div>
 
                 {/* Call to Action */}
