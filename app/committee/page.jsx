@@ -1,98 +1,87 @@
 'use client'
 import React from 'react'
 import { motion } from 'framer-motion'
-import Link from 'next/link'
+import { useInView } from 'framer-motion'
+import { useRef } from 'react'
+import {committeeData } from './data'
+import CommitteeMemberCard from '@/components/CommitteMemberCard'
+import HERO2 from '@/assets/images/hero.jpg'
 
-const CommitteeMember = ({ member }) => {
-  return (
-    <motion.div
-      whileHover={{ scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
-      className="bg-[#2a2a2a] rounded-2xl overflow-hidden shadow-lg border border-[#3a3a3a] hover:border-[#4a4a4a] transition-colors duration-300"
-    >
-      <div className="relative h-64 w-full">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1a1a1a]/80" />
-        <img
-          src={member.image.src}
-          alt={member.name}
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div className="p-6">
-        <h3 className="text-xl font-semibold text-white mb-2">{member.name}</h3>
-        <p className="text-[#00a0e9] font-medium mb-1">{member.role}</p>
-        <p className="text-gray-400 mb-3">{member.institution}</p>
-        <p className="text-gray-300 line-clamp-2">{member.description}</p>
-      </div>
-    </motion.div>
-  )
-}
-
-const CommitteeSection = ({ title, members }) => {
-  return (
-    <div className="mb-16">
-      <h2 className="text-3xl font-bold text-white mb-8 text-center">{title}</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {members.map((member) => (
-          <CommitteeMember key={member.id} member={member} />
-        ))}
-      </div>
-    </div>
-  )
-}
-
-export default function CommitteePage() {
-  // Example committee data - replace with actual data
-  const steeringCommittee = [
-    {
-      id: 1,
-      name: "Dr. Jane Smith",
-      role: "Chair",
-      institution: "University of Lisbon",
-      image: "/images/committee/member1.jpg",
-      description: "Leading expert in computational logic and formal methods.",
-    },
-    // Add more members
-  ]
-
-  const programCommittee = [
-    {
-      id: 1,
-      name: "Prof. John Doe",
-      role: "Program Chair",
-      institution: "Technical University of Lisbon",
-      image: "/images/committee/member2.jpg",
-      description: "Pioneer in automated theorem proving and program verification.",
-    },
-    // Add more members
-  ]
-
-  const organizingCommittee = [
-    {
-      id: 1,
-      name: "Dr. Maria Silva",
-      role: "Organizing Chair",
-      institution: "University of Porto",
-      image: "/images/committee/member3.jpg",
-      description: "Expert in conference organization and logistics.",
-    },
-    // Add more members
-  ]
+export default function Committee() {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true, amount: 0.3 })
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#1a1a1a] to-[#2a2a2a] py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-white mb-4">Conference Committees</h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Meet the dedicated team of experts organizing FLoC 2026.
-          </p>
+    <div className="">
+      {/* Hero Section */}
+      <section 
+        className="w-full h-[60vh] py-32 relative"
+        style={{
+          backgroundImage: `url(${HERO2.src})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundColor: 'rgba(0, 0, 0, 0.8)',
+          backgroundBlendMode: 'overlay',
+        }}
+      >
+        <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+              FLoC 2026 Committees
+            </h1>
+            <p className="text-xl text-neutral-200 max-w-3xl mx-auto leading-relaxed">
+              Meet the dedicated team of researchers and organizers behind FLoC 2026, 
+              working together to create an exceptional conference experience.
+            </p>
+          </div>
         </div>
+      </section>
 
-        <CommitteeSection title="Steering Committee" members={steeringCommittee} />
-        <CommitteeSection title="Program Committee" members={programCommittee} />
-        <CommitteeSection title="Organizing Committee" members={organizingCommittee} />
-      </div>
+      {/* Main Content */}
+      <div className="min-h-screen p-4 sm:p-6 md:p-8">
+            <div className="max-w-6xl mx-auto space-y-8">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-blue-700">
+                    FLoC&apos;26 Committees
+                </h1>
+
+                <section>
+                    <h2 className="text-2xl sm:text-3xl font-semibold text-blue-600 mb-4">FLoC&apos;26 Organizers</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                        {committeeData.organizers.map((member, index) => (
+                            <CommitteeMemberCard key={index} member={member.name} image={member.image} affiliation={member.affiliation} role={member.role} />
+                        ))}
+                    </div>
+                </section>
+
+                <section>
+                    <h2 className="text-2xl sm:text-3xl font-semibold text-blue-600 mb-4">Conference Committees</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                        {committeeData.conferenceCommittees.map((member, index) => (
+                            <CommitteeMemberCard key={index} member={member.name} image={member.image} affiliation={member.affiliation} role={member.role} />
+                        ))}
+                    </div>
+                </section>
+
+                <section>
+                    <h2 className="text-2xl sm:text-3xl font-semibold text-blue-600 mb-4">Program Committees</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                        {committeeData.programCommittees.map((member, index) => (
+                            <CommitteeMemberCard key={index} member={member.name} image={member.image} affiliation={member.affiliation} role={member.role} />
+                        ))}
+                    </div>
+                </section>
+
+                <section>
+                    <h2 className="text-2xl sm:text-3xl font-semibold text-blue-600 mb-4">FLoC&apos;26 Steering Committee</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                        {committeeData.steeringCommittee.map((member, index) => (
+                            <CommitteeMemberCard key={index} member={member.name} image={member.image} affiliation={member.affiliation} role={member.role} />
+                        ))}
+                    </div>
+                </section>
+            </div>
+        </div>
     </div>
   )
 } 
