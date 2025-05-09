@@ -65,16 +65,16 @@ const Header = () => {
 
       {/* Mobile menu button */}
       <motion.button
-        className="md:hidden text-neutral-800 text-2xl z-10"
+        className="md:hidden text-neutral-50 text-2xl z-50"
         onClick={toggleMenu}
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
       >
         {isMenuOpen ? (
-          <HiX className={`text-neutral-50 ${isScrolled ? 'text-neutral-800 z-20' : 'text-neutral-50 z-20'}`} />
+          <HiX className={`${isScrolled ? 'text-neutral-800' : 'text-neutral-50'}`} />
         ) : (
-          <HiMenu className={`${isScrolled ? 'text-neutral-800 z-20' : 'text-neutral-50 z-20'}`}/>
+          <HiMenu className={`${isScrolled ? 'text-neutral-800' : 'text-neutral-50'}`}/>
         )}
       </motion.button>
 
