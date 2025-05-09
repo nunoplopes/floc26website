@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import Image from 'next/image'
-import LOGO from '@/assets/images/logo-small.png'
+import Image from 'next/image';
+import LOGO from '@/assets/images/logo-small.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,15 +31,6 @@ const Header = () => {
     };
   }, []);
 
-  const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Speakers', href: '/speakers' },
-    { name: 'Committee', href: '/committee' },
-    { name: 'Events', href: '/events' },
-    { name: 'Contact', href: '/contact' },
-  ]
-
   return (
     <motion.header
       className={`flex justify-between items-center fixed w-full z-10 p-5 ${
@@ -59,33 +50,36 @@ const Header = () => {
         transition={{ duration: 0.5, delay: 0.7, ease: 'easeOut' }}
       >
         <Link href="/">
-          {isScrolled ? <Image src={LOGO} width={100} alt='logo'/> : <Image src={LOGO} width={100} className=' bg-white' alt='logo'/> }
+          {isScrolled ? (
+            <Image src={LOGO} width={100} alt="logo" />
+          ) : (
+            <Image src={LOGO} width={100} className="bg-white" alt="logo" />
+          )}
         </Link>
       </motion.div>
 
       {/* Mobile menu button */}
       <motion.button
-        className="md:hidden text-neutral-800 text-2xl z-10"
+        className={`md:hidden text-2xl z-20 ${
+          isScrolled ? 'text-neutral-800' : 'text-white'
+        }`} // Adjusted color for transparent background
         onClick={toggleMenu}
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
       >
-        {isMenuOpen ? (
-          <HiX className={`${isScrolled ? 'text-neutral-800' : 'text-neutral-50'}`} />
-        ) : (
-          <HiMenu className={`${isScrolled ? 'text-neutral-800' : 'text-neutral-800'}`}/>
-        )}
+        {isMenuOpen ? <HiX /> : <HiMenu />}
       </motion.button>
 
       {/* nav links */}
       <motion.nav
         className={`
-          text-sm font-bold -z-10
+          text-sm font-bold
           fixed md:relative top-0 right-0 h-screen md:h-auto w-64 md:w-auto
           ${isScrolled ? 'bg-white/90' : 'bg-black/65'} md:bg-transparent p-4 md:p-0
           transform transition-transform duration-300 ease-in-out
           ${isMenuOpen ? 'translate-x-0' : 'translate-x-full md:translate-x-0'}
+          z-10
         `}
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
@@ -112,15 +106,15 @@ const Header = () => {
           </motion.li>
 
           <Link href="/speakers">
-          <motion.li
-            className={`hover:text-gray-300 transition-colors duration-300 py-2 md:py-0 ${
-              isScrolled ? 'text-black' : 'text-neutral-100'
-            }`}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Speakers
-          </motion.li>
+            <motion.li
+              className={`hover:text-gray-300 transition-colors duration-300 py-2 md:py-0 ${
+                isScrolled ? 'text-black' : 'text-neutral-100'
+              }`}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Speakers
+            </motion.li>
           </Link>
 
           <motion.li
