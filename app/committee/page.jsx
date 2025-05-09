@@ -41,12 +41,12 @@ export default function Committee() {
       {/* Main Content */}
       <div className="min-h-screen p-4 sm:p-6 md:p-8">
             <div className="max-w-6xl mx-auto space-y-8">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-blue-700">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-neutral-800">
                     FLoC&apos;26 Committees
                 </h1>
 
                 <section>
-                    <h2 className="text-2xl sm:text-3xl font-semibold text-blue-600 mb-4">FLoC&apos;26 Organizers</h2>
+                    <h2 className="text-2xl sm:text-3xl font-semibold text-neutral-700 mb-4">FLoC&apos;26 Organizers</h2>
                     <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-6">
                         {committeeData.organizers.map((member, index) => (
                             <CommitteeMemberCard key={index} member={member.name} image={member.image} affiliation={member.affiliation} role={member.role} />

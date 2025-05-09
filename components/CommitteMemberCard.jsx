@@ -18,8 +18,8 @@ const CommitteMemberCard = ({ member, image, affiliation, role }) => {
             <Image
               src={image}
               alt={member}
-              width={100} // Set appropriate width
-              height={100} // Set appropriate height
+              width={300} // Set appropriate width
+              height={300} // Set appropriate height
               className="w-6 h-6 rounded-full"
             />
           ) : (
