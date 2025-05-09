@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import heroImage from '@/assets/images/hero.jpg'
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
@@ -33,35 +32,24 @@ const Hero = () => {
     <section 
       ref={ref}
       className='relative w-full pt-[5rem] pb-20'
-      style={{
-        backgroundImage: `url(${heroImage.src})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
     >
-      {/* Overlay with gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80" />
-      
-      {/* Animated background elements */}
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent animate-pulse" />
-      </div>
 
       {/* Content container */}
-      <div className='relative container mx-auto w-full h-full flex items-center justify-center px-4 md:px-8 lg:px-16'>
+      <div className='relative container mx-auto w-full h-full'>
         <motion.div 
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
-          className='text-white max-w-5xl text-center'
+          className='text-blue-700 max-w-5xl text-left'
         >
-          <motion.div variants={itemVariants} className="mt-20">
-            <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight'>
-              FEDERATION LOGIC
+          <motion.div variants={itemVariants} className="mt-20 ml-7 md:ml-auto">
+            <h1 className='text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight'>
+              FEDERATED 
             </h1>
-            <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight'>
-              CONFERENCE
+            <h1 className='text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight'>
+             LOGIC CONFERENCE
             </h1>
+            <h1 className='text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight text-yellow-300'>2026</h1>
           </motion.div>
 
           <motion.p 

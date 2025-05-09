@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <motion.header
       className={`flex justify-between items-center fixed w-full z-10 p-5 ${
-        isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
+        isScrolled ? 'bg-white shadow-md' : 'bg-white'
       }`}
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
@@ -61,7 +61,7 @@ const Header = () => {
       {/* Mobile menu button */}
       <motion.button
         className={`md:hidden text-4xl z-20 ${
-          isScrolled ? 'text-neutral-800' : 'text-white'
+          isScrolled ? 'text-neutral-800' : 'text-neutral-800'
         }`} // Adjusted color for transparent background
         onClick={toggleMenu}
         initial={{ opacity: 0, x: 20 }}
@@ -76,7 +76,7 @@ const Header = () => {
         className={`
           text-sm font-bold
           fixed md:relative top-0 right-0 h-screen md:h-auto w-64 md:w-auto
-          ${isScrolled ? 'bg-white w-full' : 'bg-black w-full'} md:bg-transparent p-4 md:p-0
+          ${isScrolled ? 'bg-white w-full' : 'bg-white w-full'} md:bg-white p-4 md:p-0
           transform transition-transform duration-300 ease-in-out
           ${isMenuOpen ? 'translate-x-0' : 'translate-x-full md:translate-x-0'}
           z-10
@@ -88,7 +88,7 @@ const Header = () => {
         <ul className="flex flex-col md:flex-row gap-4 md:gap-8 mt-16 md:mt-0">
           <motion.li
             className={`hover:text-gray-300 transition-colors duration-300 py-2 md:py-0 ${
-              isScrolled ? 'text-black' : 'text-neutral-100'
+              isScrolled ? 'text-black' : 'text-neutral-800'
             }`}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -97,7 +97,7 @@ const Header = () => {
           </motion.li>
           <motion.li
             className={`hover:text-gray-300 transition-colors duration-300 py-2 md:py-0 ${
-              isScrolled ? 'text-black' : 'text-neutral-100'
+              isScrolled ? 'text-black' : 'text-neutral-800'
             }`}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -108,7 +108,7 @@ const Header = () => {
           <Link href="/speakers">
             <motion.li
               className={`hover:text-gray-300 transition-colors duration-300 py-2 md:py-0 ${
-                isScrolled ? 'text-black' : 'text-neutral-100'
+                isScrolled ? 'text-black' : 'text-neutral-800'
               }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -119,7 +119,7 @@ const Header = () => {
 
           <motion.li
             className={`hover:text-gray-300 transition-colors duration-300 py-2 md:py-0 ${
-              isScrolled ? 'text-black' : 'text-neutral-100'
+              isScrolled ? 'text-black' : 'text-neutral-800'
             }`}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -128,7 +128,7 @@ const Header = () => {
           </motion.li>
           <motion.li
             className={`hover:text-gray-300 transition-colors duration-300 py-2 md:py-0 ${
-              isScrolled ? 'text-black' : 'text-neutral-100'
+              isScrolled ? 'text-black' : 'text-neutral-800'
             }`}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
