@@ -80,12 +80,12 @@ const Header = () => {
 
       {/* nav links */}
       <motion.nav
-        className={`
+        className={`-z-10
           text-sm font-bold
           fixed md:relative top-0 right-0 h-screen md:h-auto w-64 md:w-auto
           ${isScrolled ? 'bg-white/90' : 'bg-black/70'} md:bg-transparent p-4 md:p-0
           transform transition-transform duration-300 ease-in-out
-          ${isMenuOpen ? 'translate-x-0' : 'translate-x-full md:translate-x-0'}
+          ${isMenuOpen ? 'translate-x-0 -z-10' : 'translate-x-full md:translate-x-0'}
         `}
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
