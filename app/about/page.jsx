@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import hero2 from '@/assets/images/hero2.avif'
-import { motion } from 'framer-motion'
+import { motion, isInView } from 'framer-motion'
 import { useRef } from 'react'
 
 const About = () => {
