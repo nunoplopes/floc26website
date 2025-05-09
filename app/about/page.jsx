@@ -2,12 +2,10 @@
 import React from 'react'
 import hero2 from '@/assets/images/hero2.avif'
 import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 
 const About = () => {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -35,7 +33,6 @@ const About = () => {
       <motion.section
         ref={ref}
         initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
         variants={containerVariants}
         className='relative w-full h-[60vh] flex items-center justify-center'
         style={{
