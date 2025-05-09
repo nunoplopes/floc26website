@@ -65,7 +65,7 @@ const Header = () => {
 
       {/* Mobile menu button */}
       <motion.button
-        className="md:hidden text-neutral-800 text-2xl z-10"
+        className="md:hidden text-neutral-800 text-2xl z-20"
         onClick={toggleMenu}
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
