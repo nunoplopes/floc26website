@@ -65,7 +65,7 @@ const Header = () => {
 
       {/* Mobile menu button */}
       <motion.button
-        className="md:hidden text-neutral-800 text-2xl z-20"
+        className="md:hidden text-neutral-800 text-2xl z-10"
         onClick={toggleMenu}
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
@@ -74,7 +74,7 @@ const Header = () => {
         {isMenuOpen ? (
           <HiX className={`${isScrolled ? 'text-neutral-800' : 'text-neutral-50'}`} />
         ) : (
-          <HiMenu className={`${isScrolled ? 'text-neutral-800' : 'text-neutral-800'}`}/>
+          <HiMenu className={`${isScrolled ? 'text-neutral-800' : 'text-neutral-50'}`}/>
         )}
       </motion.button>
 
@@ -82,8 +82,8 @@ const Header = () => {
       <motion.nav
         className={`
           text-sm font-bold -z-10
-          fixed md:relative top-0 right-0 h-screen md:h-auto w-64 md:w-auto z-5
-          ${isScrolled ? 'bg-white/90' : 'bg-black/65'} md:bg-transparent p-4 md:p-0
+          fixed md:relative top-0 right-0 h-screen md:h-auto w-64 md:w-auto
+          ${isScrolled ? 'bg-white/90' : 'bg-black/70'} md:bg-transparent p-4 md:p-0
           transform transition-transform duration-300 ease-in-out
           ${isMenuOpen ? 'translate-x-0' : 'translate-x-full md:translate-x-0'}
         `}
