@@ -82,7 +82,7 @@ const Header = () => {
       <motion.nav
         className={`
           text-sm font-bold -z-10
-          fixed md:relative top-0 right-0 h-screen md:h-auto w-64 md:w-auto
+          fixed md:relative top-0 right-0 h-screen md:h-auto w-64 md:w-auto z-10
           ${isScrolled ? 'bg-white/90' : 'bg-black/65'} md:bg-transparent p-4 md:p-0
           transform transition-transform duration-300 ease-in-out
           ${isMenuOpen ? 'translate-x-0' : 'translate-x-full md:translate-x-0'}
