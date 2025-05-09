@@ -35,12 +35,12 @@ const Events = () => {
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
             variants={containerVariants}
-            className='py-20 bg-white'
+            className='py-10 bg-white'
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Title */}
                 <motion.div variants={itemVariants} className='text-center mb-12'>
-                    <h2 className="text-4xl font-bold text-neutral-900 mb-4">FLoC'26 Conferences</h2>
+                    <h2 className="text-4xl font-bold text-neutral-800 mb-4">FLoC'26 <span className='text-blue-700'>Conferences</span></h2>
                     <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
                         Join us for a series of prestigious conferences bringing together researchers and practitioners in logic and computation.
                     </p>

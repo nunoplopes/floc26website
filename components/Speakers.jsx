@@ -34,7 +34,7 @@ const Speakers = () => {
 
   return (
     <>
-    <section className='pb-[5rem] bg-neutral-50 pt-8'>
+    <section className='pb-[5rem] bg-blue-950 pt-8'>
         {/* Our Speakers */}
         <motion.div 
           ref={ref}
@@ -43,8 +43,8 @@ const Speakers = () => {
           variants={containerVariants}
           className='text-center pt-10'
         >
-            <p>Our Keynote</p>
-            <h2 className='text-neutral-800 font-bold text-3xl'>Speakers</h2>
+            <p className="text-blue-400 text-xl font-bold">Our Keynote</p>
+            <h2 className='text-neutral-50 font-bold text-3xl md:text-6xl'>Speakers</h2>
         </motion.div>
 
         <motion.div 
@@ -52,7 +52,7 @@ const Speakers = () => {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
-          className='flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 mt-7 px-4 md:px-8'
+          className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-7 px-4 md:px-8 place-items-center'
         >
          {keyNoteSpeakers.map((speaker, id) =>(
             <motion.div key={speaker.id} variants={itemVariants}>

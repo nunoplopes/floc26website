@@ -47,8 +47,8 @@ export default function Home() {
   return (
     <main>
       <Hero/>
-      <Speakers />
       <Events/>
+      <Speakers />
     </main>
   );
 }

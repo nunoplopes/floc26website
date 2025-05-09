@@ -10,8 +10,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-neutral-900">About FLoC 2026</h3>
-            <p className="text-neutral-600 text-sm">
+            <h3 className="text-3xl font-bold text-neutral-900">About FLoC 2026</h3>
+            <p className="text-neutral-600 text-xl">
               The Federated Logic Conference (FLoC) brings together the world's leading researchers 
               in logic and computer science.
             </p>
@@ -19,20 +19,20 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-neutral-900">Quick Links</h3>
-            <ul className="space-y-2">
+            <h3 className="text-2xl font-bold text-neutral-800">Quick Links</h3>
+            <ul className="space-y-2 text-xl">
               <li>
-                <Link href="/" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
+                <Link href="/" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-xl">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/committees" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
+                <Link href="/committees" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-xl">
                   Committees
                 </Link>
               </li>
               <li>
-                <Link href="/program" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
+                <Link href="/program" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-xl">
                   Program
                 </Link>
               </li>
@@ -41,15 +41,15 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-neutral-900">Contact</h3>
+            <h3 className="text-2xl font-bold text-neutral-800">Contact</h3>
             <ul className="space-y-2">
-              <li className="flex items-center gap-2 text-neutral-600 text-sm">
+              <li className="flex items-center gap-2 text-neutral-600 text-xl">
                 <FiMail className="w-4 h-4 text-red-500" />
                 <a href="mailto:webmaster@floc26.org" className="hover:text-red-500 transition-colors duration-300">
                   webmaster@floc26.org
                 </a>
               </li>
-              <li className="text-neutral-600 text-sm">
+              <li className="text-neutral-600 text-xl">
                 FLoC 2026 Organizing Committee
               </li>
             </ul>

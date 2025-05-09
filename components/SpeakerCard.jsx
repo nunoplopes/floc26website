@@ -10,11 +10,11 @@ const SpeakerCard = ({name, image, position}) => {
     <motion.div
       whileHover={{ scale: 1.03 }}
       transition={{ type: "spring", stiffness: 400, damping: 17 }}
-      className="shadow-md rounded-lg overflow-hidden w-full max-w-[300px] mx-auto"
+      className=" overflow-hidden w-full max-w-[240px] mx-auto"
     >
       <div className="flex flex-col">
         {/* image card */}
-        <div className="relative w-full aspect-square">
+        <div className="relative w-full aspect-square rounded-full overflow-hidden">
           <Image 
             src={image} 
             alt={name}
@@ -25,8 +25,8 @@ const SpeakerCard = ({name, image, position}) => {
         </div>
         {/* description */}
         <div className="p-3 sm:p-4">
-          <h2 className='text-xl sm:text-2xl text-neutral-800 font-semibold mb-1 text-center'>{name}</h2>
-          <p className='text-sm sm:text-base text-neutral-800 text-center'>{position}</p>
+          <h2 className=' font-semibold mb-1 text-left text-4xl text-neutral-50 font-bold'>{name}</h2>
+          <p className='text-sm sm:text-base text-neutral-300 text-left mt-2'>{position}</p>
         </div>
       </div>
     </motion.div>

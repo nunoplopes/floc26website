@@ -60,7 +60,7 @@ const Header = () => {
 
       {/* Mobile menu button */}
       <motion.button
-        className={`md:hidden text-2xl z-20 ${
+        className={`md:hidden text-4xl z-20 ${
           isScrolled ? 'text-neutral-800' : 'text-white'
         }`} // Adjusted color for transparent background
         onClick={toggleMenu}
@@ -76,7 +76,7 @@ const Header = () => {
         className={`
           text-sm font-bold
           fixed md:relative top-0 right-0 h-screen md:h-auto w-64 md:w-auto
-          ${isScrolled ? 'bg-white/90' : 'bg-black/65'} md:bg-transparent p-4 md:p-0
+          ${isScrolled ? 'bg-white w-full' : 'bg-black w-full'} md:bg-transparent p-4 md:p-0
           transform transition-transform duration-300 ease-in-out
           ${isMenuOpen ? 'translate-x-0' : 'translate-x-full md:translate-x-0'}
           z-10

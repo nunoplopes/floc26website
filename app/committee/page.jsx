@@ -41,8 +41,8 @@ export default function Committee() {
       {/* Main Content */}
       <div className="min-h-screen p-4 sm:p-6 md:p-8">
             <div className="max-w-6xl mx-auto space-y-8">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-neutral-800">
-                    FLoC&apos;26 Committees
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-neutral-800 mt-10">
+                    FLoC&apos;26 <span className='text-blue-700'>Committees</span> 
                 </h1>
 
                 <section>
