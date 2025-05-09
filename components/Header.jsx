@@ -72,16 +72,16 @@ const Header = () => {
         transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
       >
         {isMenuOpen ? (
-          <HiX className={`${isScrolled ? 'text-neutral-800' : 'text-neutral-50'}`} />
+          <HiX className={`text-neutral-50 ${isScrolled ? 'text-neutral-800 z-20' : 'text-neutral-50 z-20'}`} />
         ) : (
-          <HiMenu className={`${isScrolled ? 'text-neutral-800' : 'text-neutral-50'}`}/>
+          <HiMenu className={`${isScrolled ? 'text-neutral-800 z-20' : 'text-neutral-50 z-20'}`}/>
         )}
       </motion.button>
 
       {/* nav links */}
       <motion.nav
         className={`
-          text-sm font-bold -z-10
+          text-sm font-bold
           fixed md:relative top-0 right-0 h-screen md:h-auto w-64 md:w-auto
           ${isScrolled ? 'bg-white/90' : 'bg-black/70'} md:bg-transparent p-4 md:p-0
           transform transition-transform duration-300 ease-in-out
