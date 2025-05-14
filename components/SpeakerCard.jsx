@@ -20,13 +20,13 @@ const SpeakerCard = ({name, image, position}) => {
             alt={name}
             fill
             className='object-cover'
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="(max-width: 768px) 50vw, (max-width: 1200px) 20vw, 33vw"
           />
         </div>
         {/* description */}
         <div className="p-3 sm:p-4">
-          <h2 className=' font-semibold mb-1 text-left text-4xl text-neutral-50 font-bold'>{name}</h2>
-          <p className='text-sm sm:text-base text-neutral-300 text-left mt-2'>{position}</p>
+          <h2 className=' mb-1 text-left text-4xl text-blue-900 font-bold'>{name}</h2>
+          <p className='text-sm sm:text-base text-neutral-600 text-left mt-2'>{position}</p>
         </div>
       </div>
     </motion.div>

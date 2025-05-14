@@ -3,6 +3,8 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
+import Image from 'next/image'
+import HEROIMAGE from '@/assets/images/skyline.png'
 
 const Hero = () => {
   const ref = useRef(null)
@@ -31,7 +33,7 @@ const Hero = () => {
   return (
     <section 
       ref={ref}
-      className='relative w-full pt-[5rem] pb-20'
+      className='relative w-full h-screen bg-neutral-100 overflow-hidden pt-[5rem] pb-20'
     >
 
       {/* Content container */}
@@ -42,24 +44,38 @@ const Hero = () => {
           variants={containerVariants}
           className='text-blue-700 max-w-5xl text-left'
         >
-          <motion.div variants={itemVariants} className="mt-20 ml-7 md:ml-auto">
-            <h1 className='text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight'>
-              FEDERATED 
+
+          
+          <div className='w-full mt-20'>
+            <Image src={HEROIMAGE} layout='contain' alt='hero image'/>
+          </div>
+
+          <motion.p 
+            variants={itemVariants}
+            className=' ml-7 md:ml-auto text-left md:text-xl lg:text-xl text-xl text-blue-700'
+          >
+           13 - 29 JULY 2026
+          </motion.p>
+          
+          <motion.div variants={itemVariants} className=" ml-7 md:ml-auto">
+            <h1 className='text-5xl md:text-5xl lg:text-6xl font-bold'>
+              WELCOME TO FLoC'2026
             </h1>
-            <h1 className='text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight'>
-             LOGIC CONFERENCE
+          </motion.div>
+
+          <motion.div variants={itemVariants} className=" ml-7 md:ml-auto">
+            <h1 className='text-5xl md:text-5xl lg:text-6xl font-bold'>
+              LOGIC CONFERENCE
             </h1>
-            <h1 className='text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight text-yellow-300'>2026</h1>
           </motion.div>
 
           <motion.p 
             variants={itemVariants}
-            className='text-base sm:text-lg md:text-xl lg:text-2xl text-neutral-200 mb-8 sm:mb-12 max-w-3xl mx-auto px-4'
+            className=' ml-7 md:ml-auto text-left md:text-xl lg:text-xl text-yellow-500'
           >
-            FLOC26 will be held in JULY IN LISBON, PORTUGAL.
+           Join us in Lisbon Portugal for a premier event <br/>in logic computer and computer science
           </motion.p>
-
-          <motion.div 
+          {/* <motion.div 
             variants={itemVariants}
             className='grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-4xl mx-auto mb-8 sm:mb-12 px-4'
           >
@@ -77,7 +93,7 @@ const Hero = () => {
               <h3 className='text-lg sm:text-xl font-bold text-blue-400 mb-2'>WORKSHOP</h3>
               <p className='text-xl sm:text-2xl font-semibold'>18-19 & 24-25 JULY</p>
             </div>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
 
@@ -86,13 +102,13 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
-        className='absolute bottom-[1em] left-1/2 transform -translate-x-1/2 mt-[5rem]'
+        className='absolute bottom-[2em] left-1/2 transform -translate-x-1/2'
       >
-        <div className='w-6 h-10 border-2 border-white/30 rounded-full flex justify-center'>
+        <div className='w-6 h-10 border-2 border-blue-700 rounded-full flex justify-center'>
           <motion.div 
             animate={{ y: [0, 12, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-            className='w-1.5 h-1.5 bg-white rounded-full mt-2'
+            className='w-1.5 h-1.5 bg-blue-700 rounded-full mt-2'
           />
         </div>
       </motion.div>

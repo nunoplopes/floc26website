@@ -39,12 +39,13 @@ const nextConfig = {
             'www.macs.hw.ac.uk',
             'www21.in.tum.de',
             'www.mthimm.de',
+            'wp.doc.ic.ac.uk'
         ], // Add the external domain here
     },
-    webpack: (config) => {
-        config.resolve.extensions.push(".mjs");
-        return config;
-    },
+    // webpack: (config) => {
+    //     config.resolve.extensions.push(".mjs");
+    //     return config;
+    // },
 };
 
 export default nextConfig;

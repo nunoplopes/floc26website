@@ -1,10 +1,8 @@
 'use client'
-import React from 'react'
+import React, { useRef } from 'react'
 import { keyNoteSpeakers } from '@/components/event data/speakers'
 import SpeakerCard from './SpeakerCard'
-import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { motion, useInView } from 'framer-motion'
 import Link from 'next/link'
 
 const Speakers = () => {
@@ -33,35 +31,38 @@ const Speakers = () => {
   }
 
   return (
-    <>
-    <section className='pb-[5rem] bg-blue-950 pt-8'>
-        {/* Our Speakers */}
-        <motion.div 
-          ref={ref}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          variants={containerVariants}
-          className='text-center pt-10'
-        >
-            <p className="text-blue-400 text-xl font-bold">Our Keynote</p>
-            <h2 className='text-neutral-50 font-bold text-3xl md:text-6xl'>Speakers</h2>
-        </motion.div>
+    <section className='pb-[5rem] bg-white pt-8' ref={ref}>
+      {/* Heading */}
+      <motion.div 
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        variants={containerVariants}
+        className='text-center pt-10'
+      >
+        <motion.p className="text-blue-500 text-xl font-bold" variants={itemVariants}>Our Keynote</motion.p>
+        <motion.h2 className='text-blue-900 font-bold text-3xl md:text-6xl' variants={itemVariants}>Speakers</motion.h2>
+      </motion.div>
 
-        <motion.div 
-          ref={ref}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          variants={containerVariants}
-          className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-7 px-4 md:px-8 place-items-center'
-        >
-         {keyNoteSpeakers.map((speaker, id) =>(
-            <motion.div key={speaker.id} variants={itemVariants}>
-              <Link href={`/speakers/${speaker.id}`}><SpeakerCard name={speaker.name} image={speaker.image} position={speaker.position}/></Link>
-            </motion.div>
-         ))}   
-        </motion.div>
+      {/* Speaker Cards */}
+      <motion.div 
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        variants={containerVariants}
+        className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-7 px-4 md:px-8 place-items-center'
+      >
+        {keyNoteSpeakers.map((speaker) => (
+          <motion.div key={speaker.id} variants={itemVariants}>
+            <Link href={`/speakers/${speaker.id}`}>
+              <SpeakerCard 
+                name={speaker.name} 
+                image={speaker.image} 
+                position={speaker.position} 
+              />
+            </Link>
+          </motion.div>
+        ))}   
+      </motion.div>
     </section>
-  </>
   )
 }
 

@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Events from "@/components/Events";
 import Hero from "@/components/Hero";
 import Speakers from "@/components/Speakers";
@@ -47,6 +48,7 @@ export default function Home() {
   return (
     <main>
       <Hero/>
+      <About/>
       <Events/>
       <Speakers />
     </main>
