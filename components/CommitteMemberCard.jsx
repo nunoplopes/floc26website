@@ -10,17 +10,20 @@ const CommitteMemberCard = ({ member, image, affiliation, role }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
-      className="bg-white/80 backdrop-blur-md rounded-xl p-4 sm:p-6 border border-blue-100 shadow-md hover:shadow-lg transition-all duration-300"
+      className=""
     >
-      <div className="flex flex-col items-center gap-4">
-        <div>
+      <div className="flex items-center space-x-4 sm:space-x-6">
+        <div className='flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28 bg-amber-400 
+                      rounded-tl-[3rem] rounded-br-[3rem] 
+                      rounded-tr-lg rounded-bl-lg 
+                      overflow-hidden shadow-md'>
           {isExternalImage ? (
             <Image
               src={image}
               alt={member}
-              width={200} // Set appropriate width
-              height={200} // Set appropriate height
-              className=""
+              width={112} // Intrinsic width of image asset (can be larger than display)
+              height={112} // Intrinsic height of image asset
+              className="w-full h-full object-cover"
             />
           ) : (
             <Image

@@ -47,7 +47,7 @@ export default function Committee() {
 
                 <section>
                     <h2 className="text-2xl sm:text-3xl font-semibold text-neutral-700 mb-4">FLoC&apos;26 Organizers</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                    <div className="flex items-center justify-center md:space-x-4 space-x-6">
                         {committeeData.organizers.map((member, index) => (
                             <CommitteeMemberCard key={index} member={member.name} image={member.image} affiliation={member.affiliation} role={member.role} />
                         ))}
@@ -56,7 +56,7 @@ export default function Committee() {
 
                 <section>
                     <h2 className="text-2xl sm:text-3xl font-semibold text-blue-600 mb-4">Conference Committees</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                    <div className="flex items-center justify-center md:space-x-4 space-x-6">
                         {committeeData.conferenceCommittees.map((member, index) => (
                             <CommitteeMemberCard key={index} member={member.name} image={member.image} affiliation={member.affiliation} role={member.role} />
                         ))}
@@ -65,7 +65,7 @@ export default function Committee() {
 
                 <section>
                     <h2 className="text-2xl sm:text-3xl font-semibold text-blue-600 mb-4">Program Committees</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                    <div className="flex items-center justify-center md:space-x-4 space-x-6">
                         {committeeData.programCommittees.map((member, index) => (
                             <CommitteeMemberCard key={index} member={member.name} image={member.image} affiliation={member.affiliation} role={member.role} />
                         ))}
@@ -74,7 +74,7 @@ export default function Committee() {
 
                 <section>
                     <h2 className="text-2xl sm:text-3xl font-semibold text-blue-600 mb-4">FLoC&apos;26 Steering Committee</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                    <div className="flex items-center justify-center md:space-x-4 space-x-6">
                         {committeeData.steeringCommittee.map((member, index) => (
                             <CommitteeMemberCard key={index} member={member.name} image={member.image} affiliation={member.affiliation} role={member.role} />
                         ))}

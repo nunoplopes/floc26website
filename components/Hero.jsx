@@ -33,7 +33,7 @@ const Hero = () => {
   return (
     <section 
       ref={ref}
-      className='relative w-full h-screen bg-neutral-100 overflow-hidden pt-[5rem] pb-20'
+      className='relative w-full bg-neutral-100 overflow-hidden pt-[5rem] pb-20'
     >
 
       {/* Content container */}
@@ -46,7 +46,7 @@ const Hero = () => {
         >
 
           
-          <div className='w-full mt-20'>
+          <div className='w-full mt-10'>
             <Image src={HEROIMAGE} layout='contain' alt='hero image'/>
           </div>
 
