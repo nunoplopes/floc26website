@@ -1,16 +1,28 @@
+'use client'
 import React from 'react'
 import LISBON from '@/assets/images/lisbonsky.png'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 const About = () => {
   return (
-    <section className='w-full bg-neutral-50 pb-20'>
+    <section className='w-full pb-20'>
         {/*  */}
-        <div className='w-full text-center text-4xl font-bold text-blue-700 pt-10'>
+        <motion.div 
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.5 }}
+        className='w-full text-center text-4xl font-bold text-blue-700 pt-10 mb-7'>
           <h2>About FloC</h2>
-        </div>
+        </motion.div>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
+        <motion.div 
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.5 }}
+        className='grid grid-cols-1 md:grid-cols-2 gap-3'>
           {/* first col */}
           <div className='flex flex-col items-center justify-center text-left px-4 text-xl mt-5 space-y-2 text-neutral-500'>
             <p>Over the past forty years, there has been extensive, continuous,
@@ -31,7 +43,7 @@ const About = () => {
           <div className='px-2 mt-3'>
             <Image src={LISBON} alt='lisbon' />
           </div>
-        </div>
+        </motion.div>
     </section>
   )
 }
