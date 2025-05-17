@@ -1,14 +1,15 @@
 'use client'
-import React from 'react'
+import React, { memo } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { FaHotel, FaBus, FaInfoCircle, FaExclamationTriangle } from 'react-icons/fa'
 
-const HotelCard = ({ name, address, price, features, isHighlighted, imageUrl }) => (
+const HotelCard = memo(({ name, address, price, features, isHighlighted, imageUrl }) => (
     <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
         className={`relative bg-white rounded-xl shadow-lg overflow-hidden ${isHighlighted ? 'ring-2 ring-blue-500' : ''}`}
     >
         <div className="relative h-48 w-full">
@@ -18,6 +19,10 @@ const HotelCard = ({ name, address, price, features, isHighlighted, imageUrl }) 
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                loading="lazy"
+                quality={75}
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQtJSEkMjU1LS0yMi4qLjgyPj4+OD5AQEBAR0hHSEdISEtISEhISEhISEj/2wBDAR4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
         </div>
@@ -44,40 +49,42 @@ const HotelCard = ({ name, address, price, features, isHighlighted, imageUrl }) 
             )}
         </div>
     </motion.div>
-)
+))
 
-const AccommodationSection = () => {
-    const hotels = [
-        {
-            name: "Leonardo Plaza Haifa",
-            address: "David Elazar Street 10, Haifa, Israel",
-            price: "600 NIS",
-            features: ["Bed & Breakfast", "Central location", "Spectacular views"],
-            imageUrl: "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
-        },
-        {
-            name: "Dan Carmel",
-            address: "HaNassi Blvd 85-87, Haifa",
-            price: "860 NIS",
-            features: ["Bed & Breakfast", "Premium location", "Bay views"],
-            imageUrl: "https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
-        },
-        {
-            name: "Dan Panorama",
-            address: "HaNassi Blvd 107, Haifa",
-            price: "540 NIS",
-            features: ["Bed & Breakfast", "City views", "Central location"],
-            imageUrl: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
-        },
-        {
-            name: "Mirabelle Plaza Haifa",
-            address: "Yaffe Nof St 111, Haifa",
-            price: "560 NIS",
-            features: ["Bed & Breakfast", "Modern amenities", "Scenic location"],
-            imageUrl: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
-        }
-    ]
+HotelCard.displayName = 'HotelCard'
 
+const hotels = [
+    {
+        name: "Leonardo Plaza Haifa",
+        address: "David Elazar Street 10, Haifa, Israel",
+        price: "600 NIS",
+        features: ["Bed & Breakfast", "Central location", "Spectacular views"],
+        imageUrl: "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
+    },
+    {
+        name: "Dan Carmel",
+        address: "HaNassi Blvd 85-87, Haifa",
+        price: "860 NIS",
+        features: ["Bed & Breakfast", "Premium location", "Bay views"],
+        imageUrl: "https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
+    },
+    {
+        name: "Dan Panorama",
+        address: "HaNassi Blvd 107, Haifa",
+        price: "540 NIS",
+        features: ["Bed & Breakfast", "City views", "Central location"],
+        imageUrl: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
+    },
+    {
+        name: "Mirabelle Plaza Haifa",
+        address: "Yaffe Nof St 111, Haifa",
+        price: "560 NIS",
+        features: ["Bed & Breakfast", "Modern amenities", "Scenic location"],
+        imageUrl: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80"
+    }
+]
+
+const AccommodationSection = memo(() => {
     return (
         <section className="py-16 bg-gray-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -85,6 +92,7 @@ const AccommodationSection = () => {
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
                     className="text-center mb-16"
                 >
                     <h2 className="text-4xl font-bold text-blue-900 mb-4">Accommodation Information</h2>
@@ -98,6 +106,7 @@ const AccommodationSection = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
                     className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-12"
                 >
                     <div className="flex">
@@ -120,7 +129,7 @@ const AccommodationSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
                     {hotels.map((hotel, index) => (
                         <HotelCard
-                            key={index}
+                            key={hotel.name}
                             {...hotel}
                             isHighlighted={index === 0}
                         />
@@ -131,6 +140,7 @@ const AccommodationSection = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
                     className="bg-white rounded-xl shadow-lg p-8"
                 >
                     <div className="flex items-center mb-4">
@@ -153,6 +163,7 @@ const AccommodationSection = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
                     className="mt-12 text-center"
                 >
                     <h3 className="text-xl font-semibold text-gray-900 mb-4">Need Help with Reservations?</h3>
@@ -177,6 +188,8 @@ const AccommodationSection = () => {
             </div>
         </section>
     )
-}
+})
+
+AccommodationSection.displayName = 'AccommodationSection'
 
 export default AccommodationSection 
