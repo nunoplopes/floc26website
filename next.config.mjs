@@ -129,10 +129,10 @@ const nextConfig = {
             },
         ],
     },
-    // webpack: (config) => {
-    //     config.resolve.extensions.push(".mjs");
-    //     return config;
-    // },
+    webpack: (config) => {
+        config.resolve.extensions.push(".mjs");
+        return config;
+    },
 };
 
 export default nextConfig;
