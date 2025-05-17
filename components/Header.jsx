@@ -110,6 +110,7 @@ const Header = () => {
             { href: '/about', label: 'About' },
             { href: '/speakers', label: 'Speakers' },
             { href: '/committee', label: 'Committee' },
+            { href: '/registeration', label: 'Registeration' },
             {
               label: 'Event',
               subLinks: [

@@ -2,6 +2,8 @@ import About from "@/components/About";
 import Events from "@/components/Events";
 import Hero from "@/components/Hero";
 import Speakers from "@/components/Speakers";
+import SponsorsSection from "@/components/SponsorsSection";
+import Sponsors from "@/components/SponsorsSection";
 
 export const metadata = {
   title: 'Home',
@@ -51,6 +53,7 @@ export default function Home() {
       <About/>
       <Events/>
       <Speakers />
+      <SponsorsSection/>
     </main>
   );
 }

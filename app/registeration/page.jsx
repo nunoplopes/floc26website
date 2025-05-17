@@ -164,7 +164,7 @@ const Registration = () => {
                      </p>
                      {/* Replace with actual contact details */}
                      <p className="text-gray-700 font-medium">
-                         Email: <a href="mailto:registration@floc2022.org" className="text-blue-600 hover:underline">registration@floc2022.org</a> {/* Placeholder email */}
+                         Email: <a href="mailto:webmaster@floc26.org" className="text-blue-600 hover:underline">webmaster@floc26.org</a> {/* Placeholder email */}
                      </p>
                      {/* Add other contact info if available */}
                 </section>
