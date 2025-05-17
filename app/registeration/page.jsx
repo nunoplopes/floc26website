@@ -1,6 +1,5 @@
-
-import React from 'react';
-import Head from 'next/head';
+'use client'
+import React, { useState } from 'react';
 
 const Registration = () => {
     // Define the registration fee data based on the browse result summary
@@ -41,12 +40,6 @@ const Registration = () => {
     return (
         // Background uses the light blue shade
         <div className="min-h-screen text-gray-800">
-            <Head>
-                <title>FLOC 2022 - Registration</title>
-                <meta name="description" content="Registration fees for FLOC 2022" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-
             <main className=" md:py-16 w-full">
                 {/* Main Heading */}
                 <div

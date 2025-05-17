@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { MapPin, Clock, Utensils, Building2, Calendar, Download } from 'lucide-react';
 import Image from 'next/image';
 import { useEffect } from 'react';
-import { Metadata } from 'next'
 
 const VenueSection = ({ title, description, icon: Icon, image, className = "" }) => (
     <motion.div
@@ -65,6 +64,12 @@ const EventCard = ({ date, title, location, image }) => (
 
 const MapSection = () => {
     useEffect(() => {
+        // Check if API key is available
+        if (!process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY) {
+            console.warn('Google Maps API key is not configured');
+            return;
+        }
+
         // Check if the script is already loaded
         if (window.google && window.google.maps) {
             initMap();

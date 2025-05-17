@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-export const metadata: Metadata = {
+export const metadata = {
     title: 'Program - FLoC 2026',
     description: 'View the program schedule and details for FLoC 2026.',
     keywords: 'FLoC 2026, program schedule, conferences, workshops, logic programming, computer science, automated reasoning, verification',
@@ -22,11 +22,7 @@ export const metadata: Metadata = {
     },
 }
 
-export default function ProgramLayout({
-    children,
-}: {
-    children: React.ReactNode
-}) {
+export default function ProgramLayout({ children }) {
     return (
         <main>
             {children}
