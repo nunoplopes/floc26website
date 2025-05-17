@@ -1,233 +1,267 @@
 'use client'
 import React from 'react'
-import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-import {committeeData } from './data'
+import { committeeData } from './data'
 import HERO2 from '@/assets/images/lisbontram.jpg'
 import Image from 'next/image'
+import { IoMdContact } from 'react-icons/io'
+
+// Animation variants for sections/titles
+const sectionVariant = {
+  hidden: { opacity: 0, y: 30 }, // Slide up
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" }
+  }
+};
+
+const heroTitleVariant = {
+  hidden: { opacity: 0, y: -30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } }
+};
+
+const heroParagraphVariant = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, delay: 0.2, ease: "easeOut" } }
+};
+
 
 export default function Committee() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
-  const isExternalImage = typeof Image === 'string' && Image.startsWith('http');
+  // Refs and inView hooks for section titles
+  const organizersTitleRef = useRef(null);
+  const organizersTitleInView = useInView(organizersTitleRef, { once: true, amount: 0.3 });
+
+  const confTitleRef = useRef(null);
+  const confTitleInView = useInView(confTitleRef, { once: true, amount: 0.3 });
+
+  const progTitleRef = useRef(null);
+  const progTitleInView = useInView(progTitleRef, { once: true, amount: 0.3 });
+
+  const steerTitleRef = useRef(null);
+  const steerTitleInView = useInView(steerTitleRef, { once: true, amount: 0.3 });
+  
+  // Helper function to render the image or fallback icon (from previous response)
+  const renderMemberImage = (member) => {
+    const imageSource = member.image;
+    if (imageSource) {
+      return (
+        <Image
+          src={imageSource}
+          alt={member.name}
+          width={112}
+          height={112}
+          className="w-full h-full object-cover"
+        />
+      );
+    } else {
+      return (
+        <div className="w-full h-full flex items-center justify-center bg-gray-200">
+          <IoMdContact size={56} className="text-gray-500" />
+        </div>
+      );
+    }
+  };
 
   return (
     <div className="">
       {/* Hero Section */}
-      <section 
-        className="w-full h-[70vh] py-32 relative"
+      <section
+        className="w-full h-[70vh] py-32 relative flex flex-col items-center justify-center" // Added flex for centering text block
         style={{
           backgroundImage: `url(${HERO2.src})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
-          backgroundColor: 'rgba(0, 0, 150, 0.6)',
+          backgroundColor: 'rgba(0, 0, 100, 0.65)', // Slightly darker blue overlay
           backgroundBlendMode: 'overlay',
         }}
       >
         <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            <motion.h1
+              variants={heroTitleVariant}
+              initial="hidden"
+              animate="visible"
+              className="text-5xl md:text-6xl font-bold text-white mb-6"
+            >
               FLoC 2026 Committees
-            </h1>
-            <p className="text-xl text-neutral-200 max-w-3xl mx-auto leading-relaxed">
-              Meet the dedicated team of researchers and organizers behind FLoC 2026, 
+            </motion.h1>
+            <motion.p
+              variants={heroParagraphVariant}
+              initial="hidden"
+              animate="visible"
+              className="text-xl text-neutral-200 max-w-3xl mx-auto leading-relaxed"
+            >
+              Meet the dedicated team of researchers and organizers behind FLoC 2026,
               working together to create an exceptional conference experience.
-            </p>
+            </motion.p>
           </div>
         </div>
       </section>
 
       {/* Main Content */}
       <div className="min-h-screen w-full">
-            <div className="w-full">
+        <div className="w-full">
 
-                <section className='my-5 py-7'>
-                    <h2 className=" text-3xl font-bold text-blue-900 mb-4 text-center">FLoC&apos;26 Organizers</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 place-items-center justify-center gap-y-3">
-                        {committeeData.organizers.map((member, index) => (
-                            <motion.div 
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.3 }}
-                            key={index}>
-                              <div className='flex items-center justify-center py-7 gap-3'>
-                                <div className='flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28 bg-amber-400 
-                                  rounded-tl-[3rem] rounded-br-[3rem] 
-                                  rounded-tr-lg rounded-bl-lg 
-                                  overflow-hidden shadow-md'>
-                                    {isExternalImage ? (
-                                      <Image
-                                        src={member.image}
-                                        alt={member.name}
-                                        width={112} // Intrinsic width of image asset (can be larger than display)
-                                        height={112} // Intrinsic height of image asset
-                                        className="w-full h-full object-cover"
-                                      />
-                                    ) : (
-                                      <Image
-                                        src={member.image}
-                                        alt={member.name}
-                                        width={200} // Set appropriate width
-                                        height={200} // Set appropriate height
-                                        className=""
-                                      />
-                                    )}
-                                  </div>
-  
-                                  <div className='space-y-1'>
-                                    <h3 className="text-2xl sm:text-xl font-bold text-blue-500">{member.name}</h3>
-                                    <p className="text-yellow-500 text-xl">{member.affiliation}</p>
-                                    <p className="text-neutral-400 font-normal text-sm">{member.role}</p>
-                                  </div>
-                              </div>
-  
-                            </motion.div>
-                        ))}
+          {/* Organizers Section */}
+          <section className='my-5 py-7 overflow-hidden'> {/* Added overflow-hidden for safety with x-axis animations if used */}
+            <motion.h2
+              ref={organizersTitleRef}
+              variants={sectionVariant}
+              initial="hidden"
+              animate={organizersTitleInView ? "visible" : "hidden"}
+              className=" text-3xl font-bold text-blue-900 mb-8 text-center" // Increased mb
+            >
+              FLoC&apos;26 Organizers
+            </motion.h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 place-items-center justify-center gap-y-5 gap-x-4"> {/* Added gap-x */}
+              {committeeData.organizers.map((member, index) => (
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }} // Increased slide-in distance
+                  whileInView={{ opacity: 1, y: 0 }} // Animate when in view
+                  viewport={{ once: true, amount: 0.2 }} // Adjust amount as needed
+                  transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
+                  key={`${member.name}-${index}-org`}
+                  className="w-full max-w-md" // Added max-width for better responsiveness in grid
+                >
+                  <div className='flex items-center py-5 px-3 gap-4 bg-white shadow-lg rounded-lg'> {/* Card styling */}
+                    <div className='flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28 bg-amber-400 
+                                    rounded-tl-[3rem] rounded-br-[3rem] 
+                                    rounded-tr-lg rounded-bl-lg 
+                                    overflow-hidden shadow-md'>
+                      {renderMemberImage(member)}
                     </div>
-                </section>
-
-                <section className='bg-blue-900 w-full py-10'>
-                    <h2 className="text-4xl font-bold mb-10 text-center text-neutral-50">Conference Committees</h2>
-                    <div className="grid drid-cols-1 md:grid-cols-2 place-items-center justify-center gap-y-3 w-full">
-                        {committeeData.conferenceCommittees.map((member, index) => (
-                            <motion.div 
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.3 }}
-                            key={index}
-                            className='bg-blue-900 w-full flex items-center justify-center'
-                            >
-                              <div className='flex items-center justify-center p-5 gap-3'>
-                                <div className='flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28 bg-amber-400 
-                                  rounded-tl-[3rem] rounded-br-[3rem] 
-                                  rounded-tr-lg rounded-bl-lg 
-                                  overflow-hidden shadow-md'>
-                                    {isExternalImage ? (
-                                      <Image
-                                        src={member.image}
-                                        alt={member.name}
-                                        width={112} // Intrinsic width of image asset (can be larger than display)
-                                        height={112} // Intrinsic height of image asset
-                                        className="w-full h-full object-cover"
-                                      />
-                                    ) : (
-                                      <Image
-                                        src={member.image}
-                                        alt={member.name}
-                                        width={200} // Set appropriate width
-                                        height={200} // Set appropriate height
-                                        className=""
-                                      />
-                                    )}
-                                  </div>
-  
-                                  <div className='space-y-1'>
-                                    <h3 className="text-2xl sm:text-xl font-bold text-neutral-50">{member.name}</h3>
-                                    <p className="text-neutral-50 text-xl">{member.affiliation}</p>
-                                    <p className="text-neutral-400 font-normal text-sm">{member.role}</p>
-                                  </div>
-                              </div>
-  
-                            </motion.div>
-                        ))}
+                    <div className='space-y-1 flex-grow'>
+                      <h3 className="text-lg sm:text-xl font-bold text-blue-600">{member.name}</h3>
+                      <p className="text-amber-600 text-sm sm:text-base font-medium">{member.affiliation}</p>
+                      <p className="text-neutral-500 font-normal text-xs sm:text-sm">{member.role}</p>
                     </div>
-                </section>
-
-                <section className='bg-yellow-500'>
-                    <h2 className="text-4xl text-center font-bold text-neutral-50 py-5">Program Committees</h2>
-                    <div className="grid drid-cols-1 md:grid-cols-2 place-items-center justify-center gap-y-3 md:space-x-4 space-x-6">
-                        {committeeData.programCommittees.map((member, index) => (
-                            <motion.div 
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.3 }}
-                            key={index}
-                            className=''
-                            >
-                              <div className='flex items-center justify-center p-5 gap-3'>
-                                <div className='flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28 bg-amber-400 
-                                  rounded-tl-[3rem] rounded-br-[3rem] 
-                                  rounded-tr-lg rounded-bl-lg 
-                                  overflow-hidden shadow-md'>
-                                    {isExternalImage ? (
-                                      <Image
-                                        src={member.image}
-                                        alt={member}
-                                        width={112} // Intrinsic width of image asset (can be larger than display)
-                                        height={112} // Intrinsic height of image asset
-                                        className="w-full h-full object-cover"
-                                      />
-                                    ) : (
-                                      <Image
-                                        src={member.image.src}
-                                        alt={member.name}
-                                        width={200} // Set appropriate width
-                                        height={200} // Set appropriate height
-                                        className=""
-                                      />
-                                    )}
-                                  </div>
-  
-                                  <div className='space-y-1'>
-                                    <p className="text-blue-900  font-bold text-sm">{member.role}</p>
-                                    <h3 className="text-3xl font-bold text-neutral-50">{member.name}</h3>
-                                    <p className="text-neutral-200 text-xl">{member.affiliation}</p>
-                                  </div>
-                              </div>
-  
-                            </motion.div>
-                        ))}
-                    </div>
-                </section>
-
-                <section className='py-7 bg-blue-900'>
-                    <h2 className=" text-center text-3xl font-bold text-neutral-50 mb-4 py-5">FLoC&apos;26 Steering Committee</h2>
-                    <div className="grid drid-cols-1 md:grid-cols-2 place-items-center justify-center gap-y-3 md:space-x-4 space-x-6">
-                        {committeeData.steeringCommittee.map((member, index) => (
-                          <motion.div 
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.3 }}
-                          key={index}>
-                            <div className='flex items-center justify-center p-5 gap-3'>
-                              <div className='flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28 bg-amber-400 
-                                rounded-tl-[3rem] rounded-br-[3rem] 
-                                rounded-tr-lg rounded-bl-lg 
-                                overflow-hidden shadow-md'>
-                                    {isExternalImage ? (
-                                      <Image
-                                        src={member.image}
-                                        alt={member}
-                                        width={112} // Intrinsic width of image asset (can be larger than display)
-                                        height={112} // Intrinsic height of image asset
-                                        className="w-full h-full object-cover"
-                                      />
-                                    ) : (
-                                      <Image
-                                        src={member.image}
-                                        alt={member.name}
-                                        width={200} // Set appropriate width
-                                        height={200} // Set appropriate height
-                                        className=""
-                                      />
-                                    )}
-                                </div>
-
-                                <div className='space-y-2'>
-                                  <h3 className="text-2xl sm:text-xl font-bold text-neutral-50">{member.name}</h3>
-                                  <p className="text-neutral-50 text-xl">{member.affiliation}</p>
-                                  <p className="text-neutral-300 font-normal text-sm">{member.role}</p>
-                                </div>
-                            </div>
-
-                          </motion.div>
-                        ))}
-                    </div>
-                </section>
+                  </div>
+                </motion.div>
+              ))}
             </div>
+          </section>
+
+          {/* Conference Committees Section */}
+          <section className='bg-blue-900 w-full py-10 overflow-hidden'>
+            <motion.h2
+              ref={confTitleRef}
+              variants={sectionVariant}
+              initial="hidden"
+              animate={confTitleInView ? "visible" : "hidden"}
+              className="text-3xl md:text-4xl font-bold mb-10 text-center text-neutral-50"
+            >
+              Conference Committees
+            </motion.h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 place-items-center justify-center gap-y-5 gap-x-4 w-full">
+              {committeeData.conferenceCommittees.map((member, index) => (
+                <motion.div
+                  initial={{ opacity: 0, x: -50 }} // Slide from left
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
+                  key={`${member.name}-${index}-conf`}
+                  className='w-full max-w-md'
+                >
+                  <div className='flex items-center p-5 gap-4 bg-blue-800 shadow-lg rounded-lg'> {/* Card styling */}
+                    <div className='flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28 bg-amber-400 
+                                    rounded-tl-[3rem] rounded-br-[3rem] 
+                                    rounded-tr-lg rounded-bl-lg 
+                                    overflow-hidden shadow-md'>
+                      {renderMemberImage(member)}
+                    </div>
+                    <div className='space-y-1 flex-grow'>
+                      <h3 className="text-lg sm:text-xl font-bold text-neutral-50">{member.name}</h3>
+                      <p className="text-neutral-200 text-sm sm:text-base">{member.affiliation}</p>
+                      <p className="text-neutral-400 font-normal text-xs sm:text-sm">{member.role}</p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </section>
+
+          {/* Program Committees Section */}
+          <section className='bg-yellow-500 py-10 overflow-hidden'>
+            <motion.h2
+              ref={progTitleRef}
+              variants={sectionVariant}
+              initial="hidden"
+              animate={progTitleInView ? "visible" : "hidden"}
+              className="text-3xl md:text-4xl text-center font-bold text-blue-900 py-5 mb-5" // Adjusted mb
+            >
+              Program Committees
+            </motion.h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 place-items-center justify-center gap-y-5 gap-x-4 w-full">
+              {committeeData.programCommittees.map((member, index) => (
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }} // Slide from right
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
+                  key={`${member.name}-${index}-prog`}
+                  className='w-full max-w-md'
+                >
+                  <div className='flex items-center p-5 gap-4 bg-yellow-400 shadow-lg rounded-lg'> {/* Card styling */}
+                    <div className='flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28 bg-blue-900
+                                    rounded-tl-[3rem] rounded-br-[3rem] 
+                                    rounded-tr-lg rounded-bl-lg 
+                                    overflow-hidden shadow-md'>
+                      {renderMemberImage(member)}
+                    </div>
+                    <div className='space-y-1 flex-grow'>
+                      <p className="text-blue-800 font-bold text-xs sm:text-sm">{member.role}</p>
+                      <h3 className="text-lg sm:text-xl font-bold text-blue-900">{member.name}</h3>
+                      <p className="text-blue-900/80 text-sm sm:text-base">{member.affiliation}</p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </section>
+
+          {/* Steering Committee Section */}
+          <section className='py-10 bg-blue-900 overflow-hidden'> {/* Added py-10 */}
+            <motion.h2
+              ref={steerTitleRef}
+              variants={sectionVariant}
+              initial="hidden"
+              animate={steerTitleInView ? "visible" : "hidden"}
+              className="text-3xl md:text-4xl text-center font-bold text-neutral-50 mb-10 py-5" // Added mb-10
+            >
+              FLoC&apos;26 Steering Committee
+            </motion.h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 place-items-center justify-center gap-y-5 gap-x-4 w-full">
+              {committeeData.steeringCommittee.map((member, index) => (
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }} // Slide from bottom
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
+                  key={`${member.name}-${index}-steer`}
+                  className='w-full max-w-md'
+                >
+                  <div className='flex items-center p-5 gap-4 bg-blue-800 shadow-lg rounded-lg'> {/* Card styling */}
+                    <div className='flex-shrink-0 w-24 h-24 sm:w-28 sm:h-28 bg-amber-400 
+                                    rounded-tl-[3rem] rounded-br-[3rem] 
+                                    rounded-tr-lg rounded-bl-lg 
+                                    overflow-hidden shadow-md'>
+                      {renderMemberImage(member)}
+                    </div>
+                    <div className='space-y-1 flex-grow'>
+                      <h3 className="text-lg sm:text-xl font-bold text-neutral-50">{member.name}</h3>
+                      <p className="text-neutral-200 text-sm sm:text-base">{member.affiliation}</p>
+                      <p className="text-neutral-400 font-normal text-xs sm:text-sm">{member.role}</p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </section>
         </div>
+      </div>
     </div>
   )
-} 
+}

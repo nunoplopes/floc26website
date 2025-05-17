@@ -1,52 +1,41 @@
-import { Poppins } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { Montserrat } from 'next/font/google'
+import './globals.css'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 
-const geistSans = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ['400']
-});
+const montserrat = Montserrat({ 
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-montserrat',
+  display: 'swap',
+})
 
 export const metadata = {
-  metadataBase: new URL('https://floc2026.org'),
-  title: {
-    default: 'FLoC 2026 - Federation of Logic Conference',
-    template: '%s | FLoC 2026'
-  },
-  description: 'The 2026 Federated Logic Conference (FLoC) will be held in Lisbon, Portugal. Join us for a premier event in logic and computer science.',
-  keywords: ['FLoC 2026', 'Logic Conference', 'Computer Science', 'Lisbon', 'Portugal', 'Summer School', 'Workshop'],
-  authors: [{ name: 'FLoC 2026 Committee' }],
-  creator: 'FLoC 2026',
-  publisher: 'FLoC 2026',
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
+  title: 'FLoC 2026: The 9th Federated Logic Conference',
+  description: 'FLoC 2026 brings together several leading international conferences related to mathematical logic and computer science. Join us for conferences and workshops on topics of software/hardware verification and logic for computer science.',
+  keywords: 'FLoC, Federated Logic Conference, computer science, logic, verification, software verification, hardware verification, mathematical logic',
+  authors: [{ name: 'FLoC 2026 Organizing Committee' }],
   openGraph: {
-    type: 'website',
-    locale: 'en_US',
+    title: 'FLoC 2026: The 9th Federated Logic Conference',
+    description: 'Join the 9th Federated Logic Conference, bringing together leading international conferences on mathematical logic and computer science.',
     url: 'https://floc2026.org',
     siteName: 'FLoC 2026',
-    title: 'FLoC 2026 - Federation of Logic Conference',
-    description: 'The 2026 Federated Logic Conference (FLoC) will be held in Lisbon, Portugal. Join us for a premier event in logic and computer science.',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/floc-logo.png',
         width: 1200,
         height: 630,
-        alt: 'FLoC 2026 Conference',
+        alt: 'FLoC 2026 Logo',
       },
     ],
+    locale: 'en_US',
+    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'FLoC 2026 - Federation of Logic Conference',
-    description: 'The 2026 Federated Logic Conference (FLoC) will be held in Lisbon, Portugal. Join us for a premier event in logic and computer science.',
-    images: ['/og-image.jpg'],
-    creator: '@floc2026',
+    title: 'FLoC 2026: The 9th Federated Logic Conference',
+    description: 'Join the 9th Federated Logic Conference, bringing together leading international conferences on mathematical logic and computer science.',
+    images: ['/floc-logo.png'],
   },
   robots: {
     index: true,
@@ -61,31 +50,22 @@ export const metadata = {
   },
   verification: {
     google: 'your-google-site-verification',
-    yandex: 'your-yandex-verification',
-    bing: 'your-bing-verification',
   },
-};
+  alternates: {
+    canonical: 'https://floc2026.org',
+  },
+}
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <meta name="theme-color" content="#ffffff" />
-      </head>
-      <body
-        className={`${geistSans.variable} antialiased min-h-screen flex flex-col`}
-      >
-        <Header/>
-        <main className="flex-grow">
+      <body className={`${montserrat.variable} font-sans`}>
+        <Header />
+        <main className="min-h-screen">
           {children}
         </main>
-        <Footer/>
+        <Footer />
       </body>
     </html>
-  );
+  )
 } 

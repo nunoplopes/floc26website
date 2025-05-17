@@ -51,7 +51,7 @@ const Header = () => {
 
   return (
     <motion.header
-      className={`flex justify-between items-center fixed w-full z-20 p-5 ${
+      className={`flex justify-between items-center fixed bg-white w-full z-20 p-5 ${
         isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
       }`}
       initial={{ y: -100, opacity: 0 }}
@@ -71,7 +71,7 @@ const Header = () => {
           {isScrolled ? (
             <Image src={LOGO} width={100} alt="logo" />
           ) : (
-            <Image src={LOGO} width={100} className={!isScrolled ? 'bg-white rounded' : ''} alt="logo" />
+            <Image src={LOGO} width={100}  alt="logo" />
           )}
         </Link>
       </motion.div>
@@ -115,6 +115,7 @@ const Header = () => {
               subLinks: [
                 { label: 'Accommodation', href: '/accommodation' },
                 { label: 'Venue', href: '/venue' },
+                { label: 'transportation', href: '/transportation' },
               ],
             },
             { href: '/contact', label: 'Contact' },
@@ -174,7 +175,7 @@ const Header = () => {
                         key={subLink.href}
                         href={subLink.href}
                         className="text-neutral-800 hover:text-gray-500"
-                        onClick={handleLinkClick}
+                        onMouseOver={handleLinkClick}
                       >
                         {subLink.label}
                       </Link>
