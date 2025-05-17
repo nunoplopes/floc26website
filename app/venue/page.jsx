@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { MapPin, Clock, Utensils, Building2, Calendar, Download } from 'lucide-react';
 import Image from 'next/image';
 import { useEffect } from 'react';
+import { Metadata } from 'next'
 
 const VenueSection = ({ title, description, icon: Icon, image, className = "" }) => (
     <motion.div
