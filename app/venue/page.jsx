@@ -145,8 +145,13 @@ const MapSection = () => {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div className="lg:col-span-2">
-                    <div className="aspect-w-16 aspect-h-9 bg-gray-100 rounded-lg overflow-hidden">
+                    <div className="relative w-full h-[400px] bg-gray-100 rounded-lg overflow-hidden">
                         <div id="map" className="w-full h-full rounded-lg"></div>
+                        {!process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY && (
+                            <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
+                                <p className="text-gray-500">Map loading disabled. Please configure Google Maps API key.</p>
+                            </div>
+                        )}
                     </div>
                 </div>
                 <div className="space-y-4">

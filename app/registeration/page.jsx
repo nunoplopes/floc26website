@@ -4,28 +4,29 @@ import React, { useState } from 'react';
 const Registration = () => {
     // Define the registration fee data based on the browse result summary
     const registrationFees = [
-        // Add other categories if they exist and have different fee structures
         {
             category: 'Conference Day',
-            earlyBirdRegular: '680', // Replace with actual fees
+            earlyBirdRegular: '680',
             earlyBirdStudent: '530',
-            earlyBirdRegularStudent: '530', // Replace with actual fees
-            earlyBirdCSFMember: '680', // Replace with actual fees
+            earlyBirdRegularStudent: '530',
+            earlyBirdCSFMember: '680',
+            earlyBirdCSFNonMember: '680',
             regularRegular: '750',
-            regularStudent: '750', // Replace with actual fees
-            regularRegularStudent: '590', // Replace with actual fees
-            regularCSFMember: '750', // Replace with actual fees
-            regularCSFNonMember: '760', 
-            walkInRegular: '850', 
-            walkInStudent: '690', 
-            walkInCSFMember: '850', 
-            walkInCSFNonMember: '900', 
+            regularStudent: '750',
+            regularRegularStudent: '590',
+            regularCSFMember: '750',
+            regularCSFNonMember: '760',
+            walkInRegular: '850',
+            walkInStudent: '690',
+            walkInCSFMember: '850',
+            walkInCSFNonMember: '900'
         },
         {
             category: 'Workshop',
             earlyBirdRegular: '100',
             earlyBirdRegularStudent: '80',
             earlyBirdWorkShopDinner: '75',
+            regularRegular: '120',
             regularStudent: '120',
             regularRegularStudent: '100',
             regularWorkShopDinner: '75',

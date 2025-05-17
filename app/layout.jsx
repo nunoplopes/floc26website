@@ -11,9 +11,13 @@ const montserrat = Montserrat({
 })
 
 export const metadata = {
-  title: 'FLoC 2026: The 9th Federated Logic Conference',
-  description: 'FLoC 2026 brings together several leading international conferences related to mathematical logic and computer science. Join us for conferences and workshops on topics of software/hardware verification and logic for computer science.',
-  keywords: 'FLoC, Federated Logic Conference, computer science, logic, verification, software verification, hardware verification, mathematical logic',
+  metadataBase: new URL('https://floc2026.org'),
+  title: {
+    default: 'FLoC 2026: The 9th Federated Logic Conference',
+    template: '%s | FLoC 2026'
+  },
+  description: 'FLoC 2026 brings together several leading international conferences related to mathematical logic and computer science.',
+  keywords: ['FLoC', 'Federated Logic Conference', 'computer science', 'logic', 'verification'],
   authors: [{ name: 'FLoC 2026 Organizing Committee' }],
   openGraph: {
     title: 'FLoC 2026: The 9th Federated Logic Conference',
@@ -40,19 +44,9 @@ export const metadata = {
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
   },
   verification: {
     google: 'your-google-site-verification',
-  },
-  alternates: {
-    canonical: 'https://floc2026.org',
   },
 }
 

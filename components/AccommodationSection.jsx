@@ -154,7 +154,7 @@ const AccommodationSection = memo(() => {
                     <div className="bg-blue-50 rounded-lg p-4">
                         <p className="text-sm text-blue-800">
                             <FaInfoCircle className="inline-block mr-2" />
-                            Shuttle service will be available between July 31 - Aug 05 (Block 1) and Aug 07 - Aug 12 (Block 2)
+                            Shuttle service will be available
                         </p>
                     </div>
                 </motion.div>
