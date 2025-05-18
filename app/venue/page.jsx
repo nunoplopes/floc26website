@@ -204,7 +204,7 @@ export default function Venue() {
                         transition={{ delay: 0.2 }}
                         className="text-xl text-gray-600 max-w-3xl mx-auto"
                     >
-                        All conferences and workshops will be held at our main venue, providing an excellent environment for learning and collaboration.
+                        All conferences and workshops will be held at our main venue(ISCTE LISBON), providing an excellent environment for learning and collaboration.
                     </motion.p>
                 </div>
 

@@ -5,6 +5,7 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import Image from 'next/image'
 import HEROIMAGE from '@/assets/images/skyline.png'
+import STRIP from '@/assets/images/strip.png'
 
 const Hero = () => {
   const ref = useRef(null)
@@ -102,7 +103,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
-        className='absolute bottom-[2em] left-1/2 transform -translate-x-1/2'
+        className='absolute bottom-[2em] left-1/2 transform -translate-x-1/2 my-20'
       >
         <div className='w-6 h-10 border-2 border-blue-700 rounded-full flex justify-center'>
           <motion.div 
@@ -112,6 +113,10 @@ const Hero = () => {
           />
         </div>
       </motion.div>
+
+      <div className=' absolute bottom-0 right-0 left-0 w-full'>
+        <Image src={STRIP} className='w-full h-[4em] object-cover' alt='strip'/>
+      </div>
     </section>
   )
 }

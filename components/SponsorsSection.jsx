@@ -26,7 +26,7 @@ const SponsorLogo = ({ src, alt, tier }) => (
             <Image
                 src={src}
                 alt={alt}
-                className="object-contain max-h-20 w-auto filter grayscale hover:grayscale-0 transition-all duration-300"
+                className="object-contain max-h-20 w-auto hover:grayscale-0 transition-all duration-300"
                 priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-blue-50/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
@@ -57,7 +57,7 @@ const SponsorsSection = () => {
     }
 
     return (
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-blue-900">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <motion.div
@@ -65,12 +65,12 @@ const SponsorsSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-4xl font-bold text-blue-900 mb-4">Our Sponsors</h2>
+                    <h2 className="text-4xl font-bold text-blue-50 mb-4">Our Sponsors</h2>
                 </motion.div>
 
                 {/* Diamond Sponsors */}
                 <div className="mb-16">
-                    <h3 className="text-2xl font-semibold text-blue-900 mb-8 text-center">Diamond Sponsors</h3>
+                    <h3 className="text-2xl font-semibold text-blue-200 mb-8 text-center">Diamond Sponsors</h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-3 justify-items-center">
                         {sponsors.diamond.map((sponsor, index) => (
                             <SponsorLogo
@@ -85,7 +85,7 @@ const SponsorsSection = () => {
 
                 {/* Gold Sponsors */}
                 <div className="mb-16">
-                    <h3 className="text-2xl font-semibold text-blue-900 mb-8 text-center">Gold Sponsors</h3>
+                    <h3 className="text-2xl font-semibold text-blue-200 mb-8 text-center">Gold Sponsors</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 justify-items-center">
                         {sponsors.gold.map((sponsor, index) => (
                             <SponsorLogo
@@ -100,7 +100,7 @@ const SponsorsSection = () => {
 
                 {/* Silver Sponsors */}
                 <div>
-                    <h3 className="text-2xl font-semibold text-blue-900 mb-8 text-center">Silver Sponsors</h3>
+                    <h3 className="text-2xl font-semibold text-blue-200 mb-8 text-center">Silver Sponsors</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3 justify-items-center max-w-2xl mx-auto">
                         {sponsors.silver.map((sponsor, index) => (
                             <SponsorLogo

@@ -127,6 +127,10 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'images.unsplash.com',
             },
+            {
+                protocol: 'https',
+                hostname: 'www.technion.ac.il',
+            },
         ],
     },
     webpack: (config) => {
