@@ -1,8 +1,7 @@
 'use client'
 import { motion } from 'framer-motion';
 import { MapPin, Clock, Utensils, Building2, Calendar, Download } from 'lucide-react';
-import Image from 'next/image';
-import { useEffect } from 'react';
+
 
 const VenueSection = ({ title, description, icon: Icon, className = "" }) => (
     <motion.div
@@ -25,7 +24,7 @@ const VenueSection = ({ title, description, icon: Icon, className = "" }) => (
     </motion.div>
 );
 
-const EventCard = ({ date, title, location }) => (
+const EventCard = ({ title, location }) => (
     <motion.div
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -33,10 +32,6 @@ const EventCard = ({ date, title, location }) => (
         className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
     >
         <div className="p-4">
-            <div className="flex items-center gap-2 text-blue-900 mb-2">
-                <Calendar className="w-5 h-5" />
-                <span className="font-medium">{date}</span>
-            </div>
             <h4 className="text-lg font-semibold text-gray-900 mb-2">{title}</h4>
             <div className="flex items-center gap-2 text-gray-600">
                 <MapPin className="w-4 h-4" />
@@ -181,12 +176,10 @@ export default function Venue() {
                             location="Taub Building"
                         />
                         <EventCard
-                            
                             title="FLoC Banquet Dinner"
                             location="Bikta Bayar- Beit Oren"
                         />
                     </div>
-                    
                 </div>
             </div>
         </div>
