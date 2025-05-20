@@ -117,7 +117,7 @@ const AccommodationSection = memo(() => {
                             <h3 className="text-sm font-medium text-yellow-800">Important Notice</h3>
                             <div className="mt-2 text-sm text-yellow-700">
                                 <p>
-                                    Accommodation in August is at a premium in Haifa. We recommend booking your rooms as early as possible.
+                                    Accommodation in JULY is at a premium in Haifa. We recommend booking your rooms as early as possible.
                                     Room availability is on a first-come-first-served basis.
                                 </p>
                             </div>
@@ -156,33 +156,6 @@ const AccommodationSection = memo(() => {
                             <FaInfoCircle className="inline-block mr-2" />
                             Shuttle service will be available
                         </p>
-                    </div>
-                </motion.div>
-
-                {/* Contact Information */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="mt-12 text-center"
-                >
-                    <h3 className="text-xl font-semibold text-gray-900 mb-4">Need Help with Reservations?</h3>
-                    <p className="text-gray-600 mb-6">
-                        For international reservations, please contact:
-                    </p>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-gray-600">
-                        <div>
-                            <p className="font-medium">International Call</p>
-                            <p>+972-3-7408966</p>
-                        </div>
-                        <div>
-                            <p className="font-medium">North America</p>
-                            <p>1-800-223-7773/4</p>
-                        </div>
-                        <div>
-                            <p className="font-medium">UK, Germany, France & Belgium</p>
-                            <p>00-800-326-46835</p>
-                        </div>
                     </div>
                 </motion.div>
             </div>

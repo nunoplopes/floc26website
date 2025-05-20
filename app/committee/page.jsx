@@ -3,7 +3,7 @@ import React from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { committeeData } from './data'
-import HERO2 from '@/assets/images/lisbontram.jpg'
+import MONUMENT from '@/assets/images/monument.jpg'
 import Image from 'next/image'
 import { IoMdContact } from 'react-icons/io'
 
@@ -68,9 +68,9 @@ export default function Committee() {
     <div className="">
       {/* Hero Section */}
       <section
-        className="w-full h-[70vh] py-32 relative flex flex-col items-center justify-center" // Added flex for centering text block
+        className="w-full h-[70dvh] py-32 relative flex flex-col items-center justify-center" // Added flex for centering text block
         style={{
-          backgroundImage: `url(${HERO2.src})`,
+          backgroundImage: `url(${MONUMENT.src})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -78,7 +78,7 @@ export default function Committee() {
           backgroundBlendMode: 'overlay',
         }}
       >
-        <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
           <div className="text-center">
             <motion.h1
               variants={heroTitleVariant}

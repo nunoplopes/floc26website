@@ -3,10 +3,11 @@ import React from 'react'
 import LISBON from '@/assets/images/lisbonsky.png'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import STRIP from '@/assets/images/strip.png'
 
 const About = () => {
   return (
-    <section className='w-full pb-20'>
+    <section className='w-full relative pb-20'>
         {/*  */}
         <motion.div 
         initial={{ opacity: 0, y: 40 }}
@@ -22,7 +23,7 @@ const About = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.5 }}
-        className='grid grid-cols-1 md:grid-cols-2 gap-3'>
+        className='grid grid-cols-1 md:grid-cols-2 gap-3 mb-10'>
           {/* first col */}
           <div className='flex flex-col items-center justify-center text-left px-4 text-xl mt-5 space-y-2 text-neutral-500'>
             <p>Over the past forty years, there has been extensive, continuous,
@@ -44,6 +45,10 @@ const About = () => {
             <Image src={LISBON} alt='lisbon' />
           </div>
         </motion.div>
+
+        <div className=' absolute bottom-0 right-0 left-0 w-full'>
+        <Image src={STRIP} className='w-full h-[4em] object-cover' alt='strip'/>
+      </div>
     </section>
   )
 }

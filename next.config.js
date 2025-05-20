@@ -23,8 +23,16 @@ const nextConfig = {
                 hostname: 'web.tecnico.ulisboa.pt',
             },
             {
+                protocol: 'http',
+                hostname: 'www.philipp.ruemmer.org',
+            },
+            {
                 protocol: 'https',
                 hostname: 'www.philipp.ruemmer.org',
+            },
+            {
+                protocol: 'http',
+                hostname: 'people.unipmn.it',
             },
             {
                 protocol: 'https',
@@ -117,6 +125,7 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'www.technion.ac.il',
+                pathname: '/wp-content/uploads/**',
             },
             {
                 protocol: 'https',

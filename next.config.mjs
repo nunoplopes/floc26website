@@ -131,6 +131,10 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'www.technion.ac.il',
             },
+            {
+                protocol: 'https',
+                hostname: 'www.philipp.ruemmer.org',
+            },
         ],
     },
     webpack: (config) => {

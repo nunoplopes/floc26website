@@ -4,6 +4,8 @@ import { keyNoteSpeakers } from '@/components/event data/speakers'
 import SpeakerCard from './SpeakerCard'
 import { motion, useInView } from 'framer-motion'
 import Link from 'next/link'
+import STRIP from '@/assets/images/strip.png'
+import Image from 'next/image'
 
 const Speakers = () => {
   const ref = useRef(null)
@@ -31,7 +33,7 @@ const Speakers = () => {
   }
 
   return (
-    <section className='pb-[5rem] bg-white pt-8' ref={ref}>
+    <section className='pb-[5rem] relative bg-white pt-8' ref={ref}>
       {/* Heading */}
       <motion.div 
         initial="hidden"
@@ -62,6 +64,10 @@ const Speakers = () => {
           </motion.div>
         ))}   
       </motion.div>
+
+      <div className=' absolute bottom-0 right-0 left-0 w-full'>
+        <Image src={STRIP} className='w-full h-[4em] object-cover' alt='strip'/>
+      </div>
     </section>
   )
 }
