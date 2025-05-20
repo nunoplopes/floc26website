@@ -169,22 +169,19 @@ export default function Venue() {
                     <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Key Events Schedule</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         <EventCard
-                            date="August 1-11"
                             title="Workshop Dinners"
                             location="Taub Terrace Floor 2"
                         />
                         <EventCard
-                            date="August 2"
                             title="FLoC Reception"
                             location="Churchill Building"
                         />
                         <EventCard
-                            date="August 7"
                             title="FLoC Reception"
                             location="Taub Building"
                         />
                         <EventCard
-                            date="August 9"
+                            
                             title="FLoC Banquet Dinner"
                             location="Bikta Bayar- Beit Oren"
                         />
