@@ -35,11 +35,11 @@ const Hero = () => {
   return (
     <section 
       ref={ref}
-      className='relative w-full bg-neutral-100 overflow-hidden pt-[5rem] pb-20'
+      className='relative w-full bg-neutral-100 pt-[5rem] pb-20'
     >
 
       {/* Content container */}
-      <div className='relative container mx-auto w-full h-full mb-20'>
+      <div className='relative container mx-auto w-full h-full mb-44'>
         <motion.div 
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
@@ -105,7 +105,7 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      <div className=' absolute bottom-0 right-0 left-0 w-full'>
+      <div className='absolute bottom-0 right-0 left-0 w-full mt-16'>
         <Image src={STRIP} className='w-full h-[5em] object-cover' alt='strip'/>
         <Image src={LOGOO} className='w-full h-[5em] object-cover' alt='logoo'/>
       </div>
