@@ -49,7 +49,14 @@ const Hero = () => {
 
           
           <div className='w-full mt-10'>
-            <Image src={HEROIMAGE} layout='contain' alt='hero image'/>
+            <Image 
+              src={HEROIMAGE} 
+              alt='hero image'
+              width={1200}
+              height={600}
+              className="w-full h-auto"
+              priority
+            />
           </div>
 
           <motion.p 
@@ -84,20 +91,20 @@ const Hero = () => {
             className=''
           >
             {/* add yellow color to the list items */}
-            <ul className='flex items-center mt-3 list-disc gap-4 md:gap-4 space-x-4 [&>li]:marker:text-yellow-400 [&>li]:marker:text-2xl'>
+            <ul className='flex flex-col md:flex-row items-center mt-3 list-disc gap-4 md:gap-4 space-x-4 [&>li]:marker:text-yellow-400 [&>li]:marker:text-2xl'>
               <li>
                 <h3 className='text-blue-900 font-bold text-xl'>SUMMER SCHOOL</h3>
-                <p className='text-blue-900 font-semibold'>13-17 JULY</p>
+                <p className='text-blue-900 font-normal'>13-17 JULY</p>
               </li>
 
               <li>
                 <h3 className='text-blue-900 font-bold text-xl'>CONFERENCE</h3>
-                <p className='text-blue-900 font-semibold'>22-23 & 26-29 JULY</p>
+                <p className='text-blue-900 font-normal'>22-23 & 26-29 JULY</p>
               </li>
 
               <li>
                 <h3 className='text-blue-900 font-bold text-xl'>WORKSHOP</h3>
-                <p className='text-blue-900 font-semibold'>18-19 & 24-25 JULY</p>
+                <p className='text-blue-900 font-normal'>18-19 & 24-25 JULY</p>
               </li>
             </ul>
           </motion.div>
@@ -106,8 +113,22 @@ const Hero = () => {
       </div>
 
       <div className='absolute bottom-0 right-0 left-0 w-full mt-16'>
-        <Image src={STRIP} className='w-full h-[5em] object-cover' alt='strip'/>
-        <Image src={LOGOO} className='w-full h-[5em] object-cover' alt='logoo'/>
+        <Image 
+          src={STRIP} 
+          alt='strip'
+          width={1920}
+          height={200}
+          className='w-full h-[5em] object-cover'
+          priority
+        />
+        <Image 
+          src={LOGOO} 
+          alt='logoo'
+          width={1920}
+          height={200}
+          className='w-full h-[5em] object-cover'
+          priority
+        />
       </div>
       
     </section>
