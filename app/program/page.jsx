@@ -130,57 +130,65 @@ const Program = () => {
                     </motion.p>
                 </div>
 
-                <div className="space-y-12">
-                    {/* Summer School Section */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        <h2 className="text-3xl font-bold text-blue-900 mb-6 text-center">Summer School</h2>
-                        <WeekProgram weekData={schedule.find(item => item.title === "SUMMER SCHOOL")} />
-                    </motion.div>
+                <Tabs defaultValue="summer-school" className="w-full">
+                    <TabsList className="grid w-full grid-cols-5 mb-8">
+                        <TabsTrigger value="summer-school">Summer School</TabsTrigger>
+                        <TabsTrigger value="workshop-1">Workshop Week 1</TabsTrigger>
+                        <TabsTrigger value="conference-1">Conference Week 1</TabsTrigger>
+                        <TabsTrigger value="workshop-2">Workshop Week 2</TabsTrigger>
+                        <TabsTrigger value="conference-2">Conference Week 2</TabsTrigger>
+                    </TabsList>
 
-                    {/* Workshop Week 1 Section */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
-                    >
-                        <h2 className="text-3xl font-bold text-blue-900 mb-6 text-center">Workshop Week 1</h2>
-                        <WeekProgram weekData={schedule.find(item => item.date === "18")} />
-                    </motion.div>
+                    <TabsContent value="summer-school">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                        >
+                            <WeekProgram weekData={schedule.find(item => item.title === "SUMMER SCHOOL")} />
+                        </motion.div>
+                    </TabsContent>
 
-                    {/* Workshop Week 2 Section */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.4 }}
-                    >
-                        <h2 className="text-3xl font-bold text-blue-900 mb-6 text-center">Workshop Week 2</h2>
-                        <WeekProgram weekData={schedule.find(item => item.date === "24")} />
-                    </motion.div>
+                    <TabsContent value="workshop-1">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                        >
+                            <WeekProgram weekData={schedule.find(item => item.date === "18")} />
+                        </motion.div>
+                    </TabsContent>
 
-                    {/* Week 1 Conferences */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.6 }}
-                    >
-                        <h2 className="text-3xl font-bold text-blue-900 mb-6 text-center">Week 1 Conferences</h2>
-                        <WeekProgram weekData={schedule.find(item => item.title === "WEEK 1")} />
-                    </motion.div>
+                    <TabsContent value="conference-1">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                        >
+                            <WeekProgram weekData={schedule.find(item => item.title === "WEEK 1")} />
+                        </motion.div>
+                    </TabsContent>
 
-                    {/* Week 2 Conferences */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.8 }}
-                    >
-                        <h2 className="text-3xl font-bold text-blue-900 mb-6 text-center">Week 2 Conferences</h2>
-                        <WeekProgram weekData={schedule.find(item => item.title === "WEEK 2")} />
-                    </motion.div>
-                </div>
+                    <TabsContent value="workshop-2">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                        >
+                            <WeekProgram weekData={schedule.find(item => item.date === "24")} />
+                        </motion.div>
+                    </TabsContent>
+
+                    <TabsContent value="conference-2">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6 }}
+                        >
+                            <WeekProgram weekData={schedule.find(item => item.title === "WEEK 2")} />
+                        </motion.div>
+                    </TabsContent>
+                </Tabs>
             </div>
         </div>
     );
