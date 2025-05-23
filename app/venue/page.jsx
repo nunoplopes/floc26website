@@ -45,48 +45,36 @@ const MapSection = () => {
     return (
         <div className="bg-white rounded-xl shadow-lg p-6">
             <div className="flex justify-between items-center mb-6">
-                <h2 className="text-3xl font-bold text-gray-900">Campus Map</h2>
-                <a
-                    href="/campus-map.pdf"
-                    download
-                    className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-                >
-                    <Download className="w-5 h-5" />
-                    <span>Download Map</span>
-                </a>
+                <h2 className="text-3xl font-bold text-gray-900">Location</h2>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div className="lg:col-span-2">
-                    <div className="relative w-full h-[400px] bg-gray-100 rounded-lg overflow-hidden">
-                        <div 
-                            className="w-full h-full bg-cover bg-center"
-                            style={{ backgroundImage: `url(https://static.wixstatic.com/media/bd25dc_e9f13ef4b1784624b1ef16d9ec5847e8~mv2.jpeg/v1/crop/x_2,y_0,w_1482,h_912/fill/w_948,h_912,fp_0.50_0.50,q_85,enc_avif,quality_auto/Technion%20map%20FLOC%202022.jpeg)` }}
+                    <div className="relative w-full h-[450px] bg-gray-100 rounded-lg overflow-hidden">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d777.908180061644!2d-9.153731411706127!3d38.74918960722886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1933f31d4349d3%3A0x3b01f701d0c1e3e6!2sEdif%C3%ADcio%20II%20-%20ISCTE!5e0!3m2!1sen!2spt!4v1747835755126!5m2!1sen!2spt" 
+                            width="100%" 
+                            height="100%" 
+                            style={{ border: 0 }} 
+                            allowFullScreen="" 
+                            loading="lazy" 
+                            referrerPolicy="no-referrer-when-downgrade"
                         />
                     </div>
                 </div>
                 <div className="space-y-4">
                     <div className="bg-blue-50 p-4 rounded-lg">
-                        <h3 className="font-semibold text-blue-900 mb-2">Key Locations</h3>
-                        <ul className="space-y-2">
-                            <li className="flex items-center gap-2">
-                                <MapPin className="w-4 h-4 text-blue-600" />
-                                <span>Taub Building</span>
-                            </li>
-                            <li className="flex items-center gap-2">
-                                <MapPin className="w-4 h-4 text-blue-600" />
-                                <span>Churchill Building</span>
-                            </li>
-                            <li className="flex items-center gap-2">
-                                <MapPin className="w-4 h-4 text-blue-600" />
-                                <span>Grand Water Research Institute</span>
-                            </li>
-                        </ul>
+                        <h3 className="font-semibold text-blue-900 mb-2">Address</h3>
+                        <p className="text-gray-600">
+                            Edifício II - ISCTE<br />
+                            Avenida das Forças Armadas<br />
+                            1649-026 Lisboa, Portugal
+                        </p>
                     </div>
                     <div className="bg-gray-50 p-4 rounded-lg">
                         <h3 className="font-semibold text-gray-900 mb-2">Getting Here</h3>
                         <p className="text-gray-600 text-sm">
-                            The Technion campus is easily accessible by public transportation.
-                            Use the campus shuttle service or follow the walking paths marked on the map.
+                            The ISCTE campus is easily accessible by public transportation.
+                            Use the metro (yellow line) to Entrecampos station or take a bus to the ISCTE stop.
                         </p>
                     </div>
                 </div>

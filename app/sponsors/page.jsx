@@ -65,7 +65,7 @@ const SponsorCard = ({ name, logo, tier, website }) => (
         className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
     >
         <a href={website} target="_blank" rel="noopener noreferrer" className="block">
-            <div className="relative h-48 w-full bg-gray-50">
+            <div className={`relative ${tier === 'Diamond' ? 'h-64' : 'h-48'} w-full bg-gray-50`}>
                 <Image
                     src={logo}
                     alt={name}
@@ -92,24 +92,17 @@ const SponsorCard = ({ name, logo, tier, website }) => (
 const SponsorsSection = () => {
     const sponsors = [
         {
-            name: "Technion",
-            logo: "/sponsors/technion.png",
+            name: "AWS",
+            logo: "/sponsors/aws.png",
             tier: "Diamond",
-            website: "https://www.technion.ac.il"
+            website: "https://aws.amazon.com"
         },
         {
-            name: "Google",
-            logo: "/sponsors/google.png",
-            tier: "Platinum",
-            website: "https://www.google.com"
-        },
-        {
-            name: "Microsoft",
-            logo: "/sponsors/microsoft.png",
-            tier: "Gold",
-            website: "https://www.microsoft.com"
-        },
-        // Add more sponsors as they are confirmed
+            name: "Tourism of Lisbon",
+            logo: "/sponsors/tourism-lisbon.png",
+            tier: "Diamond",
+            website: "https://www.visitlisboa.com"
+        }
     ];
 
     return (

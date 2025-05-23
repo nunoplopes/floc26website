@@ -37,7 +37,7 @@ const About = () => {
         initial="hidden"
         animate="visible"
         variants={containerVariants}
-        className="relative w-full h-[60vh] flex items-center justify-center -z-10"
+        className="relative w-full flex items-center justify-center bg-blue-900/80 bg-blend-overlay h-[70dvh] -z-10"
         style={{
           backgroundImage: `url(${hero2.src})`,
           backgroundSize: 'cover',
@@ -45,7 +45,7 @@ const About = () => {
         }}
         aria-label="Hero Section"
       >
-        <motion.div variants={itemVariants} className="relative z-10 text-center bg-blue-900/80 w-full h-[60vh] py-20">
+        <motion.div variants={itemVariants} className="relative z-10 text-center w-full py-20 mt-20">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">About <br/>FLoC 2026</h1>
           <p className="text-xl text-neutral-200 max-w-2xl mx-auto px-4">
             Advancing the intersection of logic and computer science
@@ -62,7 +62,7 @@ const About = () => {
         className="max-w-6xl mx-auto px-4 py-16 md:py-24"
         aria-label="Main Content"
       >
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-12 items-center">
           <motion.div variants={itemVariants} className="space-y-6">
             <p className="text-xl text-neutral-600 leading-relaxed">
               During the past forty years, there has been extensive, continuous, and growing interaction between logic and computer science. In many respects, logic provides computer science with a unifying foundational framework and modeling tools.

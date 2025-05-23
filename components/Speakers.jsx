@@ -54,7 +54,7 @@ const Speakers = () => {
       >
         {keyNoteSpeakers.map((speaker) => (
           <motion.div key={speaker.id} variants={itemVariants}>
-            <Link href={`/speakers/${speaker.id}`}>
+            <Link href={`/speakers/${speaker.name.split(' ')[0].toLowerCase()}`}>
               <SpeakerCard 
                 name={speaker.name} 
                 image={speaker.image} 

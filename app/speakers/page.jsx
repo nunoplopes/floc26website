@@ -2,7 +2,7 @@
 import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import Speakers from '@/components/Speakers'
-import hero2 from '@/assets/images/hero.jpg'
+import MONUMENT from '@/assets/images/monument.jpg'
 
 const SpeakerCard = () => {
   const ref = useRef(null)
@@ -36,9 +36,9 @@ const SpeakerCard = () => {
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'}
         variants={containerVariants}
-        className=" w-full h-[60vh] flex items-center justify-center"
+        className=" w-full h-[70dvh] flex items-center justify-center"
         style={{
-          backgroundImage: `url(${hero2.src})`,
+          backgroundImage: `url(${MONUMENT.src})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundColor: 'rgba(0, 0, 0, 0.7)',

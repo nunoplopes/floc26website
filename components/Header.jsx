@@ -112,15 +112,10 @@ const Header = () => {
             { href: '/committee', label: 'Committee' },
             { href: '/program', label: 'Programs' },
             { href: '/registeration', label: 'Registeration' },
-            {
-              label: 'Event',
-              subLinks: [
-                { label: 'Accommodation', href: '/accommodation' },
-                { label: 'Venue', href: '/venue' },
-                { label: 'transportation', href: '/transportation' },
-              ],
-            },
-            { href: '/contact', label: 'Contact' },
+            { href: '/accommodation', label: 'Accommodation' },
+            { href: '/venue', label: 'Venue' },
+            { href: '/transportation', label: 'Local Information' },
+            { href: '/tourism', label: 'Tourism' },
           ].map((link) => (
             <motion.li
               key={link.href || link.label}
@@ -134,61 +129,9 @@ const Header = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              {link.subLinks ? (
-                <div>
-                  <button
-                    onClick={eventDropDown}
-                    className="flex items-center justify-center gap-2"
-                  >
-                    {link.label}
-                    <HiChevronDown className={`${isDropDown ? 'rotate-180' : ''} transition-transform`} />
-                  </button>
-                  {/* Desktop Dropdown */}
-                  <motion.div
-                    className={`hidden md:block md:absolute md:top-full md:left-0 md:mt-2 md:w-48 md:bg-white md:shadow-lg md:rounded-md md:py-2 ${
-                      isDropDown ? 'block' : 'hidden'
-                    } md:${isScrolled ? 'bg-white' : 'bg-neutral-800'} md:${isScrolled ? 'text-black' : 'text-neutral-800'}`}
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={isDropDown ? { opacity: 1, y: 0 } : { opacity: 0, y: -10 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    {link.subLinks.map((subLink) => (
-                      <Link
-                        key={subLink.href}
-                        href={subLink.href}
-                        className={`block px-4 py-2 md:hover:bg-gray-100 md:${
-                          isScrolled ? 'hover:text-black' : 'hover:text-gray-300'
-                        }`}
-                        onClick={handleLinkClick}
-                      >
-                        {subLink.label}
-                      </Link>
-                    ))}
-                  </motion.div>
-                  {/* Mobile Dropdown */}
-                  <motion.div
-                    className={`pl-4 mt-2 flex flex-col gap-4 shadow-sm rounded-lg p-3 space-y-2 ${isDropDown ? 'block' : 'hidden'} md:hidden`}
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={isDropDown ? { opacity: 1, height: 'auto' } : { opacity: 0, height: 0 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    {link.subLinks.map((subLink) => (
-                      <Link
-                        key={subLink.href}
-                        href={subLink.href}
-                        className="text-neutral-800 hover:text-gray-500"
-                        onMouseOver={handleLinkClick}
-                      >
-                        {subLink.label}
-                      </Link>
-                    ))}
-                  </motion.div>
-                </div>
-              ) : (
-                <Link href={link.href} onClick={handleLinkClick}>
-                  {link.label}
-                </Link>
-              )}
+              <Link href={link.href} onClick={handleLinkClick}>
+                {link.label}
+              </Link>
             </motion.li>
           ))}
         </ul>

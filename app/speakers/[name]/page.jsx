@@ -7,7 +7,7 @@ import { keyNoteSpeakers } from '@/components/event data/speakers'
 
 export default function SpeakerBio() {
   const params = useParams()
-  const speaker = keyNoteSpeakers.find(s => s.id === parseInt(params.id))
+  const speaker = keyNoteSpeakers.find(s => s.name.split(' ')[0].toLowerCase() === params.name.toLowerCase())
 
   if (!speaker) {
     return (
@@ -48,7 +48,7 @@ export default function SpeakerBio() {
           transition={{ duration: 0.5 }}
           className=""
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1  md:grid-cols-3 gap-4">
             {/* Speaker Image */}
             <motion.div
               initial={{ opacity: 0 }}

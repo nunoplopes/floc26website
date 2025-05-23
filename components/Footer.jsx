@@ -68,7 +68,7 @@ export default function Footer() {
                 <FiTwitter className="w-5 h-5" />
               </a>
               <a 
-                href="https://linkedin.com/company/floc26" 
+                href="https://linkedin.com/company/floc22" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-neutral-600 hover:text-red-500 transition-colors duration-300"
@@ -83,14 +83,7 @@ export default function Footer() {
               >
                 <FiInstagram className="w-5 h-5" />
               </a>
-              <a 
-                href="https://github.com/floc26" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-neutral-600 hover:text-red-500 transition-colors duration-300"
-              >
-                <FiGithub className="w-5 h-5" />
-              </a>
+              
             </div>
           </div>
         </div>

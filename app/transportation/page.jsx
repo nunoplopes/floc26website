@@ -5,6 +5,7 @@ import TransportCard from '@/components/TransportCard'
 import TRAIN from '@/assets/images/lisbontram.jpg'
 import TAXI from '@/assets/images/transport/taxi.jpg'
 import BUS from '@/assets/images/transport/bus.jpg'
+import CAR from '@/assets/images/cars.jpg'
 import Image from 'next/image';
 
 const InfoBox = ({ icon: Icon, text, className = "" }) => (
@@ -19,7 +20,7 @@ export default function Transportation() {
         <div className="py-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
                 {/* Header Section */}
-                <div className="text-center mb-16 pt-10">
+                <div className="text-center mb-16 pt-20">
                     <motion.h1
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -172,7 +173,7 @@ export default function Transportation() {
                         <div className="relative h-48 w-full bg-gray-100">
                             <div className="relative h-48 w-full">
                                 <Image
-                                    src={TAXI}
+                                    src={CAR}
                                     alt="Taxi transportation"
                                     fill
                                     className="object-cover"

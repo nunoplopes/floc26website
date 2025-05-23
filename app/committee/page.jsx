@@ -68,7 +68,7 @@ export default function Committee() {
     <div className="">
       {/* Hero Section */}
       <section
-        className="w-full h-[70dvh] py-32 relative flex flex-col items-center justify-center" // Added flex for centering text block
+        className="w-full h-[80dvh] py-32 relative flex flex-col items-center justify-center" // Added flex for centering text block
         style={{
           backgroundImage: `url(${MONUMENT.src})`,
           backgroundSize: 'cover',
@@ -134,7 +134,11 @@ export default function Committee() {
                       {renderMemberImage(member)}
                     </div>
                     <div className='space-y-1 flex-grow'>
-                      <h3 className="text-lg sm:text-xl font-bold text-blue-600">{member.name}</h3>
+                      <h3 className="text-lg sm:text-xl font-bold text-blue-600">
+                        <a href={member.webpage} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                          {member.name}
+                        </a>
+                      </h3>
                       <p className="text-amber-600 text-sm sm:text-base font-medium">{member.affiliation}</p>
                       <p className="text-neutral-500 font-normal text-xs sm:text-sm">{member.role}</p>
                     </div>
@@ -173,7 +177,9 @@ export default function Committee() {
                       {renderMemberImage(member)}
                     </div>
                     <div className='space-y-1 flex-grow'>
-                      <h3 className="text-lg sm:text-xl font-bold text-neutral-50">{member.name}</h3>
+                      <a href={member.webpage} target="_blank" rel="noopener noreferrer" className="hover:underline text-white font-bold text-2xl">
+                            {member.name}
+                      </a>
                       <p className="text-neutral-200 text-sm sm:text-base">{member.affiliation}</p>
                       <p className="text-neutral-400 font-normal text-xs sm:text-sm">{member.role}</p>
                     </div>
@@ -213,7 +219,9 @@ export default function Committee() {
                     </div>
                     <div className='space-y-1 flex-grow'>
                       <p className="text-blue-800 font-bold text-xs sm:text-sm">{member.role}</p>
-                      <h3 className="text-lg sm:text-xl font-bold text-blue-900">{member.name}</h3>
+                      <a href={member.webpage} target="_blank" rel="noopener noreferrer" className="hover:underline text-blue-900 font-bold text-lg">
+                            {member.name}
+                      </a>
                       <p className="text-blue-900/80 text-sm sm:text-base">{member.affiliation}</p>
                     </div>
                   </div>
@@ -251,7 +259,9 @@ export default function Committee() {
                       {renderMemberImage(member)}
                     </div>
                     <div className='space-y-1 flex-grow'>
-                      <h3 className="text-lg sm:text-xl font-bold text-neutral-50">{member.name}</h3>
+                      <a href={member.webpage} target="_blank" rel="noopener noreferrer" className="hover:underline text-neutral-50 font-bold text-lg">
+                            {member.name}
+                      </a>
                       <p className="text-neutral-200 text-sm sm:text-base">{member.affiliation}</p>
                       <p className="text-neutral-400 font-normal text-xs sm:text-sm">{member.role}</p>
                     </div>
