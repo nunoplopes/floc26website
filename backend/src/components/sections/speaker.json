@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_sections_speakers",
+  "info": {
+    "displayName": "Speaker"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Role": {
+      "type": "text"
+    },
+    "url": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "blocks"
+    }
+  }
+}

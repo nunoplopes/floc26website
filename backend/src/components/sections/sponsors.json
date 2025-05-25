@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_sections_sponsors",
+  "info": {
+    "displayName": "sponsors"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "url": {
+      "type": "text"
+    },
+    "sponsorsLevel": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    }
+  }
+}
