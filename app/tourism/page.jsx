@@ -2,23 +2,24 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 const TourismPage = () => {
   const attractions = [
     {
       title: "Belém Tower",
       description: "A 16th-century fortification and UNESCO World Heritage site",
-      image: "/images/belem-tower.jpg"
+      image: "https://i.pinimg.com/736x/45/f4/95/45f4950708364534c9f78cc6ed51ba5e.jpg"
     },
     {
       title: "Jerónimos Monastery",
       description: "A stunning example of Portuguese Gothic architecture",
-      image: "/images/jeronimos.jpg"
+      image: "https://i.pinimg.com/736x/3f/9a/2f/3f9a2f3f8eb0f14b034234541b311970.jpg"
     },
     {
       title: "Alfama District",
       description: "Lisbon's oldest neighborhood with narrow streets and Fado music",
-      image: "/images/alfama.jpg"
+      image: "https://i.pinimg.com/736x/63/0b/92/630b9297afa8728f762cb88fbf1a19a6.jpg"
     }
   ]
 
@@ -43,7 +44,7 @@ const TourismPage = () => {
       <section className="relative h-[60vh] w-full">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <Image
-          src="/images/lisbon-panorama.jpg"
+          src="https://i.pinimg.com/736x/d7/d7/1a/d7d71ab13a3a88fb0d3fda20f57bd53a.jpg"
           alt="Lisbon Panorama"
           fill
           className="object-cover"
@@ -111,9 +112,11 @@ const TourismPage = () => {
         <p className="text-xl text-gray-600 mb-8">
           Join us at FLOC 2026 and experience the perfect blend of academic excellence and cultural discovery.
         </p>
-        <button className="bg-yellow-400 text-blue-900 px-8 py-3 rounded-full text-lg font-bold hover:bg-yellow-500 transition-colors">
-          Register Now
-        </button>
+        <Link href='/registeration'>
+          <button className="bg-yellow-400 text-blue-900 px-8 py-3 rounded-full text-lg font-bold hover:bg-yellow-500 transition-colors">
+            Register Now
+          </button>
+        </Link>
       </section>
     </div>
   )
