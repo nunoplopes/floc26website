@@ -1,8 +1,121 @@
+'use client'
 import React from 'react'
+import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 const TourismPage = () => {
+  const attractions = [
+    {
+      title: "Belém Tower",
+      description: "A 16th-century fortification and UNESCO World Heritage site",
+      image: "/images/belem-tower.jpg"
+    },
+    {
+      title: "Jerónimos Monastery",
+      description: "A stunning example of Portuguese Gothic architecture",
+      image: "/images/jeronimos.jpg"
+    },
+    {
+      title: "Alfama District",
+      description: "Lisbon's oldest neighborhood with narrow streets and Fado music",
+      image: "/images/alfama.jpg"
+    }
+  ]
+
+  const practicalInfo = [
+    {
+      title: "Getting Around",
+      content: "Lisbon has an excellent public transportation system including metro, trams, and buses. The iconic Tram 28 is a must-try experience."
+    },
+    {
+      title: "Best Time to Visit",
+      content: "July is perfect for visiting Lisbon, with warm weather and plenty of sunshine. Average temperatures range from 20°C to 28°C."
+    },
+    {
+      title: "Local Cuisine",
+      content: "Don't miss trying Pastéis de Nata, Bacalhau, and fresh seafood. Lisbon offers a vibrant food scene with many excellent restaurants."
+    }
+  ]
+
   return (
-    <div>page</div>
+    <div className="min-h-screen bg-neutral-100">
+      {/* Hero Section */}
+      <section className="relative h-[60vh] w-full">
+        <div className="absolute inset-0 bg-black/50 z-10" />
+        <Image
+          src="/images/lisbon-panorama.jpg"
+          alt="Lisbon Panorama"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="relative z-20 h-full flex items-center justify-center text-white">
+          <div className="text-center">
+            <h1 className="text-5xl md:text-7xl font-bold mb-4">Discover Lisbon</h1>
+            <p className="text-xl md:text-2xl">Experience the charm of Portugal's capital city</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Attractions */}
+      <section className="py-20 px-4 md:px-20">
+        <h2 className="text-4xl font-bold text-blue-900 text-center mb-12">Must-Visit Attractions</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {attractions.map((attraction, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              className="bg-white rounded-lg overflow-hidden shadow-lg"
+            >
+              <div className="relative h-64">
+                <Image
+                  src={attraction.image}
+                  alt={attraction.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-blue-900 mb-2">{attraction.title}</h3>
+                <p className="text-gray-600">{attraction.description}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Practical Information */}
+      <section className="bg-blue-900 text-white py-20 px-4 md:px-20">
+        <h2 className="text-4xl font-bold text-center mb-12">Practical Information</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {practicalInfo.map((info, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              className="bg-blue-800 rounded-lg p-6"
+            >
+              <h3 className="text-2xl font-bold mb-4">{info.title}</h3>
+              <p className="text-blue-100">{info.content}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-20 px-4 md:px-20 text-center">
+        <h2 className="text-4xl font-bold text-blue-900 mb-6">Ready to Explore Lisbon?</h2>
+        <p className="text-xl text-gray-600 mb-8">
+          Join us at FLOC 2026 and experience the perfect blend of academic excellence and cultural discovery.
+        </p>
+        <button className="bg-yellow-400 text-blue-900 px-8 py-3 rounded-full text-lg font-bold hover:bg-yellow-500 transition-colors">
+          Register Now
+        </button>
+      </section>
+    </div>
   )
 }
 
