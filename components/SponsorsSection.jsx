@@ -3,11 +3,10 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-// Import sponsor logos
-import awsLogo from '@/assets/images/sponsors/aws.png'
-import intelLogo from '@/assets/images/sponsors/intel.png'
-import TURISMO from '@/assets/images/sponsors/Turismo.jpg'
-
+const getImageUrl = (image) => {
+  if (!image?.data?.attributes?.url) return '/placeholder.jpg';
+  return `${process.env.NEXT_PUBLIC_STRAPI_API_URL}${image.data.attributes.url}`;
+};
 
 const SponsorLogo = ({ src, alt, tier }) => (
     <motion.div
@@ -34,13 +33,20 @@ const SponsorLogo = ({ src, alt, tier }) => (
     </motion.div>
 )
 
-const SponsorsSection = () => {
-    const sponsors = {
-        diamond: [
-            { src: awsLogo, alt: 'AWS', name: 'Amazon Web Services' },
-            { src: TURISMO, alt: 'Turismo', name: 'Turismo de Portugal' }
-        ],
+const SponsorsSection = ({ sponsors }) => {
+    if (!sponsors || sponsors.length === 0) {
+        return null;
     }
+
+    // Group sponsors by level
+    const groupedSponsors = sponsors.reduce((acc, sponsor) => {
+        const level = sponsor.attributes.level.toLowerCase();
+        if (!acc[level]) {
+            acc[level] = [];
+        }
+        acc[level].push(sponsor);
+        return acc;
+    }, {});
 
     return (
         <section className="py-16 bg-blue-900">
@@ -54,22 +60,24 @@ const SponsorsSection = () => {
                     <h2 className="text-4xl font-bold text-blue-50 mb-4">Our Sponsors</h2>
                 </motion.div>
 
-                {/* Diamond Sponsors */}
-                <div className="mb-16">
-                    <h3 className="text-2xl font-bold text-blue-200 mb-12 text-center">Diamond Sponsors</h3>
-                    <div className="flex flex-wrap gap-4 justify-center">
-                        {sponsors.diamond.map((sponsor, index) => (
-                            <SponsorLogo
-                                key={index}
-                                src={sponsor.src}
-                                alt={sponsor.alt}
-                                tier="Diamond"
-                            />
-                        ))}
+                {/* Sponsor Levels */}
+                {Object.entries(groupedSponsors).map(([level, levelSponsors]) => (
+                    <div key={level} className="mb-16">
+                        <h3 className="text-2xl font-bold text-blue-200 mb-12 text-center capitalize">
+                            {level} Sponsors
+                        </h3>
+                        <div className="flex flex-wrap gap-4 justify-center">
+                            {levelSponsors.map((sponsor) => (
+                                <SponsorLogo
+                                    key={sponsor.id}
+                                    src={getImageUrl(sponsor.attributes.logo)}
+                                    alt={sponsor.attributes.name}
+                                    tier={level}
+                                />
+                            ))}
+                        </div>
                     </div>
-                </div>
-
-               
+                ))}
             </div>
         </section>
     )

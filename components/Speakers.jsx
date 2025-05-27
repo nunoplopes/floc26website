@@ -1,15 +1,17 @@
 'use client'
 import React, { useRef } from 'react'
-import { keyNoteSpeakers } from '@/components/event data/speakers'
 import SpeakerCard from './SpeakerCard'
 import { motion, useInView } from 'framer-motion'
 import Link from 'next/link'
 import STRIP from '@/assets/images/strip.png'
+import {keyNoteSpeakers} from '@/components/event data/speakers'
 import Image from 'next/image'
 
 const Speakers = () => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.3 })
+
+  
 
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -32,6 +34,8 @@ const Speakers = () => {
     }
   }
 
+  
+
   return (
     <section className='pb-[5rem] relative bg-white pt-8' ref={ref}>
       {/* Heading */}
@@ -50,14 +54,14 @@ const Speakers = () => {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={containerVariants}
-        className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-7 px-4 md:px-8 place-items-center'
+        className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-7 px-4 md:px-8 place-items-center mb-7'
       >
         {keyNoteSpeakers.map((speaker) => (
           <motion.div key={speaker.id} variants={itemVariants}>
             <Link href={`/speakers/${speaker.name.split(' ')[0].toLowerCase()}`}>
               <SpeakerCard 
                 name={speaker.name} 
-                image={speaker.image} 
+                image={speaker.image} jokm
                 position={speaker.position} 
               />
             </Link>
@@ -65,8 +69,8 @@ const Speakers = () => {
         ))}   
       </motion.div>
 
-      <div className=' absolute bottom-0 right-0 left-0 w-full'>
-        <Image src={STRIP} className='w-full h-[4em] object-cover' alt='strip'/>
+      <div className='absolute bottom-0 right-0 left-0 w-full'>
+        <Image src={STRIP} className='w-full h-[5em] object-cover' alt='strip'/>
       </div>
     </section>
   )

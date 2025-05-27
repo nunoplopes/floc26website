@@ -93,7 +93,7 @@ const AccommodationSection = memo(() => {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-center mb-16"
+                    className="text-center mb-16 pt-20"
                 >
                     <h2 className="text-4xl font-bold text-blue-900 mb-4">Accommodation Information</h2>
                     <p className="text-gray-600 max-w-3xl mx-auto">

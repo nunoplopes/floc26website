@@ -1,11 +1,10 @@
 'use client'
 import React, { useRef } from 'react'
-import { schedule } from '@/components/event data/event'
 import { motion } from 'framer-motion'
+import {schedule} from '@/components/event data/event'
 
 const Events = () => {
     const ref = useRef(null)
-
 
     return (
         <motion.div
@@ -32,7 +31,7 @@ const Events = () => {
                     {item.endDate && ` - ${item.endDate}`}
                     </div>
                     <div className="w-full md:w-3/4">
-                    <div className={`font-semibold text-xl mb-2 ${item.color}`}>{item.title}</div>
+                    <div className={`font-semibold text-xl mb-2 ${item.color || 'text-white'}`}>{item.title}</div>
                     {item.conferences && (
                         <ul className="list-disc list-inside space-y-1 text-sm md:text-base text-blue-100">
                         {item.conferences.map((conf, idx) => (
