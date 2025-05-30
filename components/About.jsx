@@ -8,14 +8,14 @@ import STRIP from '@/assets/images/strip.png'
 const About = () => {
 
   return (
-    <section className='w-full relative pb-20 pt-10'>
+    <section className='w-full relative pb-20 pt-10 '>
         {/*  */}
         <motion.div 
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.5 }}
-        className='w-full text-center text-4xl font-bold text-blue-900 pt-10 mb-7'>
+        className='w-full text-center text-4xl font-bold text-blue-900'>
           <h2>About FloC</h2>
         </motion.div>
 

@@ -119,7 +119,7 @@ const Header = () => {
           ].map((link) => (
             <motion.li
               key={link.href || link.label}
-              className={`py-2 md:py-0 transition-colors duration-300 relative ${
+              className={`py-2 md:py-0 hidden md:block transition-colors duration-300 relative ${
                 isMenuOpen
                   ? 'text-neutral-800 hover:text-gray-500'
                   : isScrolled

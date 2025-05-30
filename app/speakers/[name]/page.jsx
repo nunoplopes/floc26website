@@ -7,7 +7,9 @@ import { keyNoteSpeakers } from '@/components/event data/speakers'
 
 export default function SpeakerBio() {
   const params = useParams()
-  const speaker = keyNoteSpeakers.find(s => s.name.split(' ')[0].toLowerCase() === params.name.toLowerCase())
+  const speaker = keyNoteSpeakers.find(s => 
+    s.name.toLowerCase().replace(/\s+/g, '-') === params.name.toLowerCase()
+  )
 
   if (!speaker) {
     return (

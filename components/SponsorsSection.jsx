@@ -23,7 +23,7 @@ const SponsorsSection = () => {
                     <div className="mb-8">
                         <h2 className='text-center font-bold text-blue-200 text-2xl'>Diamond Sponsors</h2>
                     </div>
-                    <div className='grid grid-cols-1 md:grid-cols-2 gap-3 place-items-center'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
                         {sponsors.map((sponsor, id) => (
                             <motion.div 
                                 key={id}
@@ -33,7 +33,7 @@ const SponsorsSection = () => {
                                 whileHover={{ scale: 1.05 }}
                                 className="relative group"
                             >
-                                <div className="relative bg-white rounded-lg shadow-md p-6 flex items-center justify-center transition-all duration-300 hover:shadow-xl">
+                                <div className="relative p-6 flex items-center justify-center transition-all duration-300 hover:shadow-xl">
                                     <Image 
                                         src={sponsor.image} 
                                         width={400}
