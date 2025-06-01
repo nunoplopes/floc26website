@@ -25,6 +25,6 @@
     "isolatedModules": true,
     "incremental": true
   },
-  "include": ["**/*.js", "**/*.jsx"],
+  "include": ["**/*.js", "**/*.jsx", "next.config.mjs"],
   "exclude": ["node_modules"]
 }

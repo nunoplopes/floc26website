@@ -119,17 +119,17 @@ const Header = () => {
           ].map((link) => (
             <motion.li
               key={link.href || link.label}
-              className={`py-2 md:py-0 hidden md:block transition-colors duration-300 relative ${
+              className={`py-2 md:py-0 transition-colors duration-300 relative ${
                 isMenuOpen
                   ? 'text-neutral-800 hover:text-gray-500'
                   : isScrolled
                   ? 'text-black hover:text-gray-700'
-                  : 'text-neutral-800 hover:text-gray-500 md:text-neutral-800 md:hover:text-gray-300'
+                  : 'text-neutral-800 hover:text-gray-500 md:text-neutral-800 md:hover:text-gray-800'
               }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Link href={link.href} onClick={handleLinkClick}>
+              <Link href={link.href} onClick={handleLinkClick} className="block">
                 {link.label}
               </Link>
             </motion.li>

@@ -1,11 +1,41 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { committeeData } from './data'
 import MONUMENT from '@/assets/images/monument.jpg'
 import Image from 'next/image'
 import { IoMdContact } from 'react-icons/io'
+
+// MemberImage component
+const MemberImage = ({ member }) => {
+  const [imageError, setImageError] = useState(false);
+  const imageSource = member.image;
+
+  if (!imageSource || imageError) {
+    return (
+      <div className="w-full h-full flex items-center justify-center bg-gray-200">
+        <svg className="w-14 h-14 text-gray-500" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+        </svg>
+      </div>
+    );
+  }
+
+  return (
+    <div className="relative w-full h-full">
+      <Image
+        src={imageSource}
+        alt={member.name}
+        fill
+        sizes="(max-width: 768px) 112px, 112px"
+        className="object-cover"
+        priority={true}
+        onError={() => setImageError(true)}
+      />
+    </div>
+  );
+};
 
 // Animation variants for sections/titles
 const sectionVariant = {
@@ -42,28 +72,6 @@ export default function Committee() {
   const steerTitleRef = useRef(null);
   const steerTitleInView = useInView(steerTitleRef, { once: true, amount: 0.3 });
   
-  // Helper function to render the image or fallback icon (from previous response)
-  const renderMemberImage = (member) => {
-    const imageSource = member.image;
-    if (imageSource) {
-      return (
-        <Image
-          src={imageSource}
-          alt={member.name}
-          width={112}
-          height={112}
-          className="w-full h-full object-cover"
-        />
-      );
-    } else {
-      return (
-        <div className="w-full h-full flex items-center justify-center bg-gray-200">
-          <IoMdContact size={56} className="text-gray-500" />
-        </div>
-      );
-    }
-  };
-
   return (
     <div className="">
       {/* Hero Section */}
@@ -131,7 +139,7 @@ export default function Committee() {
                                     rounded-tl-[3rem] rounded-br-[3rem] 
                                     rounded-tr-lg rounded-bl-lg 
                                     overflow-hidden shadow-md'>
-                      {renderMemberImage(member)}
+                      <MemberImage member={member} />
                     </div>
                     <div className='space-y-1 flex-grow'>
                       <h3 className="text-lg sm:text-xl font-bold text-blue-600">
@@ -174,7 +182,7 @@ export default function Committee() {
                                     rounded-tl-[3rem] rounded-br-[3rem] 
                                     rounded-tr-lg rounded-bl-lg 
                                     overflow-hidden shadow-md'>
-                      {renderMemberImage(member)}
+                      <MemberImage member={member} />
                     </div>
                     <div className='space-y-1 flex-grow'>
                       <a href={member.webpage} target="_blank" rel="noopener noreferrer" className="hover:underline text-white font-bold text-2xl">
@@ -215,7 +223,7 @@ export default function Committee() {
                                     rounded-tl-[3rem] rounded-br-[3rem] 
                                     rounded-tr-lg rounded-bl-lg 
                                     overflow-hidden shadow-md'>
-                      {renderMemberImage(member)}
+                      <MemberImage member={member} />
                     </div>
                     <div className='space-y-1 flex-grow'>
                       <p className="text-blue-800 font-bold text-xs sm:text-sm">{member.role}</p>
@@ -256,7 +264,7 @@ export default function Committee() {
                                     rounded-tl-[3rem] rounded-br-[3rem] 
                                     rounded-tr-lg rounded-bl-lg 
                                     overflow-hidden shadow-md'>
-                      {renderMemberImage(member)}
+                      <MemberImage member={member} />
                     </div>
                     <div className='space-y-1 flex-grow'>
                       <a href={member.webpage} target="_blank" rel="noopener noreferrer" className="hover:underline text-neutral-50 font-bold text-lg">
