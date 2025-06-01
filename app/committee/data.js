@@ -1,16 +1,4 @@
-import RAJEEVALUR from '@/assets/images/committes/rajeev Alur.jpg'
-import ALEXANDRA from '@/assets/images/committes/alexandra.jpg'
-import MOI from '@/assets/images/committes/moi.jpg'
-import NUNO from '@/assets/images/committes/nuno lopes.jpg'
-import AWS from '@/assets/images/committes/aws.jpg'
-import LORI from "@/assets/images/committes/Loris D'Antoni.jpg"
-import ALESSANDRO from "@/assets/images/committes/AlessandroGianola.jpg"
-import Bernd_Finkbeiner from "@/assets/images/committes/Bernd_Finkbeiner.avif"
-import Josefragoso from "@/assets/images/committes/Jose fragoso.png"
-import caterina from "@/assets/images/committes/caterina.jpg"
-import PHILIP from "@/assets/images/committes/philip.jpeg"
-import INES from "@/assets/images/committes/ines.jpg"
-import PEDRO from "@/assets/images/committes/pedro.jpg"
+
 // No need for PLACEHOLDER_IMAGE import if using null
 
 export const committeeData = {
