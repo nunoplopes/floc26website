@@ -1,6 +1,3 @@
-
-// No need for PLACEHOLDER_IMAGE import if using null
-
 export const committeeData = {
   organizers: [
     { name: 'Rajeev Alur', image: "https://www.cis.upenn.edu/~alur/RA24.jpg", affiliation: 'University of Pennsylvania', role: 'General Chair', webpage: 'https://www.cis.upenn.edu/~alur/' },
@@ -10,7 +7,13 @@ export const committeeData = {
     { name: 'Jules Villard', image: "https://jvillard.net/moi2.jpg", affiliation: 'Meta', role: 'Fundraising Co-Chair', webpage: 'https://jvillard.net' },
     { name: 'Loris D\'Antoni', image: "https://cseweb.ucsd.edu/~ldantoni/images/face.jpg", affiliation: 'UC San Diego', role: 'Fundraising Co-Chair', webpage: 'https://cseweb.ucsd.edu/~ldantoni/' },
     { name: 'Alessandro Gianola', image: "https://arsr.inesc-id.pt/~agianola/AlessandroGianola.jpg", affiliation: 'University of Lisbon', role: 'Workshops Co-Chair', webpage: 'https://arsr.inesc-id.pt/~agianola/' },
-    { name: 'Bernd Finkbeiner', image: null, "https://finkbeiner.groups.cispa.de/img/profile/Bernd_Finkbeiner.avif": 'CISPA Helmholtz Center for Information Security', role: 'Workshops Co-Chair', webpage: 'https://finkbeiner.groups.cispa.de/people/finkbeiner.html' },
+    { 
+      name: 'Bernd Finkbeiner', 
+      image: "https://finkbeiner.groups.cispa.de/img/profile/Bernd_Finkbeiner.avif",
+      affiliation: 'CISPA Helmholtz Center for Information Security', 
+      role: 'Workshops Co-Chair', 
+      webpage: 'https://finkbeiner.groups.cispa.de/people/finkbeiner.html' 
+    },
     { name: 'José Fragoso Santos', image: "https://web.ist.utl.pt/jose.fragoso/images/Jose.png", affiliation: 'University of Lisbon', role: 'Volunteers Chair', webpage: 'https://web.ist.utl.pt/jose.fragoso/' },
     { name: 'Caterina Urban', image: null, affiliation: 'INRIA / ENS', role: 'Publicity Chair', webpage: 'https://caterinaurban.github.io' },
   ],
