@@ -64,12 +64,8 @@ const nextConfig = {
         contentDispositionType: 'attachment',
         contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;"
     },
-    compiler: {
-        removeConsole: process.env.NODE_ENV === 'production'
-    },
     poweredByHeader: false,
     experimental: {
-        scrollRestoration: true,
         optimizeCss: true,
         optimizePackageImports: ['@radix-ui/react-slot', '@radix-ui/react-tabs', 'framer-motion', 'react-icons']
     },
@@ -77,17 +73,7 @@ const nextConfig = {
         // Optimize image handling
         config.module.rules.push({
             test: /\.(png|jpe?g|gif|svg|webp|avif)$/i,
-            use: [
-                {
-                    loader: 'next-image-loader',
-                    options: {
-                        isServer,
-                        isDev: dev,
-                        assetPrefix: '',
-                        basePath: ''
-                    }
-                }
-            ]
+            type: 'asset/resource'
         });
 
         return config;

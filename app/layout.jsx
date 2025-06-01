@@ -1,14 +1,6 @@
-import { Montserrat } from 'next/font/google'
 import './globals.css'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-
-const montserrat = Montserrat({ 
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-montserrat',
-  display: 'swap',
-})
 
 export const metadata = {
   metadataBase: new URL('https://floc2026.org'),
@@ -53,7 +45,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} font-sans`}>
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="font-sans">
         <Header />
         <main className="min-h-screen">
           {children}
