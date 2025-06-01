@@ -1,7 +1,6 @@
 [build]
   command = "npm run build"
   publish = ".next"
-  base = "floc26website"
 
 [build.environment]
   NEXT_TELEMETRY_DISABLED = "1"
