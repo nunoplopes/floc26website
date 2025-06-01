@@ -1,6 +1,7 @@
 import AWS from '@/assets/images/aws.png'
+import TURISMO from '@/assets/images/turismo.png'
 
-export const sponsorsData = [
+export const sponsors = [
     {
         id: 1,
         name: "AWS",
@@ -8,6 +9,6 @@ export const sponsorsData = [
     },
     {
         name: "TURISMO",
-        image: "https://www.turismodeportugal.pt/SiteCollectionDocuments/Imagens/Logotipos/logo-turismo-portugal.png",
+        image: TURISMO
     },
 ]
