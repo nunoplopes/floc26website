@@ -1,5 +1,5 @@
 import AWS from '@/assets/images/aws.png'
-import TURISMO from '@/assets/images/turismo.png'
+import TURISMO from '@/assets/images/turismo.jpg'
 
 export const sponsors = [
     {
