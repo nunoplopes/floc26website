@@ -63,14 +63,9 @@ const nextConfig = {
         removeConsole: process.env.NODE_ENV === 'production'
     },
     poweredByHeader: false,
-    reactStrictMode: true,
     experimental: {
         scrollRestoration: true
-    },
-    webpack: (config) => {
-        config.resolve.extensions.push(".mjs");
-        return config;
     }
 };
 
-export default nextConfig;
+module.exports = nextConfig;
