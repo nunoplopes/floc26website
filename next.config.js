@@ -53,18 +53,44 @@ const nextConfig = {
             { protocol: 'https', hostname: 'lh5.googleusercontent.com' },
             { protocol: 'https', hostname: 'jvillard.net' },
             { protocol: 'https', hostname: 'lh4.googleusercontent.com' },
-            { protocol: 'https', hostname: 'servizi.unife.it' }
+            { protocol: 'https', hostname: 'servizi.unife.it' },
+            { protocol: 'https', hostname: 'www.turismodeportugal.pt' }
         ],
         formats: ['image/avif', 'image/webp'],
         deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
-        imageSizes: [16, 32, 48, 64, 96, 128, 256, 384]
+        imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+        minimumCacheTTL: 60,
+        dangerouslyAllowSVG: true,
+        contentDispositionType: 'attachment',
+        contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;"
     },
     compiler: {
         removeConsole: process.env.NODE_ENV === 'production'
     },
     poweredByHeader: false,
     experimental: {
-        scrollRestoration: true
+        scrollRestoration: true,
+        optimizeCss: true,
+        optimizePackageImports: ['@radix-ui/react-slot', '@radix-ui/react-tabs', 'framer-motion', 'react-icons']
+    },
+    webpack: (config, { dev, isServer }) => {
+        // Optimize image handling
+        config.module.rules.push({
+            test: /\.(png|jpe?g|gif|svg|webp|avif)$/i,
+            use: [
+                {
+                    loader: 'next-image-loader',
+                    options: {
+                        isServer,
+                        isDev: dev,
+                        assetPrefix: '',
+                        basePath: ''
+                    }
+                }
+            ]
+        });
+
+        return config;
     }
 };
 
