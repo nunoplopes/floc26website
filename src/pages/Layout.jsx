@@ -1,9 +1,9 @@
 import React from 'react'
-import Hero from '../src/components/Hero'
-import About from '../src/components/About'
-import Speakers from '../src/components/Speakers'
-import Sponsors from '../src/components/Sponsors'
-import Events from '../src/components/Events'
+import Hero from '../components/Hero'
+import About from '../components/About'
+import Speakers from '../components/Speakers'
+import Sponsors from '../components/Sponsors'
+import Events from '../components/Events'
 
 const Layout = () => {
   return (
