@@ -21,7 +21,7 @@ const About = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.5 }}
-        className='grid grid-cols-1 md:grid-cols-2 gap-3 mb-10'>
+        className='grid grid-cols-1 md:grid-cols-2 gap-3 mb-20 md:mb-52'>
           {/* first col */}
           <div className='flex flex-col items-center justify-center text-left px-4 text-xl mt-5 space-y-2 text-neutral-500'>
             <p>Over the past forty years, there has been extensive, continuous, and growing interaction between logic and computer science. In many ways, logic provides computer science with both a unifying foundational framework and a powerful tool for modeling.</p>
