@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
-import hero2 from '../src/assets/images/lisbontram.jpg';
+import hero2 from '../assets/images/lisbontram.jpg';
 import { motion } from 'framer-motion';
-import SKYLINE from '../src/assets/images/skylinetram.png'
+import SKYLINE from '../assets/images/skylinetram.png'
 
 const About = () => {
   const heroRef = useRef(null);
