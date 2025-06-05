@@ -1,7 +1,7 @@
 import React from 'react'
 import {motion } from 'framer-motion'
 import LISBON from '../assets/images/lisbonsky.png'
-import STRIP from '../assets/images/strip.png'
+import STRIP from '../assets/images/logostrip.png'
 
 const About = () => {
   return (
@@ -41,8 +41,8 @@ const About = () => {
         </motion.div>
 
         <div className='absolute bottom-0 right-0 left-0 w-full'>
-          <img src={STRIP} width={1920} height={100} className='w-full h-[2em] object-cover' alt='strip'/>
-        </div>
+        <img src={STRIP} className='w-full object-cover' alt='strip'/>
+      </div>
     </section>
   )
 }
