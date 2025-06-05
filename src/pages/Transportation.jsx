@@ -1,10 +1,10 @@
 'use client'
 import { motion } from 'framer-motion';
 import { MdLocationOn, MdAccessTime, MdWarning } from 'react-icons/md';
-import TRAIN from '../src/assets/images/lisbontram.jpg'
-import TAXI from '../src/assets/images/transport/taxi.jpg'
-import BUS from '../src/assets/images/transport/bus.jpg'
-import CAR from '../src/assets/images/cars.jpg'
+import TRAIN from '../assets/images/lisbontram.jpg'
+import TAXI from '../assets/images/transport/taxi.jpg'
+import BUS from '../assets/images/transport/bus.jpg'
+import CAR from '../assets/images/cars.jpg'
 
 const InfoBox = ({ icon: Icon, text, className = "" }) => (
     <div className={`flex items-center gap-2 p-3 bg-blue-50 rounded-lg ${className}`}>

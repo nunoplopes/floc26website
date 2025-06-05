@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { schedule } from '../src/components/event data/event';
+import { schedule } from '../components/event data/event';
 
 
 // Animation variants

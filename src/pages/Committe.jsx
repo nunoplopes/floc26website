@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { committeeData } from '../src/components/event data/data'
-import MONUMENT from '../src/assets/images/monument.jpg'
+import { committeeData } from '../components/event data/data'
+import MONUMENT from '../assets/images/monument.jpg'
 
 
 const MemberImage = ({ member }) => {

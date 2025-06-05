@@ -1,5 +1,5 @@
 import React from 'react'
-import Speakers from '../src/components/Speakers'
+import Speakers from '../components/Speakers'
 const Speaker = () => {
   return (
     <section>
