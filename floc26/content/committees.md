@@ -28,7 +28,7 @@ title = "FLoC 2026 Committees"
 **CSF Conference Chair**   | [Pedro Adão](https://www.math.tecnico.ulisboa.pt/~padao/), University of Lisbon
 **DL Conference Chair**    | [Matthias Knorr](https://userweb.fct.unl.pt/~mkn/), NOVA University Lisbon
 **FSCD Conference Chair**  | [Sandra Alves](https://www.dcc.fc.up.pt/~sandra/Home/Home.html), University of Porto
-**ICLP Conference Chair**  | [Vítor Santos Costa](https://www.dcc.fc.up.pt/~vsc/) & [Ricardo Rocha](https://www.dcc.fc.up.pt/~ricroc), University of Porto
+**ICLP Conference Chair**  | [Vítor Santos Costa](https://www.dcc.fc.up.pt/~vsc/) & [Ricardo Rocha](https://www.dcc.fc.up.pt/~ricroc/), University of Porto
 **IJCAR Conference Chair** | [Carlos Caleiro](https://sqig.math.tecnico.ulisboa.pt/ccal), University of Lisbon
 **ITP Conference Chair**   | [João F. Ferreira](https://joaoff.com), University of Lisbon
 **KR Conference Chair**    | [João Leite](https://userweb.fct.unl.pt/~jleite/), NOVA University Lisbon
