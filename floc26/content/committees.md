@@ -28,7 +28,7 @@ title = "FLoC 2026 Committees"
 **CSF Conference Chair**   | [Pedro Adão](https://www.math.tecnico.ulisboa.pt/~padao/), University of Lisbon
 **DL Conference Chair**    | [Matthias Knorr](https://userweb.fct.unl.pt/~mkn/), NOVA University Lisbon
 **FSCD Conference Chair**  | [Sandra Alves](https://www.dcc.fc.up.pt/~sandra/Home/Home.html), University of Porto
-**ICLP Conference Chair**  | [Vítor Santos Costa](https://www.dcc.fc.up.pt/~vsc/), University of Porto
+**ICLP Conference Chair**  | [Vítor Santos Costa](https://www.dcc.fc.up.pt/~vsc/) & [Ricardo Rocha](https://www.dcc.fc.up.pt/~ricroc), University of Porto
 **IJCAR Conference Chair** | [Carlos Caleiro](https://sqig.math.tecnico.ulisboa.pt/ccal), University of Lisbon
 **ITP Conference Chair**   | [João F. Ferreira](https://joaoff.com), University of Lisbon
 **KR Conference Chair**    | [João Leite](https://userweb.fct.unl.pt/~jleite/), NOVA University Lisbon
@@ -44,7 +44,7 @@ title = "FLoC 2026 Committees"
  &nbsp; | &nbsp;
 --------|-------
 **CAV PC Chairs**   | [Anthony W. Lin](https://anthonywlin.github.io), Technical University of Kaiserslautern<br>[Eva Darulova](https://malyzajko.github.io), Uppsala University<br>[Philipp Ruemmer](http://www.philipp.ruemmer.org), University of Regensburg
-**CP PC Chairs**    | TBA
+**CP PC Chairs**    | [Nicolas Beldiceanu](https://cv.hal.science/nicolasbeldiceanu), IMT Atlantique
 **CSF PC Chairs**   | TBA
 **DL PC Chairs**    | TBA
 **FSCD PC Chairs**  | [Frank Pfenning](https://www.cs.cmu.edu/~fp/), CMU
