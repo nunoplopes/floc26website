@@ -1,7 +1,6 @@
 import React, { useRef } from 'react'
-//import hero2 from '../assets/images/lisbontram.jpg';
+import hero2 from '../assets/images/lisbonsky.png';
 import { motion } from 'framer-motion';
-//import SKYLINE from '../assets/images/skylinetram.png'
 
 const About = () => {
   const heroRef = useRef(null);
@@ -84,13 +83,6 @@ const About = () => {
               highlighting the nation’s growing role as a hub for academic and
               technological excellence in computer science and logic research.
             </p>
-          </motion.div>
-
-          <motion.div
-            variants={itemVariants}
-            className=""
-          >
-           <img src={SKYLINE} width={800} height={700} alt=''/>
           </motion.div>
         </div>
       </motion.section>
