@@ -23,7 +23,7 @@ import LAURA from '../../assets/images/committes/laura.png';
 import ARMIN from '../../assets/images/committes/armin.jpg';
 import CARSTEN from '../../assets/images/committes/carsten.jpg';
 import SARA from '../../assets/images/committes/sara.png';
-import EKATERINA from '../../assets/images/committes/ekaterina.png';
+import EKATERINA from '../../assets/images/committes/ekaterina.jpg';
 import TOBIAS from '../../assets/images/committes/tobais.jpg';
 import FRANZ from '../../assets/images/committes/franz.jpeg';
 import MARIE from '../../assets/images/committes/marie.jpg';
@@ -31,13 +31,15 @@ import JOOST from '../../assets/images/committes/joost.jpg';
 import ALEXEY from '../../assets/images/committes/alexey.jpg';
 import STEFAN from '../../assets/images/committes/stefan.jpeg';
 import DANIEL from '../../assets/images/committes/daniel.jpg';
-import HELEN from '../../assets/images/committes/matthais.jpg';
+import HELEN from '../../assets/images/committes/helen.jpg';
 import MATTHAIS from '../../assets/images/committes/matthais.jpg';
 import ESRA from '../../assets/images/committes/esra.jpg';
 import MAGNUS from '../../assets/images/committes/magnus.jpg';
 import DOMINIQUE from '../../assets/images/committes/dominique.jpg';
 import PATRICK from '../../assets/images/committes/patrick.jpg';
 import MARCO from '../../assets/images/committes/marco.jpg';
+import JOAOFF from '../../assets/images/committes/joao-ferreira.jpg';
+import VASCOM from '../../assets/images/committes/vascom.png';
 
 export const committeeData = {
   organizers: [
@@ -58,31 +60,33 @@ export const committeeData = {
     { name: 'Pedro Adão', image: PEDRO, affiliation: 'University of Lisbon', role: 'CSF Conference Chair', webpage: 'https://www.math.tecnico.ulisboa.pt/~padao/' },
     { name: 'Matthias Knorr', image: null, affiliation: 'NOVA University Lisbon', role: 'DL Conference Chair', webpage: 'https://userweb.fct.unl.pt/~mkn/' },
     { name: 'Sandra Alves', image: SANDRA, affiliation: 'University of Porto', role: 'FSCD Conference Chair', webpage: 'https://www.dcc.fc.up.pt/~sandra/Home/Home.html' },
-    { name: 'Vítor Santos Costa', image: null, affiliation: 'University of Porto', role: 'ICLP Conference Chair', webpage: 'https://www.dcc.fc.up.pt/~vsc/' },
+    { name: 'Ricardo Rocha', image: null, affiliation: 'University of Porto', role: 'ICLP Conference Co-Chair', webpage: 'https://www.dcc.fc.up.pt/~ricroc/' },
+    { name: 'Vítor Santos Costa', image: null, affiliation: 'University of Porto', role: 'ICLP Conference Co-Chair', webpage: 'https://www.dcc.fc.up.pt/~vsc/' },
     { name: 'Carlos Caleiro', image: CARLOS, affiliation: 'University of Lisbon', role: 'IJCAR Conference Chair', webpage: 'https://sqig.math.tecnico.ulisboa.pt/ccal' },
-    { name: 'João F. Ferreira', image: null, affiliation: 'University of Lisbon', role: 'ITP Conference Chair', webpage: 'https://joaoff.com' },
+    { name: 'João F. Ferreira', image: JOAOFF, affiliation: 'University of Lisbon', role: 'ITP Conference Chair', webpage: 'https://joaoff.com' },
     { name: 'João Leite', image: JLEITE, affiliation: 'NOVA University Lisbon', role: 'KR Conference Chair', webpage: 'https://userweb.fct.unl.pt/~jleite/' },
     { name: 'Bernardo Toninho', image: BERNADO, affiliation: 'University of Lisbon', role: 'LICS Conference Chair', webpage: 'https://web.tecnico.ulisboa.pt/bernardo.toninho/' },
     { name: 'Ricardo Gonçalves', image: RICARDO, affiliation: 'NOVA University Lisbon', role: 'NMR Conference Chair', webpage: 'https://userweb.fct.unl.pt/~rjrg/' },
-    { name: 'Vasco Manquinho', image: null, affiliation: 'University of Lisbon', role: 'SAT Conference Chair', webpage: 'https://sat.inesc-id.pt/~vmm/' },
+    { name: 'Vasco Manquinho', image: VASCOM, affiliation: 'University of Lisbon', role: 'SAT Conference Chair', webpage: 'https://sat.inesc-id.pt/~vmm/' },
   ],
   programCommittees: [
-    { name: 'Anthony W. Lin', image: ANTHONY, affiliation: 'Technical University of Kaiserslautern', role: 'CAV PC Chair', webpage: 'https://anthonywlin.github.io' },
-    { name: 'Eva Darulova', image: EVA, affiliation: 'Uppsala University', role: 'CAV PC Chair', webpage: 'https://malyzajko.github.io' },
-    { name: 'Philipp Ruemmer', image: PHILIPP, affiliation: 'University of Regensburg', role: 'CAV PC Chair', webpage: 'http://www.philipp.ruemmer.org' },
+    { name: 'Anthony W. Lin', image: ANTHONY, affiliation: 'Technical University of Kaiserslautern', role: 'CAV PC Co-Chair', webpage: 'https://anthonywlin.github.io' },
+    { name: 'Eva Darulova', image: EVA, affiliation: 'Uppsala University', role: 'CAV PC Co-Chair', webpage: 'https://malyzajko.github.io' },
+    { name: 'Philipp Ruemmer', image: PHILIPP, affiliation: 'University of Regensburg', role: 'CAV PC Co-Chair', webpage: 'http://www.philipp.ruemmer.org' },
+    { name: 'Nicolas Beldiceanu', image: null, affiliation: 'IMT Atlantique', role: 'CP PC Chair', webpage: 'https://cv.hal.science/nicolasbeldiceanu' },
     { name: 'Frank Pfenning', image: FRANK, affiliation: 'CMU', role: 'FSCD PC Chair', webpage: 'https://www.cs.cmu.edu/~fp/' },
     { name: 'Laura Giordano', image: LAURA, affiliation: 'Università del Piemonte Orientale', role: 'ICLP PC Chair', webpage: 'https://people.unipmn.it/laura.giordano/' },
-    { name: 'Armin Biere', image: ARMIN, affiliation: 'University of Freiburg', role: 'IJCAR PC Chair', webpage: 'https://cca.informatik.uni-freiburg.de/biere/' },
-    { name: 'Carsten Lutz', image: CARSTEN, affiliation: 'Universität Leipzig', role: 'IJCAR PC Chair', webpage: 'https://home.uni-leipzig.de/clu/' },
-    { name: 'Sara Negri', image: SARA, affiliation: 'Università degli Studi di Genova', role: 'IJCAR PC Chair', webpage: 'https://sites.google.com/view/saranegri/home' },
-    { name: 'Ekaterina Komendantskaya', image: EKATERINA, affiliation: 'Heriot-Watt University and University of Southampton', role: 'ITP PC Chair', webpage: 'https://www.macs.hw.ac.uk/~ek19/' },
-    { name: 'Tobias Nipkow', image: TOBIAS, affiliation: 'TU Munich', role: 'ITP PC Chair', webpage: 'https://www21.in.tum.de/~nipkow/' },
-    { name: 'Franz Baader', image: FRANZ, affiliation: 'TU Dresden', role: 'KR PC Chair', webpage: 'https://tu-dresden.de/ing/informatik/thi/lat/die-professur/franz-baader' },
-    { name: 'Marie-Laure Mugnier', image: MARIE, affiliation: 'University of Montpellier', role: 'KR PC Chair', webpage: 'https://www.lirmm.fr/~mugnier/' },
-    { name: 'Claudia Faggian', image: null, affiliation: 'CNRS', role: 'LICS PC Chair', webpage: 'https://www.irif.fr/~faggian/' },
-    { name: 'Joost-Pieter Katoen', image: JOOST, affiliation: 'RWTH Aachen University', role: 'LICS PC Chair', webpage: 'https://www-i2.informatik.rwth-aachen.de/~katoen/' },
-    { name: 'Alexey Ignatiev', image: ALEXEY, affiliation: 'Monash University', role: 'SAT PC Chair', webpage: 'https://alexeyignatiev.github.io' },
-    { name: 'Stefan Szeider', image: STEFAN, affiliation: 'TU Wien', role: 'SAT PC Chair', webpage: 'https://www.ac.tuwien.ac.at/people/szeider/' },
+    { name: 'Armin Biere', image: ARMIN, affiliation: 'University of Freiburg', role: 'IJCAR PC Co-Chair', webpage: 'https://cca.informatik.uni-freiburg.de/biere/' },
+    { name: 'Carsten Lutz', image: CARSTEN, affiliation: 'Universität Leipzig', role: 'IJCAR PC Co-Chair', webpage: 'https://home.uni-leipzig.de/clu/' },
+    { name: 'Sara Negri', image: SARA, affiliation: 'Università degli Studi di Genova', role: 'IJCAR PC Co-Chair', webpage: 'https://sites.google.com/view/saranegri/home' },
+    { name: 'Ekaterina Komendantskaya', image: EKATERINA, affiliation: 'Heriot-Watt University and University of Southampton', role: 'ITP PC Co-Chair', webpage: 'https://www.macs.hw.ac.uk/~ek19/' },
+    { name: 'Tobias Nipkow', image: TOBIAS, affiliation: 'TU Munich', role: 'ITP PC Co-Chair', webpage: 'https://www21.in.tum.de/~nipkow/' },
+    { name: 'Franz Baader', image: FRANZ, affiliation: 'TU Dresden', role: 'KR PC Co-Chair', webpage: 'https://tu-dresden.de/ing/informatik/thi/lat/die-professur/franz-baader' },
+    { name: 'Marie-Laure Mugnier', image: MARIE, affiliation: 'University of Montpellier', role: 'KR PC Co-Chair', webpage: 'https://www.lirmm.fr/~mugnier/' },
+    { name: 'Claudia Faggian', image: null, affiliation: 'CNRS', role: 'LICS PC Co-Chair', webpage: 'https://www.irif.fr/~faggian/' },
+    { name: 'Joost-Pieter Katoen', image: JOOST, affiliation: 'RWTH Aachen University', role: 'LICS PC Co-Chair', webpage: 'https://www-i2.informatik.rwth-aachen.de/~katoen/' },
+    { name: 'Alexey Ignatiev', image: ALEXEY, affiliation: 'Monash University', role: 'SAT PC Co-Chair', webpage: 'https://alexeyignatiev.github.io' },
+    { name: 'Stefan Szeider', image: STEFAN, affiliation: 'TU Wien', role: 'SAT PC Co-Chair', webpage: 'https://www.ac.tuwien.ac.at/people/szeider/' },
   ],
   steeringCommittee: [
     { name: 'Rajeev Alur', image: RAJEEV, affiliation: 'University of Pennsylvania', role: 'General Chair', webpage: 'https://www.cis.upenn.edu/~alur/' },

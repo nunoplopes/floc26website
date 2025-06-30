@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { committeeData } from '../components/event data/data'
-import MONUMENT from '../assets/images/monument.jpg'
+//import MONUMENT from '../assets/images/monument.jpg'
 
 
 const MemberImage = ({ member }) => {
@@ -24,10 +24,8 @@ const MemberImage = ({ member }) => {
       <img
         src={imageSource}
         alt={member.name}
-        fill="true"
         sizes="(max-width: 768px) 112px, 112px"
-        className="object-cover"
-        priority="true"
+        className="w-full h-full object-cover"
         onError={() => setImageError(true)}
       />
     </div>
@@ -70,7 +68,7 @@ const Committe = () => {
 
   return (
     <div className="">
-      {/* Hero Section */}
+      {/* Hero Section 
       <section
         className="w-full h-[80dvh] py-32 relative flex flex-col items-center justify-center" // Added flex for centering text block
         style={{
@@ -103,7 +101,7 @@ const Committe = () => {
             </motion.p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Main Content */}
       <div className="min-h-screen w-full">
