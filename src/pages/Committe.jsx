@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { committeeData } from '../components/event data/data'
-//import MONUMENT from '../assets/images/monument.jpg'
+import MONUMENT from '../assets/images/skylinetram.png'
 
 
 const MemberImage = ({ member }) => {
@@ -47,11 +47,6 @@ const heroTitleVariant = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } }
 };
 
-const heroParagraphVariant = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, delay: 0.2, ease: "easeOut" } }
-};
-
 const Committe = () => {
   // Refs and inView hooks for section titles
   const organizersTitleRef = useRef(null);
@@ -68,40 +63,29 @@ const Committe = () => {
 
   return (
     <div className="">
-      {/* Hero Section 
+      {/* Hero Section */}
       <section
-        className="w-full h-[80dvh] py-32 relative flex flex-col items-center justify-center" // Added flex for centering text block
-        style={{
-          backgroundImage: `url(${MONUMENT})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          backgroundColor: 'rgba(0, 0, 100, 0.65)', // Slightly darker blue overlay
-          backgroundBlendMode: 'overlay',
-        }}
+        className="w-full h-[50dvh] py-32 relative flex flex-col items-center justify-center"
       >
+        <div
+          className="absolute inset-0 bg-center bg-no-repeat bg-contain opacity-40 z-0"
+          style={{
+            backgroundImage: `url(${MONUMENT})`,
+          }}
+        />
         <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
           <div className="text-center">
             <motion.h1
               variants={heroTitleVariant}
               initial="hidden"
               animate="visible"
-              className="text-5xl md:text-6xl font-bold text-white mb-6"
+              className="text-5xl md:text-6xl font-bold text-[#00008B] mb-6"
             >
               FLoC 2026 Committees
             </motion.h1>
-            <motion.p
-              variants={heroParagraphVariant}
-              initial="hidden"
-              animate="visible"
-              className="text-xl text-neutral-200 max-w-3xl mx-auto leading-relaxed"
-            >
-              Meet the dedicated team of researchers and organizers behind FLoC 2026,
-              working together to create an exceptional conference experience.
-            </motion.p>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Main Content */}
       <div className="min-h-screen w-full">

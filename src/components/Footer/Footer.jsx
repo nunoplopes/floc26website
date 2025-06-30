@@ -7,14 +7,17 @@ const Footer = () => {
     <footer className="bg-white border-t border-neutral-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* About Section
+          {/* About Section */}
           <div className="space-y-4">
             <h3 className="text-3xl font-bold text-neutral-900">About FLoC 2026</h3>
             <p className="text-neutral-600 text-xl">
               The Federated Logic Conference (FLoC) brings together the world's leading researchers 
               in logic and computer science.
             </p>
-          </div>  */}
+            <p className="mt-2 text-sm text-gray-600">
+              Hosted in Lisbon, Portugal — July 2026.
+            </p>
+          </div>
 
           {/* Quick Links
           <div className="space-y-4">

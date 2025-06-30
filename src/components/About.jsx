@@ -1,7 +1,7 @@
 import React from 'react'
 import {motion } from 'framer-motion'
 import LISBON from '../assets/images/lisbonsky.png'
-import STRIP from '../assets/images/logostrip.png'
+import STRIP from '../assets/images/strip-small.webp'
 
 const About = () => {
   return (
@@ -13,7 +13,7 @@ const About = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.5 }}
         className='w-full text-center text-4xl font-bold text-blue-900'>
-          <h2>About FloC</h2>
+          <h2>About FLoC</h2>
         </motion.div>
 
         <motion.div 

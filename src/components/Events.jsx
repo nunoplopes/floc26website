@@ -10,7 +10,7 @@ const Events = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         >
-            <h1 className="text-4xl md:text-6xl font-bold text-center mb-6">PROGRAMME</h1>
+            <h1 className="text-4xl md:text-6xl font-bold text-center mb-6">Programme</h1>
             <p className="text-lg text-center text-blue-300 mb-10">July<sup>26</sup></p>
             <div className="relative border-l-4 border-dotted border-blue-200 ml-6 md:ml-16">
                 {schedule.map((item, index) => (

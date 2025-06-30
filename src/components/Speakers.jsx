@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import STRIP from '../assets/images/logostrip.png'
+import STRIP from '../assets/images/strip-small.webp'
 import {keyNoteSpeakers} from './event data/speakers'
 import SpeakerCard from './SpeakerCard'
 import { Link } from 'react-router-dom'
@@ -63,7 +63,6 @@ const Speakers = () => {
         ))}   
       </motion.div>
 
-      <p>&nbsp;</p>
       <div className='absolute bottom-0 right-0 left-0 w-full'>
         <img src={STRIP} className='w-full object-cover' alt='strip'/>
       </div>
