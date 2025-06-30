@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { HiLocationMarker } from "react-icons/hi";
 import { MdSubway } from "react-icons/md";
+import { AiOutlineInfoCircle } from "react-icons/ai";
 import campopequeno from '../assets/images/campo-pequeno.jpg';
 import pavportugal from '../assets/images/pav-portugal.jpg';
 import patiogale from '../assets/images/patio-gale.jpg';
@@ -30,6 +31,12 @@ const VenueSection = ({ venue }) => (
     />
 
     <div className="p-4">
+
+        <p className="text-gray-700 mb-4 flex items-start gap-2">
+            <AiOutlineInfoCircle className="mt-[3px] text-gray-500 flex-shrink-0" />
+            {venue.blurb}
+        </p>
+
         <div className="flex items-center text-gray-600 mb-2">
             <HiLocationMarker className="h-5 w-5 text-gray-500 mr-2 flex-shrink-0" />
             <p>{venue.address}</p>
@@ -130,19 +137,21 @@ const Venue = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
       {[
         {
-          title: "Week 1 Reception",
+          title: "Week 1 Reception (20/07)",
           name: "Pala do Pavilhão de Portugal",
           image: pavportugal,
-          address: "Pavilhão de Portugal, 1990-221 Lisboa",
+          address: "Pavilhão de Portugal, Alameda dos Oceanos, 1990-221 Lisboa",
           mapsLink: "https://maps.app.goo.gl/ny9iQeSK8Z8qGtTr5",
+          blurb: "A modern architectural icon built for Expo 98, Pavilhão de Portugal is known for its sweeping concrete canopy and spectacular views over the Tagus (Tejo) river.",
           metro: "Oriente (Red Line)"
         },
         {
-          title: "Week 1 Banquet",
+          title: "Week 1 Banquet (22/07)",
           name: "Praça de Touros do Campo Pequeno",
           image: campopequeno,
           address: "Av. da República, 1000-082 Lisboa",
           mapsLink: "https://maps.app.goo.gl/Vv4pjxr1PNH4LXGQ8",
+          blurb: "Campo Pequeno is Lisbon's historic bullring, now a vibrant venue hosting concerts, events, and exhibitions in a unique neo-Moorish setting.",
           metro: "Campo Pequeno (Yellow Line)"
         }
       ].map((venue, index) => (
@@ -157,19 +166,21 @@ const Venue = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
       {[
         {
-          title: "Week 2 Reception",
+          title: "Week 2 Reception (26/07)",
           name: "Pátio da Galé",
           image: patiogale,
           address: "Praça do Comércio 10, 1100-148 Lisboa",
           mapsLink: "https://maps.app.goo.gl/ZZmyXQeFxH765TL39",
+          blurb: "Located in the historic Praça do Comércio, Pátio da Galé is a historic neoclassical venue that offers a sophisticated atmosphere for social gatherings.",
           metro: "Terreiro do Paço (Blue Line) or Baixa-Chiado (Blue and Green Lines)"
         },
         {
-          title: "Week 2 Banquet",
+          title: "Week 2 Banquet (28/07)",
           name: "Pavilhão Carlos Lopes",
           image: carloslopes,
           address: "Av. Sidónio Pais 16, 1070-051 Lisboa",
           mapsLink: "https://maps.app.goo.gl/Lh74ptikTBJq7ws18",
+          blurb: "Located in the Eduardo VII Park, Pavilhão Carlos Lopes is a classic event venue with elegant interiors and surrounded by lush greenery.",
           metro: "Marquês de Pombal (Yellow and Blue Lines) or Parque (Blue Line, closer to the venue)"
         }
       ].map((venue, index) => (
