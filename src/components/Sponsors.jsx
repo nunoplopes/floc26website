@@ -1,55 +1,56 @@
-import React from 'react'
-import { motion } from 'framer-motion'
 import {sponsors} from './event data/sponsors'
+
+const sponsorshipTiers = [
+  { level: "Diamond", fontSize: "text-4xl", logoSize: "max-h-32" },
+  { level: "Platinum", fontSize: "text-3xl", logoSize: "max-h-28" },
+  { level: "Gold", fontSize: "text-2xl", logoSize: "max-h-24" },
+  { level: "Silver", fontSize: "text-2xl", logoSize: "max-h-24" },
+  { level: "Bronze", fontSize: "text-2xl", logoSize: "max-h-16" },
+  { level: "Institutional", fontSize: "text-xl", logoSize: "max-h-14" },
+  { level: "Secretariat", fontSize: "text-xl", logoSize: "max-h-12", nosponsor: true },
+];
 
 const Sponsors = () => {
   return (
     <section className="py-16 bg-blue-900">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Header */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
-                    className="text-center mb-16"
-                >
-                    <h2 className="text-4xl font-bold text-blue-50 mb-4">Our Sponsors</h2>
-                </motion.div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {sponsorshipTiers.map((tier, idx) => {
+          const tierSponsors = sponsors.filter(s => s.type === tier.level);
+          if (tierSponsors.length === 0) return null;
 
-                {/* Diamond Sponsors */}
-                <div>
-                    {/* sponsors title */}
-                    <div className="mb-8">
-                        <h2 className='text-center font-bold text-blue-200 text-2xl'>Diamond Sponsors</h2>
-                    </div>
-                    <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
-                        {sponsors.map((sponsor, id) => (
-                            <motion.div 
-                                key={id}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5 }}
-                                whileHover={{ scale: 1.05 }}
-                                className="relative group"
-                            >
-                                <div className="relative p-6 flex items-center justify-center transition-all duration-300 hover:shadow-xl">
-                                    <img 
-                                        src={sponsor.image} 
-                                        width={400}
-                                        height={250}
-                                        className='object-contain max-h-40 w-auto hover:grayscale-0 transition-all duration-300' 
-                                        alt={sponsor.name}
-                                        priority="true"
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-blue-50/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg" />
-                                </div>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
+          return (
+            <div key={idx} className="mb-12">
+              {/* Tier Title */}
+              <div className="mb-8">
+                <h2 className={`text-center font-bold text-blue-50 ${tier.fontSize}`}>
+                  {tier.level} { tier.nosponsor ? "" : "Sponsors" }
+                </h2>
+              </div>
+
+              {/* Logos in flexible layout */}
+              <div className="flex flex-wrap justify-center gap-6">
+                {tierSponsors.map((sponsor, sponsorIdx) => (
+                  <a
+                    key={sponsorIdx}
+                    href={sponsor.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white rounded-lg p-3 shadow-md inline-flex items-center justify-center"
+                  >
+                    <img
+                      src={sponsor.image}
+                      alt={sponsor.name}
+                      className={`block ${tier.logoSize} h-auto w-auto min-w-[80px] min-h-[40px]`}
+                    />
+                  </a>
+                ))}
+              </div>
             </div>
-        </section>
-  )
-}
+          );
+        })}
+      </div>
+    </section>
+  );
+};
 
 export default Sponsors

@@ -1,27 +1,17 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { motion} from 'framer-motion'
-import {keyNoteSpeakers} from '../components/event data/speakers'
+import { motion } from 'framer-motion'
+import { keyNoteSpeakers } from '../components/event data/speakers'
+
 const SpeakersId = () => {
     const params = useParams();
-    // check if keynotespaker name is equal to name
     const speaker = keyNoteSpeakers.find((speaker)=>speaker.name.toLowerCase().replace(/\s+/g, '-') === params.name.toLowerCase()); 
     
-    if(!speaker){
+    if (!speaker) {
         return (
-            <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="min-h-screen bg-white py-16 flex items-center justify-center"
-      >
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">Speaker Not Found</h1>
-          <Link to="/speakers" className="text-blue-600 hover:text-blue-500">
-            Return to Speakers
-          </Link>
         </div>
-      </motion.div>
         )
     }
 
@@ -34,7 +24,7 @@ const SpeakersId = () => {
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link to="/speakers" className="inline-block mb-8 mt-10 text-blue-600 hover:text-blue-500">
-          ← Back to Speakers
+          ← Back to List of Keynote Speakers
         </Link>
 
         <motion.div
@@ -72,7 +62,7 @@ const SpeakersId = () => {
               <p className="text-gray-600 mb-6 text-xl">{speaker.description}</p>
 
               <div className="mt-6">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-2">Contact</h2>
+                <h2 className="text-2xl font-semibold text-gray-800 mb-2">Website</h2>
                 <a
                   href={speaker.link}
                   className="text-blue-600 hover:text-blue-500"

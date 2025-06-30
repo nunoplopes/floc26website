@@ -7,16 +7,16 @@ const Footer = () => {
     <footer className="bg-white border-t border-neutral-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* About Section */}
+          {/* About Section
           <div className="space-y-4">
             <h3 className="text-3xl font-bold text-neutral-900">About FLoC 2026</h3>
             <p className="text-neutral-600 text-xl">
               The Federated Logic Conference (FLoC) brings together the world's leading researchers 
               in logic and computer science.
             </p>
-          </div>
+          </div>  */}
 
-          {/* Quick Links */}
+          {/* Quick Links
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-neutral-800">Quick Links</h3>
             <ul className="space-y-2 text-xl">
@@ -36,9 +36,9 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div>  */}
 
-          {/* Contact Info */}
+          {/* Contact Info
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-neutral-800">Contact</h3>
             <ul className="space-y-2">
@@ -52,9 +52,9 @@ const Footer = () => {
                 FLoC 2026 Organizing Committee
               </li>
             </ul>
-          </div>
+          </div> */}
 
-          {/* Social Links */}
+          {/* Social Links 
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-neutral-900">Follow Us</h3>
             <div className="flex gap-4">
@@ -85,9 +85,9 @@ const Footer = () => {
               
             </div>
           </div>
-        </div>
+        </div> */}
 
-        {/* Bottom Bar */}
+        {/* Bottom Bar 
         <div className="mt-12 pt-8 border-t border-neutral-200">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-neutral-600 text-sm">
@@ -104,7 +104,7 @@ const Footer = () => {
                 Code of Conduct
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

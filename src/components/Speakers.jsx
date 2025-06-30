@@ -40,8 +40,7 @@ const Speakers = () => {
         variants={containerVariants}
         className='text-center pt-10'
       >
-        <motion.p className="text-blue-500 text-xl font-bold" variants={itemVariants}>Our Keynote</motion.p>
-        <motion.h2 className='text-blue-900 font-bold text-3xl md:text-6xl' variants={itemVariants}>Speakers</motion.h2>
+        <motion.h2 className='text-blue-900 font-bold text-3xl md:text-6xl' variants={itemVariants}>Keynote Speakers</motion.h2>
       </motion.div>
 
       {/* Speaker Cards */}
@@ -64,6 +63,7 @@ const Speakers = () => {
         ))}   
       </motion.div>
 
+      <p>&nbsp;</p>
       <div className='absolute bottom-0 right-0 left-0 w-full'>
         <img src={STRIP} className='w-full object-cover' alt='strip'/>
       </div>

@@ -39,46 +39,16 @@ const Header = () => {
         >
             <motion.ul 
             className='flex flex-col md:flex-row gap-4 md:gap-8 mt-16 md:mt-0'>
-                <Link to='/'><li
-                whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-                >Home</li></Link>
-                <Link to='/about'><li
-                whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-                >About</li></Link>
-                <Link to='/speakers'><li
-                whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-                >Speakers</li></Link>
-                <Link to='/committee'><li
-                whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-                >Committee</li></Link>
-                <Link to='/programs'><li
-                whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-                >Programs</li></Link>
-                <Link to='/registeration'><li
-                whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-                >Registeration</li></Link>
-                <Link to='/accomodation'><li
-                whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-                >Accomodation</li></Link>
-                <Link to='/venue'><li
-                whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-                >Venue</li></Link>
-                <Link to='/transportation'><li
-                whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-                >Transportation</li></Link>
-                <Link to='/tourism'><li
-                whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-                >Tourism</li></Link>
+                <Link to='/'><li whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>Home</li></Link>
+                <Link to='/about'><li whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>About</li></Link>
+                {/*<Link to='/speakers'><li whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>Keynote Speakers</li></Link> */}
+                <Link to='/committees'><li whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>Committees</li></Link>
+                {/*<Link to='/programs'><li whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>Programs</li></Link>
+                <Link to='/registeration'><li whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>Registration</li></Link>
+                <Link to='/accomodation'><li whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>Accomodation</li></Link>
+                <Link to='/venue'><li whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>Venue</li></Link>
+                <Link to='/transportation'><li whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>Transportation</li></Link>
+                <Link to='/tourism'><li whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>Tourism</li></Link> */}
             </motion.ul>
         </motion.nav>
 

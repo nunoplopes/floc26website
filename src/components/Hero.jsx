@@ -1,7 +1,6 @@
 import React from 'react'
 import HERO from '../assets/images/hero.webp'
 import FLOC from '../assets/images/floc.png'
-import {motion} from 'framer-motion'
 
 const Hero = () => {
     const itemVariants = {

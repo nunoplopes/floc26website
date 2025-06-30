@@ -48,13 +48,7 @@ export const committeeData = {
     { name: 'Jules Villard', image: JULES, affiliation: 'Meta', role: 'Fundraising Co-Chair', webpage: 'https://jvillard.net' },
     { name: 'Loris D\'Antoni', image: LORIS, affiliation: 'UC San Diego', role: 'Fundraising Co-Chair', webpage: 'https://cseweb.ucsd.edu/~ldantoni/' },
     { name: 'Alessandro Gianola', image: ALESSANDRO, affiliation: 'University of Lisbon', role: 'Workshops Co-Chair', webpage: 'https://arsr.inesc-id.pt/~agianola/' },
-    { 
-      name: 'Bernd Finkbeiner', 
-      image: BERND,
-      affiliation: 'CISPA Helmholtz Center for Information Security', 
-      role: 'Workshops Co-Chair', 
-      webpage: 'https://finkbeiner.groups.cispa.de/people/finkbeiner.html' 
-    },
+    { name: 'Bernd Finkbeiner', image: BERND, affiliation: 'CISPA Helmholtz Center for Information Security', role: 'Workshops Co-Chair', webpage: 'https://finkbeiner.groups.cispa.de/people/finkbeiner.html' },
     { name: 'José Fragoso Santos', image: JOSE, affiliation: 'University of Lisbon', role: 'Volunteers Chair', webpage: 'https://web.ist.utl.pt/jose.fragoso/' },
     { name: 'Caterina Urban', image: CATERINA, affiliation: 'INRIA / ENS', role: 'Publicity Chair', webpage: 'https://caterinaurban.github.io' },
   ],
