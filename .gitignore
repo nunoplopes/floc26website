@@ -1,2 +1,6 @@
-*.lock
-floc26/public
+package-lock.json
+*.log
+*.swp
+node_modules
+dist
+.vite
