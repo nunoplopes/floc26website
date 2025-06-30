@@ -1,42 +1,52 @@
-import React from 'react'
 import { motion } from 'framer-motion';
-import {LiaCalendar, LiaClock, LiaDownloadSolid, LiaBuilding, LiaMapPinSolid, LiaUtensilsSolid } from 'react-icons/lia'
+import { HiLocationMarker } from "react-icons/hi";
+import { MdSubway } from "react-icons/md";
+import campopequeno from '../assets/images/campo-pequeno.jpg';
+import pavportugal from '../assets/images/pav-portugal.jpg';
+import patiogale from '../assets/images/patio-gale.jpg';
+import carloslopes from '../assets/images/carlos-lopes.webp';
 
-const VenueSection = ({ title, description, icon: Icon, className = "" }) => (
+const VenueSection = ({ venue }) => (
     <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className={`bg-white rounded-xl shadow-lg overflow-hidden ${className}`}
+        className={`bg-white rounded-xl shadow-lg overflow-hidden`}
     >
-        <div className="p-6">
-            <div className="flex items-start gap-4">
-                <div className="p-3 bg-blue-100 rounded-lg">
-                    <Icon className="w-6 h-6 text-blue-900" />
-                </div>
-                <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">{title}</h3>
-                    <p className="text-gray-600">{description}</p>
-                </div>
-            </div>
-        </div>
-    </motion.div>
-);
+    <div className="p-4">
+      <h4 className="text-lg text-gray-500 font-semibold mb-1">
+        {venue.title}
+      </h4>
 
-const EventCard = ({ title, location }) => (
-    <motion.div
-        initial={{ opacity: 0, x: -20 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5 }}
-        className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-    >
-        <div className="p-4">
-            <h4 className="text-lg font-semibold text-gray-900 mb-2">{title}</h4>
-            <div className="flex items-center gap-2 text-gray-600">
-                <LiaMapPinSolid className="w-4 h-4" />
-                <span>{location}</span>
-            </div>
+      <h3 className="text-xl font-bold mb-4">
+        {venue.name}
+      </h3>
+    </div>
+
+    <img
+      src={venue.image}
+      alt={venue.name}
+      className="w-full h-80 object-contain"
+    />
+
+    <div className="p-4">
+        <div className="flex items-center text-gray-600 mb-2">
+            <HiLocationMarker className="h-5 w-5 text-gray-500 mr-2 flex-shrink-0" />
+            <p>{venue.address}</p>
         </div>
+
+    <div className="flex items-center text-gray-600 mb-4">
+      <MdSubway className="h-5 w-5 text-gray-500 mr-2 flex-shrink-0" />
+      <p>{venue.metro}</p>
+    </div>
+
+      <a
+        href={venue.mapsLink}
+        className="text-blue-600 hover:underline"
+      >
+        View on Google Maps
+      </a>
+    </div>
     </motion.div>
 );
 
@@ -73,7 +83,7 @@ const MapSection = () => {
                         <h3 className="font-semibold text-gray-900 mb-2">Getting Here</h3>
                         <p className="text-gray-600 text-sm">
                             The ISCTE campus is easily accessible by public transportation.
-                            Use the metro (yellow line) to Entrecampos station or take a bus to the ISCTE stop.
+                            Use the metro (yellow line) to the "Cidade Universitária" station or one of the several bus stops nearby.
                         </p>
                     </div>
                 </div>
@@ -101,22 +111,8 @@ const Venue = () => {
                         transition={{ delay: 0.2 }}
                         className="text-xl text-gray-600 max-w-3xl mx-auto"
                     >
-                        All conferences and workshops will be held at our main venue(ISCTE LISBON), providing an excellent environment for learning and collaboration.
+                        All conferences and workshops will be held at ISCTE, a university located in Lisbon.
                     </motion.p>
-                </div>
-
-                {/* Main Venue Information */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                    <VenueSection
-                        icon={LiaBuilding}
-                        title="Main Venue"
-                        description="FLoC Conferences and Workshops will take place at our main campus. The lecture halls are conveniently located within a 5-10 minute walk from each other and from the accommodation facilities."
-                    />
-                    <VenueSection
-                        icon={LiaMapPinSolid}
-                        title="Lecture Halls"
-                        description="The lecture halls will be located in multiple buildings across the campus, including Taub, Amado-Segoe, Ullmann, and Churchill buildings. Detailed room assignments will be available on EasyChair."
-                    />
                 </div>
 
                 {/* Map Section */}
@@ -125,49 +121,64 @@ const Venue = () => {
                 </div>
 
                 {/* Dining Information */}
-                <div className="mb-16">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Dining & Social Events</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <VenueSection
-                            icon={LiaUtensilsSolid}
-                            title="Lunch Venues"
-                            description="Lunches will be held in Taub hall and in The Grand Water Research Institute. The distribution of conferences according to lunch locations will be updated on EasyChair."
-                        />
-                        <VenueSection
-                            icon={LiaClock}
-                            title="Workshop Dinners"
-                            description="Workshop dinners will be held at Taub Terrace Floor 2, providing a perfect setting for networking and discussions."
-                        />
-                        <VenueSection
-                            icon={LiaCalendar}
-                            title="Special Events"
-                            description="The FLoC Reception will take place at Churchill and Taub buildings, while the Banquet dinner will be held at Bikta Bayar- Beit Oren."
-                        />
-                    </div>
-                </div>
+<div className="mb-16">
+  <h2 className="text-3xl font-semibold text-center mb-12">Receptions & Banquets</h2>
 
-                {/* Important Events Timeline */}
-                <div className="mb-16">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Key Events Schedule</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <EventCard
-                            title="Workshop Dinners"
-                            location="Taub Terrace Floor 2"
-                        />
-                        <EventCard
-                            title="FLoC Reception"
-                            location="Churchill Building"
-                        />
-                        <EventCard
-                            title="FLoC Reception"
-                            location="Taub Building"
-                        />
-                        <EventCard
-                            title="FLoC Banquet Dinner"
-                            location="Bikta Bayar- Beit Oren"
-                        />
-                    </div>
-                </div>
+  {/* Week 1 Section */}
+  <div className="mb-12">
+    <h3 className="text-2xl font-bold mb-6 border-b pb-2 border-gray-300">Week 1</h3>
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      {[
+        {
+          title: "Week 1 Reception",
+          name: "Pala do Pavilhão de Portugal",
+          image: pavportugal,
+          address: "Pavilhão de Portugal, 1990-221 Lisboa",
+          mapsLink: "https://maps.app.goo.gl/ny9iQeSK8Z8qGtTr5",
+          metro: "Oriente (Red Line)"
+        },
+        {
+          title: "Week 1 Banquet",
+          name: "Praça de Touros do Campo Pequeno",
+          image: campopequeno,
+          address: "Av. da República, 1000-082 Lisboa",
+          mapsLink: "https://maps.app.goo.gl/Vv4pjxr1PNH4LXGQ8",
+          metro: "Campo Pequeno (Yellow Line)"
+        }
+      ].map((venue, index) => (
+        <VenueSection venue={venue} />
+      ))}
+    </div>
+  </div>
+
+  {/* Week 2 Section */}
+  <div>
+    <h3 className="text-2xl font-bold mb-6 border-b pb-2 border-gray-300">Week 2</h3>
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      {[
+        {
+          title: "Week 2 Reception",
+          name: "Pátio da Galé",
+          image: patiogale,
+          address: "Praça do Comércio 10, 1100-148 Lisboa",
+          mapsLink: "https://maps.app.goo.gl/ZZmyXQeFxH765TL39",
+          metro: "Terreiro do Paço (Blue Line) or Baixa-Chiado (Blue and Green Lines)"
+        },
+        {
+          title: "Week 2 Banquet",
+          name: "Pavilhão Carlos Lopes",
+          image: carloslopes,
+          address: "Av. Sidónio Pais 16, 1070-051 Lisboa",
+          mapsLink: "https://maps.app.goo.gl/Lh74ptikTBJq7ws18",
+          metro: "Marquês de Pombal (Yellow and Blue Lines) or Parque (Blue Line, closer to the venue)"
+        }
+      ].map((venue, index) => (
+        <VenueSection venue={venue} />
+      ))}
+    </div>
+  </div>
+</div>
+
             </div>
         </div>
   )
