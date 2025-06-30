@@ -7,7 +7,7 @@ const sponsorshipTiers = [
   { level: "Silver", fontSize: "text-2xl", logoSize: "max-h-24" },
   { level: "Bronze", fontSize: "text-2xl", logoSize: "max-h-16" },
   { level: "Institutional", fontSize: "text-xl", logoSize: "max-h-14" },
-  { level: "Secretariat", fontSize: "text-xl", logoSize: "max-h-12", nosponsor: true },
+  { level: "Secretariat", fontSize: "text-xl", logoSize: "max-h-8", nosponsor: true },
 ];
 
 const Sponsors = () => {
@@ -40,7 +40,7 @@ const Sponsors = () => {
                     <img
                       src={sponsor.image}
                       alt={sponsor.name}
-                      className={`block ${tier.logoSize} h-auto w-auto min-w-[80px] min-h-[40px]`}
+                      className={`block ${tier.logoSize} h-auto w-auto min-w-[80px] min-h-[30px]`}
                     />
                   </a>
                 ))}
