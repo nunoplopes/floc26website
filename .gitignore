@@ -3,3 +3,4 @@ package-lock.json
 *.swp
 node_modules
 dist
+.vite
