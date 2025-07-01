@@ -5,6 +5,9 @@ export const schedule = [
       title: "SUMMER SCHOOL",
       color: "text-orange-500",
       barColor: "bg-orange-500",
+      conferences: [
+        "Summer School on Foundations of Programming and Software Systems (FoPSS)",
+      ],
     },
     {
       date: "18",

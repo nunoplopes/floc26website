@@ -116,14 +116,6 @@ const Program = () => {
                     >
                         Program Overview
                     </motion.h1>
-                    <motion.p
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.2, duration: 0.6 }}
-                        className="text-gray-600 text-lg max-w-2xl mx-auto mb-8"
-                    >
-                        Explore the comprehensive schedule of summer school and workshops
-                    </motion.p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
