@@ -1,19 +1,21 @@
-import React from 'react'
-import { Link, useParams } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import { keyNoteSpeakers } from '../components/event data/speakers'
+import React from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { keyNoteSpeakers } from '../components/event data/speakers';
 
 const SpeakersId = () => {
-    const params = useParams();
-    const speaker = keyNoteSpeakers.find((speaker)=>speaker.name.toLowerCase().replace(/\s+/g, '-') === params.name.toLowerCase()); 
-    
-    if (!speaker) {
-        return (
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">Speaker Not Found</h1>
-        </div>
-        )
-    }
+  const params = useParams();
+  const speaker = keyNoteSpeakers.find(
+    (speaker) => speaker.name.toLowerCase().replace(/\s+/g, '-') === params.name.toLowerCase()
+  );
+
+  if (!speaker) {
+    return (
+      <div className="text-center">
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">Speaker Not Found</h1>
+      </div>
+    );
+  }
 
   return (
     <motion.div
@@ -41,13 +43,7 @@ const SpeakersId = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className=""
             >
-                <img
-                  src={speaker.image}
-                  alt={speaker.name}
-                  width={500}
-                  height={500}
-                  className=""
-                />
+              <img src={speaker.image} alt={speaker.name} width={500} height={500} className="" />
             </motion.div>
 
             {/* Speaker Details */}
@@ -77,7 +73,7 @@ const SpeakersId = () => {
         </motion.div>
       </div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default SpeakersId
+export default SpeakersId;

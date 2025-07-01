@@ -1,6 +1,6 @@
-import React from 'react'
-import { FiInstagram, FiLinkedin, FiMail, FiTwitter } from 'react-icons/fi'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { FiInstagram, FiLinkedin, FiMail, FiTwitter } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -11,12 +11,10 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-3xl font-bold text-neutral-900">About FLoC 2026</h3>
             <p className="text-neutral-600 text-xl">
-              The Federated Logic Conference (FLoC) brings together the world's leading researchers 
+              The Federated Logic Conference (FLoC) brings together the world's leading researchers
               in logic and computer science.
             </p>
-            <p className="mt-2 text-sm text-gray-600">
-              Hosted in Lisbon, Portugal — July 2026.
-            </p>
+            <p className="mt-2 text-sm text-gray-600">Hosted in Lisbon, Portugal — July 2026.</p>
           </div>
 
           {/* Quick Links
@@ -90,7 +88,7 @@ const Footer = () => {
           </div>
         </div> */}
 
-        {/* Bottom Bar 
+          {/* Bottom Bar 
         <div className="mt-12 pt-8 border-t border-neutral-200">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-neutral-600 text-sm">
@@ -111,7 +109,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
