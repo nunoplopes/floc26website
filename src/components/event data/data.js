@@ -40,6 +40,7 @@ import PATRICK from "../../assets/images/committes/patrick.jpg";
 import MARCO from "../../assets/images/committes/marco.jpg";
 import JOAOFF from "../../assets/images/committes/joao-ferreira.jpg";
 import VASCOM from "../../assets/images/committes/vascom.png";
+import NICOLAS from "../../assets/images/committes/nicolas.png";
 
 export const committeeData = {
   organizers: [
@@ -231,8 +232,8 @@ export const committeeData = {
     },
     {
       name: "Nicolas Beldiceanu",
-      image: null,
-      affiliation: "IMT Atlantique",
+      image: NICOLAS,
+      affiliation: "IMT Atlantique, LS2N CNRS",
       role: "CP PC Chair",
       webpage: "https://cv.hal.science/nicolasbeldiceanu",
     },
