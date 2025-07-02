@@ -1,12 +1,12 @@
-import React from 'react';
-import { Link, useParams } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { keyNoteSpeakers } from '../components/event data/speakers';
+import React from "react";
+import { Link, useParams } from "react-router-dom";
+import { motion } from "framer-motion";
+import { keyNoteSpeakers } from "../components/event data/speakers";
 
 const SpeakersId = () => {
   const params = useParams();
   const speaker = keyNoteSpeakers.find(
-    (speaker) => speaker.name.toLowerCase().replace(/\s+/g, '-') === params.name.toLowerCase()
+    (speaker) => speaker.name.toLowerCase().replace(/\s+/g, "-") === params.name.toLowerCase(),
   );
 
   if (!speaker) {

@@ -1,7 +1,7 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import LISBON from '../assets/images/lisbonsky.png';
-import STRIP from '../assets/images/strip-small.webp';
+import React from "react";
+import { motion } from "framer-motion";
+import LISBON from "../assets/images/lisbonsky.png";
+import STRIP from "../assets/images/strip-small.webp";
 
 const About = () => {
   return (
@@ -47,7 +47,7 @@ const About = () => {
 
       <div
         className="absolute w-full h-25 bg-repeat-x"
-        style={{ backgroundImage: `url(${STRIP})`, backgroundSize: 'auto 100%' }}
+        style={{ backgroundImage: `url(${STRIP})`, backgroundSize: "auto 100%" }}
       ></div>
     </section>
   );

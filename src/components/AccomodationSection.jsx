@@ -1,6 +1,6 @@
-import React, { memo } from 'react';
-import { motion } from 'framer-motion';
-import { FaHotel, FaBus, FaInfoCircle, FaExclamationTriangle } from 'react-icons/fa';
+import React, { memo } from "react";
+import { motion } from "framer-motion";
+import { FaHotel, FaBus, FaInfoCircle, FaExclamationTriangle } from "react-icons/fa";
 
 const HotelCard = memo(({ name, address, price, features, isHighlighted, imageUrl }) => (
   <motion.div
@@ -8,7 +8,7 @@ const HotelCard = memo(({ name, address, price, features, isHighlighted, imageUr
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
     viewport={{ once: true }}
-    className={`relative bg-white rounded-xl shadow-lg overflow-hidden ${isHighlighted ? 'ring-2 ring-blue-500' : ''}`}
+    className={`relative bg-white rounded-xl shadow-lg overflow-hidden ${isHighlighted ? "ring-2 ring-blue-500" : ""}`}
   >
     <div className="relative h-48 w-full">
       <img
@@ -48,40 +48,40 @@ const HotelCard = memo(({ name, address, price, features, isHighlighted, imageUr
   </motion.div>
 ));
 
-HotelCard.displayName = 'HotelCard';
+HotelCard.displayName = "HotelCard";
 
 const hotels = [
   {
-    name: 'Leonardo Plaza Haifa',
-    address: 'David Elazar Street 10, Haifa, Israel',
-    price: '600 NIS',
-    features: ['Bed & Breakfast', 'Central location', 'Spectacular views'],
+    name: "Leonardo Plaza Haifa",
+    address: "David Elazar Street 10, Haifa, Israel",
+    price: "600 NIS",
+    features: ["Bed & Breakfast", "Central location", "Spectacular views"],
     imageUrl:
-      'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80',
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80",
   },
   {
-    name: 'Dan Carmel',
-    address: 'HaNassi Blvd 85-87, Haifa',
-    price: '860 NIS',
-    features: ['Bed & Breakfast', 'Premium location', 'Bay views'],
+    name: "Dan Carmel",
+    address: "HaNassi Blvd 85-87, Haifa",
+    price: "860 NIS",
+    features: ["Bed & Breakfast", "Premium location", "Bay views"],
     imageUrl:
-      'https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80',
+      "https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80",
   },
   {
-    name: 'Dan Panorama',
-    address: 'HaNassi Blvd 107, Haifa',
-    price: '540 NIS',
-    features: ['Bed & Breakfast', 'City views', 'Central location'],
+    name: "Dan Panorama",
+    address: "HaNassi Blvd 107, Haifa",
+    price: "540 NIS",
+    features: ["Bed & Breakfast", "City views", "Central location"],
     imageUrl:
-      'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80',
+      "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80",
   },
   {
-    name: 'Mirabelle Plaza Haifa',
-    address: 'Yaffe Nof St 111, Haifa',
-    price: '560 NIS',
-    features: ['Bed & Breakfast', 'Modern amenities', 'Scenic location'],
+    name: "Mirabelle Plaza Haifa",
+    address: "Yaffe Nof St 111, Haifa",
+    price: "560 NIS",
+    features: ["Bed & Breakfast", "Modern amenities", "Scenic location"],
     imageUrl:
-      'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80',
+      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80",
   },
 ];
 

@@ -1,37 +1,37 @@
-import React from 'react';
+import React from "react";
 
 const Registeration = () => {
   // Define the registration fee data based on the browse result summary
   const registrationFees = [
     {
-      category: 'Conference Day',
-      earlyBirdRegular: '680',
-      earlyBirdStudent: '530',
-      earlyBirdRegularStudent: '530',
-      earlyBirdCSFMember: '680',
-      earlyBirdCSFNonMember: '680',
-      regularRegular: '750',
-      regularStudent: '750',
-      regularRegularStudent: '590',
-      regularCSFMember: '750',
-      regularCSFNonMember: '760',
-      walkInRegular: '850',
-      walkInStudent: '690',
-      walkInCSFMember: '850',
-      walkInCSFNonMember: '900',
+      category: "Conference Day",
+      earlyBirdRegular: "680",
+      earlyBirdStudent: "530",
+      earlyBirdRegularStudent: "530",
+      earlyBirdCSFMember: "680",
+      earlyBirdCSFNonMember: "680",
+      regularRegular: "750",
+      regularStudent: "750",
+      regularRegularStudent: "590",
+      regularCSFMember: "750",
+      regularCSFNonMember: "760",
+      walkInRegular: "850",
+      walkInStudent: "690",
+      walkInCSFMember: "850",
+      walkInCSFNonMember: "900",
     },
     {
-      category: 'Workshop',
-      earlyBirdRegular: '100',
-      earlyBirdRegularStudent: '80',
-      earlyBirdWorkShopDinner: '75',
-      regularRegular: '120',
-      regularStudent: '120',
-      regularRegularStudent: '100',
-      regularWorkShopDinner: '75',
-      walkInRegular: '140',
-      walkInRegularStudent: '120',
-      walkInWorkShopDinner: '75',
+      category: "Workshop",
+      earlyBirdRegular: "100",
+      earlyBirdRegularStudent: "80",
+      earlyBirdWorkShopDinner: "75",
+      regularRegular: "120",
+      regularStudent: "120",
+      regularRegularStudent: "100",
+      regularWorkShopDinner: "75",
+      walkInRegular: "140",
+      walkInRegularStudent: "120",
+      walkInWorkShopDinner: "75",
     },
   ];
   return (
@@ -42,9 +42,9 @@ const Registeration = () => {
         <div
           style={{
             background: `url('https://static.wixstatic.com/media/bd25dc_ae0ac4284c924e6d9381f9c76565a612~mv2.jpg/v1/fill/w_1351,h_320,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/B.jpg')`,
-            backgroundSize: 'cover',
-            backgroundColor: 'rgba(0, 0, 0, 0.6)',
-            backgroundBlendMode: 'overlay',
+            backgroundSize: "cover",
+            backgroundColor: "rgba(0, 0, 0, 0.6)",
+            backgroundBlendMode: "overlay",
           }}
           className="h-[60dvh] flex items-center justify-center text-center text-neutral-50 w-full"
         >
@@ -174,10 +174,10 @@ const Registeration = () => {
           </p>
           {/* Replace with actual contact details */}
           <p className="text-gray-700 font-medium">
-            Email:{' '}
+            Email:{" "}
             <a href="mailto:webmaster@floc26.org" className="text-blue-600 hover:underline">
               webmaster@floc26.org
-            </a>{' '}
+            </a>{" "}
             {/* Placeholder email */}
           </p>
           {/* Add other contact info if available */}

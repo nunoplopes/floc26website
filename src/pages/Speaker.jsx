@@ -1,4 +1,4 @@
-import Speakers from '../components/Speakers';
+import Speakers from "../components/Speakers";
 const Speaker = () => {
   return (
     <section>

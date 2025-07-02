@@ -1,13 +1,13 @@
-import { sponsors } from './event data/sponsors';
+import { sponsors } from "./event data/sponsors";
 
 const sponsorshipTiers = [
-  { level: 'Diamond', fontSize: 'text-4xl', logoSize: 'max-h-32' },
-  { level: 'Platinum', fontSize: 'text-3xl', logoSize: 'max-h-28' },
-  { level: 'Gold', fontSize: 'text-2xl', logoSize: 'max-h-24' },
-  { level: 'Silver', fontSize: 'text-2xl', logoSize: 'max-h-24' },
-  { level: 'Bronze', fontSize: 'text-2xl', logoSize: 'max-h-16' },
-  { level: 'Institutional', fontSize: 'text-xl', logoSize: 'max-h-14' },
-  { level: 'Secretariat', fontSize: 'text-xl', logoSize: 'max-h-8', nosponsor: true },
+  { level: "Diamond", fontSize: "text-4xl", logoSize: "max-h-32" },
+  { level: "Platinum", fontSize: "text-3xl", logoSize: "max-h-28" },
+  { level: "Gold", fontSize: "text-2xl", logoSize: "max-h-24" },
+  { level: "Silver", fontSize: "text-2xl", logoSize: "max-h-24" },
+  { level: "Bronze", fontSize: "text-2xl", logoSize: "max-h-16" },
+  { level: "Institutional", fontSize: "text-xl", logoSize: "max-h-14" },
+  { level: "Secretariat", fontSize: "text-xl", logoSize: "max-h-8", nosponsor: true },
 ];
 
 const Sponsors = () => {
@@ -23,7 +23,7 @@ const Sponsors = () => {
               {/* Tier Title */}
               <div className="mb-8">
                 <h2 className={`text-center font-bold text-blue-50 ${tier.fontSize}`}>
-                  {tier.level} {tier.nosponsor ? '' : 'Sponsors'}
+                  {tier.level} {tier.nosponsor ? "" : "Sponsors"}
                 </h2>
               </div>
 

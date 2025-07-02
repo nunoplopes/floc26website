@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion';
-import { HiLocationMarker } from 'react-icons/hi';
-import { MdSubway } from 'react-icons/md';
-import { AiOutlineInfoCircle } from 'react-icons/ai';
-import campopequeno from '../assets/images/campo-pequeno.jpg';
-import pavportugal from '../assets/images/pav-portugal.jpg';
-import patiogale from '../assets/images/patio-gale.jpg';
-import carloslopes from '../assets/images/carlos-lopes.webp';
+import { motion } from "framer-motion";
+import { HiLocationMarker } from "react-icons/hi";
+import { MdSubway } from "react-icons/md";
+import { AiOutlineInfoCircle } from "react-icons/ai";
+import campopequeno from "../assets/images/campo-pequeno.jpg";
+import pavportugal from "../assets/images/pav-portugal.jpg";
+import patiogale from "../assets/images/patio-gale.jpg";
+import carloslopes from "../assets/images/carlos-lopes.webp";
 
 const VenueSection = ({ venue }) => (
   <motion.div
@@ -127,24 +127,24 @@ const Venue = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               {[
                 {
-                  title: 'Week 1 Reception (20/07)',
-                  name: 'Pala do Pavilhão de Portugal',
+                  title: "Week 1 Reception (20/07)",
+                  name: "Pala do Pavilhão de Portugal",
                   image: pavportugal,
-                  address: 'Pavilhão de Portugal, Alameda dos Oceanos, 1990-221 Lisboa',
-                  mapsLink: 'https://maps.app.goo.gl/ny9iQeSK8Z8qGtTr5',
+                  address: "Pavilhão de Portugal, Alameda dos Oceanos, 1990-221 Lisboa",
+                  mapsLink: "https://maps.app.goo.gl/ny9iQeSK8Z8qGtTr5",
                   blurb:
-                    'A modern architectural icon built for Expo 98, Pavilhão de Portugal is known for its sweeping concrete canopy and spectacular views over the Tagus (Tejo) river.',
-                  metro: 'Oriente (Red Line)',
+                    "A modern architectural icon built for Expo 98, Pavilhão de Portugal is known for its sweeping concrete canopy and spectacular views over the Tagus (Tejo) river.",
+                  metro: "Oriente (Red Line)",
                 },
                 {
-                  title: 'Week 1 Banquet (22/07)',
-                  name: 'Praça de Touros do Campo Pequeno',
+                  title: "Week 1 Banquet (22/07)",
+                  name: "Praça de Touros do Campo Pequeno",
                   image: campopequeno,
-                  address: 'Av. da República, 1000-082 Lisboa',
-                  mapsLink: 'https://maps.app.goo.gl/Vv4pjxr1PNH4LXGQ8',
+                  address: "Av. da República, 1000-082 Lisboa",
+                  mapsLink: "https://maps.app.goo.gl/Vv4pjxr1PNH4LXGQ8",
                   blurb:
                     "Campo Pequeno is Lisbon's historic bullring, now a vibrant venue hosting concerts, events, and exhibitions in a unique neo-Moorish setting.",
-                  metro: 'Campo Pequeno (Yellow Line)',
+                  metro: "Campo Pequeno (Yellow Line)",
                 },
               ].map((venue, index) => (
                 <VenueSection venue={venue} key={index} />
@@ -158,25 +158,25 @@ const Venue = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               {[
                 {
-                  title: 'Week 2 Reception (26/07)',
-                  name: 'Pátio da Galé',
+                  title: "Week 2 Reception (26/07)",
+                  name: "Pátio da Galé",
                   image: patiogale,
-                  address: 'Praça do Comércio 10, 1100-148 Lisboa',
-                  mapsLink: 'https://maps.app.goo.gl/ZZmyXQeFxH765TL39',
+                  address: "Praça do Comércio 10, 1100-148 Lisboa",
+                  mapsLink: "https://maps.app.goo.gl/ZZmyXQeFxH765TL39",
                   blurb:
-                    'Located in the historic Praça do Comércio, Pátio da Galé is a historic neoclassical venue that offers a sophisticated atmosphere for social gatherings.',
-                  metro: 'Terreiro do Paço (Blue Line) or Baixa-Chiado (Blue and Green Lines)',
+                    "Located in the historic Praça do Comércio, Pátio da Galé is a historic neoclassical venue that offers a sophisticated atmosphere for social gatherings.",
+                  metro: "Terreiro do Paço (Blue Line) or Baixa-Chiado (Blue and Green Lines)",
                 },
                 {
-                  title: 'Week 2 Banquet (28/07)',
-                  name: 'Pavilhão Carlos Lopes',
+                  title: "Week 2 Banquet (28/07)",
+                  name: "Pavilhão Carlos Lopes",
                   image: carloslopes,
-                  address: 'Av. Sidónio Pais 16, 1070-051 Lisboa',
-                  mapsLink: 'https://maps.app.goo.gl/Lh74ptikTBJq7ws18',
+                  address: "Av. Sidónio Pais 16, 1070-051 Lisboa",
+                  mapsLink: "https://maps.app.goo.gl/Lh74ptikTBJq7ws18",
                   blurb:
-                    'Located in the Eduardo VII Park, Pavilhão Carlos Lopes is a classic event venue with elegant interiors and surrounded by lush greenery.',
+                    "Located in the Eduardo VII Park, Pavilhão Carlos Lopes is a classic event venue with elegant interiors and surrounded by lush greenery.",
                   metro:
-                    'Marquês de Pombal (Yellow and Blue Lines) or Parque (Blue Line, closer to the venue)',
+                    "Marquês de Pombal (Yellow and Blue Lines) or Parque (Blue Line, closer to the venue)",
                 },
               ].map((venue, index) => (
                 <VenueSection venue={venue} key={index} />

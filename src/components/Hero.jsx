@@ -1,6 +1,6 @@
-import React from 'react';
-import HERO from '../assets/images/hero.webp';
-import FLOC from '../assets/images/floc.png';
+import React from "react";
+import HERO from "../assets/images/hero.webp";
+import FLOC from "../assets/images/floc.png";
 
 const Hero = () => {
   const itemVariants = {
@@ -8,7 +8,7 @@ const Hero = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: 'easeOut' },
+      transition: { duration: 0.6, ease: "easeOut" },
     },
   };
   return (

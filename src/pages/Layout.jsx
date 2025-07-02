@@ -1,9 +1,9 @@
-import React from 'react';
-import Hero from '../components/Hero';
-import About from '../components/About';
-import Speakers from '../components/Speakers';
-import Sponsors from '../components/Sponsors';
-import Events from '../components/Events';
+import React from "react";
+import Hero from "../components/Hero";
+import About from "../components/About";
+import Speakers from "../components/Speakers";
+import Sponsors from "../components/Sponsors";
+import Events from "../components/Events";
 
 const Layout = () => {
   return (

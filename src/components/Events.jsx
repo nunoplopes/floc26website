@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { schedule } from './event data/event';
+import React from "react";
+import { motion } from "framer-motion";
+import { schedule } from "./event data/event";
 
 const Events = () => {
   return (
@@ -30,7 +30,7 @@ const Events = () => {
               {item.endDate && ` - ${item.endDate}`}
             </div>
             <div className="w-full md:w-3/4">
-              <div className={`font-semibold text-xl mb-2 ${item.color || 'text-white'}`}>
+              <div className={`font-semibold text-xl mb-2 ${item.color || "text-white"}`}>
                 {item.title}
               </div>
               {item.conferences && (

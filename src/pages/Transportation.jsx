@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const LisbonMetroCard = () => {
   return (
@@ -6,7 +6,7 @@ const LisbonMetroCard = () => {
       className="metro-card"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <h2 className="metro-title">Lisbon Metro Map</h2>
       <div className="map-container">
@@ -44,7 +44,6 @@ export default function Transportation() {
             Find the best way to reach the conference venue.
           </motion.p>
         </div>
-
       </div>
     </div>
   );

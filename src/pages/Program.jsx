@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
-import { schedule } from '../components/event data/event';
+import React, { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import { schedule } from "../components/event data/event";
 
 // Animation variants
 const fadeInVariants = {
   hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeInOut' } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeInOut" } },
 };
 
 const listItemVariants = {
@@ -16,7 +16,7 @@ const listItemVariants = {
     transition: {
       delay: i * 0.1,
       duration: 0.5,
-      ease: 'easeOut',
+      ease: "easeOut",
     },
   }),
 };
@@ -57,7 +57,7 @@ const ConferenceItem = ({ conference, index }) => {
       custom={index}
       variants={listItemVariants}
       initial="hidden"
-      animate={inView ? 'visible' : 'hidden'}
+      animate={inView ? "visible" : "hidden"}
       className="group relative p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
     >
       <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-500 rounded-l-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -75,12 +75,12 @@ const WeekProgram = ({ weekData }) => {
       ref={ref}
       variants={fadeInVariants}
       initial="hidden"
-      animate={inView ? 'visible' : 'hidden'}
+      animate={inView ? "visible" : "hidden"}
       className="bg-white rounded-2xl shadow-lg overflow-hidden h-full"
     >
       <div className="bg-gradient-to-r from-blue-900 to-blue-800 p-6">
         <div className="flex items-center gap-4">
-          <div className={('w-3 h-12 rounded-full', weekData.barColor)} />
+          <div className={("w-3 h-12 rounded-full", weekData.barColor)} />
           <div>
             <h3 className="text-2xl font-semibold text-white mb-1">{weekData.title}</h3>
             <p className="text-blue-100 text-base">
@@ -117,19 +117,19 @@ const Program = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Summer School */}
-          <WeekProgram weekData={schedule.find((item) => item.title === 'SUMMER SCHOOL')} />
+          <WeekProgram weekData={schedule.find((item) => item.title === "SUMMER SCHOOL")} />
 
           {/* Workshop Week 1 */}
-          <WeekProgram weekData={schedule.find((item) => item.date === '18')} />
+          <WeekProgram weekData={schedule.find((item) => item.date === "18")} />
 
           {/* Conference Week 1 */}
-          <WeekProgram weekData={schedule.find((item) => item.title === 'WEEK 1')} />
+          <WeekProgram weekData={schedule.find((item) => item.title === "WEEK 1")} />
 
           {/* Workshop Week 2 */}
-          <WeekProgram weekData={schedule.find((item) => item.date === '24')} />
+          <WeekProgram weekData={schedule.find((item) => item.date === "24")} />
 
           {/* Conference Week 2 */}
-          <WeekProgram weekData={schedule.find((item) => item.title === 'WEEK 2')} />
+          <WeekProgram weekData={schedule.find((item) => item.title === "WEEK 2")} />
         </div>
       </div>
     </div>

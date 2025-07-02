@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
-import hero2 from '../assets/images/lisbonsky.png';
-import { motion } from 'framer-motion';
+import React, { useRef } from "react";
+import hero2 from "../assets/images/lisbonsky.png";
+import { motion } from "framer-motion";
 
 const About = () => {
   const heroRef = useRef(null);
@@ -36,8 +36,8 @@ const About = () => {
         className="relative w-full flex items-center justify-center bg-blue-900/80 bg-blend-overlay h-[70dvh] -z-10"
         style={{
           backgroundImage: `url(${hero2})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
         aria-label="Hero Section"
       >
