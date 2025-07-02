@@ -72,10 +72,10 @@ const About = () => {
               computer science with a unifying foundational framework and modeling tools.
             </p>
             <p className="text-xl text-neutral-600 leading-relaxed">
-              In fact, logic has been called "the calculus of computer science," playing a crucial
-              role in diverse areas such as artificial intelligence, computational complexity,
-              distributed computing, database systems, hardware design, programming languages, and
-              software engineering.
+              In fact, logic has been called &ldquo;the calculus of computer science,&rdquo; playing
+              a crucial role in diverse areas such as artificial intelligence, computational
+              complexity, distributed computing, database systems, hardware design, programming
+              languages, and software engineering.
             </p>
 
             <p className="text-xl text-neutral-600 leading-relaxed">

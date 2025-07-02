@@ -1,16 +1,7 @@
-import React from "react";
 import HERO from "../assets/images/hero.webp";
 import FLOC from "../assets/images/floc.png";
 
 const Hero = () => {
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
-  };
   return (
     <section className="relative w-full bg-neutral-100 h-auto ">
       {/* for medium and large screen device */}
@@ -24,7 +15,6 @@ const Hero = () => {
           width={800}
           height={600}
           className="w-full h-auto object-contain"
-          priority
         />
       </div>
     </section>

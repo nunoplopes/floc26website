@@ -13,7 +13,6 @@ const SpeakerCard = ({ name, image, position }) => {
           <img
             src={image}
             alt={name}
-            fill="true"
             className="object-cover"
             sizes="(max-width: 768px) 50vw, (max-width: 1200px) 20vw, 33vw"
           />

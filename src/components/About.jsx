@@ -32,10 +32,10 @@ const About = () => {
             both a unifying foundational framework and a powerful tool for modeling.
           </p>
           <p>
-            Logic is considered "the calculus of computer science," playing a pivotal role in
-            diverse fields such as artificial intelligence, computational complexity, distributed
-            computing, database systems, hardware design, programming languages, and software
-            engineering.
+            Logic is considered &ldquo;the calculus of computer science,&rdquo; playing a pivotal
+            role in diverse fields such as artificial intelligence, computational complexity,
+            distributed computing, database systems, hardware design, programming languages, and
+            software engineering.
           </p>
         </div>
 

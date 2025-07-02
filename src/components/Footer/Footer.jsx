@@ -11,8 +11,8 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-3xl font-bold text-neutral-900">About FLoC 2026</h3>
             <p className="text-neutral-600 text-xl">
-              The Federated Logic Conference (FLoC) brings together the world's leading researchers
-              in logic and computer science.
+              The Federated Logic Conference (FLoC) brings together the world&apos;s leading
+              researchers in logic and computer science.
             </p>
             <p className="mt-2 text-sm text-gray-600">Hosted in Lisbon, Portugal — July 2026.</p>
           </div>
