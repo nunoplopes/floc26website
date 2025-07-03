@@ -23,7 +23,6 @@ const App = () => {
       <Route path="/program" element={<Program />} />
       <Route path="/venue" element={<Venue />} />
       <Route path="/transportation" element={<Transportation />} />
-      //<Route path="/tourism" element={<Tourism />} />
       <Route path="/registration" element={<Registration />} />
     </Routes>
   );
