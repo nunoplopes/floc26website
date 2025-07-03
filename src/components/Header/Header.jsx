@@ -42,6 +42,9 @@ const Header = () => {
           <Link to="/about">
             <li>About</li>
           </Link>
+          <Link to="/registration">
+            <li>Registration</li>
+          </Link>
           <Link to="/venue">
             <li>Venue</li>
           </Link>
@@ -55,8 +58,7 @@ const Header = () => {
           <Link to="/program">
             <li>Program</li>
           </Link>
-          {/* <Link to='/registeration'><li>Registration</li></Link>
-                <Link to='/accomodation'><li>Accomodation</li></Link>  */}
+          {/* <Link to='/accomodation'><li>Accomodation</li></Link>  */}
           {/* <Link to='/tourism'><li>Tourism</li></Link> */}
         </motion.ul>
       </motion.nav>
@@ -67,9 +69,6 @@ const Header = () => {
           isMenuOpen ? "text-neutral-800" : "text-neutral-800"
         }`}
         onClick={toggleMenu}
-        // initial={{ opacity: 0, x: 20 }}
-        // animate={{ opacity: 1, x: 0 }}
-        // transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
       >
         {isMenuOpen ? <HiX /> : <HiMenu />}
       </motion.button>
