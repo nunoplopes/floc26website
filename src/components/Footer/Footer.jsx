@@ -1,10 +1,14 @@
-import React from "react";
+import STRIP from "../../assets/images/strip-small.webp";
 import { FiInstagram, FiLinkedin, FiMail, FiTwitter } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="bg-white border-t border-neutral-200">
+      <div
+        className="h-24 bg-repeat-x z-0"
+        style={{ backgroundImage: `url(${STRIP})`, backgroundSize: "auto 100%" }}
+      ></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
@@ -60,25 +64,19 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-neutral-900">Follow Us</h3>
             <div className="flex gap-4">
               <a 
-                href="https://twitter.com/floc26" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="https://twitter.com/floc26"
                 className="text-neutral-600 hover:text-red-500 transition-colors duration-300"
               >
                 <FiTwitter className="w-5 h-5" />
               </a>
               <a 
-                href="https://linkedin.com/company/floc22" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="https://linkedin.com/company/floc22"
                 className="text-neutral-600 hover:text-red-500 transition-colors duration-300"
               >
                 <FiLinkedin className="w-5 h-5" />
               </a>
               <a 
-                href="https://instagram.com/floc26" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="https://instagram.com/floc26"
                 className="text-neutral-600 hover:text-red-500 transition-colors duration-300"
               >
                 <FiInstagram className="w-5 h-5" />

@@ -201,7 +201,7 @@ export default function Transportation() {
 
         <Section title="Travel Apps for Public Transport" icon={FaGlobeEurope}>
           <p>
-            Using travel apps is the easiest way to navigate Lisbon's public transportation. Popular
+            Using travel apps is the easiest way to navigate Lisbon’s public transportation. Popular
             options that provide real-time transit info, trip planning, and live updates include:
             <a href="https://maps.google.com" className="text-blue-600 underline ml-1">
               Google Maps
