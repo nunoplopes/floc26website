@@ -41,6 +41,9 @@ import MARCO from "../../assets/images/committes/marco.jpg";
 import JOAOFF from "../../assets/images/committes/joao-ferreira.jpg";
 import VASCOM from "../../assets/images/committes/vascom.png";
 import NICOLAS from "../../assets/images/committes/nicolas.png";
+import KONTCHAKOV from "../../assets/images/committes/kontchakov.jpg";
+
+import SERTKAYA from "../../assets/images/committes/sertkaya.jpg";
 
 export const committeeData = {
   organizers: [
@@ -238,6 +241,19 @@ export const committeeData = {
       webpage: "https://cv.hal.science/nicolasbeldiceanu",
     },
     {
+      name: "Alisa Kovtunova",
+      affiliation: "TU Dresden",
+      role: "DL PC Co-Chair",
+      webpage: "https://lat.inf.tu-dresden.de/~alisa/",
+    },
+    {
+      name: "Barış Sertkaya",
+      image: SERTKAYA,
+      affiliation: "Frankfurt University of Applied Sciences",
+      role: "DL PC Co-Chair",
+      webpage: "https://www.frankfurt-university.de/de/hochschule/fachbereich-2-informatik-und-ingenieurwissenschaften/kontakt/professorinnen-und-professoren-im-fachbereich-2/baris-sertkaya/",
+    },
+    {
       name: "Frank Pfenning",
       image: FRANK,
       affiliation: "CMU",
@@ -364,6 +380,13 @@ export const committeeData = {
       affiliation: "University of Tartu",
       role: "CSF Representative",
       webpage: "https://kodu.ut.ee/~unruh/",
+    },
+    {
+      name: "Roman Kontchakov",
+      image: KONTCHAKOV,
+      affiliation: "Birkbeck, University of London",
+      role: "DL Representative",
+      webpage: "https://titan.dcs.bbk.ac.uk/~roman/",
     },
     {
       name: "Patrick Baillot",
