@@ -42,7 +42,7 @@ import JOAOFF from "../../assets/images/committes/joao-ferreira.jpg";
 import VASCOM from "../../assets/images/committes/vascom.png";
 import NICOLAS from "../../assets/images/committes/nicolas.png";
 import KONTCHAKOV from "../../assets/images/committes/kontchakov.jpg";
-
+import RICARDOROCHA from "../../assets/images/committes/ricardo-rocha.jpg";
 import SERTKAYA from "../../assets/images/committes/sertkaya.jpg";
 
 export const committeeData = {
@@ -156,7 +156,7 @@ export const committeeData = {
     },
     {
       name: "Ricardo Rocha",
-      image: null,
+      image: RICARDOROCHA,
       affiliation: "University of Porto",
       role: "ICLP Conference Co-Chair",
       webpage: "https://www.dcc.fc.up.pt/~ricroc/",
@@ -242,6 +242,7 @@ export const committeeData = {
     },
     {
       name: "Alisa Kovtunova",
+      image: null,
       affiliation: "TU Dresden",
       role: "DL PC Co-Chair",
       webpage: "https://lat.inf.tu-dresden.de/~alisa/",

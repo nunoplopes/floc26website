@@ -136,14 +136,14 @@ export default function Transportation() {
 
         {/* Metro Map Image */}
         <Section
-          title="Lisbon Metro Map with Conference Location"
+          title="Lisbon Metro Map with Conference Location Marked"
           icon={FaMapMarkedAlt}
           className="mt-12 mb-16"
         >
           <div className="rounded-lg overflow-hidden shadow-lg border">
             <img
               src={METROMAP}
-              alt="Lisbon Metro Map with Conference Location"
+              alt="Lisbon Metro Map with Conference Location Marked"
               className="w-full"
             />
           </div>
