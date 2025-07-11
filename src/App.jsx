@@ -1,7 +1,7 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import About from "./pages/About";
+import SponsorsPage from "./pages/SponsorsPage";
 import Speaker from "./pages/Speaker";
 import Committe from "./pages/Committe";
 import Program from "./pages/Program";
@@ -17,6 +17,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Layout />} />
       <Route path="/about" element={<About />} />
+      <Route path="/sponsors" element={<SponsorsPage />} />
       <Route path="/speakers" element={<Speaker />} />
       <Route path="/speakers/:name" element={<SpeakersId />} />
       <Route path="/committees" element={<Committe />} />
