@@ -252,7 +252,8 @@ export const committeeData = {
       image: SERTKAYA,
       affiliation: "Frankfurt University of Applied Sciences",
       role: "DL PC Co-Chair",
-      webpage: "https://www.frankfurt-university.de/de/hochschule/fachbereich-2-informatik-und-ingenieurwissenschaften/kontakt/professorinnen-und-professoren-im-fachbereich-2/baris-sertkaya/",
+      webpage:
+        "https://www.frankfurt-university.de/de/hochschule/fachbereich-2-informatik-und-ingenieurwissenschaften/kontakt/professorinnen-und-professoren-im-fachbereich-2/baris-sertkaya/",
     },
     {
       name: "Frank Pfenning",
