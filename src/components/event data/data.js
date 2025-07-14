@@ -44,6 +44,7 @@ import NICOLAS from "../../assets/images/committes/nicolas.png";
 import KONTCHAKOV from "../../assets/images/committes/kontchakov.jpg";
 import RICARDOROCHA from "../../assets/images/committes/ricardo-rocha.jpg";
 import SERTKAYA from "../../assets/images/committes/sertkaya.jpg";
+import ALISA from "../../assets/images/committes/alisa.jpg"
 
 export const committeeData = {
   organizers: [
@@ -242,7 +243,7 @@ export const committeeData = {
     },
     {
       name: "Alisa Kovtunova",
-      image: null,
+      image: ALISA,
       affiliation: "TU Dresden",
       role: "DL PC Co-Chair",
       webpage: "https://lat.inf.tu-dresden.de/~alisa/",
