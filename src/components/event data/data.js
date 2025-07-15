@@ -44,7 +44,7 @@ import NICOLAS from "../../assets/images/committes/nicolas.png";
 import KONTCHAKOV from "../../assets/images/committes/kontchakov.jpg";
 import RICARDOROCHA from "../../assets/images/committes/ricardo-rocha.jpg";
 import SERTKAYA from "../../assets/images/committes/sertkaya.jpg";
-import ALISA from "../../assets/images/committes/alisa.jpg"
+import ALISA from "../../assets/images/committes/alisa.jpg";
 
 export const committeeData = {
   organizers: [

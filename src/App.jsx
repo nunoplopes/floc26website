@@ -11,6 +11,7 @@ import Venue from "./pages/Venue";
 import Transportation from "./pages/Transportation";
 //import Tourism from "./pages/Tourism";
 import SpeakersId from "./components/SpeakersId";
+import NotFound from "./pages/NotFound";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       <Route path="/venue" element={<Venue />} />
       <Route path="/transportation" element={<Transportation />} />
       <Route path="/registration" element={<Registration />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };
