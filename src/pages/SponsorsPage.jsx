@@ -30,10 +30,10 @@ export default function SponsorsPage() {
           </a>
           . For further information or to discuss sponsorship options, please contact us at{" "}
           <a
-            href="mailto:sponsors@floc2026.org"
+            href="mailto:sponsors@floc26.org"
             style={{ color: "#0066cc", textDecoration: "underline" }}
           >
-            sponsors@floc2026.org
+            sponsors@floc26.org
           </a>
           .
         </p>
