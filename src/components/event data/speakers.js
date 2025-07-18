@@ -15,7 +15,7 @@ export const keyNoteSpeakers = [
   },
   {
     id: 2,
-    name: "Giuseppe De Diacomo",
+    name: "Giuseppe De Giacomo",
     image: IMAGE2,
     position: "University of Oxford",
     description:
