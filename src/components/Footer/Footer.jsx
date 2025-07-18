@@ -1,6 +1,6 @@
 import STRIP from "../../assets/images/strip-small.webp";
-import { FiInstagram, FiLinkedin, FiMail, FiTwitter } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { FiFacebook, FiLinkedin } from "react-icons/fi";
+import { FaBluesky, FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -10,9 +10,9 @@ const Footer = () => {
         style={{ backgroundImage: `url(${STRIP})`, backgroundSize: "auto 100%" }}
       ></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="flex justify-between items-start">
           {/* About Section */}
-          <div className="space-y-4">
+          <div className="w-[250px]">
             <h3 className="text-3xl font-bold text-neutral-900">About FLoC 2026</h3>
             <p className="text-neutral-600 text-xl">
               The Federated Logic Conference (FLoC) brings together the world&apos;s leading
@@ -59,32 +59,36 @@ const Footer = () => {
             </ul>
           </div> */}
 
-          {/* Social Links 
+          {/* Social Links */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-neutral-900">Follow Us</h3>
             <div className="flex gap-4">
-              <a 
-                href="https://twitter.com/floc26"
-                className="text-neutral-600 hover:text-red-500 transition-colors duration-300"
-              >
-                <FiTwitter className="w-5 h-5" />
-              </a>
-              <a 
-                href="https://linkedin.com/company/floc22"
+              <a
+                href="https://www.linkedin.com/groups/13323055/"
                 className="text-neutral-600 hover:text-red-500 transition-colors duration-300"
               >
                 <FiLinkedin className="w-5 h-5" />
               </a>
-              <a 
-                href="https://instagram.com/floc26"
+              <a
+                href="https://x.com/FLoC2026"
                 className="text-neutral-600 hover:text-red-500 transition-colors duration-300"
               >
-                <FiInstagram className="w-5 h-5" />
+                <FaXTwitter className="w-5 h-5" />
               </a>
-              
+              <a
+                href="https://www.facebook.com/profile.php?id=61578290047447"
+                className="text-neutral-600 hover:text-red-500 transition-colors duration-300"
+              >
+                <FiFacebook className="w-5 h-5" />
+              </a>
+              <a
+                href="https://bsky.app/profile/floc2026.bsky.social"
+                className="text-neutral-600 hover:text-red-500 transition-colors duration-300"
+              >
+                <FaBluesky className="w-5 h-5" />
+              </a>
             </div>
           </div>
-        </div> */}
 
           {/* Bottom Bar 
         <div className="mt-12 pt-8 border-t border-neutral-200">
