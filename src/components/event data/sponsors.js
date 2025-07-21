@@ -1,5 +1,5 @@
 import AWS from "../../assets/images/sponsors/aws.png";
-import TURISMO from "../../assets/images/sponsors/ATL.jpg";
+import TURISMO from "../../assets/images/sponsors/ATL.png";
 import THE from "../../assets/images/sponsors/THE.svg";
 import IST from "../../assets/images/sponsors/IST.webp";
 import ULISBON from "../../assets/images/sponsors/ulisbon.webp";
