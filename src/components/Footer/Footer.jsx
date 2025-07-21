@@ -65,28 +65,28 @@ const Footer = () => {
             <div className="flex gap-4">
               <a
                 href="https://www.linkedin.com/groups/13323055/"
-                alt="LinkedIn"
+                aria-label="LinkedIn"
                 className="text-neutral-600 hover:text-red-500 transition-colors duration-300"
               >
                 <FiLinkedin className="w-5 h-5" />
               </a>
               <a
                 href="https://x.com/FLoC2026"
-                alt="X (Twitter)"
+                aria-label="X (Twitter)"
                 className="text-neutral-600 hover:text-red-500 transition-colors duration-300"
               >
                 <FaXTwitter className="w-5 h-5" />
               </a>
               <a
                 href="https://www.facebook.com/profile.php?id=61578290047447"
-                alt="Facebook"
+                aria-label="Facebook"
                 className="text-neutral-600 hover:text-red-500 transition-colors duration-300"
               >
                 <FiFacebook className="w-5 h-5" />
               </a>
               <a
                 href="https://bsky.app/profile/floc2026.bsky.social"
-                alt="Bluesky"
+                aria-label="Bluesky"
                 className="text-neutral-600 hover:text-red-500 transition-colors duration-300"
               >
                 <FaBluesky className="w-5 h-5" />
