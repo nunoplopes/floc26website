@@ -165,7 +165,7 @@ export default function Transportation() {
           </a>
           . This card is valid across the metro, buses, trams, and some regional trains. <br />
           <div className="mt-4 bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded-md text-yellow-800">
-            ⚠️ <strong>Important:</strong> Buses and trams do <em>not</em> stop automatically. To
+            ⚠️ <strong>Important:</strong> Buses and trams do <em>not</em> stop by default. To
             board, you must <strong>extend your arm</strong> clearly as the vehicle approaches —
             this signals your intention to get on. To get off, press the red{" "}
             <strong>“stop” button</strong> in advance.
@@ -182,7 +182,7 @@ export default function Transportation() {
             Navegante pre-paid travel card
           </a>{" "}
           or buy a ticket online at{" "}
-          <a className="text-blue-600 underline" href="https://carris.pt/en/">
+          <a className="text-blue-600 underline" href="https://www.cp.pt/passageiros/en">
             CP.pt
           </a>{" "}
           or at a station.
