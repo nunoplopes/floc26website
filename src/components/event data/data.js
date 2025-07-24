@@ -45,6 +45,8 @@ import KONTCHAKOV from "../../assets/images/committes/kontchakov.jpg";
 import RICARDOROCHA from "../../assets/images/committes/ricardo-rocha.jpg";
 import SERTKAYA from "../../assets/images/committes/sertkaya.jpg";
 import ALISA from "../../assets/images/committes/alisa.jpg";
+import DEEPAK from "../../assets/images/committes/deepakgarg.jpg";
+import UNRUH from "../../assets/images/committes/unruh.jpg";
 
 export const committeeData = {
   organizers: [
@@ -233,6 +235,20 @@ export const committeeData = {
       affiliation: "University of Regensburg",
       role: "CAV PC Co-Chair",
       webpage: "http://www.philipp.ruemmer.org",
+    },
+    {
+      name: "Deepak Garg",
+      image: DEEPAK,
+      affiliation: "Max Planck Institute for Software Systems",
+      role: "CSF PC Co-Chair",
+      webpage: "https://people.mpi-sws.org/~dg/",
+    },
+    {
+      name: "Dominique Unruh",
+      image: UNRUH,
+      affiliation: "RWTH Aachen & University of Tartu",
+      role: "CSF PC Co-Chair",
+      webpage: "https://qis.rwth-aachen.de/people/unruh/",
     },
     {
       name: "Nicolas Beldiceanu",
