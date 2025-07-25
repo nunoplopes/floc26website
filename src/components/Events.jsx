@@ -36,7 +36,9 @@ const Events = () => {
               {item.conferences && (
                 <ul className="list-disc list-inside space-y-1 text-sm md:text-base text-blue-100">
                   {item.conferences.map((conf, idx) => (
-                    <li key={idx}>{conf}</li>
+                    <li key={idx}>
+                      {conf.link ? <a href={conf.link}>{conf.name}</a> : <>{conf.name}</>}
+                    </li>
                   ))}
                 </ul>
               )}

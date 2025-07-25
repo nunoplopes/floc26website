@@ -61,7 +61,9 @@ const ConferenceItem = ({ conference, index }) => {
       className="group relative p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
     >
       <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-500 rounded-l-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-      <p className="text-gray-700 text-base pl-4">{conference}</p>
+      <p className="text-gray-700 text-base pl-4">
+        {conference.link ? <a href={conference.link}>{conference.name}</a> : <>{conference.name}</>}
+      </p>
     </motion.li>
   );
 };

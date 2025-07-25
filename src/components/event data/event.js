@@ -5,7 +5,12 @@ export const schedule = [
     title: "SUMMER SCHOOL",
     color: "text-orange-500",
     barColor: "bg-orange-500",
-    conferences: ["6th Summer School on Foundations of Programming and Software Systems (FoPSS)"],
+    conferences: [
+      {
+        name: "6th Summer School on Foundations of Programming and Software Systems (FoPSS)",
+        link: null,
+      },
+    ],
   },
   {
     date: "18",
@@ -21,12 +26,30 @@ export const schedule = [
     color: "text-orange-500",
     barColor: "bg-orange-500",
     conferences: [
-      "32nd International Conference on Principles and Practice of Constraint Programming (CP)",
-      "11th International Conference on Formal Structures for Computation and Deduction (FSCD)",
-      "42nd International Conference on Logic Programming (ICLP)",
-      "23rd International Conference on Principles of Knowledge Representation and Reasoning (KR)",
-      "41st Annual ACM/IEEE Symposium on Logic in Computer Science (LICS)",
-      "29th International Conference on Theory and Applications of Satisfiability Testing (SAT)",
+      {
+        name: "32nd International Conference on Principles and Practice of Constraint Programming (CP)",
+        link: null,
+      },
+      {
+        name: "11th International Conference on Formal Structures for Computation and Deduction (FSCD)",
+        link: "https://fscd-conference.org/2026",
+      },
+      {
+        name: "42nd International Conference on Logic Programming (ICLP)",
+        link: null,
+      },
+      {
+        name: "23rd International Conference on Principles of Knowledge Representation and Reasoning (KR)",
+        link: "https://kr.org/KR2026/",
+      },
+      {
+        name: "41st Annual ACM/IEEE Symposium on Logic in Computer Science (LICS)",
+        link: null,
+      },
+      {
+        name: "29th International Conference on Theory and Applications of Satisfiability Testing (SAT)",
+        link: null,
+      },
     ],
   },
   {
@@ -43,10 +66,22 @@ export const schedule = [
     color: "text-orange-500",
     barColor: "bg-orange-500",
     conferences: [
-      "38th International Conference on Computer Aided Verification (CAV)",
-      "39th IEEE Computer Security Foundations Symposium (CSF)",
-      "13th International Joint Conference on Automated Reasoning (IJCAR)",
-      "17th International Conference on Interactive Theorem Proving (ITP)",
+      {
+        name: "38th International Conference on Computer Aided Verification (CAV)",
+        link: null,
+      },
+      {
+        name: "39th IEEE Computer Security Foundations Symposium (CSF)",
+        link: "https://csf2026.ieee-security.org",
+      },
+      {
+        name: "13th International Joint Conference on Automated Reasoning (IJCAR)",
+        link: null,
+      },
+      {
+        name: "17th International Conference on Interactive Theorem Proving (ITP)",
+        link: null,
+      },
     ],
   },
 ];
