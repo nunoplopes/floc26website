@@ -15,10 +15,10 @@ const CallForWorkshops = () => {
       <h2 className="text-2xl font-semibold mb-3 text-gray-800">Important Dates</h2>
       <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
         <li>
-          <strong>Submission of workshop proposals deadline:</strong> September 17, 2025
+          <strong>Submission of workshop proposals deadline:</strong> September 24, 2025
         </li>
         <li>
-          <strong>Notification of Acceptance:</strong> October 10, 2025
+          <strong>Notification of Acceptance:</strong> October 17, 2025
         </li>
         <li>
           <strong>Workshop Dates - first block:</strong> July 18-19, 2026
@@ -80,7 +80,7 @@ const CallForWorkshops = () => {
       <h2 className="text-2xl font-semibold mb-3 text-gray-800">Contact</h2>
       <p className="text-gray-700 mb-6">
         Specific questions regarding proposals for workshops affiliated with a specific conference
-        should be sent to the Workshops Chairs of the proposed affiliated conference. General
+        should be sent to the representatives of the proposed affiliated conference. General
         questions should be sent to the FLoC 2026 Workshops Chairs:{" "}
         <a
           href="mailto:alessandro.gianola@tecnico.ulisboa.pt"
