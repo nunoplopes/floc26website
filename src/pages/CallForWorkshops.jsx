@@ -75,7 +75,16 @@ const CallForWorkshops = () => {
       </p>
 
       <h2 className="text-2xl font-semibold mb-3 text-gray-800">Submission Instructions</h2>
-      <p className="text-gray-700 mb-6">TBA </p>
+      <p className="text-gray-700 mb-6">
+        Please submit your workshop proposals via{" "}
+        <a
+          href="https://submissions.floc26.org/workshops/"
+          className="text-blue-600 hover:underline"
+        >
+          https://submissions.floc26.org/workshops/
+        </a>
+        .
+      </p>
 
       <h2 className="text-2xl font-semibold mb-3 text-gray-800">Contact</h2>
       <p className="text-gray-700 mb-6">
