@@ -1,6 +1,7 @@
 import STRIP from "../../assets/images/strip-small.webp";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import { FaBluesky, FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -93,25 +94,21 @@ const Footer = () => {
               </a>
             </div>
           </div>
+        </div>
 
-          {/* Bottom Bar 
+        {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-neutral-200">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-neutral-600 text-sm">
-              © {new Date().getFullYear()} FLoC 2026. All rights reserved.
-            </p>
+            <p className="text-neutral-600 text-sm">© FLoC 2026. All rights reserved.</p>
             <div className="flex gap-6">
-              <Link to="/" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
-                Privacy Policy
-              </Link>
-              <Link to="/" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
-                Terms of Service
-              </Link>
-              <Link to="/" className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm">
-                Code of Conduct
+              <Link
+                to="/policies"
+                className="text-neutral-600 hover:text-red-500 transition-colors duration-300 text-sm"
+              >
+                Policies
               </Link>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </footer>
