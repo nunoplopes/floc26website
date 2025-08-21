@@ -120,7 +120,7 @@ const CallForWorkshops = () => {
           <strong>Daniel Kroening</strong> (CAV representative)
         </li>
         <li>
-          <strong>Emmanuel Hebrand</strong> (CP representative)
+          <strong>Emmanuel Hebrard</strong> (CP representative)
         </li>
         <li>
           <strong>Cynthia Kop</strong> (FSCD representative)
