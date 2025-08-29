@@ -24,7 +24,7 @@ export const keyNoteSpeakers = [
   },
   {
     id: 3,
-    name: "Işıl Dilling",
+    name: "Işıl Dillig",
     image: IMAGE3,
     position: "University of Texas at Austin",
     description:
