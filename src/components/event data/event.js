@@ -68,7 +68,7 @@ export const schedule = [
     conferences: [
       {
         name: "38th International Conference on Computer Aided Verification (CAV)",
-        link: null,
+        link: "https://conferences.i-cav.org/2026/",
       },
       {
         name: "39th IEEE Computer Security Foundations Symposium (CSF)",
