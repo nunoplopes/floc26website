@@ -60,6 +60,23 @@ export const schedule = [
     barColor: "bg-sky-400",
   },
   {
+    date: "24",
+    endDate: "26",
+    title: "3-DAY WORKSHOPS",
+    color: "text-sky-400",
+    barColor: "bg-sky-400",
+        conferences: [
+      {
+        name: "39th International Workshop on Description Logics (DL)",
+        link: null,
+      },
+      {
+        name: "24th International Workshop on Nonmonotonic Reasoning (NMR)",
+        link: null,
+      },
+    ],
+  },
+  {
     date: "26",
     endDate: "29",
     title: "WEEK 2",
