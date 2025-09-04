@@ -12,6 +12,23 @@ export const schedule = [
       },
     ],
   },
+  /*{
+    date: "17",
+    endDate: "19",
+    title: "3-DAY WORKSHOPS",
+    color: "text-sky-400",
+    barColor: "bg-sky-400",
+        conferences: [
+      {
+        name: "39th International Workshop on Description Logics (DL)",
+        link: null,
+      },
+      {
+        name: "24th International Workshop on Nonmonotonic Reasoning (NMR)",
+        link: null,
+      },
+    ],
+  },*/
   {
     date: "18",
     endDate: "19",
@@ -58,23 +75,6 @@ export const schedule = [
     title: "WORKSHOPS",
     color: "text-sky-400",
     barColor: "bg-sky-400",
-  },
-  {
-    date: "24",
-    endDate: "26",
-    title: "3-DAY WORKSHOPS",
-    color: "text-sky-400",
-    barColor: "bg-sky-400",
-        conferences: [
-      {
-        name: "39th International Workshop on Description Logics (DL)",
-        link: null,
-      },
-      {
-        name: "24th International Workshop on Nonmonotonic Reasoning (NMR)",
-        link: null,
-      },
-    ],
   },
   {
     date: "26",
