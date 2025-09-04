@@ -123,6 +123,9 @@ const CallForWorkshops = () => {
           <strong>Emmanuel Hebrard</strong> (CP representative)
         </li>
         <li>
+          <strong>Bartosz Bednarczyk</strong> (DL representative)
+        </li>
+        <li>
           <strong>Cynthia Kop</strong> (FSCD representative)
         </li>
         <li>
