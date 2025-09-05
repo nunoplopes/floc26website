@@ -75,6 +75,12 @@ export const schedule = [
     title: "WORKSHOPS",
     color: "text-sky-400",
     barColor: "bg-sky-400",
+    conferences: [
+      {
+        name: "FLoC Mentoring Workshop",
+        link: null,
+      },
+    ],
   },
   {
     date: "26",
