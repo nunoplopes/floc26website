@@ -79,13 +79,6 @@ export const committeeData = {
       webpage: "https://pages.cs.wisc.edu/~aws/",
     },
     {
-      name: "Jules Villard",
-      image: JULES,
-      affiliation: "Meta",
-      role: "Fundraising Co-Chair",
-      webpage: "https://jvillard.net",
-    },
-    {
       name: "Loris D'Antoni",
       image: LORIS,
       affiliation: "UC San Diego",

@@ -49,7 +49,7 @@ export const schedule = [
       },
       {
         name: "11th International Conference on Formal Structures for Computation and Deduction (FSCD)",
-        link: "https://fscd-conference.org/2026",
+        link: "https://fscd-conference.org/2026/",
       },
       {
         name: "42nd International Conference on Logic Programming (ICLP)",
