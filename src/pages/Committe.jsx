@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
 import { committeeData } from "../components/event data/data";
 import MONUMENT from "../assets/images/skylinetram.png";
 

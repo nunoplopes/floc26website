@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 const Tourism = () => {
   const attractions = [
@@ -115,11 +114,6 @@ const Tourism = () => {
           Join us at FLOC 2026 and experience the perfect blend of academic excellence and cultural
           discovery.
         </p>
-        <Link to="/registeration">
-          <button className="bg-yellow-400 text-blue-900 px-8 py-3 rounded-full text-lg font-bold hover:bg-yellow-500 transition-colors">
-            Register Now
-          </button>
-        </Link>
       </section>
     </div>
   );

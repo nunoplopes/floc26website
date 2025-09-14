@@ -1,6 +1,6 @@
 import { useState } from "react";
 import LOGO from "../../assets/images/logo.svg";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { HiMenu, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 

@@ -1,5 +1,4 @@
-import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router";
 import { motion } from "framer-motion";
 import { keyNoteSpeakers } from "../components/event data/speakers";
 

@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import Footer from "./components/Footer/Footer.jsx";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router";
 import Header from "./components/Header/Header.jsx";
 import "@fontsource/montserrat/300.css";
 import "@fontsource/montserrat/400.css";

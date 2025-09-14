@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import STRIP from "../assets/images/strip-small.webp";
 import { keyNoteSpeakers } from "./event data/speakers";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 const SpeakerCard = ({ name, image, position }) => {
   return (
