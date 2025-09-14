@@ -2,7 +2,6 @@ import RAJEEV from "../../assets/images/committes/rajeev.jpg";
 import ALEXANDRA from "../../assets/images/committes/alexandra.jpg";
 import NUNO from "../../assets/images/committes/nuno.jpg";
 import AWS from "../../assets/images/committes/aws.jpg";
-import JULES from "../../assets/images/committes/moi.jpg";
 import LORIS from "../../assets/images/committes/loris.jpg";
 import ALESSANDRO from "../../assets/images/committes/Alessandro.jpg";
 import BERND from "../../assets/images/committes/bernd.avif";
