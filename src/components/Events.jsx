@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router";
 import { motion } from "framer-motion";
 import { schedule } from "./event data/event";
 
@@ -37,7 +37,15 @@ const Events = () => {
                 <ul className="list-disc list-inside space-y-1 text-sm md:text-base text-blue-100">
                   {item.conferences.map((conf, idx) => (
                     <li key={idx}>
-                      {conf.link ? <a href={conf.link}>{conf.name}</a> : <>{conf.name}</>}
+                      {conf.link ? (
+                        conf.link.startsWith("http") ? (
+                          <a href={conf.link}>{conf.name}</a>
+                        ) : (
+                          <Link to={conf.link}>{conf.name}</Link>
+                        )
+                      ) : (
+                        <>{conf.name}</>
+                      )}
                     </li>
                   ))}
                 </ul>

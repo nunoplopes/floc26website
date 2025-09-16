@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import hero2 from "../assets/images/lisbonsky.png";
 import { motion } from "framer-motion";
 

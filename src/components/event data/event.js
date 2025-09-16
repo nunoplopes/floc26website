@@ -99,7 +99,7 @@ export const schedule = [
       },
       {
         name: "13th International Joint Conference on Automated Reasoning (IJCAR)",
-        link: null,
+        link: "/ijcar",
       },
       {
         name: "17th International Conference on Interactive Theorem Proving (ITP)",

@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router";
 import { motion } from "framer-motion";
 import { schedule } from "../components/event data/event";
 
@@ -48,7 +49,7 @@ const useInView = (options) => {
 };
 
 // Component to display a single conference
-const ConferenceItem = ({ conference, index }) => {
+const ConferenceItem = ({ conf, index }) => {
   const { ref, inView } = useInView({ threshold: 0.1 });
 
   return (
@@ -62,7 +63,15 @@ const ConferenceItem = ({ conference, index }) => {
     >
       <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-500 rounded-l-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       <p className="text-gray-700 text-base pl-4">
-        {conference.link ? <a href={conference.link}>{conference.name}</a> : <>{conference.name}</>}
+        {conf.link ? (
+          conf.link.startsWith("http") ? (
+            <a href={conf.link}>{conf.name}</a>
+          ) : (
+            <Link to={conf.link}>{conf.name}</Link>
+          )
+        ) : (
+          <>{conf.name}</>
+        )}
       </p>
     </motion.li>
   );
