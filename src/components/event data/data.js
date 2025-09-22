@@ -46,6 +46,7 @@ import SERTKAYA from "../../assets/images/committes/sertkaya.jpg";
 import ALISA from "../../assets/images/committes/alisa.jpg";
 import DEEPAK from "../../assets/images/committes/deepakgarg.jpg";
 import UNRUH from "../../assets/images/committes/unruh.jpg";
+import WFABER from "../../assets/images/committes/wfaber.jpg";
 
 export const committeeData = {
   organizers: [
@@ -275,8 +276,15 @@ export const committeeData = {
       name: "Laura Giordano",
       image: LAURA,
       affiliation: "Università del Piemonte Orientale",
-      role: "ICLP PC Chair",
+      role: "ICLP PC Co-Chair",
       webpage: "https://people.unipmn.it/laura.giordano/",
+    },
+    {
+      name: "Wolfgang Faber",
+      image: WFABER,
+      affiliation: "Alpen-Adria-Universität Klagenfurt",
+      role: "ICLP PC Co-Chair",
+      webpage: "https://wfaber.com",
     },
     {
       name: "Armin Biere",
