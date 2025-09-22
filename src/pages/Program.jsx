@@ -103,7 +103,7 @@ const WeekProgram = ({ weekData }) => {
       <div className="p-6">
         <ul className="space-y-3">
           {weekData.conferences?.map((conference, index) => (
-            <ConferenceItem key={conference} conference={conference} index={index} />
+            <ConferenceItem key={conference} conf={conference} index={index} />
           ))}
         </ul>
       </div>
