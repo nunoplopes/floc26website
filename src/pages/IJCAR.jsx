@@ -1,19 +1,23 @@
 const IJCAR = () => {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800">
-      <header className="bg-indigo-700 text-white py-10 text-center shadow-md">
-        <h1 className="text-4xl font-bold">IJCAR 2026</h1>
-        <h2 className="text-xl mt-2">International Joint Conference on Automated Reasoning</h2>
-        <h3 className="text-lg mt-1">Part of FLoC 2026</h3>
-        <p className="mt-4 text-gray-200">
+    <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
+      <header className="bg-indigo-700 text-white py-16 text-center shadow-lg">
+        <h1 className="text-5xl font-extrabold tracking-tight">IJCAR 2026</h1>
+        <h2 className="text-2xl mt-2 font-medium">
+          International Joint Conference on Automated Reasoning
+        </h2>
+        <h3 className="text-lg mt-1 font-light">Part of FLoC 2026</h3>
+        <p className="mt-4 text-gray-200 text-lg">
           Dates: <strong>July 26-29, 2026</strong>
         </p>
       </header>
 
-      <main className="max-w-4xl mx-auto px-6 py-12 space-y-12">
-        <section className="bg-white p-6 rounded-lg shadow">
-          <h2 className="text-2xl font-semibold text-indigo-700 mb-4">Preliminary Dates</h2>
-          <ul className="list-disc list-inside space-y-2">
+      <main className="max-w-6xl mx-auto px-6 py-16 space-y-16">
+        <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+          <h2 className="text-3xl font-semibold text-indigo-700 mb-6 border-b border-indigo-200 pb-2">
+            Preliminary Dates
+          </h2>
+          <ul className="list-disc list-inside space-y-2 text-gray-700">
             <li>
               Abstract submission: <strong>January 23, 2026</strong> (tentatively)
             </li>
@@ -35,39 +39,42 @@ const IJCAR = () => {
           </ul>
         </section>
 
-        <section className="bg-white p-6 rounded-lg shadow">
-          <h2 className="text-2xl font-semibold text-indigo-700 mb-4">
+        <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-4">
+          <h2 className="text-3xl font-semibold text-indigo-700 mb-4 border-b border-indigo-200 pb-2">
             Preliminary Call for Papers
           </h2>
-          <ul className="space-y-2">
+          <div className="space-y-4 text-gray-700 leading-relaxed">
             <p>
               The{" "}
-              <a href="https://ijcar.org">
+              <a href="https://ijcar.org" className="text-indigo-600 hover:underline">
                 International Joint Conference on Automated Reasoning (IJCAR)
               </a>
-              , is the premier international venue on all aspects of automated reasoning. It is held
+              is the premier international venue on all aspects of automated reasoning. It is held
               biannually as a merger of leading events in automated reasoning:
             </p>
-            <p>
-              <a href="https://cadeinc.org">CADE – Conference on Automated Deduction</a>
-            </p>
-            <p>
-              <a href="https://frocos.cs.uiowa.edu">
-                FroCoS – Symposium on Frontiers of Combining Systems
-              </a>
-            </p>
-            <p>
-              <a href="https://tableaux-conf.github.io/web">
-                TABLEAUX – Conference on Analytic Tableaux and Related Methods Topics
-              </a>
-            </p>
+            <ul className="list-disc list-inside space-y-1">
+              <li>
+                <a href="https://cadeinc.org" className="text-indigo-600 hover:underline">
+                  CADE – Conference on Automated Deduction
+                </a>
+              </li>
+              <li>
+                <a href="https://frocos.cs.uiowa.edu" className="text-indigo-600 hover:underline">
+                  FroCoS – Symposium on Frontiers of Combining Systems
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://tableaux-conf.github.io/web"
+                  className="text-indigo-600 hover:underline"
+                >
+                  TABLEAUX – Conference on Analytic Tableaux and Related Methods Topics
+                </a>
+              </li>
+            </ul>
             <p>
               IJCAR 2026 will be held in Lisbon, Portugal, as part of the Federate Logic Conference
-              FLoC
-            </p>
-            <p>from July 26 to July 29.</p>
-            <p>
-              <a href="https://www.floc26.org/ijcar">https://www.floc26.org/ijcar</a>
+              FLoC from July 26 to July 29.
             </p>
             <p>
               IJCAR 2026 invites submissions related to all aspects of automated or interactive
@@ -189,38 +196,55 @@ const IJCAR = () => {
               Woody Bledsoe Travel Awards will be available to support selected students in
               attending the conference.
             </p>
-          </ul>
+          </div>
         </section>
 
-        <section className="bg-white p-6 rounded-lg shadow text-center">
-          <h2 className="text-2xl font-semibold text-indigo-700 mb-4">Paper Submission</h2>
+        <section className="bg-white p-8 rounded-2xl shadow-lg text-center border border-gray-200">
+          <h2 className="text-3xl font-semibold text-indigo-700 mb-6">Paper Submission</h2>
           <a
             href="https://submissions.floc26.org/ijcar/"
-            className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium transition"
+            className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl font-medium transition transform hover:scale-105"
           >
             Submit via HotCrp
           </a>
         </section>
 
-        <section className="bg-white p-6 rounded-lg shadow">
-          <h2 className="text-2xl font-semibold text-indigo-700 mb-4">Program Chairs</h2>
-          <ul className="space-y-2">
+        <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+          <h2 className="text-3xl font-semibold text-indigo-700 mb-4 border-b border-indigo-200 pb-2">
+            Program Chairs
+          </h2>
+          <ul className="space-y-2 text-gray-700">
             <li>
-              <a href="https://cca.informatik.uni-freiburg.de/biere">Armin Biere</a>, University of
-              Freiburg
+              <a
+                href="https://cca.informatik.uni-freiburg.de/biere"
+                className="text-indigo-600 hover:underline"
+              >
+                Armin Biere
+              </a>
+              , University of Freiburg
             </li>
             <li>
-              <a href="https://home.uni-leipzig.de/clu">Carsten Lutz</a>, Universität Leipzig
+              <a href="https://home.uni-leipzig.de/clu" className="text-indigo-600 hover:underline">
+                Carsten Lutz
+              </a>
+              , Universität Leipzig
             </li>
             <li>
-              <a href="https://sites.google.com/view/saranegri/home">Sara Niegri</a>, Università
-              degli Studi di Genova
+              <a
+                href="https://sites.google.com/view/saranegri/home"
+                className="text-indigo-600 hover:underline"
+              >
+                Sara Niegri
+              </a>
+              , Università degli Studi di Genova
             </li>
           </ul>
         </section>
 
-        <section className="bg-white p-6 rounded-lg shadow">
-          <h2 className="text-2xl font-semibold text-indigo-700 mb-4">Program Committee</h2>
+        <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+          <h2 className="text-3xl font-semibold text-indigo-700 mb-4 border-b border-indigo-200 pb-2">
+            Program Committee
+          </h2>
           <ul className="space-y-2">
             <li>TBA</li>
           </ul>
