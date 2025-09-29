@@ -61,7 +61,7 @@ export const schedule = [
       },
       {
         name: "41st Annual ACM/IEEE Symposium on Logic in Computer Science (LICS)",
-        link: null,
+        link: "https://lics.siglog.org/lics26/",
       },
       {
         name: "29th International Conference on Theory and Applications of Satisfiability Testing (SAT)",
