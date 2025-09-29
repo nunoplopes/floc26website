@@ -48,7 +48,7 @@ const IJCAR = () => {
               The{" "}
               <a href="https://ijcar.org" className="text-indigo-600 hover:underline">
                 International Joint Conference on Automated Reasoning (IJCAR)
-              </a>
+              </a>{" "}
               is the premier international venue on all aspects of automated reasoning. It is held
               biannually as a merger of leading events in automated reasoning:
             </p>
@@ -154,13 +154,19 @@ const IJCAR = () => {
               via HotCRP:
             </p>
             <p>
-              <a href="https://submissions.floc26.org/ijcar">
+              <a
+                href="https://submissions.floc26.org/ijcar"
+                className="text-indigo-600 hover:underline"
+              >
                 https://submissions.floc26.org/ijcar
               </a>
             </p>
             <p>Formatting instructions and the LNCS style files can be obtained here:</p>
             <p>
-              <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines">
+              <a
+                href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines"
+                className="text-indigo-600 hover:underline"
+              >
                 https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines
               </a>
             </p>
@@ -169,7 +175,10 @@ const IJCAR = () => {
               submissions, please see:
             </p>
             <p>
-              <a href="https://www.springer.com/in/editorial-policies/artificial-intelligence--ai-/25428500">
+              <a
+                href="https://www.springer.com/in/editorial-policies/artificial-intelligence--ai-/25428500"
+                className="text-indigo-600 hover:underline"
+              >
                 https://www.springer.com/in/editorial-policies/artificial-intelligence--ai-/25428500
               </a>
             </p>
