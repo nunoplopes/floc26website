@@ -4,6 +4,7 @@ import THE from "../../assets/images/sponsors/THE.svg";
 import IST from "../../assets/images/sponsors/IST.webp";
 import ULISBON from "../../assets/images/sponsors/ulisbon.webp";
 import INESCID from "../../assets/images/sponsors/inescid.png";
+import ACM from "../../assets/images/sponsors/ACM-cooperation.webp";
 
 export const sponsors = [
   {
@@ -35,6 +36,12 @@ export const sponsors = [
     image: INESCID,
     type: "Institutional",
     url: "https://www.inesc-id.pt",
+  },
+  {
+    name: "ACM",
+    image: ACM,
+    type: "Institutional",
+    url: "https://www.acm.org/",
   },
   {
     name: "THE - The House of Events",
