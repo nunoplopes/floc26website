@@ -47,6 +47,8 @@ import ALISA from "../../assets/images/committes/alisa.jpg";
 import DEEPAK from "../../assets/images/committes/deepakgarg.jpg";
 import UNRUH from "../../assets/images/committes/unruh.jpg";
 import WFABER from "../../assets/images/committes/wfaber.jpg";
+import OZAKI from "../../assets/images/committes/ozaki.avif";
+import POTYKA from "../../assets/images/committes/potyka.jpg";
 
 export const committeeData = {
   organizers: [
@@ -348,6 +350,20 @@ export const committeeData = {
       affiliation: "RWTH Aachen University",
       role: "LICS PC Co-Chair",
       webpage: "https://www-i2.informatik.rwth-aachen.de/~katoen/",
+    },
+    {
+      name: "Ana Ozaki",
+      image: OZAKI,
+      affiliation: "University of Bergen",
+      role: "NMR PC Co-Chair",
+      webpage: "https://www4.uib.no/en/find-employees/Ana.Ozaki",
+    },
+    {
+      name: "Nico Potyka",
+      image: POTYKA,
+      affiliation: "Cardiff University",
+      role: "NMR PC Co-Chair",
+      webpage: "https://profiles.cardiff.ac.uk/staff/potykan",
     },
     {
       name: "Alexey Ignatiev",
