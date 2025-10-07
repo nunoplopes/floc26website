@@ -103,7 +103,7 @@ export const schedule = [
       },
       {
         name: "17th International Conference on Interactive Theorem Proving (ITP)",
-        link: null,
+        link: "https://itp-conference-2026.github.io",
       },
     ],
   },
