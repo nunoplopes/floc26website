@@ -12,7 +12,7 @@ export const schedule = [
       },
     ],
   },
-  /*{
+  {
     date: "17",
     endDate: "19",
     title: "3-DAY WORKSHOPS",
@@ -28,7 +28,7 @@ export const schedule = [
         link: null,
       },
     ],
-  },*/
+  },
   {
     date: "18",
     endDate: "19",
