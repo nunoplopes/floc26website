@@ -130,6 +130,9 @@ const Program = () => {
           {/* Summer School */}
           <WeekProgram weekData={schedule.find((item) => item.title === "SUMMER SCHOOL")} />
 
+          {/* Workshop Pre Week */}
+          <WeekProgram weekData={schedule.find((item) => item.date === "17")} />
+
           {/* Workshop Week 1 */}
           <WeekProgram weekData={schedule.find((item) => item.date === "18")} />
 
