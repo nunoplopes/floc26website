@@ -18,7 +18,7 @@ export const schedule = [
     title: "3-DAY WORKSHOPS",
     color: "text-sky-400",
     barColor: "bg-sky-400",
-        conferences: [
+    conferences: [
       {
         name: "39th International Workshop on Description Logics (DL)",
         link: null,

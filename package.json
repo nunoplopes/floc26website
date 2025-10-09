@@ -1,7 +1,7 @@
 {
   "name": "flocwebsite",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -28,8 +28,9 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^6.1.1",
     "prettier": "^3.6.2",
-    "vite": "^7.0.0",
-    "vite-plugin-imagemin": "^0.6.1"
+    "sharp": "^0.34.4",
+    "svgo": "^4.0.0",
+    "vite": "^7.0.0"
   },
   "browserslist": [
     "last 2 years",
