@@ -45,7 +45,8 @@ function imageOptimizerPlugin() {
 
           const assetId = this.emitFile({
             type: 'asset',
-            name: fileName.replace(/-[a-z0-9_-]{8}\.[a-z]+$/i, ext),
+            name: fileName.replace(/^assets\//, '')
+                          .replace(/-[a-z0-9_-]{8}\.[a-z]+$/i, ext),
             source: outputBuffer
           })
 
