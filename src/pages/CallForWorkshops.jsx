@@ -16,7 +16,7 @@ const CallForWorkshops = () => {
           <strong>Submission of workshop proposals deadline:</strong> September 24, 2025
         </li>
         <li>
-          <strong>Notification of Acceptance:</strong> October 17, 2025
+          <strong>Notification of Acceptance:</strong> October 22, 2025
         </li>
         <li>
           <strong>Workshop Dates - first block:</strong> July 18-19, 2026
@@ -134,6 +134,9 @@ const CallForWorkshops = () => {
         </li>
         <li>
           <strong>Mathias Fleury</strong> (IJCAR representative)
+        </li>
+        <li>
+        <strong>Serena Villata</strong> (KR representative)
         </li>
         <li>
           <strong>Stefan Borgwardt</strong> (KR representative)
