@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { HiLocationMarker } from "react-icons/hi";
 import { MdSubway } from "react-icons/md";
 import { AiOutlineInfoCircle } from "react-icons/ai";
@@ -8,12 +7,7 @@ import patiogale from "../assets/images/patio-gale.jpg";
 import carloslopes from "../assets/images/carlos-lopes.webp";
 
 const VenueSection = ({ venue }) => (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5 }}
-    className={`bg-white rounded-xl shadow-lg overflow-hidden`}
-  >
+  <div className={`bg-white rounded-xl shadow-lg overflow-hidden`}>
     <div className="p-4">
       <h4 className="text-lg text-gray-500 font-semibold mb-1">{venue.title}</h4>
 
@@ -42,7 +36,7 @@ const VenueSection = ({ venue }) => (
         View on Google Maps
       </a>
     </div>
-  </motion.div>
+  </div>
 );
 
 const MapSection = () => {
@@ -95,21 +89,10 @@ const Venue = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16 mt-10">
-          <motion.h1
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
-          >
-            Venues of FLoC 2026
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="text-xl text-gray-600 max-w-3xl mx-auto"
-          >
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Venues of FLoC 2026</h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             All conferences and workshops will be held at ISCTE, a university located in Lisbon.
-          </motion.p>
+          </p>
         </div>
 
         {/* Map Section */}

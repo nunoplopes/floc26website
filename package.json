@@ -14,7 +14,6 @@
   "dependencies": {
     "@fontsource/montserrat": "^5.2.6",
     "@tailwindcss/vite": "^4.1.11",
-    "framer-motion": "^12.15.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-icons": "^5.5.0",
@@ -26,7 +25,7 @@
     "eslint": "^9.30.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^6.1.1",
+    "eslint-plugin-react-hooks": "^7.0.0",
     "prettier": "^3.6.2",
     "sharp": "^0.34.4",
     "svgo": "^4.0.0",

@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 const Tourism = () => {
   const attractions = [
     {
@@ -64,13 +62,7 @@ const Tourism = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {attractions.map((attraction, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="bg-white rounded-lg overflow-hidden shadow-lg"
-            >
+            <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg">
               <div className="relative h-64">
                 <img
                   src={attraction.image}
@@ -83,7 +75,7 @@ const Tourism = () => {
                 <h3 className="text-2xl font-bold text-blue-900 mb-2">{attraction.title}</h3>
                 <p className="text-gray-600">{attraction.description}</p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>
@@ -93,16 +85,10 @@ const Tourism = () => {
         <h2 className="text-4xl font-bold text-center mb-12">Practical Information</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {practicalInfo.map((info, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="bg-blue-800 rounded-lg p-6"
-            >
+            <div key={index} className="bg-blue-800 rounded-lg p-6">
               <h3 className="text-2xl font-bold mb-4">{info.title}</h3>
               <p className="text-blue-100">{info.content}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>

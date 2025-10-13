@@ -1,13 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router";
-import { motion } from "framer-motion";
 import { schedule } from "../components/event data/event";
-
-// Animation variants
-const fadeInVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeInOut" } },
-};
 
 const listItemVariants = {
   hidden: { opacity: 0, x: -20 },
@@ -28,20 +21,18 @@ const useInView = (options) => {
   const [inView, setInView] = useState(false);
 
   useEffect(() => {
+    const currentRef = ref.current;
+    if (!currentRef) return;
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         setInView(entry.isIntersecting);
       });
     }, options);
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
+    observer.observe(currentRef);
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
+      observer.unobserve(currentRef);
     };
   }, [options]);
 
@@ -53,14 +44,7 @@ const ConferenceItem = ({ conf, index }) => {
   const { ref, inView } = useInView({ threshold: 0.1 });
 
   return (
-    <motion.li
-      ref={ref}
-      custom={index}
-      variants={listItemVariants}
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      className="group relative p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100"
-    >
+    <li className="group relative p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
       <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-500 rounded-l-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       <p className="text-gray-700 text-base pl-4">
         {conf.link ? (
@@ -73,22 +57,14 @@ const ConferenceItem = ({ conf, index }) => {
           <>{conf.name}</>
         )}
       </p>
-    </motion.li>
+    </li>
   );
 };
 
 // Component to display the program for a single week
 const WeekProgram = ({ weekData }) => {
-  const { ref, inView } = useInView({ threshold: 0.1 });
-
   return (
-    <motion.div
-      ref={ref}
-      variants={fadeInVariants}
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      className="bg-white rounded-2xl shadow-lg overflow-hidden h-full"
-    >
+    <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-full">
       <div className="bg-gradient-to-r from-blue-900 to-blue-800 p-6">
         <div className="flex items-center gap-4">
           <div className={("w-3 h-12 rounded-full", weekData.barColor)} />
@@ -107,7 +83,7 @@ const WeekProgram = ({ weekData }) => {
           ))}
         </ul>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
@@ -116,14 +92,7 @@ const Program = () => {
     <div className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 mt-7">
-          <motion.h1
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-5xl font-bold text-blue-900 mb-4"
-          >
-            Program Overview
-          </motion.h1>
+          <h1 className="text-5xl font-bold text-blue-900 mb-4">Program Overview</h1>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

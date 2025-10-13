@@ -12,13 +12,14 @@ import "@fontsource/montserrat/700.css";
 import "./index.css";
 
 const ScrollToTop = () => {
+  const scrollDep = useLocation();
   useLayoutEffect(() => {
     window.scrollTo({
       top: 0,
       left: 0,
       behavior: "smooth",
     });
-  }, [useLocation()]);
+  }, [scrollDep]);
   return null;
 };
 

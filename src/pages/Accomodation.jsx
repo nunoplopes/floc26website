@@ -1,12 +1,7 @@
-import { motion } from "framer-motion";
 import { FaHotel, FaBus, FaInfoCircle, FaExclamationTriangle } from "react-icons/fa";
 
 const HotelCard = memo(({ name, address, price, features, isHighlighted, imageUrl }) => (
-  <motion.div
-    initial={{ opacity: 0, y: 20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5 }}
-    viewport={{ once: true }}
+  <div
     className={`relative bg-white rounded-xl shadow-lg overflow-hidden ${isHighlighted ? "ring-2 ring-blue-500" : ""}`}
   >
     <div className="relative h-48 w-full">
@@ -44,7 +39,7 @@ const HotelCard = memo(({ name, address, price, features, isHighlighted, imageUr
         </ul>
       )}
     </div>
-  </motion.div>
+  </div>
 ));
 
 HotelCard.displayName = "HotelCard";
@@ -64,27 +59,17 @@ const AccomodationSection = memo(() => {
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16 pt-20"
-        >
+        <div className="text-center mb-16 pt-20">
           <h2 className="text-4xl font-bold text-blue-900 mb-4">Accommodation Information</h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
             The following hotels are conveniently located in the Central Carmel area, close to
             shopping, restaurants, and cultural centers. All offer spectacular views of Haifa Bay
             and the coastline.
           </p>
-        </motion.div>
+        </div>
 
         {/* Important Notice */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-12"
-        >
+        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-12">
           <div className="flex">
             <div className="flex-shrink-0">
               <FaExclamationTriangle className="h-5 w-5 text-yellow-400" />
@@ -99,7 +84,7 @@ const AccomodationSection = memo(() => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
 
         {/* Hotels Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
@@ -109,12 +94,7 @@ const AccomodationSection = memo(() => {
         </div>
 
         {/* Transportation Info */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="bg-white rounded-xl shadow-lg p-8"
-        >
+        <div className="bg-white rounded-xl shadow-lg p-8">
           <div className="flex items-center mb-4">
             <FaBus className="h-6 w-6 text-blue-600 mr-3" />
             <h3 className="text-2xl font-semibold text-gray-900">
@@ -132,7 +112,7 @@ const AccomodationSection = memo(() => {
               Shuttle service will be available
             </p>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

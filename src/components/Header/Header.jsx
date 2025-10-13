@@ -2,7 +2,6 @@ import { useState } from "react";
 import LOGO from "../../assets/images/logo.svg";
 import { Link } from "react-router";
 import { HiMenu, HiX } from "react-icons/hi";
-import { motion } from "framer-motion";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,7 +38,7 @@ const Header = () => {
           </Link>
         </div>
 
-        <motion.nav
+        <nav
           className={`
           text-sm font-bold
           fixed top-0 right-0 w-full h-screen bg-white p-4
@@ -49,28 +48,25 @@ const Header = () => {
           md:translate-x-0 md:shadow-none
           z-10 md:z-auto
         `}
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.7, ease: "easeOut" }}
         >
-          <motion.ul className="flex flex-col md:flex-row gap-4 md:gap-8 mt-16 md:mt-0">
+          <ul className="flex flex-col md:flex-row gap-4 md:gap-8 mt-16 md:mt-0">
             {navLinks.map(({ to, label }) => (
               <Link key={to} to={to} onClick={handleLinkClick}>
                 <li>{label}</li>
               </Link>
             ))}
-          </motion.ul>
-        </motion.nav>
+          </ul>
+        </nav>
 
         {/* Mobile menu button - hidden on md and larger screens */}
-        <motion.button
+        <button
           className={`md:hidden text-4xl z-30 ${
             isMenuOpen ? "text-neutral-800" : "text-neutral-800"
           }`}
           onClick={toggleMenu}
         >
           {isMenuOpen ? <HiX /> : <HiMenu />}
-        </motion.button>
+        </button>
       </header>
     </>
   );

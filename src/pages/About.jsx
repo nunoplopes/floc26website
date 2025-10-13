@@ -1,38 +1,10 @@
-import { useRef } from "react";
 import hero2 from "../assets/images/lisbonsky.png";
-import { motion } from "framer-motion";
 
 const About = () => {
-  const heroRef = useRef(null);
-  const contentRef = useRef(null);
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 0.6,
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.5 },
-    },
-  };
   return (
     <div className="min-h-screen -z-10">
       {/* Hero Section */}
-      <motion.section
-        ref={heroRef}
-        initial="hidden"
-        animate="visible"
-        variants={containerVariants}
+      <section
         className="relative w-full flex items-center justify-center bg-blue-900/80 bg-blend-overlay h-[70dvh] -z-10"
         style={{
           backgroundImage: `url(${hero2})`,
@@ -41,10 +13,7 @@ const About = () => {
         }}
         aria-label="Hero Section"
       >
-        <motion.div
-          variants={itemVariants}
-          className="relative z-10 text-center w-full py-20 mt-20"
-        >
+        <div className="relative z-10 text-center w-full py-20 mt-20">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">
             About <br />
             FLoC 2026
@@ -52,20 +21,13 @@ const About = () => {
           <p className="text-xl text-neutral-200 max-w-2xl mx-auto px-4">
             Advancing the intersection of logic and computer science
           </p>
-        </motion.div>
-      </motion.section>
+        </div>
+      </section>
 
       {/* Main Content */}
-      <motion.section
-        ref={contentRef}
-        initial="hidden"
-        animate="visible"
-        variants={containerVariants}
-        className="max-w-6xl mx-auto px-4 py-16 md:py-24"
-        aria-label="Main Content"
-      >
+      <section className="max-w-6xl mx-auto px-4 py-16 md:py-24" aria-label="Main Content">
         <div className="grid grid-cols-1 md:grid-cols-1 gap-12 items-center">
-          <motion.div variants={itemVariants} className="space-y-6">
+          <div className="space-y-6">
             <p className="text-xl text-neutral-600 leading-relaxed">
               During the past forty years, there has been extensive, continuous, and growing
               interaction between logic and computer science. In many respects, logic provides
@@ -92,9 +54,9 @@ const About = () => {
               nation’s growing role as a hub for academic and technological excellence in computer
               science and logic research.
             </p>
-          </motion.div>
+          </div>
         </div>
-      </motion.section>
+      </section>
     </div>
   );
 };

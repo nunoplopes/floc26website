@@ -1,5 +1,4 @@
 import { useMemo } from "react";
-import { motion } from "framer-motion";
 import { FaEnvelope, FaExclamationTriangle, FaQuoteLeft } from "react-icons/fa";
 
 export default function FlocPolicies2026() {
@@ -21,12 +20,7 @@ export default function FlocPolicies2026() {
     <div className="px-4 md:px-16 py-12 max-w-5xl mx-auto">
       <h1 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">FLoC 2026 Policies</h1>
 
-      <motion.section
-        initial={{ opacity: 0, y: 8 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.35 }}
-        className="grid gap-6"
-      >
+      <section className="grid gap-6">
         <div className="rounded-2xl border bg-white p-6 shadow-sm">
           <h2 className="mb-3 flex items-center gap-2 text-lg font-semibold">
             <FaQuoteLeft className="h-5 w-5" aria-hidden />
@@ -115,7 +109,7 @@ export default function FlocPolicies2026() {
             </div>
           </div>
         </div>
-      </motion.section>
+      </section>
     </div>
   );
 }
