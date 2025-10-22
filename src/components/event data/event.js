@@ -2,12 +2,16 @@ export const schedule = [
   {
     date: "13",
     endDate: "17",
-    title: "SUMMER SCHOOL",
+    title: "SUMMER SCHOOLS",
     color: "text-orange-500",
     barColor: "bg-orange-500",
     conferences: [
       {
         name: "6th Summer School on Foundations of Programming and Software Systems (FoPSS)",
+        link: null,
+      },
+      {
+        name: "13th SAT/SMT/AR Summer School",
         link: null,
       },
     ],
@@ -35,6 +39,12 @@ export const schedule = [
     title: "WORKSHOPS",
     color: "text-sky-400",
     barColor: "bg-sky-400",
+    conferences: [
+      {
+        name: "FLoC Mentoring Workshop",
+        link: null,
+      },
+    ],
   },
   {
     date: "20",

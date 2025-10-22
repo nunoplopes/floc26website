@@ -136,7 +136,7 @@ const CallForWorkshops = () => {
           <strong>Mathias Fleury</strong> (IJCAR representative)
         </li>
         <li>
-        <strong>Serena Villata</strong> (KR representative)
+          <strong>Serena Villata</strong> (KR representative)
         </li>
         <li>
           <strong>Stefan Borgwardt</strong> (KR representative)
