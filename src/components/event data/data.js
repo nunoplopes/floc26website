@@ -176,7 +176,7 @@ export const committeeData = {
     {
       name: "João F. Ferreira",
       image: JOAOFF,
-      affiliation: "University of Lisbon",
+      affiliation: "University of Porto",
       role: "ITP Conference Chair",
       webpage: "https://joaoff.com",
     },
