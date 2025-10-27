@@ -16,7 +16,7 @@ const CallForWorkshops = () => {
           <strong>Submission of workshop proposals deadline:</strong> September 24, 2025
         </li>
         <li>
-          <strong>Notification of Acceptance:</strong> October 26, 2025
+          <strong>Notification of Acceptance:</strong> October 28, 2025
         </li>
         <li>
           <strong>Workshop Dates - first block:</strong> July 18-19, 2026
