@@ -1,48 +1,8 @@
-import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router";
 import { schedule } from "../components/event data/event";
 
-const listItemVariants = {
-  hidden: { opacity: 0, x: -20 },
-  visible: (i) => ({
-    opacity: 1,
-    x: 0,
-    transition: {
-      delay: i * 0.1,
-      duration: 0.5,
-      ease: "easeOut",
-    },
-  }),
-};
-
-// Custom hook to detect when an element is in view
-const useInView = (options) => {
-  const ref = useRef(null);
-  const [inView, setInView] = useState(false);
-
-  useEffect(() => {
-    const currentRef = ref.current;
-    if (!currentRef) return;
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        setInView(entry.isIntersecting);
-      });
-    }, options);
-
-    observer.observe(currentRef);
-
-    return () => {
-      observer.unobserve(currentRef);
-    };
-  }, [options]);
-
-  return { ref, inView };
-};
-
 // Component to display a single conference
-const ConferenceItem = ({ conf, index }) => {
-  const { ref, inView } = useInView({ threshold: 0.1 });
-
+const ConferenceItem = ({ conf }) => {
   return (
     <li className="group relative p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
       <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-500 rounded-l-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -96,8 +56,8 @@ const Program = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Summer School */}
-          <WeekProgram weekData={schedule.find((item) => item.title === "SUMMER SCHOOL")} />
+          {/* Summer Schools */}
+          <WeekProgram weekData={schedule.find((item) => item.title === "SUMMER SCHOOLS")} />
 
           {/* Workshop Pre Week */}
           <WeekProgram weekData={schedule.find((item) => item.date === "17")} />
