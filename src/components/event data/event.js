@@ -42,7 +42,7 @@ export const schedule = [
     conferences: [
       {
         name: "FLoC Mentoring Workshop",
-        link: null,
+        link: "/mentoring-workshop",
       },
     ],
   },
@@ -88,7 +88,7 @@ export const schedule = [
     conferences: [
       {
         name: "FLoC Mentoring Workshop",
-        link: null,
+        link: "/mentoring-workshop",
       },
     ],
   },

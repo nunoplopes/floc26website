@@ -14,6 +14,7 @@ import SpeakersId from "./components/SpeakersId";
 import Policies from "./pages/Policies";
 import CallForWorkshops from "./pages/CallForWorkshops";
 import IJCAR from "./pages/IJCAR";
+import MentoringWorkshop from "./pages/MentoringWorkshop";
 import NotFound from "./pages/NotFound";
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
       <Route path="/policies" element={<Policies />} />
       <Route path="/call-for-workshops" element={<CallForWorkshops />} />
       <Route path="/ijcar" element={<IJCAR />} />
+      <Route path="/mentoring-workshop" element={<MentoringWorkshop />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
