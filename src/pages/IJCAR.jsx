@@ -281,7 +281,10 @@ const IJCAR = () => {
 		, University of Freiburg
 	      </li>
 	      <li>
-		<a href="https://home.uni-leipzig.de/clu" className="text-indigo-600 hover:underline">
+		<a 
+		  href="https://home.uni-leipzig.de/clu"
+		  className="text-indigo-600 hover:underline"
+		>
 		  Carsten Lutz
 		</a>
 		, Universität Leipzig
@@ -347,7 +350,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://cca.informatik.uni-freiburg.de/biere"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Armin Biere
@@ -356,7 +359,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://home.uni-leipzig.de/clu"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Carsten Lutz
@@ -680,7 +683,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://sites.google.com/view/saranegri/home"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Sara Negri
