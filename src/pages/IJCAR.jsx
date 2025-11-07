@@ -217,8 +217,23 @@ const IJCAR = () => {
 	      Proceedings
 	    </h3>
             <p>
-              The IJCAR 2026 proceedings will be published in the Springer series Lecture Notes in
-              Artificial Intelligence (LNAI/LNCS) as Gold Open Access, and is planned to be
+              The IJCAR 2026 proceedings will be published in the Springer
+	      series <a href="https://link.springer.com/series/1244"
+                className="text-indigo-600 hover:underline"
+	      >
+	        Lecture Notes in Artificial Intelligence
+	      </a> (
+	      <a
+	         href="https://link.springer.com/series/1244"
+                className="text-indigo-600 hover:underline"
+	       >
+		 LNAI
+	       </a> / <a 
+	         href="https://link.springer.com/series/558"
+                 className="text-indigo-600 hover:underline"
+	       >
+	         LNCS
+	       </a>) as Gold Open Access, and is planned to be
               available online during the conference. At least one person must register for IJCAR
               for each accepted paper. Authors of accepted papers are required to ensure that at
               least one of them will participate in the conference and present the work.
@@ -227,7 +242,13 @@ const IJCAR = () => {
               The papers delivered to us will be processed according to the regular workﬂow, meaning
               Springer will generate both full-text HTML and PDF versions of the papers, to be made
               available in SpringerLink, and the full book will be available in PDF and ePub
-              formats. The papers will be published under the CC-BY-4.0-license.
+              formats. The papers will be published under the <a
+	          href="https://creativecommons.org/licenses/by/4.0/"
+                  className="text-indigo-600 hover:underline"
+		>
+		  CC-BY-4.0-license
+		</a>
+		.
             </p>
 	    <h3 className="text-2xl font-semibold text-indigo-700 pb-0">
 	      Awards
