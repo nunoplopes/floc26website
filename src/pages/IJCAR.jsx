@@ -33,10 +33,17 @@ const IJCAR = () => {
             <li>
               Camera-ready: <strong>June 15, 2026</strong> (tentatively)
             </li>
-            <li>
-              Conference: <strong>July 26-29, 2026</strong>
-            </li>
           </ul>
+        </section>
+
+        <section className="bg-white p-8 rounded-2xl shadow-lg text-center border border-gray-200">
+          <h2 className="text-3xl font-semibold text-indigo-700 mb-6">Paper Submission</h2>
+          <a
+            href="https://submissions.floc26.org/ijcar/"
+            className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl font-medium transition transform hover:scale-105"
+          >
+            Submit via HotCrp
+          </a>
         </section>
 
         <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-4">
@@ -236,58 +243,97 @@ const IJCAR = () => {
               Woody Bledsoe Travel Awards will be available to support selected students in
               attending the conference.
             </p>
-          </div>
-        </section>
-
-        <section className="bg-white p-8 rounded-2xl shadow-lg text-center border border-gray-200">
-          <h2 className="text-3xl font-semibold text-indigo-700 mb-6">Paper Submission</h2>
-          <a
-            href="https://submissions.floc26.org/ijcar/"
-            className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl font-medium transition transform hover:scale-105"
-          >
-            Submit via HotCrp
-          </a>
-        </section>
-
-        <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
-          <h2 className="text-3xl font-semibold text-indigo-700 mb-4 border-b border-indigo-200 pb-2">
-            Program Chairs
-          </h2>
-          <ul className="space-y-2 text-gray-700">
-            <li>
-              <a
-                href="https://cca.informatik.uni-freiburg.de/biere"
-                className="text-indigo-600 hover:underline"
-              >
-                Armin Biere
-              </a>
-              , University of Freiburg
-            </li>
-            <li>
-              <a href="https://home.uni-leipzig.de/clu" className="text-indigo-600 hover:underline">
-                Carsten Lutz
-              </a>
-              , Universität Leipzig
-            </li>
-            <li>
-              <a
-                href="https://sites.google.com/view/saranegri/home"
-                className="text-indigo-600 hover:underline"
-              >
-                Sara Niegri
-              </a>
-              , Università degli Studi di Genova
-            </li>
-          </ul>
-        </section>
-
-        <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
-          <h2 className="text-3xl font-semibold text-indigo-700 mb-4 border-b border-indigo-200 pb-2">
-            Program Committee
-          </h2>
-          <ul className="space-y-2">
-            <li>TBA</li>
-          </ul>
+	    <h3 className="text-2xl font-semibold text-indigo-700 pb-0">
+	      Program Chairs
+            </h3>
+	    <ul className="space-y-2 text-gray-700">
+	      <li>
+		<a
+		  href="https://cca.informatik.uni-freiburg.de/biere"
+		  className="text-indigo-600 hover:underline"
+		>
+		  Armin Biere
+		</a>
+		, University of Freiburg
+	      </li>
+	      <li>
+		<a href="https://home.uni-leipzig.de/clu" className="text-indigo-600 hover:underline">
+		  Carsten Lutz
+		</a>
+		, Universität Leipzig
+	      </li>
+	      <li>
+		<a
+		  href="https://sites.google.com/view/saranegri/home"
+		  className="text-indigo-600 hover:underline"
+		>
+		  Sara Niegri
+		</a>
+		, Università degli Studi di Genova
+	      </li>
+	    </ul>
+	    <h3 className="text-2xl font-semibold text-indigo-700 pb-0">
+	      Program Committee
+	    </h3>
+	    <ul className="space-y-2 text-gray-700">
+	      <li>Agata Ciabattoni, TU Wien</li>
+	      <li>André Platzer, Karlsruhe Institute of Technology</li>
+	      <li>Andrei Popescu, University of Sheffield</li>
+	      <li>Andrew Reynolds, University of Iowa</li>
+	      <li>Andrzej Indrzejczak, University of Lodz</li>
+	      <li>Armin Biere, University of Freiburg</li>
+	      <li>Carsten Lutz, Leipzig University</li>
+	      <li>Cesare Tinelli, University of Iowa</li>
+	      <li>Christoph Weidenbach, MPI for Informatics</li>
+	      <li>Christophe Ringeissen, INRIA Loria</li>
+	      <li>Clark Barrett, Stanford University</li>
+	      <li>Daniela Kaufmann, TU Wien</li>
+	      <li>Didier Galmiche, University of Lorraine - CNRS - LORIA</li>
+	      <li>Elaine Pimentel, UCL</li>
+	      <li>Emiliano Lorini, CNRS IRIT</li>
+	      <li>Florian Rabe, FAU Erlangen-Nürnberg</li>
+	      <li>Frank Wolter, University of Liverpool</li>
+	      <li>Jakob Nordström, University of Copenhagen and Lund University</li>
+	      <li>Jasmin Blanchette, Ludwig-Maximilians-Universität München</li>
+	      <li>Jean Christoph Jung, TU Dortmund University</li>
+	      <li>Josef Urban, Czech Technical University in Prague</li>
+	      <li>Jürgen Giesl, RWTH Aachen University</li>
+	      <li>Konstantin Korovin, University of Manchester</li>
+	      <li>Kuldeep S. Meel, University of Toronto</li>
+	      <li>Laura Kovacs, TU Wien</li>
+	      <li>Liron Cohen, Ben-Gurion University</li>
+	      <li>Lutz Schröder, Friedrich-Alexander-Universität Erlangen-Nürnberg</li>
+	      <li>Maria Paola Bonacina, Università degli Studi di Verona</li>
+	      <li>Marianna Girlando, University of Amsterdam</li>
+	      <li>Marijn Heule, Carnegie Mellon University</li>
+	      <li>Martin Lange, University of Kassel</li>
+	      <li>Martin Suda, Czech Technical University of Prague</li>
+	      <li>Martina Seidl, Johannes Kepler University Linz</li>
+	      <li>Mathias Fleury, University of Freiburg</li>
+	      <li>Moa Johansson, Chalmers University of Technology</li>
+	      <li>Nicolaj Bjørner, Microsoft Research</li>
+	      <li>Nicolas Peltier, CNRS LIG</li>
+	      <li>Pascal Fontaine, University of Liège</li>
+	      <li>Patrick Koopmann, Vrije Universiteit Amsterdam</li>
+	      <li>Renate Schmidt, University of Manchester</li>
+	      <li>René Thiemann, University of Innsbruck</li>
+	      <li>Roberto Sebastiani, University of Trento</li>
+	      <li>Sara Negri, University of Genoa</li>
+	      <li>Sarah Winkler, Free University of Bozen-Bolzano</li>
+	      <li>Silvio Ghilardi, Università degli Studi di Milano</li>
+	      <li>Sophie Tourret, INRIA Loria</li>
+	      <li>Stefan Mengel, CRIL-CNRS/Université d’Artois</li>
+	      <li>Stefano Guerrini, Université Paris 13</li>
+	      <li>Stephan Merz, INRIA Loria</li>
+	      <li>Stephan Schulz, DHBW Stuttgart</li>
+	      <li>Tanja Schindler, University of Basel</li>
+	      <li>Tim Lyon, TU Dresden</li>
+	      <li>Tobias Nipkow, Technical University Munich</li>
+	      <li>Uwe Waldmann, MPI for Informatics</li>
+	      <li>Viorica Sofronie-Stokkermans, University of Koblenz</li>
+	      <li>Yoni Zohar, Bar-Ilan University</li>
+	    </ul>
+	   </div>
         </section>
       </main>
     </div>
