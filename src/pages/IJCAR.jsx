@@ -82,8 +82,9 @@ const IJCAR = () => {
               research papers and descriptions/evaluations of working automated deduction systems or
               proof assistant systems are solicited.
             </p>
-            <p>IJCAR topics include the following:</p>
-            <p></p>
+	    <h3 className="text-2xl font-semibold text-indigo-700">
+	      IJCAR topics
+	    </h3>
             <p>
               Logics of interest include: propositional, first-order, classical, equational,
               higher-order, non-classical, constructive, modal, temporal, many-valued,
@@ -107,20 +108,43 @@ const IJCAR = () => {
               mathematics, trusted AI, etc.
             </p>
             <p></p>
-            <p>Preliminary Dates (all times AoE)</p>
-            <p>Abstract submission: January 23, 2026 (tentatively)</p>
-            <p>Paper submission: January 30, 2026 (tentatively)</p>
-            <p>Rebuttal: March 16-17, 2026 (tentatively)</p>
-            <p>Notification: March 31, 2026 (tentatively)</p>
-            <p>Camera-ready: June 15, 2026 (tentatively)</p>
-            <p>Conference: July 26-29, 2026</p>
-            <p>Co-located Events</p>
+	    <h3 className="text-2xl font-semibold text-indigo-700 pb-0">
+              Preliminary Dates 
+	    </h3>
+	    <p className="text-.5xl">
+	      All times are "Anywhere-on-Earth" (AoE).
+	    </p>
+	    <ul className="list-disc list-inside space-y-2 text-gray-700">
+	      <li>
+		Abstract submission: <strong>January 23, 2026</strong> (tentatively)
+	      </li>
+	      <li>
+		Paper submission: <strong>January 30, 2026</strong> (tentatively)
+	      </li>
+	      <li>
+		Rebuttal: <strong>March 16-17, 2026</strong> (tentatively)
+	      </li>
+	      <li>
+		Notification: <strong>March 31, 2026</strong> (tentatively)
+	      </li>
+	      <li>
+		Camera-ready: <strong>June 15, 2026</strong> (tentatively)
+	      </li>
+	      <li>
+		Conference: <strong>July 26-29, 2026</strong>
+	      </li>
+	    </ul>
+	    <h3 className="text-2xl font-semibold text-indigo-700 pb-0">
+	      Co-located Events
+	    </h3>
             <p>
               IJCAR 2026 will have numerous co-located events including CASC. More information to
               follow.
             </p>
             <p></p>
-            <p>Submission Guidelines</p>
+	    <h3 className="text-2xl font-semibold text-indigo-700 pb-0">
+	      Submission Guidelines
+	    </h3>
             <p>IJCAR 2026 invites submissions related to the topics of interest mentioned above.</p>
             <p>
               All papers must be original and not simultaneously submitted to another peer-reviewed
@@ -182,6 +206,9 @@ const IJCAR = () => {
                 https://www.springer.com/in/editorial-policies/artificial-intelligence--ai-/25428500
               </a>
             </p>
+	    <h3 className="text-2xl font-semibold text-indigo-700 pb-0">
+	      Proceedings
+	    </h3>
             <p>
               The IJCAR 2026 proceedings will be published in the Springer series Lecture Notes in
               Artificial Intelligence (LNAI/LNCS) as Gold Open Access, and is planned to be
@@ -195,12 +222,16 @@ const IJCAR = () => {
               available in SpringerLink, and the full book will be available in PDF and ePub
               formats. The papers will be published under the CC-BY-4.0-license.
             </p>
-            <p>Best Paper Award</p>
+	    <h3 className="text-2xl font-semibold text-indigo-700 pb-0">
+              Best Paper Award
+	    </h3>
             <p>
               IJCAR 2024 will recognize the most outstanding submissions with a best paper award and
               a best student paper award at the conference.
             </p>
-            <p>Student Travel Award</p>
+	    <h3 className="text-2xl font-semibold text-indigo-700 pb-0">
+              Student Travel Award
+	    </h3>
             <p>
               Woody Bledsoe Travel Awards will be available to support selected students in
               attending the conference.
