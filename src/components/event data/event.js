@@ -75,7 +75,7 @@ export const schedule = [
       },
       {
         name: "29th International Conference on Theory and Applications of Satisfiability Testing (SAT)",
-        link: null,
+        link: "https://satisfiability.org/SAT26/",
       },
     ],
   },
