@@ -230,15 +230,18 @@ const IJCAR = () => {
               formats. The papers will be published under the CC-BY-4.0-license.
             </p>
 	    <h3 className="text-2xl font-semibold text-indigo-700 pb-0">
-              Best Paper Award
+	      Awards
 	    </h3>
+	    <h4 className="text-1.5xl font-semibold text-indigo-700 pb-0">
+              Best Paper Award
+	    </h4>
             <p>
               IJCAR 2024 will recognize the most outstanding submissions with a best paper award and
               a best student paper award at the conference.
             </p>
-	    <h3 className="text-2xl font-semibold text-indigo-700 pb-0">
+	    <h4 className="text-1.5xl font-semibold text-indigo-700 pb-0">
               Student Travel Award
-	    </h3>
+	    </h4>
             <p>
               Woody Bledsoe Travel Awards will be available to support selected students in
               attending the conference.
@@ -246,7 +249,7 @@ const IJCAR = () => {
 	    <h3 className="text-2xl font-semibold text-indigo-700 pb-0">
 	      Program Chairs
             </h3>
-	    <ul className="space-y-2 text-gray-700">
+	      <ul className="list-disc list-inside space-y-2 text-gray-700">
 	      <li>
 		<a
 		  href="https://cca.informatik.uni-freiburg.de/biere"
@@ -275,63 +278,511 @@ const IJCAR = () => {
 	    <h3 className="text-2xl font-semibold text-indigo-700 pb-0">
 	      Program Committee
 	    </h3>
-	    <ul className="space-y-2 text-gray-700">
-	      <li>Agata Ciabattoni, TU Wien</li>
-	      <li>André Platzer, Karlsruhe Institute of Technology</li>
-	      <li>Andrei Popescu, University of Sheffield</li>
-	      <li>Andrew Reynolds, University of Iowa</li>
-	      <li>Andrzej Indrzejczak, University of Lodz</li>
-	      <li>Armin Biere, University of Freiburg</li>
-	      <li>Carsten Lutz, Leipzig University</li>
-	      <li>Cesare Tinelli, University of Iowa</li>
-	      <li>Christoph Weidenbach, MPI for Informatics</li>
-	      <li>Christophe Ringeissen, INRIA Loria</li>
-	      <li>Clark Barrett, Stanford University</li>
-	      <li>Daniela Kaufmann, TU Wien</li>
-	      <li>Didier Galmiche, University of Lorraine - CNRS - LORIA</li>
-	      <li>Elaine Pimentel, UCL</li>
-	      <li>Emiliano Lorini, CNRS IRIT</li>
-	      <li>Florian Rabe, FAU Erlangen-Nürnberg</li>
-	      <li>Frank Wolter, University of Liverpool</li>
-	      <li>Jakob Nordström, University of Copenhagen and Lund University</li>
-	      <li>Jasmin Blanchette, Ludwig-Maximilians-Universität München</li>
-	      <li>Jean Christoph Jung, TU Dortmund University</li>
-	      <li>Josef Urban, Czech Technical University in Prague</li>
-	      <li>Jürgen Giesl, RWTH Aachen University</li>
-	      <li>Konstantin Korovin, University of Manchester</li>
-	      <li>Kuldeep S. Meel, University of Toronto</li>
-	      <li>Laura Kovacs, TU Wien</li>
-	      <li>Liron Cohen, Ben-Gurion University</li>
-	      <li>Lutz Schröder, Friedrich-Alexander-Universität Erlangen-Nürnberg</li>
-	      <li>Maria Paola Bonacina, Università degli Studi di Verona</li>
-	      <li>Marianna Girlando, University of Amsterdam</li>
-	      <li>Marijn Heule, Carnegie Mellon University</li>
-	      <li>Martin Lange, University of Kassel</li>
-	      <li>Martin Suda, Czech Technical University of Prague</li>
-	      <li>Martina Seidl, Johannes Kepler University Linz</li>
-	      <li>Mathias Fleury, University of Freiburg</li>
-	      <li>Moa Johansson, Chalmers University of Technology</li>
-	      <li>Nicolaj Bjørner, Microsoft Research</li>
-	      <li>Nicolas Peltier, CNRS LIG</li>
-	      <li>Pascal Fontaine, University of Liège</li>
-	      <li>Patrick Koopmann, Vrije Universiteit Amsterdam</li>
-	      <li>Renate Schmidt, University of Manchester</li>
-	      <li>René Thiemann, University of Innsbruck</li>
-	      <li>Roberto Sebastiani, University of Trento</li>
-	      <li>Sara Negri, University of Genoa</li>
-	      <li>Sarah Winkler, Free University of Bozen-Bolzano</li>
-	      <li>Silvio Ghilardi, Università degli Studi di Milano</li>
-	      <li>Sophie Tourret, INRIA Loria</li>
-	      <li>Stefan Mengel, CRIL-CNRS/Université d’Artois</li>
-	      <li>Stefano Guerrini, Université Paris 13</li>
-	      <li>Stephan Merz, INRIA Loria</li>
-	      <li>Stephan Schulz, DHBW Stuttgart</li>
-	      <li>Tanja Schindler, University of Basel</li>
-	      <li>Tim Lyon, TU Dresden</li>
-	      <li>Tobias Nipkow, Technical University Munich</li>
-	      <li>Uwe Waldmann, MPI for Informatics</li>
-	      <li>Viorica Sofronie-Stokkermans, University of Koblenz</li>
-	      <li>Yoni Zohar, Bar-Ilan University</li>
+	    <ul className="list-disc list-inside space-y-2 text-gray-700">
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Agata Ciabattoni
+		</a>
+		, TU Wien
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  André Platzer
+		</a>
+		, Karlsruhe Institute of Technology
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Andrei Popescu
+		</a>
+		, University of Sheffield
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Andrew Reynolds
+		</a>
+		, University of Iowa
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Andrzej Indrzejczak
+		</a>
+		, University of Lodz
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Armin Biere
+		</a>
+		, University of Freiburg
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Carsten Lutz
+		</a>
+		, Leipzig University
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Cesare Tinelli
+		</a>
+		, University of Iowa
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Christoph Weidenbach
+		</a>
+		, MPI for Informatics
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Christophe Ringeissen
+		</a>
+		, INRIA Loria
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Clark Barrett
+		</a>
+		, Stanford University
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Daniela Kaufmann
+		</a>
+		, TU Wien
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Didier Galmiche
+		</a>
+		, University of Lorraine - CNRS - LORIA
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Elaine Pimentel
+		</a>
+		, UCL
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Emiliano Lorini
+		</a>
+		, CNRS IRIT
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Florian Rabe
+		</a>
+		, FAU Erlangen-Nürnberg
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Frank Wolter
+		</a>
+		, University of Liverpool
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Jakob Nordström
+		</a>
+		, University of Copenhagen and Lund University
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Jasmin Blanchette
+		</a>
+		, Ludwig-Maximilians-Universität München
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Jean Christoph Jung
+		</a>
+		, TU Dortmund University
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Josef Urban
+		</a>
+		, Czech Technical University in Prague
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Jürgen Giesl
+		</a>
+		, RWTH Aachen University
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Konstantin Korovin
+		</a>
+		, University of Manchester
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Kuldeep S. Meel
+		</a>
+		, University of Toronto
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Laura Kovacs
+		</a>
+		, TU Wien
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Liron Cohen
+		</a>
+		, Ben-Gurion University
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Lutz Schröder
+		</a>
+		, Friedrich-Alexander-Universität Erlangen-Nürnberg
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Maria Paola Bonacina
+		</a>
+		, Università degli Studi di Verona
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Marianna Girlando
+		</a>
+		, University of Amsterdam
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Marijn Heule
+		</a>
+		, Carnegie Mellon University
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Martin Lange
+		</a>
+		, University of Kassel
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Martin Suda
+		</a>
+		, Czech Technical University of Prague
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Martina Seidl
+		</a>
+		, Johannes Kepler University Linz
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Mathias Fleury
+		</a>
+		, University of Freiburg
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Moa Johansson
+		</a>
+		, Chalmers University of Technology
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Nicolaj Bjørner
+		</a>
+		, Microsoft Research
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Nicolas Peltier
+		</a>
+		, CNRS LIG
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Pascal Fontaine
+		</a>
+		, University of Liège
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Patrick Koopmann
+		</a>
+		, Vrije Universiteit Amsterdam
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Renate Schmidt
+		</a>
+		, University of Manchester
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  René Thiemann
+		</a>
+		, University of Innsbruck
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Roberto Sebastiani
+		</a>
+		, University of Trento
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Sara Negri
+		</a>
+		, University of Genoa
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Sarah Winkler
+		</a>
+		, Free University of Bozen-Bolzano
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Silvio Ghilardi
+		</a>
+		, Università degli Studi di Milano
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Sophie Tourret
+		</a>
+		, INRIA Loria
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Stefan Mengel
+		</a>
+		, CRIL-CNRS/Université d’Artois
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Stefano Guerrini
+		</a>
+		, Université Paris 13
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Stephan Merz
+		</a>
+		, INRIA Loria
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Stephan Schulz
+		</a>
+		, DHBW Stuttgart
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Tanja Schindler
+		</a>
+		, University of Basel
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Tim Lyon
+		</a>
+		, TU Dresden
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Tobias Nipkow
+		</a>
+		, Technical University Munich
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Uwe Waldmann
+		</a>
+		, MPI for Informatics
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Viorica Sofronie-Stokkermans
+		</a>
+		, University of Koblenz
+	      </li>
+	      <li>
+		<a
+		  href=""
+		  className="text-indigo-600 hover:underline"
+		>
+		  Yoni Zohar
+		</a>
+		, Bar-Ilan University
+	      </li>
 	    </ul>
 	   </div>
         </section>
