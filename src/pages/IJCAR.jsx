@@ -13,6 +13,17 @@ const IJCAR = () => {
       </header>
 
       <main className="max-w-6xl mx-auto px-6 py-16 space-y-16">
+
+        <section className="bg-white p-8 rounded-2xl shadow-lg text-center border border-gray-200">
+          <h2 className="text-3xl font-semibold text-indigo-700 mb-6">Paper Submission</h2>
+          <a
+            href="https://submissions.floc26.org/ijcar/"
+            className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl font-medium transition transform hover:scale-105"
+          >
+            Submit via HotCrp
+          </a>
+        </section>
+
         <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
           <h2 className="text-3xl font-semibold text-indigo-700 mb-6 border-b border-indigo-200 pb-2">
             Preliminary Dates
@@ -34,16 +45,6 @@ const IJCAR = () => {
               Camera-ready: <strong>June 15, 2026</strong> (tentatively)
             </li>
           </ul>
-        </section>
-
-        <section className="bg-white p-8 rounded-2xl shadow-lg text-center border border-gray-200">
-          <h2 className="text-3xl font-semibold text-indigo-700 mb-6">Paper Submission</h2>
-          <a
-            href="https://submissions.floc26.org/ijcar/"
-            className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl font-medium transition transform hover:scale-105"
-          >
-            Submit via HotCrp
-          </a>
         </section>
 
         <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-4">
@@ -305,7 +306,7 @@ const IJCAR = () => {
 	    <ul className="list-disc list-inside space-y-2 text-gray-700">
 	      <li>
 		<a
-		  href=""
+		  href="https://informatics.tuwien.ac.at/people/agata-ciabattoni"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Agata Ciabattoni
@@ -314,7 +315,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://symbolaris.com/index.html"
 		  className="text-indigo-600 hover:underline"
 		>
 		  André Platzer
@@ -323,7 +324,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://sheffield.ac.uk/cs/people/academic/andrei-popescu"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Andrei Popescu
@@ -332,7 +333,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://homepage.cs.uiowa.edu/~ajreynol"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Andrew Reynolds
@@ -341,7 +342,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www.filozofia.uni.lodz.pl/andrzej-indrzejczak"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Andrzej Indrzejczak
@@ -368,7 +369,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://homepage.cs.uiowa.edu/~tinelli"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Cesare Tinelli
@@ -377,7 +378,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www.mpi-inf.mpg.de/departments/automation-of-logic/people/christoph-weidenbach"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Christoph Weidenbach
@@ -386,7 +387,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://members.loria.fr/CRingeissen"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Christophe Ringeissen
@@ -395,7 +396,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://engineering.stanford.edu/people/clark-barrett"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Clark Barrett
@@ -404,7 +405,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://danielakaufmann.at"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Daniela Kaufmann
@@ -413,7 +414,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://members.loria.fr/DGalmiche/files"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Didier Galmiche
@@ -422,7 +423,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://profiles.ucl.ac.uk/87847-elaine-pimentel"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Elaine Pimentel
@@ -431,7 +432,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www.irit.fr/~Emiliano.Lorini"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Emiliano Lorini
@@ -440,7 +441,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www.dhss.phil.fau.de/person/prof-dr-florian-rabe"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Florian Rabe
@@ -449,7 +450,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www.liverpool.ac.uk/people/frank-wolter"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Frank Wolter
@@ -458,7 +459,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://jakobnordstrom.se"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Jakob Nordström
@@ -467,7 +468,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www.tcs.ifi.lmu.de/staff/jasmin-blanchette"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Jasmin Blanchette
@@ -476,7 +477,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www.tu-dortmund.de/universitaet/neuberufene-professorinnen/prof-jean-christoph-jung"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Jean Christoph Jung
@@ -485,7 +486,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://people.ciirc.cvut.cz/~urbanjo3"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Josef Urban
@@ -494,7 +495,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://verify.rwth-aachen.de/giesl"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Jürgen Giesl
@@ -503,7 +504,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://korovin.gitlab.io"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Konstantin Korovin
@@ -512,16 +513,16 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www.cs.toronto.edu/~meel"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Kuldeep S. Meel
 		</a>
-		, University of Toronto
+		, Georgia Institute of Technology
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="http://lkovacs.com"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Laura Kovacs
@@ -530,7 +531,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www.lironcohenlab.com"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Liron Cohen
@@ -539,7 +540,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www8.cs.fau.de/people/schroeder"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Lutz Schröder
@@ -548,7 +549,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://mariapaola.github.io"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Maria Paola Bonacina
@@ -557,7 +558,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www.mariannagirlando.com/Girlando.html"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Marianna Girlando
@@ -566,7 +567,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www.cs.cmu.edu/~mheule"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Marijn Heule
@@ -575,7 +576,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://carrick.tifm.cs.uni-kassel.de/~mlange/index.html"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Martin Lange
@@ -584,7 +585,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://people.ciirc.cvut.cz/~sudamar2"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Martin Suda
@@ -593,7 +594,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www.jku.at/institut-fuer-symbolic-artificial-intelligence/team/martina-seidl"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Martina Seidl
@@ -602,7 +603,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://m-fleury.github.io"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Mathias Fleury
@@ -611,7 +612,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www.cse.chalmers.se/~jomoa"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Moa Johansson
@@ -620,7 +621,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www.microsoft.com/en-us/research/people/nbjorner"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Nicolaj Bjørner
@@ -629,7 +630,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://lig-membres.imag.fr/peltier"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Nicolas Peltier
@@ -638,7 +639,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://people.montefiore.uliege.be/pfontain"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Pascal Fontaine
@@ -647,7 +648,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://research.vu.nl/en/persons/patrick-koopmann"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Patrick Koopmann
@@ -656,7 +657,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www.cs.man.ac.uk/~schmidt"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Renate Schmidt
@@ -665,7 +666,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="http://cl-informatik.uibk.ac.at/users/thiemann"
 		  className="text-indigo-600 hover:underline"
 		>
 		  René Thiemann
@@ -674,7 +675,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://disi.unitn.it/rseba"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Roberto Sebastiani
@@ -692,7 +693,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="http://cl-informatik.uibk.ac.at/users/swinkler/bolzano"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Sarah Winkler
@@ -701,7 +702,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://homes.di.unimi.it/ghilardi"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Silvio Ghilardi
@@ -710,7 +711,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://members.loria.fr/sophie.tourret"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Sophie Tourret
@@ -719,7 +720,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www.cril.univ-artois.fr/~mengel"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Stefan Mengel
@@ -728,7 +729,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://lipn.univ-paris13.fr/~guerrini/home"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Stefano Guerrini
@@ -737,7 +738,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://members.loria.fr/Stephan.Merz"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Stephan Merz
@@ -746,7 +747,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://wwwlehre.dhbw-stuttgart.de/~sschulz/DHBW_Stephan_Schulz/Stephan_Schulz.html"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Stephan Schulz
@@ -755,7 +756,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://ai.dmi.unibas.ch/people/schindler"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Tanja Schindler
@@ -764,7 +765,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://iccl.inf.tu-dresden.de/web/Tim_Lyon/en"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Tim Lyon
@@ -773,7 +774,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www21.in.tum.de/~nipkow"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Tobias Nipkow
@@ -782,7 +783,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www.mpi-inf.mpg.de/departments/automation-of-logic/people/uwe-waldmann"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Uwe Waldmann
@@ -791,7 +792,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://www.uni-koblenz.de/de/informatik/ifi/sofronie-stokkermans/team/viorica-sofronie-stokkermans"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Viorica Sofronie-Stokkermans
@@ -800,7 +801,7 @@ const IJCAR = () => {
 	      </li>
 	      <li>
 		<a
-		  href=""
+		  href="https://u.cs.biu.ac.il/~zoharyo1"
 		  className="text-indigo-600 hover:underline"
 		>
 		  Yoni Zohar
