@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import {
   FaMapMarkedAlt,
   FaBus,
@@ -11,18 +10,13 @@ import {
 import METROMAP from "../assets/images/map_metro.png";
 
 const Section = ({ title, icon: Icon, children }) => (
-  <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5 }}
-    className="mb-10"
-  >
+  <div className="mb-10">
     <div className="flex items-center mb-3">
       <Icon className="h-6 w-6 text-blue-600 mr-2" />
       <h2 className="text-2xl font-bold text-gray-800">{title}</h2>
     </div>
     <p className="text-gray-700 text-lg leading-relaxed">{children}</p>
-  </motion.div>
+  </div>
 );
 
 // Main transportation component
@@ -32,21 +26,12 @@ export default function Transportation() {
       <div className="max-w-4xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16 md:pt-10">
-          <motion.h1
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
-          >
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Transportation in Lisbon
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="text-xl text-gray-600 max-w-3xl mx-auto"
-          >
+          </h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Find the best way to reach the conference venue.
-          </motion.p>
+          </p>
         </div>
 
         {/* Getting to Lisbon */}

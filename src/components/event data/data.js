@@ -46,6 +46,9 @@ import SERTKAYA from "../../assets/images/committes/sertkaya.jpg";
 import ALISA from "../../assets/images/committes/alisa.jpg";
 import DEEPAK from "../../assets/images/committes/deepakgarg.jpg";
 import UNRUH from "../../assets/images/committes/unruh.jpg";
+import WFABER from "../../assets/images/committes/wfaber.jpg";
+import OZAKI from "../../assets/images/committes/ozaki.avif";
+import POTYKA from "../../assets/images/committes/potyka.jpg";
 
 export const committeeData = {
   organizers: [
@@ -173,7 +176,7 @@ export const committeeData = {
     {
       name: "João F. Ferreira",
       image: JOAOFF,
-      affiliation: "University of Lisbon",
+      affiliation: "University of Porto",
       role: "ITP Conference Chair",
       webpage: "https://joaoff.com",
     },
@@ -275,8 +278,15 @@ export const committeeData = {
       name: "Laura Giordano",
       image: LAURA,
       affiliation: "Università del Piemonte Orientale",
-      role: "ICLP PC Chair",
+      role: "ICLP PC Co-Chair",
       webpage: "https://people.unipmn.it/laura.giordano/",
+    },
+    {
+      name: "Wolfgang Faber",
+      image: WFABER,
+      affiliation: "Alpen-Adria-Universität Klagenfurt",
+      role: "ICLP PC Co-Chair",
+      webpage: "https://wfaber.com",
     },
     {
       name: "Armin Biere",
@@ -340,6 +350,20 @@ export const committeeData = {
       affiliation: "RWTH Aachen University",
       role: "LICS PC Co-Chair",
       webpage: "https://www-i2.informatik.rwth-aachen.de/~katoen/",
+    },
+    {
+      name: "Ana Ozaki",
+      image: OZAKI,
+      affiliation: "University of Bergen",
+      role: "NMR PC Co-Chair",
+      webpage: "https://www4.uib.no/en/find-employees/Ana.Ozaki",
+    },
+    {
+      name: "Nico Potyka",
+      image: POTYKA,
+      affiliation: "Cardiff University",
+      role: "NMR PC Co-Chair",
+      webpage: "https://profiles.cardiff.ac.uk/staff/potykan",
     },
     {
       name: "Alexey Ignatiev",

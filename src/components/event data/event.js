@@ -2,7 +2,7 @@ export const schedule = [
   {
     date: "13",
     endDate: "17",
-    title: "SUMMER SCHOOL",
+    title: "SUMMER SCHOOLS",
     color: "text-orange-500",
     barColor: "bg-orange-500",
     conferences: [
@@ -10,15 +10,19 @@ export const schedule = [
         name: "6th Summer School on Foundations of Programming and Software Systems (FoPSS)",
         link: null,
       },
+      {
+        name: "13th SAT/SMT/AR Summer School",
+        link: null,
+      },
     ],
   },
-  /*{
+  {
     date: "17",
     endDate: "19",
     title: "3-DAY WORKSHOPS",
     color: "text-sky-400",
     barColor: "bg-sky-400",
-        conferences: [
+    conferences: [
       {
         name: "39th International Workshop on Description Logics (DL)",
         link: null,
@@ -28,13 +32,19 @@ export const schedule = [
         link: null,
       },
     ],
-  },*/
+  },
   {
     date: "18",
     endDate: "19",
     title: "WORKSHOPS",
     color: "text-sky-400",
     barColor: "bg-sky-400",
+    conferences: [
+      {
+        name: "FLoC Mentoring Workshop",
+        link: "/mentoring-workshop",
+      },
+    ],
   },
   {
     date: "20",
@@ -61,7 +71,7 @@ export const schedule = [
       },
       {
         name: "41st Annual ACM/IEEE Symposium on Logic in Computer Science (LICS)",
-        link: null,
+        link: "https://lics.siglog.org/lics26/",
       },
       {
         name: "29th International Conference on Theory and Applications of Satisfiability Testing (SAT)",
@@ -78,7 +88,7 @@ export const schedule = [
     conferences: [
       {
         name: "FLoC Mentoring Workshop",
-        link: null,
+        link: "/mentoring-workshop",
       },
     ],
   },
@@ -103,7 +113,7 @@ export const schedule = [
       },
       {
         name: "17th International Conference on Interactive Theorem Proving (ITP)",
-        link: null,
+        link: "https://itp-conference-2026.github.io",
       },
     ],
   },

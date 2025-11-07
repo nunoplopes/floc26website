@@ -6,6 +6,7 @@ export default [
   {
     files: ['**/*.jsx', '**/*.tsx'],
     ...react.configs.flat.recommended,
+    ...reactHooks.configs.flat.recommended,
     plugins: {
       react,
       'react-hooks': reactHooks,
@@ -17,6 +18,7 @@ export default [
     },
     rules: {
       ...react.configs.flat.recommended.rules,
+      ...reactHooks.configs.flat.recommended.rules,
       'react/react-in-jsx-scope': 0,
       'react/jsx-uses-react': 0,
       'react/prop-types': 0,
