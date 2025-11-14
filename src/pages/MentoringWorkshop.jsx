@@ -114,7 +114,7 @@ const MentoringWorkshop = () => {
               >
                 Marie Kerjean
               </a>
-              , CNRS
+              , CNRS, Université Sorbonne Paris Nord
             </li>
           </ul>
         </section>
@@ -134,6 +134,45 @@ const MentoringWorkshop = () => {
               </a>{" "}
               in our policy against harassment and unacceptable behaviour. If you experience any
               such behaviour, please report it to the organisers.
+            </p>
+          </div>
+        </section>
+
+        <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-4">
+          <h2 className="text-3xl font-semibold text-indigo-700 mb-4 border-b border-indigo-200 pb-2">
+            Past Events
+          </h2>
+          <div className="space-y-4 text-gray-700 leading-relaxed">
+            <p>
+              FLoC&apos;26 MW will build on the success of the{" "}
+              <a
+                href="https://www.floc2022.org/flocmentoringworkshop"
+                className="text-indigo-600 hover:underline"
+              >
+                FLoC 2022 Mentoring Workshop (FLoC&apos;22 MW)
+              </a>{" "}
+              and of similar workshops such as the{" "}
+              <a
+                href="https://logic-mentoring-workshop.github.io/"
+                className="text-indigo-600 hover:underline"
+              >
+                Logic Mentoring Workshop (LMW)
+              </a>{" "}
+              at LICS and CSL, the{" "}
+              <a
+                href="https://conferences.i-cav.org/2025/mentoring/"
+                className="text-indigo-600 hover:underline"
+              >
+                Verification Mentoring Workshop (VMW)
+              </a>{" "}
+              at CAV, and the{" "}
+              <a
+                href="https://pldi25.sigplan.org/series/PLMW"
+                className="text-indigo-600 hover:underline"
+              >
+                Programming Languages Mentoring Workshops (PLMWs)
+              </a>
+              .
             </p>
           </div>
         </section>
