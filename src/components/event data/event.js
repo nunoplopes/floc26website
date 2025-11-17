@@ -55,7 +55,7 @@ export const schedule = [
     conferences: [
       {
         name: "32nd International Conference on Principles and Practice of Constraint Programming (CP)",
-        link: null,
+        link: "https://cp2026.a4cp.org",
       },
       {
         name: "11th International Conference on Formal Structures for Computation and Deduction (FSCD)",
