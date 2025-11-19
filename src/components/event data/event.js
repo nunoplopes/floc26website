@@ -12,7 +12,7 @@ export const schedule = [
       },
       {
         name: "13th SAT/SMT/AR Summer School",
-        link: null,
+        link: "https://sat-smt-ar-school.gitlab.io/www/2026/",
       },
     ],
   },
