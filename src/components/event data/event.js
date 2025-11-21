@@ -63,7 +63,7 @@ export const schedule = [
       },
       {
         name: "42nd International Conference on Logic Programming (ICLP)",
-        link: null,
+        link: "https://www.semsys.aau.at/events/iclp2026/",
       },
       {
         name: "23rd International Conference on Principles of Knowledge Representation and Reasoning (KR)",
