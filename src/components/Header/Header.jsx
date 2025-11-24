@@ -13,11 +13,11 @@ const Header = () => {
     { to: "/about", label: "About" },
     { to: "/sponsors", label: "Sponsors" },
     { to: "/registration", label: "Registration" },
+    { to: "/accommodation", label: "Accommodation" },
     { to: "/venue", label: "Venue" },
-    { to: "/transportation", label: "Transportation" },
+    { to: "/local-transportation", label: "Local Transportation" },
     { to: "/committees", label: "Committees" },
     { to: "/program", label: "Program" },
-    // { to: "/accommodation", label: "Accommodation" },
     // { to: "/tourism", label: "Tourism" },
   ];
 
