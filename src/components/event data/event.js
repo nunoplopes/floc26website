@@ -12,7 +12,7 @@ export const schedule = [
       },
       {
         name: "13th SAT/SMT/AR Summer School",
-        link: null,
+        link: "https://sat-smt-ar-school.gitlab.io/www/2026/",
       },
     ],
   },
@@ -55,7 +55,7 @@ export const schedule = [
     conferences: [
       {
         name: "32nd International Conference on Principles and Practice of Constraint Programming (CP)",
-        link: null,
+        link: "https://cp2026.a4cp.org",
       },
       {
         name: "11th International Conference on Formal Structures for Computation and Deduction (FSCD)",
@@ -63,7 +63,7 @@ export const schedule = [
       },
       {
         name: "42nd International Conference on Logic Programming (ICLP)",
-        link: null,
+        link: "https://www.semsys.aau.at/events/iclp2026/",
       },
       {
         name: "23rd International Conference on Principles of Knowledge Representation and Reasoning (KR)",
@@ -75,7 +75,7 @@ export const schedule = [
       },
       {
         name: "29th International Conference on Theory and Applications of Satisfiability Testing (SAT)",
-        link: null,
+        link: "https://satisfiability.org/SAT26/",
       },
     ],
   },

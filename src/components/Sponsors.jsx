@@ -5,7 +5,7 @@ const sponsorshipTiers = [
   { level: "Platinum", fontSize: "text-3xl", logoSize: "max-h-28" },
   { level: "Gold", fontSize: "text-2xl", logoSize: "max-h-24" },
   { level: "Silver", fontSize: "text-2xl", logoSize: "max-h-24" },
-  { level: "Bronze", fontSize: "text-2xl", logoSize: "max-h-16" },
+  { level: "Bronze", fontSize: "text-2xl", logoSize: "max-h-14" },
   { level: "Institutional", fontSize: "text-xl", logoSize: "max-h-14" },
   { level: "Secretariat", fontSize: "text-xl", logoSize: "max-h-8", nosponsor: true },
 ];

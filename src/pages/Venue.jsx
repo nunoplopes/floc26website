@@ -74,7 +74,7 @@ const MapSection = () => {
             <h3 className="font-semibold text-gray-900 mb-2">Getting Here</h3>
             <p className="text-gray-600 text-sm">
               The ISCTE campus is easily accessible by public transportation. Use the metro (yellow
-              line) to &ldquo;Cidade Universitária&ldquo; or one of the several bus stops nearby.
+              line) to &ldquo;Cidade Universitária&rdquo; or one of the several bus stops nearby.
             </p>
           </div>
         </div>
