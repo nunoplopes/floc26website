@@ -29,16 +29,16 @@ const IJCAR = () => {
           </h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
             <li>
-              Abstract submission: <strong>January 23, 2026</strong> (tentatively)
+              Abstract submission: <strong>February 6, 2026</strong> (tentatively)
             </li>
             <li>
-              Paper submission: <strong>January 30, 2026</strong> (tentatively)
+              Paper submission: <strong>February 13, 2026</strong> (tentatively)
             </li>
             <li>
-              Rebuttal: <strong>March 16-17, 2026</strong> (tentatively)
+              Rebuttal: <strong>March 30-31, 2026</strong> (tentatively)
             </li>
             <li>
-              Notification: <strong>March 31, 2026</strong> (tentatively)
+              Notification: <strong>April 14, 2026</strong> (tentatively)
             </li>
             <li>
               Camera-ready: <strong>June 15, 2026</strong> (tentatively)
@@ -117,16 +117,16 @@ const IJCAR = () => {
             <p className="text-.5xl">All times are &ldquo;Anywhere-on-Earth&rdquo; (AoE).</p>
             <ul className="list-disc list-inside space-y-2 text-gray-700">
               <li>
-                Abstract submission: <strong>January 23, 2026</strong> (tentatively)
+                Abstract submission: <strong>February 6, 2026</strong> (tentatively)
               </li>
               <li>
-                Paper submission: <strong>January 30, 2026</strong> (tentatively)
+                Paper submission: <strong>February 13, 2026</strong> (tentatively)
               </li>
               <li>
-                Rebuttal: <strong>March 16-17, 2026</strong> (tentatively)
+                Rebuttal: <strong>March 30-31, 2026</strong> (tentatively)
               </li>
               <li>
-                Notification: <strong>March 31, 2026</strong> (tentatively)
+                Notification: <strong>April 14, 2026</strong> (tentatively)
               </li>
               <li>
                 Camera-ready: <strong>June 15, 2026</strong> (tentatively)
@@ -586,7 +586,7 @@ const IJCAR = () => {
                   href="https://www.microsoft.com/en-us/research/people/nbjorner"
                   className="text-indigo-600 hover:underline"
                 >
-                  Nicolaj Bjørner
+                  Nikolaj Bjørner
                 </a>
                 , Microsoft Research
               </li>
