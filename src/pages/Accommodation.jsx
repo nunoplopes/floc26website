@@ -76,8 +76,8 @@ export default function Accommodation() {
           <div className="mt-4 bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded-md text-yellow-800">
             <p className="text-base leading-relaxed">
               ⚠️ <strong>Be especially cautious at the Oriente Bus Terminal.</strong> The platform
-              area is open-air and not secured — there have been occasional reports of luggage
-              theft. Keep your bags close and don’t leave items unattended.
+              area is open-air and not secured. There have been occasional reports of luggage theft.
+              Keep your bags close and don’t leave items unattended.
             </p>
           </div>
         </Section>
@@ -239,6 +239,29 @@ export default function Accommodation() {
                   alexandra.ramalho@sanahotels.com
                 </a>{" "}
                 with the code &ldquo;FLoC26&rdquo;
+              </p>
+            </div>
+
+            <div className="p-4 border rounded-lg">
+              <h3 className="font-bold">Turim Ibéria Hotel (4*)</h3>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Rates:</span> 10% discount on best rate
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Av. 5 de Outubro, 160,
+                1050-062 Lisbon
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Distance:</span> 1.1 km from venue
+              </p>
+              <p className="mt-2 text-sm">
+                <a
+                  href="https://turim-hotels.com/turim-iberia-hotel-pt/?_gl=1*7hvv3l*_gcl_aw*R0NMLjE3NjQwNzEzOTIuQ2owS0NRaUF4SlhKQmhEX0FSSXNBSF9KR2pnRDhwVTRpbzl3OXhZTnVTR3pfT3Bwa0ZiMmNCUDJfZDdFNjY4NVA3TGlhVDBjRk54OXZMTWFBcnA2RUFMd193Y0I.*_gcl_au*MTM0MjczODgxMC4xNzY0MDcxMzIzLjcyMTg0ODgzNy4xNzY0MDcxMzc3LjE3NjQwNzEzODg."
+                  className="text-blue-600 underline"
+                >
+                  Book now
+                </a>{" "}
+                (use promo code &ldquo;FLOC&rdquo;)
               </p>
             </div>
 
