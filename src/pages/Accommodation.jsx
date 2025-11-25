@@ -137,7 +137,7 @@ export default function Accommodation() {
                 (Double room)
               </p>
               <p className="text-sm mb-1">
-                <span className="font-medium text-gray-700">Address:</span> Av. da República 93,
+                <span className="font-medium text-gray-700">Address:</span> Av. da República, 93,
                 1050-190 Lisbon
               </p>
               <p className="text-sm mb-1">
@@ -156,8 +156,8 @@ export default function Accommodation() {
                 <span className="font-medium text-gray-700">Rates:</span> 10% discount on best rate
               </p>
               <p className="text-sm mb-1">
-                <span className="font-medium text-gray-700">Address:</span> Av. de Roma 33, 1749-074
-                Lisbon
+                <span className="font-medium text-gray-700">Address:</span> Av. de Roma, 33,
+                1749-074 Lisbon
               </p>
               <p className="text-sm mb-1">
                 <span className="font-medium text-gray-700">Distance:</span> 1.4 km from venue
@@ -224,8 +224,8 @@ export default function Accommodation() {
                 (Double room)
               </p>
               <p className="text-sm mb-1">
-                <span className="font-medium text-gray-700">Address:</span> Rua Soeiro Pereira Gomes
-                2, 1600-198 Lisbon
+                <span className="font-medium text-gray-700">Address:</span> Rua Soeiro Pereira
+                Gomes, 2, 1600-198 Lisbon
               </p>
               <p className="text-sm mb-1">
                 <span className="font-medium text-gray-700">Distance:</span> 0.7 km from venue
@@ -250,7 +250,7 @@ export default function Accommodation() {
               </p>
               <p className="text-sm mb-1">
                 <span className="font-medium text-gray-700">Address:</span> Av. Columbano Bordalo
-                Pinheiro 3, 1070-060 Lisbon
+                Pinheiro, 3, 1070-060 Lisbon
               </p>
               <p className="text-sm mb-1">
                 <span className="font-medium text-gray-700">Distance:</span> 1.8 km from venue
@@ -270,9 +270,7 @@ export default function Accommodation() {
                 <span className="font-medium text-gray-700">Rates:</span> €200 (Single room), €215
                 (Double room)
               </p>
-              <p className="text-sm">
-                Address: Av. D. João II 27 - Parque das Nações, 1990-079 Lisbon
-              </p>
+              <p className="text-sm">Address: Av. D. João II, 27, 1990-079 Lisbon</p>
               <p className="text-sm mb-1">
                 <span className="font-medium text-gray-700">Distance:</span> 6.4 km from venue
                 (Metro: Red Line)
@@ -294,7 +292,7 @@ export default function Accommodation() {
                 (Double room)
               </p>
               <p className="text-sm mb-1">
-                <span className="font-medium text-gray-700">Address:</span> Rua Latino Coelho 1,
+                <span className="font-medium text-gray-700">Address:</span> Rua Latino Coelho, 1,
                 1050-234 Lisbon
               </p>
               <p className="text-sm mb-1">
