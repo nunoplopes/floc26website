@@ -162,7 +162,12 @@ export default function Accommodation() {
               <p className="text-sm mb-1">
                 <span className="font-medium text-gray-700">Distance:</span> 1.4 km from venue
               </p>
-              <p className="mt-2 text-sm">Book through TBD</p>
+              <p className="mt-2 text-sm">
+                <a href=": https://www.hotelroma.pt" className="text-blue-600 underline">
+                  Book now
+                </a>{" "}
+                (use promo code &ldquo;FLOC&rdquo;)
+              </p>
             </div>
 
             <div className="p-4 border rounded-lg">
@@ -225,7 +230,16 @@ export default function Accommodation() {
               <p className="text-sm mb-1">
                 <span className="font-medium text-gray-700">Distance:</span> 0.7 km from venue
               </p>
-              <p className="mt-2 text-sm">Book through TBD</p>
+              <p className="mt-2 text-sm">
+                Book by sending an email to{" "}
+                <a
+                  href="mailto:alexandra.ramalho@sanahotels.com"
+                  className="text-blue-600 underline"
+                >
+                  alexandra.ramalho@sanahotels.com
+                </a>{" "}
+                with the code &ldquo;FLoC26&rdquo;
+              </p>
             </div>
 
             <div className="p-4 border rounded-lg">
@@ -301,7 +315,7 @@ export default function Accommodation() {
         <Section title="Discounted Airfares" icon={FaPlane}>
           <p>
             FLoC attendees can access special discounted fares from our partner airlines. Use the
-            links below to view offers and make bookings.
+            links below to book.
           </p>
           <div className="mt-4">
             <div className="flex flex-wrap items-center gap-6">
