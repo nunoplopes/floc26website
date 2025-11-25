@@ -163,7 +163,7 @@ export default function Accommodation() {
                 <span className="font-medium text-gray-700">Distance:</span> 1.4 km from venue
               </p>
               <p className="mt-2 text-sm">
-                <a href=": https://www.hotelroma.pt" className="text-blue-600 underline">
+                <a href="https://www.hotelroma.pt" className="text-blue-600 underline">
                   Book now
                 </a>{" "}
                 (use promo code &ldquo;FLOC&rdquo;)
