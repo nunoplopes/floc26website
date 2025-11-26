@@ -331,6 +331,17 @@ export default function Accommodation() {
               </p>
             </div>
           </div>
+
+          <p className="mt-6">
+            If you prefer a short-term apartment stay, you can also search for options on{" "}
+            <a
+              href="https://www.jdoqocy.com/click-101479577-15736461"
+              className="text-blue-600 underline"
+            >
+              Vrbo
+            </a>{" "}
+            (Expedia Group).
+          </p>
         </Section>
 
         <Section title="Discounted Airfares" icon={FaPlane}>
