@@ -34,74 +34,11 @@ export default function Transportation() {
           </p>
         </div>
 
-        {/* Getting to Lisbon */}
-        <Section title="Getting to Lisbon" icon={FaPlane}>
-          Lisbon’s only airport is <strong>Humberto Delgado Airport (LIS)</strong>, located inside
-          the city. It’s connected via metro (Red Line). <br />
-          <br />
-          <strong>On a tight budget?</strong> It’s worth checking flights into{" "}
-          <strong>Porto (OPO)</strong> or <strong>Faro (FAO)</strong>, as they often have lower-cost
-          international connections. From either city, you can travel to Lisbon by:
-          <ul className="list-disc pl-5 mt-2">
-            <li>
-              <strong>Train</strong> (
-              <a className="text-blue-600 underline" href="https://www.cp.pt/passageiros/en">
-                CP
-              </a>
-              ) : ~3 hours from Porto, ~3.5 hours from Faro
-            </li>
-            <li>
-              <strong>Bus</strong> (
-              <a className="text-blue-600 underline" href="https://rede-expressos.pt/en">
-                Rede Expressos
-              </a>{" "}
-              or{" "}
-              <a className="text-blue-600 underline" href="https://global.flixbus.com">
-                Flixbus
-              </a>
-              ) : ~3–4 hours
-            </li>
-          </ul>
-          <br />
-          <div className="mt-6">
-            🚉 <strong>Train arrivals:</strong> Lisbon has two main train stations:
-            <ul className="list-disc pl-5 mt-2">
-              <li>
-                <strong>Oriente</strong>: well-connected via metro (Red Line) and close to the
-                airport
-              </li>
-              <li>
-                <strong>Santa Apolónia</strong>: located closer to the historic city center (Blue
-                Metro Line)
-              </li>
-            </ul>
-          </div>
-          <div className="mt-6">
-            🚌 <strong>Bus terminals:</strong>
-            <ul className="list-disc pl-5 mt-2">
-              <li>
-                <strong>Oriente</strong>: shared with the train station and metro (Red Line)
-              </li>
-              <li>
-                <strong>Sete Rios</strong>: accessible via metro (Blue Line, Jardim Zoológico
-                station)
-              </li>
-            </ul>
-          </div>
-          <div className="mt-4 bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded-md text-yellow-800">
-            <p className="text-base leading-relaxed">
-              ⚠️ <strong>Be especially cautious at the Oriente Bus Terminal.</strong> The platform
-              area is open-air and not secured — there have been occasional reports of luggage
-              theft. Keep your bags close and don’t leave items unattended.
-            </p>
-          </div>
-        </Section>
-
         {/* Metro */}
         <Section title="Metro" icon={FaSubway}>
           The Metro is one of the fastest and most reliable ways to get around the city. You can tap
-          in directly at the gates using a contactless debit or credit card — no need to buy a
-          separate ticket. <br />
+          in directly at the gates using a contactless debit or credit card. There is no need to buy
+          a separate ticket. <br />
           <br />
           Alternatively, you can purchase a <strong>24-hour public transport ticket</strong>, valid
           on metro, buses, trams, and trains within Lisbon. These are available at ticket machines
@@ -113,7 +50,7 @@ export default function Transportation() {
           >
             Navegante pre-paid travel card
           </a>
-          , which works across the entire public transport system — including metro, buses, trams,
+          , which works across the entire public transport system, including metro, buses, trams,
           ferries, and regional CP trains within the Lisbon area. <br />
           <br />
           The metro runs daily from <strong>6:30 AM to 1:00 AM</strong>.

@@ -25,11 +25,11 @@ export const schedule = [
     conferences: [
       {
         name: "39th International Workshop on Description Logics (DL)",
-        link: null,
+        link: "https://dl-2026.github.io",
       },
       {
         name: "24th International Workshop on Nonmonotonic Reasoning (NMR)",
-        link: null,
+        link: "https://nmr.krportal.org/2026/",
       },
     ],
   },
