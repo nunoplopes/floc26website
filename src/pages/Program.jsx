@@ -48,9 +48,9 @@ const WeekProgram = ({ weekData }) => {
         <div className="flex items-center gap-4">
           <div className={("w-3 h-12 rounded-full", weekData.barColor)} />
           <div>
-            <h3 className="text-2xl font-semibold text-white mb-1">{weekData.name}</h3>
+            <h3 className="text-2xl font-semibold text-white mb-1">{weekData.title}</h3>
             <p className="text-blue-100 text-base">
-              {weekData.date} - {weekData.end}
+              {weekData.date} - {weekData.endDate}
             </p>
           </div>
         </div>
