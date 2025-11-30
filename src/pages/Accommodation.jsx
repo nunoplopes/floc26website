@@ -115,7 +115,7 @@ export default function Accommodation() {
             </li>
           </ul>
           <p className="mt-3">
-            For official information, visit the{" "}
+            For more information, visit the{" "}
             <a href="https://travel-europe.europa.eu/en/ees" className="text-blue-600 underline">
               official EU website
             </a>
@@ -333,14 +333,28 @@ export default function Accommodation() {
           </div>
 
           <p className="mt-6">
-            If you prefer a short-term apartment stay, you can also search for options on{" "}
+            If you prefer a short-term apartment stay, you can search for options on{" "}
             <a
               href="https://www.jdoqocy.com/click-101479577-15736461"
               className="text-blue-600 underline"
             >
               Vrbo
             </a>{" "}
-            (Expedia Group).
+            (Expedia Group). You can also browse hotel and accommodation options through{" "}
+            <a
+              href="https://www.dpbolvw.net/click-101479577-17085746"
+              className="text-blue-600 underline"
+            >
+              Hotels.com
+            </a>{" "}
+            or{" "}
+            <a
+              href="https://www.jdoqocy.com/click-101479577-13880339"
+              className="text-blue-600 underline"
+            >
+              Expedia
+            </a>
+            .
           </p>
         </Section>
 
