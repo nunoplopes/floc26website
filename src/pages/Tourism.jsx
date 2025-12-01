@@ -1,108 +1,235 @@
-const Tourism = () => {
-  const attractions = [
-    {
-      title: "Belém Tower",
-      description: "A 16th-century fortification and UNESCO World Heritage site",
-      image: "https://i.pinimg.com/736x/45/f4/95/45f4950708364534c9f78cc6ed51ba5e.jpg",
-    },
-    {
-      title: "Jerónimos Monastery",
-      description: "A stunning example of Portuguese Gothic architecture",
-      image: "https://i.pinimg.com/736x/3f/9a/2f/3f9a2f3f8eb0f14b034234541b311970.jpg",
-    },
-    {
-      title: "Alfama District",
-      description: "Lisbon's oldest neighborhood with narrow streets and Fado music",
-      image: "https://i.pinimg.com/736x/63/0b/92/630b9297afa8728f762cb88fbf1a19a6.jpg",
-    },
-  ];
+import { FaMapMarkerAlt, FaInfoCircle, FaUtensils, FaLeaf } from "react-icons/fa";
 
-  const practicalInfo = [
-    {
-      title: "Getting Around",
-      content:
-        "Lisbon has an excellent public transportation system including metro, trams, and buses. The iconic Tram 28 is a must-try experience.",
-    },
-    {
-      title: "Best Time to Visit",
-      content:
-        "July is perfect for visiting Lisbon, with warm weather and plenty of sunshine. Average temperatures range from 20°C to 28°C.",
-    },
-    {
-      title: "Local Cuisine",
-      content:
-        "Don't miss trying Pastéis de Nata, Bacalhau, and fresh seafood. Lisbon offers a vibrant food scene with many excellent restaurants.",
-    },
-  ];
+// https://pixabay.com/photos/lisbon-monument-to-the-discoveries-927669/
+import LISBON from "../assets/images/lisbon-927669_1920.jpg";
+// https://pixabay.com/photos/tower-belem-portugal-lisbon-lisboa-3867791/
+import BELEM_TOWER from "../assets/images/tower-3867791_1280.jpg";
+// https://pixabay.com/photos/jeronimos-monastery-jeronimos-1739271/
+import JERONIMOS_MONASTERY from "../assets/images/jeronimos-monastery-1739271_1280.jpg";
+// https://pixabay.com/photos/sao-jorges-castle-castle-saint-jorge-1733139/
+import SAO_JORGE_CASTLE from "../assets/images/sao-jorges-castle-1733139_1280.jpg";
+// https://pixabay.com/photos/portugal-lisbon-window-tiles-4065069/
+import ALFAMA from "../assets/images/portugal-4065069_1280.jpg";
+// https://pixabay.com/photos/pra%c3%a7a-do-com%c3%a9rcio-terreiro-do-pa%c3%a7o-1186240/
+import PRACA_COMERCIO from "../assets/images/praca-do-comercio-1186240_1280.jpg";
+// https://pixabay.com/photos/see-from-lisbon-viewpoint-lisbon-2825282/
+import MIRADOURO from "../assets/images/see-from-lisbon-2825282_1280.jpg";
+
+const Section = ({ title, icon: Icon, children }) => (
+  <div className="mb-10">
+    <div className="flex items-center mb-3">
+      <Icon className="h-6 w-6 text-blue-600 mr-2" />
+      <h2 className="text-2xl font-bold text-gray-800">{title}</h2>
+    </div>
+    <p className="text-gray-700 text-lg leading-relaxed">{children}</p>
+  </div>
+);
+
+export default function TourismPage() {
   return (
-    <div className="min-h-screen bg-neutral-100">
-      {/* Hero Section */}
-      <section
-        className="relative h-[60vh] w-full"
+    <div>
+      {/* Hero Section (preserved exactly as requested) */}
+      <div
+        className="relative w-full h-64 md:h-96 flex items-center justify-center"
         style={{
-          background: `url("https://i.pinimg.com/736x/d7/d7/1a/d7d71ab13a3a88fb0d3fda20f57bd53a.jpg")`,
+          backgroundImage: `url(${LISBON})`,
           backgroundSize: "cover",
-          backgroundColor: "rgba(0, 0, 0, 0.6)",
-          backgroundBlendMode: "overlay",
+          backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-black/50 z-10" />
-        <div className="relative z-20 h-full flex items-center justify-center text-white">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4">Discover Lisbon</h1>
-            <p className="text-xl md:text-2xl">Experience the charm of Portugal's capital city</p>
-          </div>
-        </div>
-      </section>
+        <div className="absolute inset-0 bg-white opacity-60"></div>
+        <h1 className="text-4xl md:text-6xl font-bold drop-shadow-lg text-cyan-900">
+          Discover Lisbon & Portugal
+        </h1>
+      </div>
 
-      {/* Main Attractions */}
-      <section className="py-20 px-4 md:px-20">
-        <h2 className="text-4xl font-bold text-blue-900 text-center mb-12">
-          Must-Visit Attractions
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {attractions.map((attraction, index) => (
-            <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg">
-              <div className="relative h-64">
-                <img
-                  src={attraction.image}
-                  alt={attraction.title}
-                  fill="true"
-                  className="object-cover h-60 w-full"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold text-blue-900 mb-2">{attraction.title}</h3>
-                <p className="text-gray-600">{attraction.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Practical Information */}
-      <section className="bg-blue-900 text-white py-20 px-4 md:px-20">
-        <h2 className="text-4xl font-bold text-center mb-12">Practical Information</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {practicalInfo.map((info, index) => (
-            <div key={index} className="bg-blue-800 rounded-lg p-6">
-              <h3 className="text-2xl font-bold mb-4">{info.title}</h3>
-              <p className="text-blue-100">{info.content}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="py-20 px-4 md:px-20 text-center">
-        <h2 className="text-4xl font-bold text-blue-900 mb-6">Ready to Explore Lisbon?</h2>
-        <p className="text-xl text-gray-600 mb-8">
-          Join us at FLOC 2026 and experience the perfect blend of academic excellence and cultural
-          discovery.
+      <div className="p-6 max-w-4xl mx-auto">
+        <p className="text-lg mb-6">
+          While you’re here, take some time to explore Lisbon and the rest of Portugal. Below are
+          highlights and tips to help you plan your visit.
         </p>
-      </section>
+
+        <Section title="Key Monuments to Visit in Lisbon" icon={FaMapMarkerAlt}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              {
+                label: "Belém Tower",
+                image: BELEM_TOWER,
+                description: "Iconic riverside fortress from the Age of Discoveries.",
+              },
+              {
+                label: "Jerónimos Monastery",
+                image: JERONIMOS_MONASTERY,
+                description:
+                  "Masterpiece of Manueline architecture (a late Gothic style) in Belém.",
+              },
+              {
+                label: "São Jorge Castle",
+                image: SAO_JORGE_CASTLE,
+                description: "Hilltop castle offering panoramic views of Lisbon.",
+              },
+              {
+                label: "Alfama District",
+                image: ALFAMA,
+                description:
+                  "Lisbon’s oldest neighborhood; a maze of streets, viewpoints, and Fado music.",
+              },
+              {
+                label: "Praça do Comércio",
+                image: PRACA_COMERCIO,
+                description:
+                  "Grand square facing the Tagus River. Rebuilt after the 1755 earthquake.",
+              },
+              {
+                label: "Miradouros",
+                image: MIRADOURO,
+                description:
+                  "Scenic viewpoints scattered across Lisbon offer stunning city views. Look out for Miradouro de Santa Catarina, Miradouro da Senhora do Monte, and Miradouro de São Pedro de Alcântara.",
+              },
+            ].map((item, i) => (
+              <div key={i} className="border rounded-xl p-4 shadow-sm bg-white">
+                <img
+                  src={item.image}
+                  alt={item.label}
+                  className="w-full h-44 object-cover rounded mb-2"
+                />
+                <p className="font-semibold text-sm">{item.label}</p>
+                <p className="text-xs text-gray-600">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </Section>
+
+        <Section title="Traditional Portuguese Foods" icon={FaUtensils}>
+          <ul className="list-disc ml-6 space-y-2">
+            <li>
+              <strong>Bacalhau</strong>: Portugal’s iconic salted cod, famously prepared in more
+              than a hundred different ways.
+            </li>
+            <li>
+              <strong>Pastel de Nata</strong>: The famous custard tarts. The original version is
+              called <strong>Pastel de Belém</strong> and is sold exclusively at one pastry shop in
+              Belém, but you can find many great pastéis de nata all over Lisbon.
+            </li>
+            <li>
+              <strong>Grilled Sardines</strong>: June is traditionally the month of sardines in
+              Lisbon, but they are still widely available throughout July.
+            </li>
+            <li>
+              <strong>Octopus Lagareiro Style</strong>: Roasted octopus with &ldquo;punched&rdquo;
+              potatoes, garlic, and olive oil.
+            </li>
+            <li>
+              <strong>Arroz de Marisco (Seafood Rice)</strong>: Rich, tomato-based rice packed with
+              prawns, mussels, clams, and sometimes lobster. Unlike risotto, it’s meant to be brothy
+              and soupy.
+            </li>
+            <li>
+              <strong>Amêijoas à Bulhão Pato</strong>: Clams cooked in garlic, olive oil, white
+              wine, and cilantro.
+            </li>
+            <li>
+              <strong>Caldo Verde</strong>: Traditional kale and potato soup. Very popular in Lisbon
+              and a staple during the city’s June celebrations.
+            </li>
+            <li>
+              <strong>Alheira</strong>: Smoked sausage originally created by Portuguese Jews; today
+              it’s a beloved comfort food.
+            </li>
+            <li>
+              <strong>Cozido à Portuguesa</strong>: A hearty Portuguese stew of mixed meats,
+              sausages, vegetables, potatoes, and rice. Not commonly eaten in the summer.
+            </li>
+          </ul>
+        </Section>
+
+        <Section title="For the Courageous Eaters" icon={() => <span className="text-xl">🦑</span>}>
+          <ul className="list-disc ml-6 space-y-2">
+            <li>
+              <strong>Percebes</strong>: Gooseneck barnacles from the Atlantic coast.
+            </li>
+            <li>
+              <strong>Morcela</strong>: Traditional Portuguese blood sausage (often included in
+              Cozido à Portuguesa).
+            </li>
+            <li>
+              <strong>Iscas</strong>: Pork liver, typically served with boiled potatoes.
+            </li>
+            <li>
+              <strong>Caracóis</strong>: Small simmered snails, a beloved summer snack in Lisbon
+              taverns, typically enjoyed with a cold beer.
+            </li>
+            <li>
+              <strong>Dobrada</strong>: White bean stew with beef tripe, a Porto classic for the
+              brave.
+            </li>
+          </ul>
+        </Section>
+
+        <Section title="Nature & Outdoor Spots Around Lisbon" icon={FaLeaf}>
+          <ul className="list-disc ml-6 space-y-2">
+            <li>
+              <strong>Sintra</strong>: Palaces, lush gardens, and mystical forests.
+            </li>
+            <li>
+              <strong>Arrábida Natural Park</strong>: Turquoise waters, dramatic cliffs, and quiet
+              beaches.
+            </li>
+            <li>
+              <strong>Cascais & Guincho Coast</strong>: Rugged coastline, surfing spots, and scenic
+              bike paths.
+            </li>
+            <li>
+              <strong>Cabo da Roca</strong>: The westernmost point of mainland Europe, with sweeping
+              ocean views.
+            </li>
+            <li>
+              <strong>Monsanto Forest Park</strong>: Lisbon’s “urban forest” with trails,
+              viewpoints, and picnic spots.
+            </li>
+            <li>
+              <strong>Costa da Caparica</strong>: Long sandy beaches, beach bars, and great sunsets.
+            </li>
+            <li>
+              <strong>Tagus Estuary Natural Reserve</strong>: Bird-watching, wetlands, and peaceful
+              riverside walks.
+            </li>
+          </ul>
+        </Section>
+
+        <Section title="Useful Travel Tips" icon={FaInfoCircle}>
+          <ul className="list-disc ml-6 space-y-2">
+            <li>
+              <strong>ATMs</strong>: Portugal has several ATM networks. The private ones charge
+              extra fees. We recommend you{" "}
+              <strong>use only the blue &ldquo;MB&rdquo; (Multibanco) machines</strong>. They do not
+              add any fees beyond what your home bank charges.
+            </li>
+            <li>
+              <strong>Power Plugs</strong>: Portugal uses Type C & F (&ldquo;German-style&rdquo;)
+              plugs at <strong>230V / 50Hz</strong>.
+            </li>
+            <li>
+              <strong>Weather in July</strong>: Expect warm, sunny days, typically{" "}
+              <strong>26-32°C</strong> (79-90°F). Evenings are mild. Heatwaves can push temperatures
+              higher (40°C / 100°F).
+            </li>
+            <li>
+              <strong>Sun</strong>: July is very sunny; bring <strong>sunscreen</strong>,
+              sunglasses, and a hat.
+            </li>
+            <li>
+              <strong>Rain</strong>: July is one of the driest months; <strong>rain is rare</strong>
+              .
+            </li>
+            <li>
+              <strong>Currency</strong>: Portugal uses the <strong>Euro (€)</strong>. Cards are
+              widely accepted, but small cafés and shops may impose a minimum for card payments (€5
+              usually). Amex is rarely accepted.
+            </li>
+          </ul>
+        </Section>
+      </div>
     </div>
   );
-};
-
-export default Tourism;
+}
