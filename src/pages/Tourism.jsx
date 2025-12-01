@@ -28,7 +28,6 @@ const Section = ({ title, icon: Icon, children }) => (
 export default function TourismPage() {
   return (
     <div>
-      {/* Hero Section (preserved exactly as requested) */}
       <div
         className="relative w-full h-64 md:h-96 flex items-center justify-center"
         style={{

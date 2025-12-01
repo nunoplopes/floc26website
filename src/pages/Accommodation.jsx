@@ -1,5 +1,7 @@
 import { FaHotel, FaPlane } from "react-icons/fa";
 import Vueling from "../assets/images/vueling.svg";
+// https://pixabay.com/photos/lisbon-statue-travel-jesus-1953199/
+import CRISTOREI from "../assets/images/lisbon-1953199_1280.jpg";
 
 const Section = ({ title, icon: Icon, children }) => (
   <div className="mb-10">
@@ -13,14 +15,22 @@ const Section = ({ title, icon: Icon, children }) => (
 
 export default function Accommodation() {
   return (
-    <div className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16 md:pt-10">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Traveling to and Staying in Lisbon
-          </h1>
-        </div>
+    <div>
+      <div
+        className="w-full h-64 md:h-96 relative flex items-center justify-center text-center"
+        style={{
+          backgroundImage: `url(${CRISTOREI})`,
+          backgroundSize: "cover",
+          backgroundPosition: "top",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <h1 className="relative z-10 text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
+          Traveling to and Staying in Lisbon
+        </h1>
+      </div>
 
+      <div className="p-6 max-w-4xl mx-auto">
         <Section title="Getting to Lisbon" icon={FaPlane}>
           Lisbon’s only airport is <strong>Humberto Delgado Airport (LIS)</strong>, located inside
           the city. It’s connected via metro (Red Line). <br />
