@@ -33,7 +33,7 @@ function imageOptimizerPlugin() {
           const webpSize = webpBuffer.byteLength
           const avifSize = avifBuffer.byteLength
 
-          const isAvifSmaller = avifSize < webpSize
+          const isAvifSmaller = avifSize <= webpSize
           const outputBuffer = isAvifSmaller ? avifBuffer : webpBuffer
           const outputSize = outputBuffer.byteLength
           const ext = isAvifSmaller ? '.avif' : '.webp'
