@@ -1,4 +1,6 @@
+import { useEffect, useState } from "react";
 import { FaMapMarkerAlt, FaInfoCircle, FaUtensils, FaLeaf } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
 
 // https://pixabay.com/photos/lisbon-monument-to-the-discoveries-927669/
 import LISBON from "../assets/images/lisbon-927669_1920.jpg";
@@ -26,6 +28,18 @@ const Section = ({ title, icon: Icon, children }) => (
 );
 
 export default function TourismPage() {
+  const [popupImage, setPopupImage] = useState(null);
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        setPopupImage(null);
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
   return (
     <div>
       <div
@@ -90,7 +104,8 @@ export default function TourismPage() {
                 <img
                   src={item.image}
                   alt={item.label}
-                  className="w-full h-44 object-cover rounded mb-2"
+                  className="w-full h-44 object-cover rounded mb-2 cursor-pointer"
+                  onClick={() => setPopupImage(item.image)}
                 />
                 <p className="font-semibold text-sm">{item.label}</p>
                 <p className="text-xs text-gray-600">{item.description}</p>
@@ -98,6 +113,29 @@ export default function TourismPage() {
             ))}
           </div>
         </Section>
+        {popupImage && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50"
+            onClick={() => setPopupImage(null)}
+          >
+            <div
+              className="relative bg-white p-4 rounded shadow-lg max-w-3xl max-h-[90vh]"
+              onClick={(e) => e.stopPropagation()} // Prevent closing when clicking the image
+            >
+              <button
+                className="absolute -top-3 -right-3 bg-white/80 backdrop-blur p-2 rounded-full shadow-md hover:bg-white transition"
+                onClick={() => setPopupImage(null)}
+              >
+                <IoClose size={24} className="text-gray-700 hover:text-black" />
+              </button>
+              <img
+                src={popupImage}
+                alt="Large view"
+                className="max-h-[80vh] max-w-full object-contain rounded"
+              />
+            </div>
+          </div>
+        )}
 
         <Section title="Traditional Portuguese Foods" icon={FaUtensils}>
           <ul className="list-disc ml-6 space-y-2">
@@ -115,7 +153,7 @@ export default function TourismPage() {
               Lisbon, but they are still widely available throughout July.
             </li>
             <li>
-              <strong>Octopus Lagareiro Style</strong>: Roasted octopus with &ldquo;punched&rdquo;
+              <strong>Polvo à Lagareiro</strong>: Roasted octopus with &ldquo;punched&rdquo;
               potatoes, garlic, and olive oil.
             </li>
             <li>
