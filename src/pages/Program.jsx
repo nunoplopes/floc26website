@@ -22,20 +22,23 @@ const workshops_week2 = [
 
 // Component to display a single conference
 const ConferenceItem = ({ conf }) => {
+  const content = (
+    <div className="group relative p-4 rounded-xl shadow-sm hover:shadow-md border border-gray-100">
+      <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-500" />
+      <p className="text-gray-700 text-base pl-4">{conf.name}</p>
+    </div>
+  );
   return (
-    <li className="group relative p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100">
-      <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-500 rounded-l-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-      <p className="text-gray-700 text-base pl-4">
-        {conf.link ? (
-          conf.link.startsWith("http") ? (
-            <a href={conf.link}>{conf.name}</a>
-          ) : (
-            <Link to={conf.link}>{conf.name}</Link>
-          )
+    <li>
+      {conf.link ? (
+        conf.link.startsWith("http") ? (
+          <a href={conf.link}>{content}</a>
         ) : (
-          <>{conf.name}</>
-        )}
-      </p>
+          <Link to={conf.link}>{content}</Link>
+        )
+      ) : (
+        content
+      )}
     </li>
   );
 };
