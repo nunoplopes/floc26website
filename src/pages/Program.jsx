@@ -4,21 +4,336 @@ import { schedule } from "../components/event data/event";
 
 const workshops_week1 = [
   {
-    name: "IFIP Working Group 1.6",
+    name: "19th Workshop on Answer Set Programming and Other Programming Paradigms (ASPOCP)",
+    aff: "ICLP",
     start: 18,
     end: 18,
     link: null,
+  },
+  {
+    name: "2nd Workshop on Cognitive Architectures for Robotics: LLMs and Logic in Action (CARLA)",
+    aff: "ICLP",
+    start: 18,
+    end: 18,
+    link: null,
+  },
+  {
+    name: "Workshop on End-user Logic Programming (EULP)",
+    aff: "ICLP",
+    start: 18,
+    end: 18,
+    link: null,
+  },
+  {
+    name: "Formal Methods for Quantum Computing (FMQC)",
+    aff: null,
+    start: 18,
+    end: 18,
+    link: null,
+  },
+  {
+    name: "IFIP Working Group 1.6 (IFIP16)",
+    aff: "IJCAR & FSCD",
+    start: 18,
+    end: 18,
+    link: null,
+  },
+  {
+    name: "12th Workshop on Intersection Types and Related Systems (ITRS)",
+    aff: "FSCD",
+    start: 18,
+    end: 18,
+    link: null,
+  },
+  {
+    name: "Logic and Computational Complexity (LCC)",
+    aff: "LICS",
+    start: 18,
+    end: 19,
+    link: null,
+  },
+  {
+    name: "Joint Workshop on Next-Generation Language Models for KKR, Reasoning and Ethics in LLMs and on Statistics and Knowledge Integration for Logic and Learning (LLMs)",
+    aff: "KR",
+    start: 18,
+    end: 18,
+    link: null,
+  },
+  {
+    name: "Logical and Semantic Frameworks with Applications (LSFA)",
+    aff: "FSCD",
+    start: 18,
+    end: 18,
+    link: null,
+  },
+  {
+    name: "Proof Complexity (PC)",
+    aff: "SAT",
+    start: 18,
+    end: 18,
+    link: null,
+  },
+  {
+    name: "International Workshop on Experimental Evaluation of Algorithms for Solving Problems with Combinatorial Explosion (RCRA)",
+    aff: "ICLP",
+    start: 18,
+    end: 18,
+    link: null,
+  },
+  {
+    name: "Tribute to Gilles Dowek (TGD)",
+    aff: "FSCD",
+    start: 18,
+    end: 18,
+    link: null,
+  },
+  {
+    name: "Diagrams in Logic and Computation (DIALOCO)",
+    aff: "LICS",
+    start: 19,
+    end: 19,
+    link: null,
+  },
+  {
+    name: "Joint Workshop on LLMs meet Constraint Solving and on Logic for Explainable AI Systems (LLM-Solve)",
+    aff: null,
+    start: 19,
+    end: 19,
+    link: null,
+  },
+  {
+    name: "Mentoring Workshop - 1st week (MW1)",
+    aff: null,
+    start: 19,
+    end: 19,
+    link: "/mentoring-workshop",
+  },
+  {
+    name: "25th Workshop on Constraint Modelling and Reformulation (ModRef)",
+    aff: "CP",
+    start: 19,
+    end: 19,
+    link: null,
+  },
+  {
+    name: "Prolog Education Workshop (PEG)",
+    aff: "ICLP",
+    start: 19,
+    end: 19,
+    link: null,
+  },
+  {
+    name: "Pragmatics of SAT (PoS)",
+    aff: "SAT & CP",
+    start: 19,
+    end: 19,
+    link: null,
+  },
+  {
+    name: "Theorem Proving Components for Educational Software (ThEdu)",
+    aff: null,
+    start: 19,
+    end: 19,
+    link: null,
+  },
+  {
+    name: "3rd International Workshop on Highlights in Organizing and Optimizing Proof-logging Systems (WHOOPS)",
+    aff: "CP & SAT",
+    start: 19,
+    end: 19,
+    link: null,
+  },
+  {
+    name: "12th International Workshop on Rewriting Techniques for Program Transformations and Evaluation (WPTE)",
+    aff: "FSCD",
+    start: 19,
+    end: 19,
+    link: "https://wpte2026.github.io",
   },
 ];
 
 const workshops_week2 = [
   {
+    name: "Workshop on Abstract and Concrete Techniques in Verification (ACV)",
+    aff: "LICS & CAV",
+    start: 24,
+    end: 25,
+    link: null,
+  },
+  {
+    name: "Workshop on Craig Interpolation, Beth Definability, and Second-Order Quantifier Elimination (CI-BD-SOQE)",
+    aff: null,
+    start: 24,
+    end: 25,
+    link: null,
+  },
+  {
     name: "Computational Methods in Systems Biology (CMSB)",
+    aff: null,
     start: 24,
     end: 25,
     link: "https://arsr.inesc-id.pt/cmsb2026/",
   },
+  {
+    name: "28th International Workshop on Configuration (ConfWS)",
+    aff: "CP",
+    start: 24,
+    end: 25,
+    link: null,
+  },
+  {
+    name: "15th International Workshop on Confluence (IWC)",
+    aff: "FSCD",
+    start: 24,
+    end: 24,
+    link: null,
+  },
+  {
+    name: "Isabelle Workshop (Isabelle)",
+    aff: "ITP & IJCAR",
+    start: 24,
+    end: 25,
+    link: null,
+  },
+  {
+    name: "Logical frameworks and meta-languages: Theory and Practice (LFMTP)",
+    aff: "FSCD",
+    start: 24,
+    end: 24,
+    link: null,
+  },
+  {
+    name: "RajeevFest: A Celebration of Rajeev Alur (RajeevFest)",
+    aff: "CAV",
+    start: 24,
+    end: 24,
+    link: null,
+  },
+  {
+    name: "Symposium on AI Verification (SAIV)",
+    aff: "CAV",
+    start: 24,
+    end: 25,
+    link: null,
+  },
+  {
+    name: "24th International Workshop on Satisfiability Modulo Theories (SMT)",
+    aff: "IJCAR",
+    start: 24,
+    end: 25,
+    link: "https://smt-workshop.cs.uiowa.edu/2026/",
+  },
+  {
+    name: "15th TPTP Tea Party (TPTPTP)",
+    aff: "IJCAR",
+    start: 24,
+    end: 24,
+    link: null,
+  },
+  {
+    name: "40th International Workshop on Unification (UNIF)",
+    aff: "FSCD & IJCAR",
+    start: 24,
+    end: 24,
+    link: null,
+  },
+  {
+    name: "9th Vampire Workshop (Vampire)",
+    aff: "IJCAR",
+    start: 24,
+    end: 24,
+    link: null,
+  },
+  {
+    name: "Women in Logic (WiL)",
+    aff: "LICS",
+    start: 24,
+    end: 25,
+    link: null,
+  },
+  {
+    name: "Joint Workshop on  Competitions and other Problem Solving Challenges and on the Design and Evaluation of Benchmark Sets for Formal Methods (Bench-Evaluations)",
+    aff: null,
+    start: 25,
+    end: 25,
+    link: null,
+  },
+  {
+    name: "Workshop on Horn Clauses for Verification and Synthesis (HCVS)",
+    aff: null,
+    start: 25,
+    end: 25,
+    link: null,
+  },
+  {
+    name: "Workshop on Logical Methods for Neural Network Analysis (LOGICNN)",
+    aff: "KR",
+    start: 25,
+    end: 25,
+    link: null,
+  },
+  {
+    name: "Workshop on Counting, Sampling, and Synthesis (MC)",
+    aff: "SAT",
+    start: 25,
+    end: 25,
+    link: null,
+  },
+  {
+    name: "Mentoring Workshop - 2nd week (MW2)",
+    aff: null,
+    start: 25,
+    end: 25,
+    link: "/mentoring-workshop",
+  },
+  {
+    name: "Practical Aspects of Automated Reasoning (PAAR)",
+    aff: "IJCAR",
+    start: 25,
+    end: 25,
+    link: null,
+  },
+  {
+    name: "Workshop on Synthesis (SYNT)",
+    aff: "CAV",
+    start: 25,
+    end: 25,
+    link: null,
+  },
+  {
+    name: "Workshop on Synthesis (SYNT)",
+    aff: "CAV",
+    start: 25,
+    end: 25,
+    link: null,
+  },
+  {
+    name: "Workshop on Verification of Probabilistic Programs (VeriProP)",
+    aff: "CAV",
+    start: 25,
+    end: 25,
+    link: null,
+  },
+  {
+    name: "21st International Workshop on Termination and Termination and Complexity Competition (WST)",
+    aff: "IJCAR",
+    start: 25,
+    end: 25,
+    link: null,
+  },
 ];
+
+const link = ({ url, children }) => {
+  return url ? (
+    url.startsWith("http") ? (
+      <a href={url}>{children}</a>
+    ) : (
+      <Link to={url}>{children}</Link>
+    )
+  ) : (
+    children
+  );
+};
 
 // Component to display a single conference
 const ConferenceItem = ({ conf }) => {
@@ -28,19 +343,7 @@ const ConferenceItem = ({ conf }) => {
       <p className="text-gray-700 text-base pl-4">{conf.name}</p>
     </div>
   );
-  return (
-    <li>
-      {conf.link ? (
-        conf.link.startsWith("http") ? (
-          <a href={conf.link}>{content}</a>
-        ) : (
-          <Link to={conf.link}>{content}</Link>
-        )
-      ) : (
-        content
-      )}
-    </li>
-  );
+  return <li>{link({ url: conf.link, children: content })}</li>;
 };
 
 // Component to display the program for a single week
@@ -96,14 +399,15 @@ const WorkshopDayFilter = ({ selectedDay, onChange }) => {
 const WorkshopItem = ({ workshop }) => {
   const content = (
     <div className="p-4 bg-white rounded-xl border border-gray-200 hover:shadow transition">
-      <h4 className="font-semibold text-blue-900">{workshop.name}</h4>
+      <h4 className="font-semibold text-blue-900 mb-1">{workshop.name}</h4>
+      {workshop.aff && <p className="text-sm text-gray-700">Affiliated with {workshop.aff}</p>}
       <p className="text-sm text-gray-500">
         July {workshop.start}
         {workshop.start !== workshop.end && `-${workshop.end}`}
       </p>
     </div>
   );
-  return workshop.link ? <a href={workshop.link}>{content}</a> : content;
+  return link({ url: workshop.link, children: content });
 };
 
 const WorkshopList = ({ week1, week2 }) => {
