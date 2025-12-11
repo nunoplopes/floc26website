@@ -301,13 +301,6 @@ const workshops_week2 = [
     link: null,
   },
   {
-    name: "Workshop on Synthesis (SYNT)",
-    aff: "CAV",
-    start: 25,
-    end: 25,
-    link: null,
-  },
-  {
     name: "Workshop on Verification of Probabilistic Programs (VeriProP)",
     aff: "CAV",
     start: 25,
