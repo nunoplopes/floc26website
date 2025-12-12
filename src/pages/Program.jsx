@@ -350,13 +350,6 @@ const workshops_week2 = [
     link: null,
   },
   {
-    name: "28th International Workshop on Configuration (ConfWS)",
-    aff: "CP",
-    start: 24,
-    end: 25,
-    link: null,
-  },
-  {
     name: "Workshop on the Ergonomics of Verification Interfaces & Tools (EVIT)",
     aff: "CAV",
     start: 24,
