@@ -148,7 +148,7 @@ const workshops_week1 = [
     aff: "ICLP",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://rcra2026.github.io/",
   },
   {
     name: "Workshop on Semantic Technologies for Data Management (ST4DM)",
