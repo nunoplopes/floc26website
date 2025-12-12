@@ -466,7 +466,7 @@ const workshops_week2 = [
     aff: "IJCAR",
     start: 24,
     end: 24,
-    link: null,
+    link: "https://tptp.org/TPTPTParty/2026/",
   },
   {
     name: "40th International Workshop on Unification (UNIF)",
