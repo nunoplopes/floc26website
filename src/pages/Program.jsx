@@ -543,7 +543,7 @@ const workshops_week2 = [
     aff: "KR",
     start: 25,
     end: 25,
-    link: null,
+    link: "https://perso.ens-lyon.fr/francois.schwarzentruber/research/events/logicnn2026/",
   },
   {
     name: "Logic and Practice of Programming: Rigorous Knowledge and Efficient Queries for Trustworthy Al (LPOP)",
