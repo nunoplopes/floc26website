@@ -105,7 +105,7 @@ const workshops_week1 = [
     name: "Logical and Semantic Frameworks with Applications (LSFA)",
     aff: "FSCD",
     start: 18,
-    end: 18,
+    end: 19,
     link: null,
   },
   {
