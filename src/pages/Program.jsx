@@ -148,7 +148,7 @@ const workshops_week1 = [
     aff: "ICLP",
     start: 18,
     end: 18,
-    link: "https://rcra2026.github.io/",
+    link: "https://rcra2026.github.io",
   },
   {
     name: "Workshop on Semantic Technologies for Data Management (ST4DM)",
@@ -396,7 +396,7 @@ const workshops_week2 = [
     aff: "KR",
     start: 24,
     end: 24,
-    link: null,
+    link: "https://linda-workshop26.cs.uni-paderborn.de",
   },
   {
     name: "A Celebration of Professor Marta Kwiatkowskas Contributions to Formal Methods (MartaFest)",
