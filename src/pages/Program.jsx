@@ -550,7 +550,7 @@ const workshops_week2 = [
     aff: null,
     start: 25,
     end: 25,
-    link: null,
+    link: "https://lpop.cs.stonybrook.edu/lpop2026/",
   },
   {
     name: "Lean Workshop (Lean)",
