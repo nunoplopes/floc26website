@@ -176,7 +176,7 @@ const workshops_week1 = [
     aff: "FSCD",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://deducteam.gitlabpages.inria.fr/tribute-to-gilles/",
   },
   {
     name: "10th International Workshop on Trends in Linear Logic and Applications (TLLA)",
