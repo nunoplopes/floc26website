@@ -64,7 +64,7 @@ const workshops_week1 = [
     aff: null,
     start: 18,
     end: 18,
-    link: null,
+    link: "https://fmqc-workshop.github.io/",
   },
   {
     name: "17th Workshop on Games for Logic and Programming Languages (GALOP)",
