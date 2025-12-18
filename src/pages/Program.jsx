@@ -99,7 +99,7 @@ const workshops_week1 = [
     aff: "KR",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://skilled-llms.github.io/2026/",
   },
   {
     name: "Logical and Semantic Frameworks with Applications (LSFA)",
