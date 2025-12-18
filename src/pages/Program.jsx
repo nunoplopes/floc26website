@@ -95,7 +95,7 @@ const workshops_week1 = [
     link: null,
   },
   {
-    name: "Joint Workshop on Next-Generation Language Models for KKR, Reasoning and Ethics in LLMs and on Statistics and Knowledge Integration for Logic and Learning (LLMs)",
+    name: "Joint Workshop on Statistics and Knowledge Integration for Logic, Learning, Ethical Decisions, and LLMs (SKILLED-LLMs)",
     aff: "KR",
     start: 18,
     end: 18,
