@@ -333,7 +333,7 @@ const workshops_week2 = [
     aff: null,
     start: 24,
     end: 25,
-    link: null,
+    link: "http://2026.ci-bd.soqe.org/",
   },
   {
     name: "Computational Methods in Systems Biology (CMSB)",
