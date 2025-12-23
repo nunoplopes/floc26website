@@ -64,7 +64,7 @@ const workshops_week1 = [
     aff: null,
     start: 18,
     end: 18,
-    link: "https://fmqc-workshop.github.io/",
+    link: "https://fmqc-workshop.github.io",
   },
   {
     name: "17th Workshop on Games for Logic and Programming Languages (GALOP)",
@@ -333,7 +333,7 @@ const workshops_week2 = [
     aff: null,
     start: 24,
     end: 25,
-    link: "http://2026.ci-bd.soqe.org/",
+    link: "http://2026.ci-bd.soqe.org",
   },
   {
     name: "Computational Methods in Systems Biology (CMSB)",
