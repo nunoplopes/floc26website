@@ -60,11 +60,11 @@ const workshops_week1 = [
     link: null,
   },
   {
-    name: "Formal Methods for Quantum Computing (FMQC)",
+    name: "Formal Methods in Quantum Computing (FMQC)",
     aff: null,
     start: 18,
     end: 18,
-    link: "https://fmqc-workshop.github.io",
+    link: "https://fmqc-workshop.github.io/2026/",
   },
   {
     name: "17th Workshop on Games for Logic and Programming Languages (GALOP)",
