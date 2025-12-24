@@ -431,7 +431,7 @@ const workshops_week2 = [
     aff: "CAV",
     start: 24,
     end: 25,
-    link: null,
+    link: "https://aiverification.org/2026/",
   },
   {
     name: "Structures and Deduction (SD)",
