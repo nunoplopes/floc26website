@@ -1,96 +1,282 @@
+// https://pixabay.com/photos/ocean-sea-beach-waves-water-sand-6737634/
+import IMG from "../assets/images/ocean-6737634_1280.jpg";
+
 const Registration = () => {
   return (
     <div className="min-h-screen text-gray-800">
-      <main className=" md:py-16 w-full">
-        {/* Main Heading */}
-        <div className="flex items-center justify-center text-center w-full">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-center mb-12 md:mb-16">
-            Registration
-          </h1>
+      <main className="w-full">
+        <div
+          className="relative w-full h-64 md:h-90 flex items-center justify-center"
+          style={{
+            backgroundImage: `url(${IMG})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="absolute inset-0 bg-white opacity-20"></div>
+          <h1 className="text-4xl md:text-6xl font-bold drop-shadow-lg text-white">Registration</h1>
         </div>
 
-        <section className="bg-white rounded-xl shadow-lg p-6 md:p-8">
-          <p>The registration fees will be announced in early 2026.</p>
+        <section className="bg-white rounded-xl shadow-lg p-6 md:p-8 space-y-8">
+          <h2 className="text-2xl font-semibold text-blue-800 mt-8 mb-2">Conferences</h2>
+          <table className="min-w-full text-sm md:text-base border border-gray-300 rounded-lg">
+            <thead className="bg-gray-100">
+              <tr>
+                <th
+                  rowSpan={2}
+                  className="px-4 py-3 text-left font-semibold border-b border-gray-300"
+                >
+                  Category
+                </th>
+                <th
+                  colSpan={2}
+                  className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400"
+                >
+                  Early (until 15/May)
+                </th>
+                <th
+                  colSpan={2}
+                  className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400"
+                >
+                  Late (until 13/July)
+                </th>
+                <th
+                  rowSpan={2}
+                  className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400"
+                >
+                  Onsite
+                </th>
+              </tr>
+              <tr className="bg-gray-100">
+                <th className="px-4 py-2 text-center font-medium border-b border-l-2 border-gray-400">
+                  Student
+                </th>
+                <th className="px-4 py-2 text-center font-medium border-b border-gray-400 border-l border-gray-200">
+                  Regular
+                </th>
+                <th className="px-4 py-2 text-center font-medium border-b border-l-2 border-gray-400">
+                  Student
+                </th>
+                <th className="px-4 py-2 text-center font-medium border-b border-gray-400 border-l border-gray-200">
+                  Regular
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {[
+                {
+                  label: "Conference (except CSF)",
+                  earlyStudent: "TBA",
+                  earlyRegular: "TBA",
+                  regStudent: "TBA",
+                  regRegular: "TBA",
+                  onsite: "TBA",
+                },
+                {
+                  label: "CSF IEEE member",
+                  earlyStudent: "TBA",
+                  earlyRegular: "TBA",
+                  regStudent: "TBA",
+                  regRegular: "TBA",
+                  onsite: "TBA",
+                },
+                {
+                  label: "CSF IEEE life member",
+                  earlyStudent: "—",
+                  earlyRegular: "TBA",
+                  regStudent: "—",
+                  regRegular: "TBA",
+                  onsite: "TBA",
+                },
+                {
+                  label: "CSF non-IEEE member",
+                  earlyStudent: "TBA",
+                  earlyRegular: "TBA",
+                  regStudent: "TBA",
+                  regRegular: "TBA",
+                  onsite: "TBA",
+                },
+              ].map((row, idx) => (
+                <tr key={row.label} className={idx % 2 === 0 ? "bg-white" : "bg-gray-100"}>
+                  <th className="px-4 py-3 text-left font-medium border-t border-gray-300">
+                    {row.label}
+                  </th>
+                  <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">
+                    {row.earlyStudent}
+                  </td>
+                  <td className="px-4 py-3 text-center border-t border-gray-400 border-l border-gray-200">
+                    {row.earlyRegular}
+                  </td>
+                  <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">
+                    {row.regStudent}
+                  </td>
+                  <td className="px-4 py-3 text-center border-t border-gray-400 border-l border-gray-200">
+                    {row.regRegular}
+                  </td>
+                  <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">
+                    {row.onsite}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+
+          <h2 className="text-2xl font-semibold text-blue-800 mt-16 mb-2">Workshops</h2>
+          <table className="min-w-full text-sm md:text-base border border-gray-300 rounded-lg">
+            <thead className="bg-gray-100">
+              <tr>
+                <th
+                  rowSpan={2}
+                  className="px-4 py-3 text-left font-semibold border-b border-gray-300"
+                >
+                  Category
+                </th>
+                <th
+                  colSpan={2}
+                  className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400"
+                >
+                  Early (until 1/June)
+                </th>
+                <th
+                  colSpan={2}
+                  className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400"
+                >
+                  Late (until 13/July)
+                </th>
+                <th
+                  rowSpan={2}
+                  className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400"
+                >
+                  Onsite
+                </th>
+              </tr>
+              <tr className="bg-gray-100">
+                <th className="px-4 py-2 text-center font-medium border-b border-l-2 border-gray-400">
+                  Student
+                </th>
+                <th className="px-4 py-2 text-center font-medium border-b border-gray-400 border-l border-gray-200">
+                  Regular
+                </th>
+                <th className="px-4 py-2 text-center font-medium border-b border-l-2 border-gray-400">
+                  Student
+                </th>
+                <th className="px-4 py-2 text-center font-medium border-b border-gray-400 border-l border-gray-200">
+                  Regular
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                {
+                  label: "DL",
+                  earlyStudent: "TBA",
+                  earlyRegular: "TBA",
+                  regStudent: "TBA",
+                  regRegular: "TBA",
+                  onsite: "TBA",
+                },
+                {
+                  label: "NMR (includes dinner)",
+                  earlyStudent: "TBA",
+                  earlyRegular: "TBA",
+                  regStudent: "TBA",
+                  regRegular: "TBA",
+                  onsite: "TBA",
+                },
+                {
+                  label: "2-day workshop",
+                  earlyStudent: "TBA",
+                  earlyRegular: "TBA",
+                  regStudent: "TBA",
+                  regRegular: "TBA",
+                  onsite: "TBA",
+                },
+                {
+                  label: "1-day workshop/tutorial",
+                  earlyStudent: "TBA",
+                  earlyRegular: "TBA",
+                  regStudent: "TBA",
+                  regRegular: "TBA",
+                  onsite: "TBA",
+                },
+                {
+                  label: "Dinner",
+                  earlyStudent: "TBA",
+                  earlyRegular: "TBA",
+                  regStudent: "TBA",
+                  regRegular: "TBA",
+                  onsite: "TBA",
+                },
+              ].map((row, idx) => (
+                <tr key={row.label} className={idx % 2 === 0 ? "bg-white" : "bg-gray-100"}>
+                  <th className="px-4 py-3 text-left font-medium border-t border-gray-300">
+                    {row.label}
+                  </th>
+                  <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">
+                    {row.earlyStudent}
+                  </td>
+                  <td className="px-4 py-3 text-center border-t border-gray-400 border-l border-gray-200">
+                    {row.earlyRegular}
+                  </td>
+                  <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">
+                    {row.regStudent}
+                  </td>
+                  <td className="px-4 py-3 text-center border-t border-gray-400 border-l border-gray-200">
+                    {row.regRegular}
+                  </td>
+                  <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">
+                    {row.onsite}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+
+          <h2 className="text-2xl font-semibold text-blue-800 mt-16 mb-2">Summer Schools</h2>
+          <table className="min-w-full text-sm md:text-base border border-gray-300 rounded-lg">
+            <thead className="bg-gray-100">
+              <tr>
+                <th className="px-4 py-3 text-left font-semibold border-b border-gray-300">
+                  Category
+                </th>
+                <th className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400">
+                  Early (until 1/June)
+                </th>
+                <th className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400">
+                  Late (until 6/July)
+                </th>
+                <th className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400">
+                  Onsite
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th className="px-4 py-3 text-left font-medium border-t border-gray-300">
+                  All summer schools
+                </th>
+                <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">TBA</td>
+                <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">TBA</td>
+                <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">TBA</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p className="text-gray-700">All prices are inclusive of Portuguese 23% VAT.</p>
+
+          {/*
+          <div className="pt-4">
+            <a
+              href="TBD"
+              className="inline-block px-6 py-3 rounded-lg bg-blue-700 text-white font-semibold shadow hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            >
+              Go to registration website →
+            </a>
+          </div>
+*/}
         </section>
 
-        {/* Registration Fees Section 
-        <section className="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-12 md:mb-16 mx-2 mt-4">
-          <h2 className="text-3xl font-bold text-blue-900 mb-8 text-center">
-            Conference and Workshop Fees (in Euros)
-          </h2>
-
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr className="bg-blue-900 text-white text-left">
-                  <th className="p-3 rounded-tl-lg">Category</th>
-                  <th className="p-3 text-center">Early Bird (until June 20)</th>
-                  <th className="p-3 text-center">Regular (until July 20)</th>
-                  <th className="p-3 text-center rounded-tr-lg">Walk-in (after July 20)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b border-gray-200 hover:bg-blue-50">
-                  <td className="p-3 font-medium text-blue-800">Regular</td>
-                  <td className="p-3 text-center">{registrationFees[0].earlyBirdRegular}</td>
-                  <td className="p-3 text-center">{registrationFees[0].regularRegular}</td>
-                  <td className="p-3 text-center">{registrationFees[0].walkInRegular}</td>
-                </tr>
-                <tr className="border-b border-gray-200 hover:bg-blue-50">
-                  <td className="p-3 font-medium text-blue-800"> Regular Student</td>
-                  <td className="p-3 text-center">{registrationFees[0].earlyBirdStudent}</td>
-                  <td className="p-3 text-center">{registrationFees[0].regularStudent}</td>
-                  <td className="p-3 text-center">{registrationFees[0].walkInStudent}</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section className="rounded-xl shadow-lg p-6 md:p-8 mb-12 md:mb-16 bg-amber-500 mx-2">
-          <h2 className="text-3xl font-bold text-neutral-50 mb-8 text-center">Workshop</h2>
-
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr className="bg-blue-900 text-white text-left">
-                  <th className="p-3 rounded-tl-lg">Category</th>
-                  <th className="p-3 text-center">Early Bird (until June 20)</th>
-                  <th className="p-3 text-center">Regular (until July 20)</th>
-                  <th className="p-3 text-center rounded-tr-lg">Walk-in (after July 20)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b border-gray-200 hover:bg-blue-500/30">
-                  <td className="p-3 font-medium text-white">Regular</td>
-                  <td className="p-3 text-center font-semibold text-neutral-700">
-                    {registrationFees[0].earlyBirdRegular}
-                  </td>
-                  <td className="p-3 text-center font-semibold text-neutral-700">
-                    {registrationFees[0].regularRegular}
-                  </td>
-                  <td className="p-3 text-center font-semibold text-neutral-700">
-                    {registrationFees[0].walkInRegular}
-                  </td>
-                </tr>
-                <tr className="border-b border-gray-200 hover:bg-blue-500/30">
-                  <td className="p-3 font-medium text-white">Regular Student</td>
-                  <td className="p-3 text-center font-semibold text-neutral-700">
-                    {registrationFees[1].earlyBirdRegularStudent}
-                  </td>
-                  <td className="p-3 text-center font-semibold text-neutral-700">
-                    {registrationFees[1].regularRegularStudent}
-                  </td>
-                  <td className="p-3 text-center font-semibold text-neutral-700">
-                    {registrationFees[1].walkInRegularStudent}
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section> *}
-
-        {/* Contact Information Section */}
         <section
           className="bg-white rounded-xl shadow-lg p-6 md:p-8"
           aria-labelledby="inquiries-heading"

@@ -29,7 +29,7 @@ export default function Transportation() {
         <div className="absolute inset-0 bg-black/50"></div>
 
         <div className="relative z-10">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg">
+          <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">
             Transportation in Lisbon
           </h1>
           <p className="mt-4 text-xl text-gray-200 max-w-2xl mx-auto drop-shadow">
