@@ -70,7 +70,7 @@ export const schedule = [
         link: "https://kr.org/KR2026/",
       },
       {
-        name: "41st Annual ACM/IEEE Symposium on Logic in Computer Science (LICS)",
+        name: "41st Annual Symposium on Logic in Computer Science (LICS)",
         link: "https://lics.siglog.org/lics26/",
       },
       {
