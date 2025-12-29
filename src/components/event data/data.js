@@ -60,18 +60,18 @@ export const committeeData = {
       webpage: "https://www.cis.upenn.edu/~alur/",
     },
     {
-      name: "Alexandra Silva",
-      image: ALEXANDRA,
-      affiliation: "Cornell University",
-      role: "Advisory Chair",
-      webpage: "https://alexandrasilva.org",
-    },
-    {
       name: "Nuno P. Lopes",
       image: NUNO,
       affiliation: "University of Lisbon",
       role: "Organization Chair",
       webpage: "https://web.ist.utl.pt/nuno.lopes/",
+    },
+    {
+      name: "Alexandra Silva",
+      image: ALEXANDRA,
+      affiliation: "Cornell University",
+      role: "Advisory Chair",
+      webpage: "https://alexandrasilva.org",
     },
     {
       name: "Aws Albarghouthi",
