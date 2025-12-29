@@ -652,12 +652,19 @@ const WeekProgram = ({ weekData }) => {
   );
 };
 
-const WorkshopDayFilter = ({ selectedDay, onChange }) => {
+const conference_list = ["CAV", "CP", "CSF", "FSCD", "ICLP", "IJCAR", "ITP", "KR", "LICS", "SAT"];
+
+const WorkshopDayFilter = ({
+  selectedDay,
+  onDayChange,
+  selectedConference,
+  onConferenceChange,
+}) => {
   return (
-    <div className="mb-8 flex justify-center">
+    <div className="mb-8 flex flex-col md:flex-row justify-center items-center gap-4">
       <select
         value={selectedDay}
-        onChange={(e) => onChange(e.target.value)}
+        onChange={(e) => onDayChange(e.target.value)}
         className="border border-gray-300 rounded-lg px-4 py-2 text-gray-700 shadow-sm"
       >
         <option value="all">All workshop days</option>
@@ -671,6 +678,19 @@ const WorkshopDayFilter = ({ selectedDay, onChange }) => {
           <option value="24">July 24</option>
           <option value="25">July 25</option>
         </optgroup>
+      </select>
+
+      <select
+        value={selectedConference}
+        onChange={(e) => onConferenceChange(e.target.value)}
+        className="border border-gray-300 rounded-lg px-4 py-2 text-gray-700 shadow-sm"
+      >
+        <option value="all">All conferences</option>
+        {conference_list.map((conf) => (
+          <option key={conf} value={conf}>
+            {conf}
+          </option>
+        ))}
       </select>
     </div>
   );
@@ -692,20 +712,29 @@ const WorkshopItem = ({ workshop }) => {
 
 const WorkshopList = ({ week1, week2 }) => {
   const [selectedDay, setSelectedDay] = useState("all");
+  const [selectedConference, setSelectedConference] = useState("all");
 
   const matchesDay = (workshop) =>
-    selectedDay === "all"
-      ? true
-      : workshop.start === Number(selectedDay) || workshop.end === Number(selectedDay);
+    selectedDay === "all" ||
+    workshop.start === Number(selectedDay) ||
+    workshop.end === Number(selectedDay);
 
-  const filteredWeek1 = week1.filter(matchesDay);
-  const filteredWeek2 = week2.filter(matchesDay);
+  const matchesConference = (workshop) =>
+    selectedConference === "all" || (workshop.aff && workshop.aff.includes(selectedConference));
+
+  const filteredWeek1 = week1.filter((w) => matchesDay(w) && matchesConference(w));
+  const filteredWeek2 = week2.filter((w) => matchesDay(w) && matchesConference(w));
 
   return (
     <div className="mt-20">
       <h2 className="text-4xl font-bold text-blue-900 mb-10 text-center">List of Workshops</h2>
 
-      <WorkshopDayFilter selectedDay={selectedDay} onChange={setSelectedDay} />
+      <WorkshopDayFilter
+        selectedDay={selectedDay}
+        onDayChange={setSelectedDay}
+        selectedConference={selectedConference}
+        onConferenceChange={setSelectedConference}
+      />
 
       {/* Week 1 */}
       {filteredWeek1.length > 0 && (
