@@ -601,6 +601,12 @@ const workshops_week2 = [
     end: 25,
     link: null,
   },
+      name: "Tools for Educational Activities in Logic (TEAL)",
+    aff: null,
+    start: 25,
+    end: 25,
+    link: null,
+  },
 ];
 
 const link = ({ url, children }) => {
