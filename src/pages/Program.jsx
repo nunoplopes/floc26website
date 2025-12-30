@@ -588,6 +588,13 @@ const workshops_week2 = [
     link: null,
   },
   {
+    name: "Tools for Educational Activities in Logic (TEAL)",
+    aff: null,
+    start: 25,
+    end: 25,
+    link: null,
+  },
+  {
     name: "Workshop on Verification of Probabilistic Programs (VeriProP)",
     aff: "CAV",
     start: 25,
@@ -597,12 +604,6 @@ const workshops_week2 = [
   {
     name: "21st International Workshop on Termination and Termination and Complexity Competition (WST)",
     aff: "IJCAR",
-    start: 25,
-    end: 25,
-    link: null,
-  },
-      name: "Tools for Educational Activities in Logic (TEAL)",
-    aff: null,
     start: 25,
     end: 25,
     link: null,
