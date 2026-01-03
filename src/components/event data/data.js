@@ -140,7 +140,6 @@ export const committeeData = {
     },
     {
       name: "Matthias Knorr",
-      image: null,
       affiliation: "NOVA University Lisbon",
       role: "DL Conference Chair",
       webpage: "https://userweb.fct.unl.pt/~mkn/",
@@ -161,7 +160,6 @@ export const committeeData = {
     },
     {
       name: "Vítor Santos Costa",
-      image: null,
       affiliation: "University of Porto",
       role: "ICLP Conference Co-Chair",
       webpage: "https://www.dcc.fc.up.pt/~vsc/",
@@ -339,7 +337,6 @@ export const committeeData = {
     },
     {
       name: "Claudia Faggian",
-      image: null,
       affiliation: "CNRS",
       role: "LICS PC Co-Chair",
       webpage: "https://www.irif.fr/~faggian/",
@@ -460,7 +457,6 @@ export const committeeData = {
     },
     {
       name: "Igor Walukiewicz",
-      image: null,
       affiliation: "University of Bordeaux",
       role: "LICS Representative",
       webpage: "https://www.labri.fr/perso/igw/",
