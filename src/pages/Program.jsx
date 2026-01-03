@@ -61,7 +61,6 @@ const workshops_week1 = [
   },
   {
     name: "Formal Methods in Quantum Computing (FMQC)",
-    aff: null,
     start: 18,
     end: 18,
     link: "https://fmqc-workshop.github.io/2026/",
@@ -110,7 +109,6 @@ const workshops_week1 = [
   },
   {
     name: "Machine Learning for Solvers and Provers (ML4SP)",
-    aff: null,
     start: 18,
     end: 18,
     link: null,
@@ -131,7 +129,6 @@ const workshops_week1 = [
   },
   {
     name: "8th International Workshop on Artificial Intelligence and fOrmal VERification, Logic, Automata, and sYnthesis (OVERLAY)",
-    aff: null,
     start: 18,
     end: 19,
     link: null,
@@ -152,7 +149,6 @@ const workshops_week1 = [
   },
   {
     name: "Workshop on Semantic Technologies for Data Management (ST4DM)",
-    aff: null,
     start: 18,
     end: 18,
     link: null,
@@ -200,6 +196,12 @@ const workshops_week1 = [
     link: null,
   },
   {
+    name: "Correct-by-construction distributed systems and Decentralised applications: from blockchain to swarms (CbC-DS)",
+    start: 19,
+    end: 19,
+    link: null,
+  },
+  {
     name: "Diagrams in Logic and Computation (DIALOCO)",
     aff: "LICS",
     start: 19,
@@ -222,7 +224,6 @@ const workshops_week1 = [
   },
   {
     name: "Joint Workshop on LLMs meet Constraint Solving and on Logic for Explainable AI Systems (LLM-Solve&LEX-AI)",
-    aff: null,
     start: 19,
     end: 19,
     link: null,
@@ -236,7 +237,6 @@ const workshops_week1 = [
   },
   {
     name: "Mentoring Workshop - 1st week (MW1)",
-    aff: null,
     start: 19,
     end: 19,
     link: "/mentoring-workshop",
@@ -292,7 +292,6 @@ const workshops_week1 = [
   },
   {
     name: "Theorem Proving Components for Educational Software (ThEdu)",
-    aff: null,
     start: 19,
     end: 19,
     link: null,
@@ -330,14 +329,12 @@ const workshops_week2 = [
   },
   {
     name: "Workshop on Craig Interpolation, Beth Definability, and Second-Order Quantifier Elimination (CI-BD-SOQE)",
-    aff: null,
     start: 24,
     end: 25,
     link: "http://2026.ci-bd.soqe.org",
   },
   {
     name: "Computational Methods in Systems Biology (CMSB)",
-    aff: null,
     start: 24,
     end: 25,
     link: "https://arsr.inesc-id.pt/cmsb2026/",
@@ -491,7 +488,6 @@ const workshops_week2 = [
   },
   {
     name: "Joint Workshop on Explainable Logic-Based Knowledge Representation and Explanations with Constraints and Satisfiability (XLoKR-ExCoS)",
-    aff: null,
     start: 24,
     end: 24,
     link: null,
@@ -512,14 +508,12 @@ const workshops_week2 = [
   },
   {
     name: "Joint Workshop on  Competitions and other Problem Solving Challenges and on the Design and Evaluation of Benchmark Sets for Formal Methods (Bench-Evaluations)",
-    aff: null,
     start: 25,
     end: 25,
     link: null,
   },
   {
     name: "Foundations of Computer Security (FCS)",
-    aff: null,
     start: 25,
     end: 25,
     link: null,
@@ -533,7 +527,6 @@ const workshops_week2 = [
   },
   {
     name: "Workshop on Horn Clauses for Verification and Synthesis (HCVS)",
-    aff: null,
     start: 25,
     end: 25,
     link: null,
@@ -547,7 +540,6 @@ const workshops_week2 = [
   },
   {
     name: "Logic and Practice of Programming: Rigorous Knowledge and Efficient Queries for Trustworthy Al (LPOP)",
-    aff: null,
     start: 25,
     end: 25,
     link: "https://lpop.cs.stonybrook.edu/lpop2026/",
@@ -568,7 +560,6 @@ const workshops_week2 = [
   },
   {
     name: "Mentoring Workshop - 2nd week (MW2)",
-    aff: null,
     start: 25,
     end: 25,
     link: "/mentoring-workshop",
@@ -589,7 +580,6 @@ const workshops_week2 = [
   },
   {
     name: "Tools for Educational Activities in Logic (TEAL)",
-    aff: null,
     start: 25,
     end: 25,
     link: null,
