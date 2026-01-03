@@ -4,6 +4,20 @@ import { schedule } from "../components/event data/event";
 
 const workshops_week1 = [
   {
+    name: "39th International Workshop on Description Logics (DL)",
+    aff: "KR",
+    start: 17,
+    end: 19,
+    link: "https://dl-2026.github.io",
+  },
+  {
+    name: "24th International Workshop on Nonmonotonic Reasoning (NMR)",
+    aff: "KR",
+    start: 17,
+    end: 19,
+    link: "https://nmr.krportal.org/2026/",
+  },
+  {
     name: "19th Workshop on Answer Set Programming and Other Programming Paradigms (ASPOCP)",
     aff: "ICLP",
     start: 18,
@@ -667,6 +681,7 @@ const WorkshopDayFilter = ({
         <option value="all">All workshop days</option>
 
         <optgroup label="Week 1">
+          <option value="17">July 17</option>
           <option value="18">July 18</option>
           <option value="19">July 19</option>
         </optgroup>
@@ -713,8 +728,7 @@ const WorkshopList = ({ week1, week2 }) => {
 
   const matchesDay = (workshop) =>
     selectedDay === "all" ||
-    workshop.start === Number(selectedDay) ||
-    workshop.end === Number(selectedDay);
+    (Number(selectedDay) >= workshop.start && Number(selectedDay) <= workshop.end);
 
   const matchesConference = (workshop) =>
     selectedConference === "all" || (workshop.aff && workshop.aff.includes(selectedConference));
