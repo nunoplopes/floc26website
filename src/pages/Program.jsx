@@ -507,7 +507,7 @@ const workshops_week2 = [
     link: null,
   },
   {
-    name: "Joint Workshop on  Competitions and other Problem Solving Challenges and on the Design and Evaluation of Benchmark Sets for Formal Methods (Bench-Evaluations)",
+    name: "Joint Workshop on Competitions and other Problem Solving Challenges and on the Design and Evaluation of Benchmark Sets for Formal Methods (Bench-Evaluations)",
     start: 25,
     end: 25,
     link: null,
