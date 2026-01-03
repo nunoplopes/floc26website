@@ -386,7 +386,7 @@ const workshops_week2 = [
     aff: "FSCD",
     start: 24,
     end: 24,
-    link: null,
+    link: "https://iwc2026.github.io/",
   },
   {
     name: "Isabelle Workshop (Isabelle)",
