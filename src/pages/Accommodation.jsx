@@ -303,7 +303,10 @@ export default function Accommodation() {
                 <span className="font-medium text-gray-700">Rates:</span> €200 (Single room), €215
                 (Double room)
               </p>
-              <p className="text-sm">Address: Av. D. João II, 27, 1990-079 Lisbon</p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Av. D. João II, 27,
+                1990-079 Lisbon
+              </p>
               <p className="text-sm mb-1">
                 <span className="font-medium text-gray-700">Distance:</span> 6.4 km from venue
                 (Metro: Red Line)
