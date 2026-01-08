@@ -428,7 +428,7 @@ const workshops_week2 = [
     aff: "CAV",
     start: 24,
     end: 24,
-    link: null,
+    link: "https://perr-workshop.github.io/2026/",
   },
   {
     name: "RajeevFest: A Celebration of Rajeev Alur (RajeevFest)",
