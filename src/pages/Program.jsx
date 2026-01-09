@@ -386,7 +386,7 @@ const workshops_week2 = [
     aff: "FSCD",
     start: 24,
     end: 24,
-    link: "https://iwc2026.github.io/",
+    link: "https://iwc2026.github.io",
   },
   {
     name: "Isabelle Workshop (Isabelle)",
@@ -498,7 +498,7 @@ const workshops_week2 = [
     aff: "LICS",
     start: 24,
     end: 25,
-    link: null,
+    link: "https://womeninlogic.org/workshops/2026/",
   },
   {
     name: "Joint Workshop on Explainable Logic-Based Knowledge Representation and Explanations with Constraints and Satisfiability (XLoKR-ExCoS)",
