@@ -477,6 +477,27 @@ export default function Accommodation() {
                 with the code &ldquo;FLoC&rdquo;
               </p>
             </div>
+            <div className="p-4 border rounded-lg">
+              <h3 className="font-bold">Hotel Dom Pedro Lisboa (5*)</h3>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Rates:</span> 15% discount on flexible
+                rate
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Av. Eng. Duarte Pacheco
+                24, 1070-110 Lisbon
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Distance:</span> 3.5 km (Metro: Yellow
+                Line)
+              </p>
+              <p className="mt-2 text-sm">
+                <a href="https://www.radissonhotels.com" className="text-blue-600 underline">
+                  Book now
+                </a>{" "}
+                with the code &ldquo;FLOC26&rdquo;
+              </p>
+            </div>
           </div>
 
           <p className="mt-6">
