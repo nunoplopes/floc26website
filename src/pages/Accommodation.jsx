@@ -139,6 +139,12 @@ export default function Accommodation() {
             promo code provided by the hotel when booking.
           </p>
 
+          <p className="mt-3 bg-blue-50 border-l-4 border-blue-400 p-3 rounded-md text-blue-900 text-sm">
+            ℹ️ <strong>Tourist tax:</strong> In Lisbon, a city tourist tax of{" "}
+            <strong>€4 per night, per guest</strong> is usually payable directly at the hotel and is
+            not included in the room rates shown below.
+          </p>
+
           <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="p-4 border rounded-lg">
               <h3 className="font-bold">Hotel 3K Europa (3*)</h3>
@@ -157,6 +163,30 @@ export default function Accommodation() {
                 <a href="https://bit.ly/4gDH1FE" className="text-blue-600 underline">
                   Book now
                 </a>
+              </p>
+            </div>
+
+            <div className="p-4 border rounded-lg">
+              <h3 className="font-bold">VIP Executive Zurique Hotel (3*)</h3>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Rates:</span> €145 (Single room), €155
+                (Double room)
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Rua Ivone Silva 18,
+                1050-124 Lisbon
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Distance:</span> 1.0 km from venue
+              </p>
+              <p className="mt-2 text-sm">
+                <a
+                  href="https://www.vipzuriquehotel.com/en/?_gl=1*w2wmq5*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiApfjKBhC0ARIsAMiR_Is7Ao6sMEM4Ve_H6lGHELRoa3-K-7eB7eR-F6DCC_DZlepSzoKS1TEaAjgdEALw_wcB&gbraid=0AAAAAowXuwWcX3YOXNjzioiXSeUUvNR2X"
+                  className="text-blue-600 underline"
+                >
+                  Book now
+                </a>{" "}
+                (use promo code &ldquo;FLOC26&rdquo;)
               </p>
             </div>
 
@@ -276,6 +306,27 @@ export default function Accommodation() {
             </div>
 
             <div className="p-4 border rounded-lg">
+              <h3 className="font-bold">Hotel 3K Barcelona (4*)</h3>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Rates:</span> €120 (Single room), €130
+                (Double room)
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Rua Laura Alves 10,
+                1050-138 Lisbon
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Distance:</span> 1.1 km from venue
+              </p>
+              <p className="mt-2 text-sm">
+                <a href="https://www.hotel3kbarcelona.pt" className="text-blue-600 underline">
+                  Book now
+                </a>{" "}
+                (use promo code &ldquo;FLoC&rdquo;)
+              </p>
+            </div>
+
+            <div className="p-4 border rounded-lg">
               <h3 className="font-bold">Hotel Açores Lisboa (4*)</h3>
               <p className="text-sm mb-1">
                 <span className="font-medium text-gray-700">Rates:</span> €149 (Single room), €161
@@ -294,6 +345,89 @@ export default function Accommodation() {
                   grupos.hal@bhc.pt
                 </a>{" "}
                 with the code &ldquo;FLoC&rdquo;
+              </p>
+            </div>
+
+            <div className="p-4 border rounded-lg">
+              <h3 className="font-bold">
+                Holiday Inn Lisbon (4*)
+                <br />
+              </h3>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Rates:</span> €165 (Single room), €175
+                (Double room)
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Av. António José de
+                Almeida 28 A, 1000-044 Lisbon
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Distance:</span> 2.0 km from venue
+              </p>
+              <p className="mt-2 text-sm">
+                <a
+                  href="https://drive.google.com/file/d/1YJpKNL_AhA8Y6H7ejBjq8Jvl0Eof6D1e/view"
+                  className="text-blue-600 underline"
+                >
+                  Book now
+                </a>
+              </p>
+            </div>
+
+            <div className="p-4 border rounded-lg">
+              <h3 className="font-bold">
+                Hotel Vincci Liberdade (4*)
+                <br />
+              </h3>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Rates:</span> 15% discount on best rate
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Rua Rosa Araújo 16,
+                1250-096 Lisbon
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Distance:</span> 3.4 km from venue
+              </p>
+              <p className="mt-2 text-sm">
+                <a
+                  href="https://www.vinccihoteles.com/en/?cp=FLOC2026"
+                  className="text-blue-600 underline"
+                >
+                  Book now
+                </a>
+              </p>
+            </div>
+
+            <div className="p-4 border rounded-lg">
+              <h3 className="font-bold">
+                Hotel Vincci Alfama (4*)
+                <br />
+                Hotel Vincci Baixa (4*)
+                <br />
+                Vincci Baixa Suites Apartments
+              </h3>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Rates:</span> 15% discount on best rate
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Calçada de São Vicente
+                32-38, 1100-569 Lisbon
+                <br />
+                Rua do Comércio 32-38, 1100-150 Lisbon
+                <br />
+                Rua do Comércio 24, 1100-150 Lisbon
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Distance:</span> 5.1 km from venue
+              </p>
+              <p className="mt-2 text-sm">
+                <a
+                  href="https://www.vinccihoteles.com/en/?cp=FLOC2026"
+                  className="text-blue-600 underline"
+                >
+                  Book now
+                </a>
               </p>
             </div>
 
