@@ -306,6 +306,7 @@ const workshops_week1 = [
   },
   {
     name: "Theorem Proving Components for Educational Software (ThEdu)",
+    aff: "IJCAR",
     start: 19,
     end: 19,
     link: null,
