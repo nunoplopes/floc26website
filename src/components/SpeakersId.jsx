@@ -22,25 +22,39 @@ const SpeakersId = () => {
           ← Back to List of Keynote Speakers
         </Link>
 
-        <div>
-          <div className="grid grid-cols-1  md:grid-cols-3 gap-4">
-            {/* Speaker Image */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div>
+            <img src={speaker.image} alt={speaker.name} className="w-full rounded-lg" />
+          </div>
+
+          <div className="md:col-span-2 space-y-6">
             <div>
-              <img src={speaker.image} alt={speaker.name} width={500} height={500} />
+              <h1 className="text-3xl font-bold text-neutral-800">{speaker.name}</h1>
+              <p className="text-blue-600 font-medium text-xl">{speaker.position}</p>
             </div>
 
-            {/* Speaker Details */}
-            <div className="p-3 md:col-span-2">
-              <h1 className="text-3xl font-bold text-neutral-800 mb-2">{speaker.name}</h1>
-              <p className="text-blue-600 font-medium mb-4 text-xl">{speaker.position}</p>
-              <p className="text-gray-600 mb-6 text-xl">{speaker.description}</p>
+            <div>
+              <h2 className="text-2xl font-semibold text-gray-800">{speaker.title}</h2>
+              <p className="mt-2 text-lg font-medium text-gray-500">{speaker.date}</p>
+            </div>
 
-              <div className="mt-6">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-2">Website</h2>
-                <a href={speaker.link} className="text-blue-600 hover:text-blue-500">
-                  {speaker.link}
-                </a>
-              </div>
+            <div>
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">Abstract</h3>
+              <p className="text-gray-600 text-lg leading-relaxed text-justify">
+                {speaker.abstract}
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">Speaker Bio</h3>
+              <p className="text-gray-600 text-lg leading-relaxed text-justify">{speaker.bio}</p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">Website</h3>
+              <a href={speaker.link} className="text-blue-600 hover:text-blue-500">
+                {speaker.link}
+              </a>
             </div>
           </div>
         </div>
