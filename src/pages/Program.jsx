@@ -470,7 +470,7 @@ const workshops_week2 = [
     aff: "KR",
     start: 24,
     end: 24,
-    link: null,
+    link: "https://abstraction.cognitive-logics.org/thema2026/",
   },
   {
     name: "15th TPTP Tea Party (TPTPTP)",
