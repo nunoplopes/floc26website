@@ -492,7 +492,7 @@ const workshops_week2 = [
     aff: "IJCAR",
     start: 24,
     end: 24,
-    link: null,
+    link: "https://vprover.github.io/workshop.html",
   },
   {
     name: "Women in Logic (WiL)",
@@ -584,7 +584,7 @@ const workshops_week2 = [
     aff: "IJCAR",
     start: 25,
     end: 25,
-    link: null,
+    link: "https://paar2026.github.io",
   },
   {
     name: "Workshop on Synthesis (SYNT)",
