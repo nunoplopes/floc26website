@@ -394,7 +394,7 @@ const workshops_week2 = [
     aff: "ITP & IJCAR",
     start: 24,
     end: 25,
-    link: null,
+    link: "https://sketis.net/isabelle/isabelle-workshop-2026",
   },
   {
     name: "Logical frameworks and meta-languages: Theory and Practice (LFMTP)",
