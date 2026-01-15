@@ -80,11 +80,11 @@ const workshops_week1 = [
     link: "https://fmqc-workshop.github.io/2026/",
   },
   {
-    name: "17th Workshop on Games for Logic and Programming Languages (GALOP)",
+    name: "17th Workshop on Games for Logic and Programming Languages (GaLoP)",
     aff: "LICS & FSCD",
     start: 18,
     end: 19,
-    link: null,
+    link: "https://galop-2026.lacl.fr",
   },
   {
     name: "IFIP Working Group 1.6 (IFIP16)",
