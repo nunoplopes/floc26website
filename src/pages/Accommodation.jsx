@@ -160,7 +160,10 @@ export default function Accommodation() {
                 <span className="font-medium text-gray-700">Distance:</span> 1.0 km from venue
               </p>
               <p className="mt-2 text-sm">
-                <a href="https://bit.ly/4gDH1FE" className="text-blue-600 underline">
+                <a
+                  href="https://secure.guestcentric.net/api/bg/book.php?nrNights=1&startDay=2026-07-12&select=p166r5&apikey=cd31bd3218bc05fb5a9e5fcc3996ee24&pc=RRQEPDK"
+                  className="text-blue-600 underline"
+                >
                   Book now
                 </a>
               </p>
@@ -376,6 +379,30 @@ export default function Accommodation() {
 
             <div className="p-4 border rounded-lg">
               <h3 className="font-bold">
+                VIP Executive Picoas Hotel (4*)
+                <br />
+              </h3>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Rates:</span> €178 (Single room), €191
+                (Double room)
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Rua Filipe Folque 12,
+                1069-191 Lisbon
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Distance:</span> 2.2 km from venue
+              </p>
+              <p className="mt-2 text-sm">
+                <a href="https://www.viphotels.com" className="text-blue-600 underline">
+                  Book now
+                </a>{" "}
+                with the code &ldquo;FLOC26&rdquo;
+              </p>
+            </div>
+
+            <div className="p-4 border rounded-lg">
+              <h3 className="font-bold">
                 Hotel Vincci Liberdade (4*)
                 <br />
               </h3>
@@ -452,6 +479,30 @@ export default function Accommodation() {
                 >
                   Book now
                 </a>
+              </p>
+            </div>
+
+            <div className="p-4 border rounded-lg">
+              <h3 className="font-bold">
+                VIP Grand Lisboa Hotel (5*)
+                <br />
+              </h3>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Rates:</span> €170 (Single room), €185
+                (Double room)
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Av. 5 de Outubro 197,
+                1050-054 Lisbon
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Distance:</span> 0.9 km from venue
+              </p>
+              <p className="mt-2 text-sm">
+                <a href="https://www.viphotels.com" className="text-blue-600 underline">
+                  Book now
+                </a>{" "}
+                with the code &ldquo;FLOC26&rdquo;
               </p>
             </div>
 
