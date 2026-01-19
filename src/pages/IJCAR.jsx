@@ -25,30 +25,30 @@ const IJCAR = () => {
 
         <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
           <h2 className="text-3xl font-semibold text-indigo-700 mb-6 border-b border-indigo-200 pb-2">
-            Preliminary Dates
+            Dates
           </h2>
           <ul className="list-disc list-inside space-y-2 text-gray-700">
             <li>
-              Abstract submission: <strong>February 6, 2026</strong> (tentatively)
+              Abstract submission: <strong>February 6, 2026</strong>
             </li>
             <li>
-              Paper submission: <strong>February 13, 2026</strong> (tentatively)
+              Paper submission: <strong>February 13, 2026</strong>
             </li>
             <li>
-              Rebuttal: <strong>March 30-31, 2026</strong> (tentatively)
+              Rebuttal: <strong>March 30-31, 2026</strong>
             </li>
             <li>
-              Notification: <strong>April 14, 2026</strong> (tentatively)
+              Notification: <strong>April 14, 2026</strong>
             </li>
             <li>
-              Camera-ready: <strong>June 15, 2026</strong> (tentatively)
+              Camera-ready: <strong>June 15, 2026</strong>
             </li>
           </ul>
         </section>
 
         <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-4">
           <h2 className="text-3xl font-semibold text-indigo-700 mb-4 border-b border-indigo-200 pb-2">
-            Preliminary Call for Papers
+            Call for Papers
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed">
             <p>
@@ -113,23 +113,23 @@ const IJCAR = () => {
               mathematics, trusted AI, etc.
             </p>
             <p></p>
-            <h3 className="text-2xl font-semibold text-indigo-700 pb-0">Preliminary Dates</h3>
+            <h3 className="text-2xl font-semibold text-indigo-700 pb-0">Dates</h3>
             <p className="text-.5xl">All times are &ldquo;Anywhere-on-Earth&rdquo; (AoE).</p>
             <ul className="list-disc list-inside space-y-2 text-gray-700">
               <li>
-                Abstract submission: <strong>February 6, 2026</strong> (tentatively)
+                Abstract submission: <strong>February 6, 2026</strong>
               </li>
               <li>
-                Paper submission: <strong>February 13, 2026</strong> (tentatively)
+                Paper submission: <strong>February 13, 2026</strong>
               </li>
               <li>
-                Rebuttal: <strong>March 30-31, 2026</strong> (tentatively)
+                Rebuttal: <strong>March 30-31, 2026</strong>
               </li>
               <li>
-                Notification: <strong>April 14, 2026</strong> (tentatively)
+                Notification: <strong>April 14, 2026</strong>
               </li>
               <li>
-                Camera-ready: <strong>June 15, 2026</strong> (tentatively)
+                Camera-ready: <strong>June 15, 2026</strong>
               </li>
               <li>
                 Conference: <strong>July 26-29, 2026</strong>
