@@ -98,7 +98,7 @@ const workshops_week1 = [
     aff: "FSCD",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://itrs2026.tu-dortmund.de",
   },
   {
     name: "Logic and Computational Complexity (LCC)",
