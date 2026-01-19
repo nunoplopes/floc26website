@@ -18,7 +18,7 @@ const Header = () => {
     { to: "/local-transportation", label: "Local Transportation" },
     { to: "/committees", label: "Committees" },
     { to: "/program", label: "Program" },
-    // { to: "/tourism", label: "Tourism" },
+    { to: "/tourism", label: "Tourism" },
   ];
 
   return (

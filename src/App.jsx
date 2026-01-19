@@ -9,7 +9,7 @@ import Registration from "./pages/Registration";
 import Accommodation from "./pages/Accommodation";
 import Venue from "./pages/Venue";
 import Transportation from "./pages/Transportation";
-//import Tourism from "./pages/Tourism";
+import Tourism from "./pages/Tourism";
 import SpeakersId from "./components/SpeakersId";
 import Policies from "./pages/Policies";
 import CallForWorkshops from "./pages/CallForWorkshops";
@@ -29,6 +29,7 @@ const App = () => {
       <Route path="/program" element={<Program />} />
       <Route path="/venue" element={<Venue />} />
       <Route path="/accommodation" element={<Accommodation />} />
+      <Route path="/tourism" element={<Tourism />} />
       <Route path="/local-transportation" element={<Transportation />} />
       <Route path="/registration" element={<Registration />} />
       <Route path="/policies" element={<Policies />} />
