@@ -1,13 +1,7 @@
-import {
-  FaMapMarkedAlt,
-  FaBus,
-  FaTrain,
-  FaTaxi,
-  FaPlane,
-  FaSubway,
-  FaGlobeEurope,
-} from "react-icons/fa";
+import { FaMapMarkedAlt, FaBus, FaTrain, FaTaxi, FaSubway, FaGlobeEurope } from "react-icons/fa";
 import METROMAP from "../assets/images/map_metro.png";
+// https://pixabay.com/photos/lisbon-tram-portugal-4438148/
+import TRAM from "../assets/images/lisbon-4438148_1280.jpg";
 
 const Section = ({ title, icon: Icon, children }) => (
   <div className="mb-10">
@@ -22,18 +16,29 @@ const Section = ({ title, icon: Icon, children }) => (
 // Main transportation component
 export default function Transportation() {
   return (
-    <div className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-4xl mx-auto">
-        {/* Header Section */}
-        <div className="text-center mb-16 md:pt-10">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+    <div className="bg-white">
+      {/* Header Section */}
+      <div
+        className="relative w-full h-64 md:h-96 flex flex-col items-center justify-center text-center px-4"
+        style={{
+          backgroundImage: `url(${TRAM})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50"></div>
+
+        <div className="relative z-10">
+          <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">
             Transportation in Lisbon
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="mt-4 text-xl text-gray-200 max-w-2xl mx-auto drop-shadow">
             Find the best way to reach the conference venue.
           </p>
         </div>
+      </div>
 
+      <div className="max-w-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         {/* Metro */}
         <Section title="Metro" icon={FaSubway}>
           The Metro is one of the fastest and most reliable ways to get around the city. You can tap

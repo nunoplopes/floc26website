@@ -280,7 +280,7 @@ const IJCAR = () => {
                   href="https://sites.google.com/view/saranegri/home"
                   className="text-indigo-600 hover:underline"
                 >
-                  Sara Niegri
+                  Sara Negri
                 </a>
                 , Università degli Studi di Genova
               </li>

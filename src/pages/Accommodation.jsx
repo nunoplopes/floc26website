@@ -1,5 +1,7 @@
 import { FaHotel, FaPlane } from "react-icons/fa";
 import Vueling from "../assets/images/vueling.svg";
+// https://pixabay.com/photos/lisbon-statue-travel-jesus-1953199/
+import CRISTOREI from "../assets/images/lisbon-1953199_1280.jpg";
 
 const Section = ({ title, icon: Icon, children }) => (
   <div className="mb-10">
@@ -13,14 +15,22 @@ const Section = ({ title, icon: Icon, children }) => (
 
 export default function Accommodation() {
   return (
-    <div className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16 md:pt-10">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Traveling to and Staying in Lisbon
-          </h1>
-        </div>
+    <div>
+      <div
+        className="w-full h-64 md:h-96 relative flex items-center justify-center text-center"
+        style={{
+          backgroundImage: `url(${CRISTOREI})`,
+          backgroundSize: "cover",
+          backgroundPosition: "top",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <h1 className="relative z-10 text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
+          Traveling to and Staying in Lisbon
+        </h1>
+      </div>
 
+      <div className="p-6 max-w-4xl mx-auto">
         <Section title="Getting to Lisbon" icon={FaPlane}>
           Lisbon’s only airport is <strong>Humberto Delgado Airport (LIS)</strong>, located inside
           the city. It’s connected via metro (Red Line). <br />
@@ -115,7 +125,7 @@ export default function Accommodation() {
             </li>
           </ul>
           <p className="mt-3">
-            For official information, visit the{" "}
+            For more information, visit the{" "}
             <a href="https://travel-europe.europa.eu/en/ees" className="text-blue-600 underline">
               official EU website
             </a>
@@ -127,6 +137,12 @@ export default function Accommodation() {
           <p>
             FLoC has negotiated reduced rates with several nearby hotels. Use the booking link or
             promo code provided by the hotel when booking.
+          </p>
+
+          <p className="mt-3 bg-blue-50 border-l-4 border-blue-400 p-3 rounded-md text-blue-900 text-sm">
+            ℹ️ <strong>Tourist tax:</strong> In Lisbon, a city tourist tax of{" "}
+            <strong>€4 per night, per guest</strong> is usually payable directly at the hotel and is
+            not included in the room rates shown below.
           </p>
 
           <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -144,9 +160,36 @@ export default function Accommodation() {
                 <span className="font-medium text-gray-700">Distance:</span> 1.0 km from venue
               </p>
               <p className="mt-2 text-sm">
-                <a href="https://bit.ly/4gDH1FE" className="text-blue-600 underline">
+                <a
+                  href="https://secure.guestcentric.net/api/bg/book.php?nrNights=1&startDay=2026-07-12&select=p166r5&apikey=cd31bd3218bc05fb5a9e5fcc3996ee24&pc=RRQEPDK"
+                  className="text-blue-600 underline"
+                >
                   Book now
                 </a>
+              </p>
+            </div>
+
+            <div className="p-4 border rounded-lg">
+              <h3 className="font-bold">VIP Executive Zurique Hotel (3*)</h3>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Rates:</span> €145 (Single room), €155
+                (Double room)
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Rua Ivone Silva 18,
+                1050-124 Lisbon
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Distance:</span> 1.0 km from venue
+              </p>
+              <p className="mt-2 text-sm">
+                <a
+                  href="https://www.vipzuriquehotel.com/en/?_gl=1*w2wmq5*_up*MQ..*_gs*MQ..&gclid=Cj0KCQiApfjKBhC0ARIsAMiR_Is7Ao6sMEM4Ve_H6lGHELRoa3-K-7eB7eR-F6DCC_DZlepSzoKS1TEaAjgdEALw_wcB&gbraid=0AAAAAowXuwWcX3YOXNjzioiXSeUUvNR2X"
+                  className="text-blue-600 underline"
+                >
+                  Book now
+                </a>{" "}
+                (use promo code &ldquo;FLOC26&rdquo;)
               </p>
             </div>
 
@@ -266,6 +309,27 @@ export default function Accommodation() {
             </div>
 
             <div className="p-4 border rounded-lg">
+              <h3 className="font-bold">Hotel 3K Barcelona (4*)</h3>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Rates:</span> €120 (Single room), €130
+                (Double room)
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Rua Laura Alves 10,
+                1050-138 Lisbon
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Distance:</span> 1.1 km from venue
+              </p>
+              <p className="mt-2 text-sm">
+                <a href="https://www.hotel3kbarcelona.pt" className="text-blue-600 underline">
+                  Book now
+                </a>{" "}
+                (use promo code &ldquo;FLoC&rdquo;)
+              </p>
+            </div>
+
+            <div className="p-4 border rounded-lg">
               <h3 className="font-bold">Hotel Açores Lisboa (4*)</h3>
               <p className="text-sm mb-1">
                 <span className="font-medium text-gray-700">Rates:</span> €149 (Single room), €161
@@ -288,12 +352,122 @@ export default function Accommodation() {
             </div>
 
             <div className="p-4 border rounded-lg">
+              <h3 className="font-bold">
+                Holiday Inn Lisbon (4*)
+                <br />
+              </h3>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Rates:</span> €165 (Single room), €175
+                (Double room)
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Av. António José de
+                Almeida 28 A, 1000-044 Lisbon
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Distance:</span> 2.0 km from venue
+              </p>
+              <p className="mt-2 text-sm">
+                <a
+                  href="https://drive.google.com/file/d/1YJpKNL_AhA8Y6H7ejBjq8Jvl0Eof6D1e/view"
+                  className="text-blue-600 underline"
+                >
+                  Book now
+                </a>
+              </p>
+            </div>
+
+            <div className="p-4 border rounded-lg">
+              <h3 className="font-bold">
+                VIP Executive Picoas Hotel (4*)
+                <br />
+              </h3>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Rates:</span> €178 (Single room), €191
+                (Double room)
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Rua Filipe Folque 12,
+                1069-191 Lisbon
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Distance:</span> 2.2 km from venue
+              </p>
+              <p className="mt-2 text-sm">
+                <a href="https://www.viphotels.com" className="text-blue-600 underline">
+                  Book now
+                </a>{" "}
+                with the code &ldquo;FLOC26&rdquo;
+              </p>
+            </div>
+
+            <div className="p-4 border rounded-lg">
+              <h3 className="font-bold">
+                Hotel Vincci Liberdade (4*)
+                <br />
+              </h3>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Rates:</span> 15% discount on best rate
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Rua Rosa Araújo 16,
+                1250-096 Lisbon
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Distance:</span> 3.4 km from venue
+              </p>
+              <p className="mt-2 text-sm">
+                <a
+                  href="https://www.vinccihoteles.com/en/?cp=FLOC2026"
+                  className="text-blue-600 underline"
+                >
+                  Book now
+                </a>
+              </p>
+            </div>
+
+            <div className="p-4 border rounded-lg">
+              <h3 className="font-bold">
+                Hotel Vincci Alfama (4*)
+                <br />
+                Hotel Vincci Baixa (4*)
+                <br />
+                Vincci Baixa Suites Apartments
+              </h3>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Rates:</span> 15% discount on best rate
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Calçada de São Vicente
+                32-38, 1100-569 Lisbon
+                <br />
+                Rua do Comércio 32-38, 1100-150 Lisbon
+                <br />
+                Rua do Comércio 24, 1100-150 Lisbon
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Distance:</span> 5.1 km from venue
+              </p>
+              <p className="mt-2 text-sm">
+                <a
+                  href="https://www.vinccihoteles.com/en/?cp=FLOC2026"
+                  className="text-blue-600 underline"
+                >
+                  Book now
+                </a>
+              </p>
+            </div>
+
+            <div className="p-4 border rounded-lg">
               <h3 className="font-bold">Tivoli Oriente Lisboa Hotel (4*)</h3>
               <p className="text-sm mb-1">
                 <span className="font-medium text-gray-700">Rates:</span> €200 (Single room), €215
                 (Double room)
               </p>
-              <p className="text-sm">Address: Av. D. João II, 27, 1990-079 Lisbon</p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Av. D. João II, 27,
+                1990-079 Lisbon
+              </p>
               <p className="text-sm mb-1">
                 <span className="font-medium text-gray-700">Distance:</span> 6.4 km from venue
                 (Metro: Red Line)
@@ -305,6 +479,30 @@ export default function Accommodation() {
                 >
                   Book now
                 </a>
+              </p>
+            </div>
+
+            <div className="p-4 border rounded-lg">
+              <h3 className="font-bold">
+                VIP Grand Lisboa Hotel (5*)
+                <br />
+              </h3>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Rates:</span> €170 (Single room), €185
+                (Double room)
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Av. 5 de Outubro 197,
+                1050-054 Lisbon
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Distance:</span> 0.9 km from venue
+              </p>
+              <p className="mt-2 text-sm">
+                <a href="https://www.viphotels.com" className="text-blue-600 underline">
+                  Book now
+                </a>{" "}
+                with the code &ldquo;FLOC26&rdquo;
               </p>
             </div>
 
@@ -330,7 +528,53 @@ export default function Accommodation() {
                 with the code &ldquo;FLoC&rdquo;
               </p>
             </div>
+            <div className="p-4 border rounded-lg">
+              <h3 className="font-bold">Hotel Dom Pedro Lisboa (5*)</h3>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Rates:</span> 15% discount on flexible
+                rate
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Av. Eng. Duarte Pacheco
+                24, 1070-110 Lisbon
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Distance:</span> 3.5 km (Metro: Yellow
+                Line)
+              </p>
+              <p className="mt-2 text-sm">
+                <a href="https://www.radissonhotels.com" className="text-blue-600 underline">
+                  Book now
+                </a>{" "}
+                with the code &ldquo;FLOC26&rdquo;
+              </p>
+            </div>
           </div>
+
+          <p className="mt-6">
+            If you prefer a short-term apartment stay, you can search for options on{" "}
+            <a
+              href="https://www.jdoqocy.com/click-101479577-15736461"
+              className="text-blue-600 underline"
+            >
+              Vrbo
+            </a>{" "}
+            (Expedia Group). You can also browse hotel and accommodation options through{" "}
+            <a
+              href="https://www.dpbolvw.net/click-101479577-17085746"
+              className="text-blue-600 underline"
+            >
+              Hotels.com
+            </a>{" "}
+            or{" "}
+            <a
+              href="https://www.jdoqocy.com/click-101479577-13880339"
+              className="text-blue-600 underline"
+            >
+              Expedia
+            </a>
+            .
+          </p>
         </Section>
 
         <Section title="Discounted Airfares" icon={FaPlane}>
