@@ -119,7 +119,7 @@ const workshops_week1 = [
     aff: "FSCD",
     start: 18,
     end: 19,
-    link: null,
+    link: "https://lsfa-workshop.github.io/2026/",
   },
   {
     name: "Machine Learning for Solvers and Provers (ML4SP)",
