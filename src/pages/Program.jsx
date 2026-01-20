@@ -597,7 +597,7 @@ const workshops_week2 = [
     name: "Tools for Educational Activities in Logic (TEAL)",
     start: 25,
     end: 25,
-    link: null,
+    link: "https://teal.cs.brown.edu/floc2026/",
   },
   {
     name: "Workshop on Verification of Probabilistic Programs (VeriProP)",
