@@ -1,6 +1,7 @@
 import AWS from "../../assets/images/sponsors/aws.png";
 import TURISMO from "../../assets/images/sponsors/ATL.png";
 import CADENCE from "../../assets/images/sponsors/cadence.png";
+import NVIDIA from "../../assets/images/sponsors/nvidia.svg";
 import THE from "../../assets/images/sponsors/THE.svg";
 import IST from "../../assets/images/sponsors/IST.webp";
 import ULISBON from "../../assets/images/sponsors/ulisbon.webp";
@@ -13,6 +14,12 @@ export const sponsors = [
     image: AWS,
     type: "Platinum",
     url: "https://aws.amazon.com",
+  },
+  {
+    name: "NVIDIA",
+    image: NVIDIA,
+    type: "Gold",
+    url: "https://www.nvidia.com",
   },
   {
     name: "Associação de Turismo de Lisboa",
