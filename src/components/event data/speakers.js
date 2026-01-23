@@ -39,10 +39,11 @@ export const keyNoteSpeakers = [
     name: "Işıl Dillig",
     image: IMAGE3,
     date: "28/July",
-    title: "",
-    abstract: "TBA",
+    title: "Trustworthy Neuro-Symbolic Programming with Informal Specifications",
+    abstract:
+      "Neuro-Symbolic Programming (NSP) treats learning-enabled systems as programs that compose symbolic control structure composed with learned neural primitives for perception and prediction. NSP offers a principled response to a central challenge for logic and formal methods in the age of machine learning: how to obtain trustworthy, compositional behavior when key components are statistical and uncertain. This talk gives an gives an overview of recent advances in NSP along three axes: (1) domain-specific  languages targeting real-world use cases, (2) learning techniques for fitting program structure based on informal specifications, and (3) approaches for ensuring correctness despite noisy neural components and incomplete specifications.",
     position: "University of Texas at Austin",
-    bio: "Işıl Dillig (PhD, Stanford) is a Professor of Computer Science at the University of Texas at Austin where she leads the UToPiA research group.  Her primary research areas are programming languages and formal methods, with an emphasis on software verification and program synthesis.  She has published many academic papers at top conferences in her field (PLDI, POPL, OOPSLA, CAV etc), several of which have received best and distinguished paper awards. She was a recipient of an NSF CAREER Award in 2015 and was also selected as a Sloan Fellow in the same year. She has been a PI (or a co-PI) on several grants from the National Science Foundation and DARPA. She has also been a program committee chair for several conferences, including OOPSLA'26, PLDI'22 and CAV'19.  She is also the recipient of several teaching awards at UT Austin, including the Texas 10 award and the College of Natural Sciences Teaching Excellence Award.",
+    bio: "Işıl Dillig is a Professor of Computer Science at the University of Texas at Austin, where she leads the UToPiA research group. Her research interests span formal methods and programming languages. She received her B.S., M.S., and Ph.D. in Computer Science from Stanford University. Her work has been recognized with the SIGPLAN Robin Milner Young Researcher Award, an Alfred P. Sloan Research Fellowship, and an NSF CAREER Award, as well as best paper awards at PLDI, POPL, OOPSLA, and ETAPS. She has served as Program Committee Chair for PLDI 2022 and CAV 2019, and she has received multiple teaching awards at UT Austin.",
     link: "https://www.cs.utexas.edu/~isil/",
   },
 ];
