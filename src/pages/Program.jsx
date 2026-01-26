@@ -485,7 +485,7 @@ const workshops_week2 = [
     aff: "FSCD & IJCAR",
     start: 24,
     end: 24,
-    link: null,
+    link: "https://www3.risc.jku.at/conferences/unif2026/",
   },
   {
     name: "9th Vampire Workshop (Vampire)",
