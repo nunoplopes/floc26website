@@ -105,7 +105,7 @@ const workshops_week1 = [
     aff: "LICS",
     start: 18,
     end: 19,
-    link: null,
+    link: "https://webusers.imj-prg.fr/~arnaud.durand/LCC/lcc26.html",
   },
   {
     name: "Joint Workshop on Statistics and Knowledge Integration for Logic, Learning, Ethical Decisions, and LLMs (SKILLED-LLMs)",
