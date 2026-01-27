@@ -418,11 +418,11 @@ const workshops_week2 = [
     link: null,
   },
   {
-    name: "Parameterized Complexity of Computational Reasoning (PCRR)",
+    name: "Parameterized Complexity of Computational Reasoning (PCCR)",
     aff: "KR",
     start: 24,
     end: 25,
-    link: null,
+    link: "https://algorithms.leeds.ac.uk/pccr2026/",
   },
   {
     name: "6th Workshop on Program Equivalence and Relational Reasoning (PERR)",
