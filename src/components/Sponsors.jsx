@@ -3,7 +3,7 @@ import { sponsors } from "./event data/sponsors";
 const sponsorshipTiers = [
   { level: "Diamond", fontSize: "text-4xl", logoSize: "max-h-32" },
   { level: "Platinum", fontSize: "text-3xl", logoSize: "max-h-28" },
-  { level: "Gold", fontSize: "text-2xl", logoSize: "max-h-24" },
+  { level: "Gold", fontSize: "text-3xl", logoSize: "max-h-28 min-h-[50px]" },
   { level: "Silver", fontSize: "text-2xl", logoSize: "max-h-24" },
   { level: "Bronze", fontSize: "text-2xl", logoSize: "max-h-14" },
   { level: "Institutional", fontSize: "text-xl", logoSize: "max-h-14" },
@@ -33,8 +33,6 @@ const Sponsors = () => {
                   <a
                     key={sponsorIdx}
                     href={sponsor.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="bg-white rounded-lg p-3 shadow-md inline-flex items-center justify-center"
                   >
                     <img

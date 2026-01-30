@@ -22,7 +22,7 @@ const workshops_week1 = [
     aff: "ICLP",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://sites.google.com/view/aspocp2026",
   },
   {
     name: "2nd Workshop on Cognitive Architectures for Robotics: LLMs and Logic in Action (CARLA)",
@@ -36,7 +36,7 @@ const workshops_week1 = [
     aff: "ICLP",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://sites.google.com/view/iclp-dc-ss2026",
   },
   {
     name: "Doctoral Program of the International Conference on Principles and Practice of Constraint Programming (DPCP)",
@@ -105,7 +105,7 @@ const workshops_week1 = [
     aff: "LICS",
     start: 18,
     end: 19,
-    link: null,
+    link: "https://webusers.imj-prg.fr/~arnaud.durand/LCC/lcc26.html",
   },
   {
     name: "Joint Workshop on Statistics and Knowledge Integration for Logic, Learning, Ethical Decisions, and LLMs (SKILLED-LLMs)",
@@ -418,11 +418,11 @@ const workshops_week2 = [
     link: null,
   },
   {
-    name: "Parameterized Complexity of Computational Reasoning (PCRR)",
+    name: "Parameterized Complexity of Computational Reasoning (PCCR)",
     aff: "KR",
     start: 24,
     end: 25,
-    link: null,
+    link: "https://algorithms.leeds.ac.uk/pccr2026/",
   },
   {
     name: "6th Workshop on Program Equivalence and Relational Reasoning (PERR)",
@@ -485,7 +485,7 @@ const workshops_week2 = [
     aff: "FSCD & IJCAR",
     start: 24,
     end: 24,
-    link: null,
+    link: "https://www3.risc.jku.at/conferences/unif2026/",
   },
   {
     name: "9th Vampire Workshop (Vampire)",
@@ -597,7 +597,7 @@ const workshops_week2 = [
     name: "Tools for Educational Activities in Logic (TEAL)",
     start: 25,
     end: 25,
-    link: null,
+    link: "https://teal.cs.brown.edu/floc2026/",
   },
   {
     name: "Workshop on Verification of Probabilistic Programs (VeriProP)",

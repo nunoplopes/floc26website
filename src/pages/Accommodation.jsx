@@ -135,8 +135,8 @@ export default function Accommodation() {
 
         <Section title="Hotels with Reduced Rates" icon={FaHotel}>
           <p>
-            FLoC has negotiated reduced rates with several nearby hotels. Use the booking link or
-            promo code provided by the hotel when booking.
+            FLoC has negotiated reduced rates with several nearby hotels, with breakfast included.
+            Use the booking link or promo code provided by the hotel when booking.
           </p>
 
           <p className="mt-3 bg-blue-50 border-l-4 border-blue-400 p-3 rounded-md text-blue-900 text-sm">
@@ -189,7 +189,7 @@ export default function Accommodation() {
                 >
                   Book now
                 </a>{" "}
-                (use promo code &ldquo;FLOC26&rdquo;)
+                with the code &ldquo;FLOC26&rdquo;
               </p>
             </div>
 
@@ -209,7 +209,7 @@ export default function Accommodation() {
                 <a href="https://www.hotelroma.pt" className="text-blue-600 underline">
                   Book now
                 </a>{" "}
-                (use promo code &ldquo;FLOC&rdquo;)
+                with the code &ldquo;FLOC&rdquo;
               </p>
             </div>
 
@@ -256,7 +256,7 @@ export default function Accommodation() {
                 >
                   Book now
                 </a>{" "}
-                (use promo code &ldquo;FLOC26&rdquo;)
+                with the code &ldquo;FLOC26&rdquo;
               </p>
             </div>
 
@@ -304,7 +304,7 @@ export default function Accommodation() {
                 >
                   Book now
                 </a>{" "}
-                (use promo code &ldquo;FLOC&rdquo;)
+                with the code &ldquo;FLOC&rdquo;
               </p>
             </div>
 
@@ -325,7 +325,31 @@ export default function Accommodation() {
                 <a href="https://www.hotel3kbarcelona.pt" className="text-blue-600 underline">
                   Book now
                 </a>{" "}
-                (use promo code &ldquo;FLoC&rdquo;)
+                with the code &ldquo;FLoC&rdquo;
+              </p>
+            </div>
+
+            <div className="p-4 border rounded-lg">
+              <h3 className="font-bold">Lisbon Marriott Hotel (4*)</h3>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Rates:</span> 10% discount on best
+                available rate
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Av. dos Combatentes 45,
+                1600-042 Lisbon
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Distance:</span> 1.3 km from venue
+              </p>
+              <p className="mt-2 text-sm">
+                <a
+                  href="https://www.marriott.com/en-us/hotels/lispt-lisbon-marriott-hotel/overview/"
+                  className="text-blue-600 underline"
+                >
+                  Book now
+                </a>{" "}
+                with the code &ldquo;KF7&rdquo;
               </p>
             </div>
 
