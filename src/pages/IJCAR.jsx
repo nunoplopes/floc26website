@@ -148,25 +148,28 @@ const IJCAR = () => {
               journal or conference. The following paper categories are welcome:
             </p>
             <p>
-              Regular papers describing solid new research results. They can be up to 15 pages in
+              <b>Regular papers</b> describing solid new research results which can be
+	      up to <b>15 pages</b> in
               LNCS style, including figures but excluding references and appendices. Where
               applicable, regular papers are supported by experimental validation. Submissions
               reporting on case studies in an industrial context are strongly invited as regular
               papers.
             </p>
             <p>
-              Short papers describing implemented systems, user experiences, case studies and domain
-              models, etc. They can be up to 7 pages in LNCS style, excluding references and
+              <b>Short papers</b> describing implemented systems, user experiences, case studies and domain
+              models, etc.&nbsp;can be up to <b>7 pages</b> in LNCS style, excluding references and
               appendices.
             </p>
             <p>
-              All submissions will be judged on relevance, originality, significance, correctness,
+	      The reviewing process is <b>single blind</b> and thus
+              all submissions should list authors and their affiliations.
+	      Each submission will be judged on relevance, originality, significance, correctness,
               and readability. Proofs of theoretical results that do not fit in the page limit,
               executables of systems, and input data of experiments should be made available, e.g.,
               via a reference to a website or in an appendix of the paper.
             </p>
             <p>
-              The review process will include a feedback/rebuttal period where authors will have the
+              The review process will include a <b>rebuttal</b> period where authors will have the
               option to respond to reviewer comments. The PC chairs may solicit further reviews
               after the rebuttal period.
             </p>
