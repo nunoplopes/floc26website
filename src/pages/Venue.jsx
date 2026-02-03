@@ -5,6 +5,10 @@ import campopequeno from "../assets/images/campo-pequeno.jpg";
 import pavportugal from "../assets/images/pav-portugal.jpg";
 import patiogale from "../assets/images/patio-gale.jpg";
 import carloslopes from "../assets/images/carlos-lopes.webp";
+import museudacerveja from "../assets/images/museudacerveja.webp";
+// https://casadoalentejo.pt/wp-content/uploads/2020/02/casa-do-alentejo007-1024x683.jpg
+import casadoalentejo from "../assets/images/casa-do-alentejo.jpg";
+import portugalia from "../assets/images/portugalia.jpg";
 
 const VenueSection = ({ venue }) => (
   <div className={`bg-white rounded-xl shadow-lg overflow-hidden`}>
@@ -102,7 +106,9 @@ const Venue = () => {
 
         {/* Dining Information */}
         <div className="mb-16">
-          <h2 className="text-3xl font-semibold text-center mb-12">Receptions & Banquets</h2>
+          <h2 className="text-3xl font-semibold text-center mb-12">
+            Receptions, Banquets & Dinners
+          </h2>
 
           {/* Week 1 Section */}
           <div className="mb-12">
@@ -160,6 +166,50 @@ const Venue = () => {
                     "Located in the Eduardo VII Park, Pavilhão Carlos Lopes is a classic event venue with elegant interiors and surrounded by lush greenery.",
                   metro:
                     "Marquês de Pombal (Yellow and Blue Lines) or Parque (Blue Line, closer to the venue)",
+                },
+              ].map((venue, index) => (
+                <VenueSection venue={venue} key={index} />
+              ))}
+            </div>
+          </div>
+
+          {/* Dinners Section */}
+          <div className="mt-16">
+            <h3 className="text-2xl font-bold mb-6 border-b pb-2 border-gray-300">
+              Summer School & Workshop Dinners
+            </h3>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                {
+                  title: "Summer School Dinner (15/07)",
+                  name: "Museu da Cerveja",
+                  image: museudacerveja,
+                  address: "Terreiro do Paço, Ala Norte, 1100-148 Lisboa",
+                  mapsLink: "https://maps.app.goo.gl/1m6Howtorkw84smS8",
+                  blurb:
+                    "Located in Praça do Comércio, combines Portuguese gastronomy with a relaxed atmosphere overlooking the Tagus River. Includes a visit to the beer museum.",
+                  metro: "Terreiro do Paço (Blue Line)  or Baixa-Chiado (Blue and Green Lines)",
+                },
+                {
+                  title: "Workshop Dinner – Week 1 (18/07)",
+                  name: "Portugália",
+                  image: portugalia,
+                  address: "Av. Almirante Reis 117, 1150-014 Lisboa",
+                  mapsLink: "https://maps.app.goo.gl/6PyFTiF54g9FtLt5A",
+                  blurb:
+                    "A Lisbon classic, Portugália is known for traditional Portuguese cuisine and a lively, welcoming atmosphere.",
+                  metro: "Arroios (Green Line)",
+                },
+                {
+                  title: "Workshop Dinner – Week 2 (24/07)",
+                  name: "Casa do Alentejo",
+                  image: casadoalentejo,
+                  address: "Rua das Portas de Santo Antão 58, 1150-268 Lisboa",
+                  mapsLink: "https://maps.app.goo.gl/h4PBBaJwb5SVPehQA",
+                  blurb:
+                    "Built in the 17th century, Casa do Alentejo is a historic palace hidden behind a modest façade, and offers traditional food in a beautiful courtyard setting.",
+                  metro: "Rossio (Green Line) or Restauradores (Blue Line)",
                 },
               ].map((venue, index) => (
                 <VenueSection venue={venue} key={index} />
