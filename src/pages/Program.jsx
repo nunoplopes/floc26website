@@ -29,7 +29,7 @@ const workshops_week1 = [
     aff: "ICLP",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://ws-carla.github.io/web/",
   },
   {
     name: "22nd Doctoral Consortium and Summer School on Logic Programming (ICLP-DC-SS)",
