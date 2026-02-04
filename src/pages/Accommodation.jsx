@@ -1,4 +1,5 @@
 import { FaHotel, FaPlane } from "react-icons/fa";
+import Volotea from "../assets/images/volotea.svg";
 import Vueling from "../assets/images/vueling.svg";
 // https://pixabay.com/photos/lisbon-statue-travel-jesus-1953199/
 import CRISTOREI from "../assets/images/lisbon-1953199_1280.jpg";
@@ -615,6 +616,15 @@ export default function Accommodation() {
                   height={150}
                   alt="Iberia logo"
                 />
+              </a>
+
+              <a
+                href="https://www.anrdoezrs.net/click-101479577-15735255"
+                className="inline-block h-36 w-36"
+              >
+                <div className="h-full w-full bg-gray-100 flex items-center justify-center rounded-md border">
+                  <img src={Volotea} alt="Volotea logo" className="max-h-full max-w-full" />
+                </div>
               </a>
 
               <a
