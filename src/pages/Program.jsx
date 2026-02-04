@@ -302,7 +302,7 @@ const workshops_week1 = [
     aff: "FSCD",
     start: 19,
     end: 19,
-    link: null,
+    link: "http://www.termgraph.org.uk/2026/",
   },
   {
     name: "Theorem Proving Components for Educational Software (ThEdu)",
