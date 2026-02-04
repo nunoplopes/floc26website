@@ -145,7 +145,7 @@ const workshops_week1 = [
     name: "8th International Workshop on Artificial Intelligence and fOrmal VERification, Logic, Automata, and sYnthesis (OVERLAY)",
     start: 18,
     end: 19,
-    link: null,
+    link: "https://overlay.uniud.it/workshop/2026/",
   },
   {
     name: "Proof Complexity (PC)",
@@ -288,7 +288,7 @@ const workshops_week1 = [
     aff: "SAT",
     start: 19,
     end: 19,
-    link: null,
+    link: "https://www.informatik.uni-freiburg.de/qbf26",
   },
   {
     name: "Rocqshop (RocqWS)",
