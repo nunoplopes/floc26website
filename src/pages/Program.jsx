@@ -71,7 +71,7 @@ const workshops_week1 = [
     aff: "ICLP",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://eulp.gitlab.io/eulp2026/",
   },
   {
     name: "Formal Methods in Quantum Computing (FMQC)",
