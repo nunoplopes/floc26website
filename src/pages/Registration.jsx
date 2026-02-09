@@ -19,7 +19,7 @@ const Registration = () => {
 
         <section className="bg-white rounded-xl shadow-lg p-6 md:p-8 space-y-8">
           <h2 className="text-2xl font-semibold text-blue-800 mt-8 mb-2">Conferences</h2>
-          <table className="min-w-full text-sm md:text-base border border-gray-300 rounded-lg">
+          <table className="text-sm md:text-base border border-gray-300 rounded-lg">
             <thead className="bg-gray-100">
               <tr>
                 <th
@@ -67,35 +67,35 @@ const Registration = () => {
               {[
                 {
                   label: "Conference (except CSF)",
-                  earlyStudent: "TBA",
-                  earlyRegular: "TBA",
-                  regStudent: "TBA",
-                  regRegular: "TBA",
-                  onsite: "TBA",
+                  earlyStudent: "€525",
+                  earlyRegular: "€750",
+                  regStudent: "€630",
+                  regRegular: "€900",
+                  onsite: "€1,100",
                 },
                 {
                   label: "CSF IEEE member",
-                  earlyStudent: "TBA",
-                  earlyRegular: "TBA",
-                  regStudent: "TBA",
-                  regRegular: "TBA",
-                  onsite: "TBA",
+                  earlyStudent: "€525",
+                  earlyRegular: "€750",
+                  regStudent: "€630",
+                  regRegular: "€900",
+                  onsite: "€1,100",
                 },
                 {
                   label: "CSF IEEE life member",
                   earlyStudent: "—",
-                  earlyRegular: "TBA",
+                  earlyRegular: "€415",
                   regStudent: "—",
-                  regRegular: "TBA",
-                  onsite: "TBA",
+                  regRegular: "€495",
+                  onsite: "€1,100",
                 },
                 {
                   label: "CSF non-IEEE member",
-                  earlyStudent: "TBA",
-                  earlyRegular: "TBA",
-                  regStudent: "TBA",
-                  regRegular: "TBA",
-                  onsite: "TBA",
+                  earlyStudent: "€630",
+                  earlyRegular: "€900",
+                  regStudent: "€760",
+                  regRegular: "€1,080",
+                  onsite: "€1,320",
                 },
               ].map((row, idx) => (
                 <tr key={row.label} className={idx % 2 === 0 ? "bg-white" : "bg-gray-100"}>
@@ -123,7 +123,7 @@ const Registration = () => {
           </table>
 
           <h2 className="text-2xl font-semibold text-blue-800 mt-16 mb-2">Workshops</h2>
-          <table className="min-w-full text-sm md:text-base border border-gray-300 rounded-lg">
+          <table className="text-sm md:text-base border border-gray-300 rounded-lg">
             <thead className="bg-gray-100">
               <tr>
                 <th
@@ -169,44 +169,36 @@ const Registration = () => {
             <tbody>
               {[
                 {
-                  label: "DL",
-                  earlyStudent: "TBA",
-                  earlyRegular: "TBA",
-                  regStudent: "TBA",
-                  regRegular: "TBA",
-                  onsite: "TBA",
-                },
-                {
-                  label: "NMR (includes dinner)",
-                  earlyStudent: "TBA",
-                  earlyRegular: "TBA",
-                  regStudent: "TBA",
-                  regRegular: "TBA",
-                  onsite: "TBA",
+                  label: "DL & NMR (includes the dinner below)",
+                  earlyStudent: "€285",
+                  earlyRegular: "€390",
+                  regStudent: "€345",
+                  regRegular: "€480",
+                  onsite: "€575",
                 },
                 {
                   label: "2-day workshop",
-                  earlyStudent: "TBA",
-                  earlyRegular: "TBA",
-                  regStudent: "TBA",
-                  regRegular: "TBA",
-                  onsite: "TBA",
+                  earlyStudent: "€150",
+                  earlyRegular: "€220",
+                  regStudent: "€180",
+                  regRegular: "€270",
+                  onsite: "€330",
                 },
                 {
                   label: "1-day workshop/tutorial",
-                  earlyStudent: "TBA",
-                  earlyRegular: "TBA",
-                  regStudent: "TBA",
-                  regRegular: "TBA",
-                  onsite: "TBA",
+                  earlyStudent: "€75",
+                  earlyRegular: "€110",
+                  regStudent: "€90",
+                  regRegular: "€135",
+                  onsite: "€165",
                 },
                 {
                   label: "Dinner",
-                  earlyStudent: "TBA",
-                  earlyRegular: "TBA",
-                  regStudent: "TBA",
-                  regRegular: "TBA",
-                  onsite: "TBA",
+                  earlyStudent: "€60",
+                  earlyRegular: "€60",
+                  regStudent: "€75",
+                  regRegular: "€75",
+                  onsite: "€80",
                 },
               ].map((row, idx) => (
                 <tr key={row.label} className={idx % 2 === 0 ? "bg-white" : "bg-gray-100"}>
@@ -232,9 +224,14 @@ const Registration = () => {
               ))}
             </tbody>
           </table>
+          <p className="mt-2">
+            Note: The dinner takes place on day 1 of each workshop week, i.e., on 18 & 24 of July.
+            Dinners are held at restaurants with limited capacity, and tickets are sold on a
+            first-come, first-served basis until full.
+          </p>
 
           <h2 className="text-2xl font-semibold text-blue-800 mt-16 mb-2">Summer Schools</h2>
-          <table className="min-w-full text-sm md:text-base border border-gray-300 rounded-lg">
+          <table className="text-sm md:text-base border border-gray-300 rounded-lg">
             <thead className="bg-gray-100">
               <tr>
                 <th className="px-4 py-3 text-left font-semibold border-b border-gray-300">
@@ -256,14 +253,40 @@ const Registration = () => {
                 <th className="px-4 py-3 text-left font-medium border-t border-gray-300">
                   All summer schools
                 </th>
-                <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">TBA</td>
-                <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">TBA</td>
-                <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">TBA</td>
+                <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">€200</td>
+                <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">€250</td>
+                <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">€300</td>
               </tr>
             </tbody>
           </table>
+          <p className="text-gray-700">
+            The summer school registration fee includes dinner on Wednesday, 22/July.
+          </p>
 
           <p className="text-gray-700">All prices are inclusive of Portuguese 23% VAT.</p>
+
+          <h2 className="text-2xl font-semibold text-blue-800 mt-16 mb-2">
+            Cancellation & Refund Policy
+          </h2>
+          <div className="text-gray-700 space-y-2 max-w-3xl">
+            <p>
+              <strong>Until 30 April 2026:</strong> Full refund of registration fees, minus
+              administrative costs (€50).
+            </p>
+            <p>
+              <strong>From 1 May to 15 June 2026:</strong> 50% refund of the registration fee, minus
+              administrative costs (€50).
+            </p>
+            <p>
+              <strong>After 15 June 2026:</strong> No refunds will be issued.
+            </p>
+          </div>
+          <h2 className="text-2xl font-semibold text-blue-800 mb-2">Transfer of Registration</h2>
+          <p>
+            Registration may be transferred to another participant from the same institution or
+            organization, subject to approval by the Organizing Committee. Transfer requests must be
+            submitted in writing no later than <strong>30 June 2026</strong>.
+          </p>
 
           {/*
           <div className="pt-4">
