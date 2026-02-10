@@ -125,7 +125,7 @@ const workshops_week1 = [
     name: "Machine Learning for Solvers and Provers (ML4SP)",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://ml4sp.github.io/",
   },
   {
     name: "Mathematically Structured Functional Programming (MSFP)",
