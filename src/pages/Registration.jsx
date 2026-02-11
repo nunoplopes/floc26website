@@ -260,7 +260,7 @@ const Registration = () => {
             </tbody>
           </table>
           <p className="text-gray-700">
-            The summer school registration fee includes dinner on Wednesday, 22/July.
+            The summer school registration fee includes dinner on Wednesday, 15/July.
           </p>
 
           <p className="text-gray-700">All prices are inclusive of Portuguese 23% VAT.</p>
