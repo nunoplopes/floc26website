@@ -29,7 +29,7 @@ const workshops_week1 = [
     aff: "ICLP",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://ws-carla.github.io/web/",
   },
   {
     name: "22nd Doctoral Consortium and Summer School on Logic Programming (ICLP-DC-SS)",
@@ -71,7 +71,7 @@ const workshops_week1 = [
     aff: "ICLP",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://eulp.gitlab.io/eulp2026/",
   },
   {
     name: "Formal Methods in Quantum Computing (FMQC)",
@@ -125,7 +125,7 @@ const workshops_week1 = [
     name: "Machine Learning for Solvers and Provers (ML4SP)",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://ml4sp.github.io",
   },
   {
     name: "Mathematically Structured Functional Programming (MSFP)",
@@ -145,7 +145,7 @@ const workshops_week1 = [
     name: "8th International Workshop on Artificial Intelligence and fOrmal VERification, Logic, Automata, and sYnthesis (OVERLAY)",
     start: 18,
     end: 19,
-    link: null,
+    link: "https://overlay.uniud.it/workshop/2026/",
   },
   {
     name: "Proof Complexity (PC)",
@@ -172,7 +172,7 @@ const workshops_week1 = [
     aff: "LICS",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://structuremeetspower.github.io/SmP2026/",
   },
   {
     name: "Tutorial: NeuroSymbolic AI for Making Sense of Streaming Data (SteamingNeSy)",
@@ -288,7 +288,7 @@ const workshops_week1 = [
     aff: "SAT",
     start: 19,
     end: 19,
-    link: null,
+    link: "https://www.informatik.uni-freiburg.de/qbf26",
   },
   {
     name: "Rocqshop (RocqWS)",
@@ -302,7 +302,7 @@ const workshops_week1 = [
     aff: "FSCD",
     start: 19,
     end: 19,
-    link: null,
+    link: "http://www.termgraph.org.uk/2026/",
   },
   {
     name: "Theorem Proving Components for Educational Software (ThEdu)",
