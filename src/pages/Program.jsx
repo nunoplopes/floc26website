@@ -172,7 +172,7 @@ const workshops_week1 = [
     aff: "LICS",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://structuremeetspower.github.io/SmP2026/",
   },
   {
     name: "Tutorial: NeuroSymbolic AI for Making Sense of Streaming Data (SteamingNeSy)",
