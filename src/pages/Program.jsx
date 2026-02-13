@@ -316,7 +316,7 @@ const workshops_week1 = [
     aff: "CP & SAT",
     start: 19,
     end: 19,
-    link: null,
+    link: "https://ciaranm.github.io/WHOOPS26/",
   },
   {
     name: "12th International Workshop on Rewriting Techniques for Program Transformations and Evaluation (WPTE)",
