@@ -122,7 +122,7 @@ const IJCAR = () => {
               </li>
               <li>
                 Paper submission: <strike>February 13, 2026</strike>
-              &nbsp;<strong>February&nbsp;15,&nbsp;2026</strong>
+                &nbsp;<strong>February&nbsp;15,&nbsp;2026</strong>
               </li>
               <li>
                 Rebuttal: <strong>March 30-31, 2026</strong>

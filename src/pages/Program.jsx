@@ -309,7 +309,7 @@ const workshops_week1 = [
     aff: "IJCAR",
     start: 19,
     end: 19,
-    link: null,
+    link: "https://theduworkshop.github.io/ThEduWebSite/#thedu26-presentation",
   },
   {
     name: "3rd International Workshop on Highlights in Organizing and Optimizing Proof-logging Systems (WHOOPS)",
