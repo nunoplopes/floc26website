@@ -260,7 +260,7 @@ const workshops_week1 = [
     aff: "CP",
     start: 19,
     end: 19,
-    link: null,
+    link: "https://2026.modref.org",
   },
   {
     name: "Prolog Education Workshop (PEG)",
