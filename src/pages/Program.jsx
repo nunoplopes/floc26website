@@ -139,7 +139,7 @@ const workshops_week1 = [
     aff: "KR",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://most.cs.tu-dortmund.de",
   },
   {
     name: "8th International Workshop on Artificial Intelligence and fOrmal VERification, Logic, Automata, and sYnthesis (OVERLAY)",
