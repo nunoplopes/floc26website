@@ -519,7 +519,7 @@ const workshops_week2 = [
     aff: "CP & CAV",
     start: 25,
     end: 25,
-    link: null,
+    link: "https://ar4space.github.io/2026/",
   },
   {
     name: "Joint Workshop on Competitions and other Problem Solving Challenges and on the Design and Evaluation of Benchmark Sets for Formal Methods (Bench-Evaluations)",
