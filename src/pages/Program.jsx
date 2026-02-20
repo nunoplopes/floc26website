@@ -411,13 +411,6 @@ const workshops_week2 = [
     link: "https://linda-workshop26.cs.uni-paderborn.de",
   },
   {
-    name: "A Celebration of Professor Marta Kwiatkowska's Contributions to Formal Methods (MartaFest)",
-    aff: "CAV",
-    start: 25,
-    end: 25,
-    link: null,
-  },
-  {
     name: "Parameterized Complexity of Computational Reasoning (PCCR)",
     aff: "KR",
     start: 24,
@@ -562,6 +555,13 @@ const workshops_week2 = [
   {
     name: "Lean Workshop (Lean)",
     aff: "ITP",
+    start: 25,
+    end: 25,
+    link: null,
+  },
+  {
+    name: "A Celebration of Professor Marta Kwiatkowska's Contributions to Formal Methods (MartaFest)",
+    aff: "CAV",
     start: 25,
     end: 25,
     link: null,
