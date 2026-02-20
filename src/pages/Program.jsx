@@ -288,7 +288,7 @@ const workshops_week1 = [
     aff: "SAT",
     start: 19,
     end: 19,
-    link: "https://www.informatik.uni-freiburg.de/qbf26",
+    link: "https://qbf-workshop.github.io",
   },
   {
     name: "Rocqshop (RocqWS)",
