@@ -237,7 +237,13 @@ const workshops_week1 = [
     link: null,
   },
   {
-    name: "Joint Workshop on LLMs meet Constraint Solving and on Logic for Explainable AI Systems (LLM-Solve&LEX-AI)",
+    name: "Logic for Explainable AI Systems (LEX-AI)",
+    start: 19,
+    end: 19,
+    link: null,
+  },
+  {
+    name: "LLMs meet Constraint Solving (LLM-Solve)",
     start: 19,
     end: 19,
     link: null,
