@@ -8,7 +8,7 @@ export const schedule = [
     conferences: [
       {
         name: "6th Summer School on Foundations of Programming and Software Systems (FoPSS)",
-        link: null,
+        link: "https://lcaires.github.io/fopps2026/",
       },
       {
         name: "13th SAT/SMT/AR Summer School",
