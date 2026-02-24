@@ -288,16 +288,14 @@ const Registration = () => {
             submitted in writing no later than <strong>30 June 2026</strong>.
           </p>
 
-          {/*
           <div className="pt-4">
             <a
-              href="TBD"
+              href="https://app.floc26.org/#/register"
               className="inline-block px-6 py-3 rounded-lg bg-blue-700 text-white font-semibold shadow hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-400"
             >
               Go to registration website →
             </a>
           </div>
-*/}
         </section>
 
         <section

@@ -23,13 +23,12 @@ const Header = () => {
 
   return (
     <>
-      {/* Banner
       <div className="bg-yellow-400 text-black text-center text-sm md:text-base font-semibold py-2 px-4">
         📢{" "}
-        <Link to="/call-for-workshops" className="underline hover:text-blue-800 transition">
-          Call for Workshops is now open! Submit your proposal here!
+        <Link to="/registration" className="underline hover:text-blue-800 transition">
+          Registration is now open! Early bird rates end on 15 May.
         </Link>
-      </div>  */}
+      </div>
 
       <header className="flex items-center justify-between z-10 p-5 bg-white">
         <div>
