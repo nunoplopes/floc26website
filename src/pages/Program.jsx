@@ -287,7 +287,7 @@ const workshops_week1 = [
     aff: "SAT & CP",
     start: 19,
     end: 19,
-    link: null,
+    link: "https://www.pragmaticsofssat.org/2026/",
   },
   {
     name: "International Workshop on Quantified Boolean Formulas and Beyond (QBF)",
@@ -407,7 +407,7 @@ const workshops_week2 = [
     aff: "FSCD",
     start: 24,
     end: 24,
-    link: null,
+    link: "https://lfmtp.github.io/lfmtp-page/workshops/2026/",
   },
   {
     name: "Logical approaches to handling INconsistent DAta (LINDA)",
@@ -435,7 +435,7 @@ const workshops_week2 = [
     aff: "CAV",
     start: 24,
     end: 24,
-    link: null,
+    link: "https://lorisdanto.github.io/rajeevfest.github.io/",
   },
   {
     name: "Symposium on AI Verification (SAIV)",
