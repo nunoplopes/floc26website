@@ -563,7 +563,7 @@ const workshops_week2 = [
     aff: "ITP",
     start: 25,
     end: 25,
-    link: null,
+    link: "https://leanprover-community.github.io/floc-2026-lean-workshop/",
   },
   {
     name: "A Celebration of Professor Marta Kwiatkowska's Contributions to Formal Methods (MartaFest)",
