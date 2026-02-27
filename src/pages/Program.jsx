@@ -230,6 +230,13 @@ const workshops_week1 = [
     link: null,
   },
   {
+    name: "A Celebration of Joseph Y. Halpern's Contributions to Logic, Knowledge, and Reasoning (JoeFest)",
+    aff: "KR",
+    start: 19,
+    end: 19,
+    link: null,
+  },
+  {
     name: "International Workshop on Logical Aspects in Multi-Agent Systems and Strategic Reasoning (LAMAS&SR)",
     aff: "KR",
     start: 19,
