@@ -372,7 +372,7 @@ const workshops_week2 = [
     aff: "CAV",
     start: 24,
     end: 24,
-    link: null,
+    link: "https://sites.google.com/view/crest26/",
   },
   {
     name: "Workshop on the Ergonomics of Verification Interfaces & Tools (EVIT)",
@@ -386,7 +386,7 @@ const workshops_week2 = [
     aff: "CAV & CSF",
     start: 24,
     end: 24,
-    link: null,
+    link: "https://hyperworkshop26.cispa.io/",
   },
   {
     name: "Intuitionistic Modal Logic and Applications (IMLA)",
