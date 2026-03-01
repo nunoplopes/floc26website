@@ -386,7 +386,7 @@ const workshops_week2 = [
     aff: "CAV & CSF",
     start: 24,
     end: 24,
-    link: "https://hyperworkshop26.cispa.io/",
+    link: "https://hyperworkshop26.cispa.io",
   },
   {
     name: "Intuitionistic Modal Logic and Applications (IMLA)",
