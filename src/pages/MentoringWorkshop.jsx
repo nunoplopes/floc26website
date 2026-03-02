@@ -1,3 +1,7 @@
+import AWS from "../assets/images/sponsors/aws.png";
+import NSF from "../assets/images/mwsponsors/nsf.png";
+import JANESTREET from "../assets/images/mwsponsors/janestreet.png";
+
 const MentoringWorkshop = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
@@ -6,7 +10,7 @@ const MentoringWorkshop = () => {
         <h2 className="text-2xl mt-2 font-medium">FLoC 2026 Mentoring Workshop</h2>
         <h3 className="text-lg mt-1 font-light">Part of FLoC 2026</h3>
         <p className="mt-4 text-gray-200 text-lg">
-          Dates: <strong>19 July and 26 July 2026</strong>
+          Dates: <strong>19 July and 25 July 2026</strong>
         </p>
       </header>
 
@@ -44,7 +48,7 @@ const MentoringWorkshop = () => {
 
         <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-4">
           <h2 className="text-3xl font-semibold text-indigo-700 mb-4 border-b border-indigo-200 pb-2">
-            Programme Day 2 (26 July 2026)
+            Programme Day 2 (25 July 2026)
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed">
             <p>TBA</p>
@@ -56,7 +60,26 @@ const MentoringWorkshop = () => {
             Student Sponsorship
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed">
-            <p>TBA</p>
+            <p>
+              Students (undergrad, master&apos;s, and PhD alike) can apply to have their costs (some
+              or all) covered by our sponsors.
+            </p>
+            <ul>
+              <li>
+                Deadline for applications: 13 April (applications are accepted after that date if
+                funds allow)
+              </li>
+              <li>
+                Apply at:{" "}
+                <a
+                  href="https://forms.gle/89q9AaNfZV3fkMzD7"
+                  className="text-indigo-600 hover:underline"
+                >
+                  {"https://forms.gle/89q9AaNfZV3fkMzD7"}
+                </a>
+              </li>
+              <li>Notification: 20 April</li>
+            </ul>
           </div>
         </section>
 
@@ -72,14 +95,15 @@ const MentoringWorkshop = () => {
               attendee. Every newcomer will be assigned either a more experienced peer or another
               newcomer, so you are not alone. For those who are not attending a conference for the
               first time, being a buddy is a way for you to help the community to grow and introduce
-              less experienced students to the field. If you are interested, write{" "}
+              less experienced students to the field. If you are interested, please sign up for the
+              Buddy Programme via the following form:{" "}
               <a
-                href="mailto:steffen.van.bergerem@hu-berlin.de?subject=FLoC%202026%20Buddy"
+                href="https://forms.gle/Gjy4jejM9GinP2897"
                 className="text-indigo-600 hover:underline"
               >
-                Steffen van Bergerem
-              </a>{" "}
-              an email.
+                {"https://forms.gle/Gjy4jejM9GinP2897"}
+              </a>
+              .
             </p>
           </div>
         </section>
@@ -174,6 +198,46 @@ const MentoringWorkshop = () => {
               </a>
               .
             </p>
+          </div>
+        </section>
+
+        <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-4">
+          <h2 className="text-3xl font-semibold text-indigo-700 mb-4 border-b border-indigo-200 pb-2">
+            Sponsors
+          </h2>
+          <div className="space-y-4 text-gray-700 leading-relaxed">
+            <div className="flex flex-wrap justify-center gap-6">
+              <a
+                href="https://aws.amazon.com"
+                className="p-3 inline-flex items-center justify-center"
+              >
+                <img
+                  src={AWS}
+                  alt="AWS"
+                  className="block max-w-52 h-auto w-auto min-w-[80px] min-h-[30px]"
+                />
+              </a>
+              <a
+                href="https://www.janestreet.com/"
+                className="p-3 inline-flex items-center justify-center"
+              >
+                <img
+                  src={JANESTREET}
+                  alt="Jane Street"
+                  className="block max-w-52 h-auto w-auto min-w-[80px] min-h-[30px]"
+                />
+              </a>
+              <a
+                href="https://www.nsf.gov/"
+                className="p-3 inline-flex items-center justify-center"
+              >
+                <img
+                  src={NSF}
+                  alt="NSF"
+                  className="block max-w-52 h-auto w-auto min-w-[80px] min-h-[30px]"
+                />
+              </a>
+            </div>
           </div>
         </section>
       </main>
