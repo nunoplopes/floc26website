@@ -379,7 +379,7 @@ const workshops_week2 = [
     aff: "CAV",
     start: 24,
     end: 24,
-    link: null,
+    link: "https://trustworthy-it.com/floc-cav-2026",
   },
   {
     name: "Workshop on Hyperproperties: Advances in Theory and Applications (HYPER)",
