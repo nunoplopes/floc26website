@@ -280,7 +280,7 @@ const workshops_week1 = [
     aff: "ICLP",
     start: 19,
     end: 19,
-    link: null,
+    link: "https://prolog-lang.org/Education/PrologEducationWS2026CFP.html",
   },
   {
     name: "Third Annual Workshop on Prolog Improvement Proposals (PIPs)",
