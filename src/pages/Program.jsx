@@ -528,10 +528,10 @@ const workshops_week2 = [
     link: "https://ar4space.github.io/2026/",
   },
   {
-    name: "Joint Workshop on Competitions and other Problem Solving Challenges and on the Design and Evaluation of Benchmark Sets for Formal Methods (Bench-Evaluations)",
+    name: "1st Workshop on Comparative Evaluation and Benchmarking (CompBench)",
     start: 25,
     end: 25,
-    link: null,
+    link: "https://sites.google.com/view/compbench2026/",
   },
   {
     name: "Foundations of Computer Security (FCS)",
