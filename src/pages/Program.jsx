@@ -165,7 +165,7 @@ const workshops_week1 = [
     name: "Workshop on Semantic Technologies for Data Management (ST4DM)",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://sites.google.com/diag.uniroma1.it/st4dm2026/",
   },
   {
     name: "Structure meets Power (SmP)",
@@ -241,7 +241,7 @@ const workshops_week1 = [
     aff: "KR",
     start: 19,
     end: 19,
-    link: null,
+    link: "https://strategic-reasoning.github.io/lamassr26/",
   },
   {
     name: "Logic for Explainable AI Systems (LEX-AI)",
@@ -551,7 +551,7 @@ const workshops_week2 = [
     name: "Workshop on Horn Clauses for Verification and Synthesis (HCVS)",
     start: 25,
     end: 25,
-    link: null,
+    link: "https://www.sci.unich.it/hcvs26/",
   },
   {
     name: "Workshop on Logical Methods for Neural Network Analysis (LOGICNN)",
@@ -625,7 +625,7 @@ const workshops_week2 = [
     aff: "IJCAR",
     start: 25,
     end: 25,
-    link: null,
+    link: "https://termination-portal.org/wiki/21st_International_Workshop_on_Termination",
   },
 ];
 
