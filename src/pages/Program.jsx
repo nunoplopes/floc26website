@@ -393,7 +393,7 @@ const workshops_week2 = [
     aff: "LICS",
     start: 24,
     end: 25,
-    link: null,
+    link: "https://sonia-marin.github.io/imla26/",
   },
   {
     name: "15th International Workshop on Confluence (IWC)",
