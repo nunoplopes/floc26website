@@ -534,7 +534,7 @@ const workshops_week2 = [
     link: null,
   },
   {
-    name: " of Computer Security (FCS)",
+    name: "Foundations of Computer Security (FCS)",
     aff: "CSF",
     start: 25,
     end: 25,
