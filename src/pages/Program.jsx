@@ -534,10 +534,11 @@ const workshops_week2 = [
     link: null,
   },
   {
-    name: "Foundations of Computer Security (FCS)",
+    name: " of Computer Security (FCS)",
+    aff: "CSF",
     start: 25,
     end: 25,
-    link: null,
+    link: "https://fcs-workshop.github.io/fcs2026/",
   },
   {
     name: "Formal Reasoning for Compositional Systems Engineering (FORCE)",
