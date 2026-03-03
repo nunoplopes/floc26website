@@ -120,13 +120,13 @@ const MentoringWorkshop = () => {
               , Humboldt-Universität zu Berlin
             </li>
             <li>
-              <a href="https://joaoff.com/" className="text-indigo-600 hover:underline">
+              <a href="https://joaoff.com" className="text-indigo-600 hover:underline">
                 João F. Ferreira
               </a>
               , INESC-ID &amp; IST, University of Lisbon
             </li>
             <li>
-              <a href="https://aisychev.github.io/" className="text-indigo-600 hover:underline">
+              <a href="https://aisychev.github.io" className="text-indigo-600 hover:underline">
                 Anastasia Isychev
               </a>
               , TU Wien
@@ -177,7 +177,7 @@ const MentoringWorkshop = () => {
               </a>{" "}
               and of similar workshops such as the{" "}
               <a
-                href="https://logic-mentoring-workshop.github.io/"
+                href="https://logic-mentoring-workshop.github.io"
                 className="text-indigo-600 hover:underline"
               >
                 Logic Mentoring Workshop (LMW)
@@ -218,7 +218,7 @@ const MentoringWorkshop = () => {
                 />
               </a>
               <a
-                href="https://www.janestreet.com/"
+                href="https://www.janestreet.com"
                 className="p-3 inline-flex items-center justify-center"
               >
                 <img
@@ -228,7 +228,7 @@ const MentoringWorkshop = () => {
                 />
               </a>
               <a
-                href="https://www.nsf.gov/"
+                href="https://www.nsf.gov"
                 className="p-3 inline-flex items-center justify-center"
               >
                 <img
