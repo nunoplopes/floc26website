@@ -220,7 +220,7 @@ const workshops_week1 = [
     aff: "LICS",
     start: 19,
     end: 19,
-    link: null,
+    link: "https://dialoco.github.io/dialoco26/",
   },
   {
     name: "Tutorial: Geometric Ontology Embeddings (GOE)",
@@ -456,7 +456,7 @@ const workshops_week2 = [
     aff: "LICS",
     start: 24,
     end: 25,
-    link: null,
+    link: "https://www.lix.polytechnique.fr/~lutz/orgs/SD26.html",
   },
   {
     name: "24th International Workshop on Satisfiability Modulo Theories (SMT)",
@@ -511,7 +511,7 @@ const workshops_week2 = [
     name: "Joint Workshop on Explainable Logic-Based Knowledge Representation and Explanations with Constraints and Satisfiability (XLoKR-ExCoS)",
     start: 24,
     end: 24,
-    link: null,
+    link: "https://sites.google.com/view/xlokrexcos2026/",
   },
   {
     name: "Workshop on AI for Mathematics and Computer Science Research (AIMACS)",
@@ -585,7 +585,7 @@ const workshops_week2 = [
     aff: "SAT",
     start: 25,
     end: 25,
-    link: null,
+    link: "https://mccompetition.org/2026/mcw_description",
   },
   {
     name: "Mentoring Workshop - 2nd week (MW2)",
