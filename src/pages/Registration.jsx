@@ -296,6 +296,26 @@ const Registration = () => {
               Go to registration website →
             </a>
           </div>
+
+          <h2 className="text-2xl font-semibold text-blue-800 mt-16 mb-2">Student Volunteers</h2>
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-5 max-w-3xl">
+            <p className="text-gray-700 mb-4">
+              Students interested in volunteering at the conference are invited to apply. Volunteers
+              assist with session support (e.g., helping with Q&amp;A) and general event logistics
+              while gaining the opportunity to attend the conference and meet researchers from
+              around the world. For accepted student volunteers, the conference registration fee
+              will be waived; however, travel and accommodation expenses are not covered.
+            </p>
+            <p className="text-gray-700 mb-4">
+              The student volunteer application is open until <strong>mid-May</strong>.
+            </p>
+            <a
+              href="https://forms.gle/R8UnrcCQX1nwtBF2A"
+              className="inline-block px-5 py-3 rounded-lg bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            >
+              Apply as Student Volunteer →
+            </a>
+          </div>
         </section>
 
         <section

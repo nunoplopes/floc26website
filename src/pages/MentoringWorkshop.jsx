@@ -227,10 +227,7 @@ const MentoringWorkshop = () => {
                   className="block max-w-52 h-auto w-auto min-w-[80px] min-h-[30px]"
                 />
               </a>
-              <a
-                href="https://www.nsf.gov"
-                className="p-3 inline-flex items-center justify-center"
-              >
+              <a href="https://www.nsf.gov" className="p-3 inline-flex items-center justify-center">
                 <img
                   src={NSF}
                   alt="NSF"
