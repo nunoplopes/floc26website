@@ -470,7 +470,7 @@ const workshops_week2 = [
     aff: "CP",
     start: 24,
     end: 24,
-    link: null,
+    link: "https://hub.imt-atlantique.fr/soft2026/",
   },
   {
     name: "Theory and Methods for Abstraction (THEMA)",
