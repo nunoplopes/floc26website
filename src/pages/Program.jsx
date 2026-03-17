@@ -546,7 +546,7 @@ const workshops_week2 = [
     aff: "CAV",
     start: 25,
     end: 25,
-    link: null,
+    link: "https://ces.eecs.umich.edu/force26/",
   },
   {
     name: "Workshop on Horn Clauses for Verification and Synthesis (HCVS)",
