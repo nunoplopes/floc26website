@@ -251,6 +251,7 @@ const workshops_week1 = [
   },
   {
     name: "LLMs meet Constraint Solving (LLM-Solve)",
+    aff: "CP",
     start: 19,
     end: 19,
     link: null,
