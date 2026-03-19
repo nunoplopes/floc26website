@@ -2,6 +2,7 @@ import AWS from "../../assets/images/sponsors/aws.png";
 import TURISMO from "../../assets/images/sponsors/ATL.png";
 import CADENCE from "../../assets/images/sponsors/cadence.png";
 import NVIDIA from "../../assets/images/sponsors/nvidia.svg";
+import POTASSCO from "../../assets/images/sponsors/potassco.svg";
 import THE from "../../assets/images/sponsors/THE.svg";
 import IST from "../../assets/images/sponsors/IST.webp";
 import ULISBON from "../../assets/images/sponsors/ulisbon.webp";
@@ -31,7 +32,13 @@ export const sponsors = [
     name: "Cadence",
     image: CADENCE,
     type: "Bronze",
-    url: "https://www.cadence.com/",
+    url: "https://www.cadence.com",
+  },
+  {
+    name: "Potassco",
+    image: POTASSCO,
+    type: "Bronze",
+    url: "https://www.potassco.com",
   },
   {
     name: "Instituto Superior Técnico",
@@ -55,7 +62,7 @@ export const sponsors = [
     name: "ACM",
     image: ACM,
     type: "Institutional",
-    url: "https://www.acm.org/",
+    url: "https://www.acm.org",
   },
   {
     name: "THE - The House of Events",
