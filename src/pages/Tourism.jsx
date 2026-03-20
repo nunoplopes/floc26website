@@ -282,8 +282,7 @@ export default function TourismPage() {
 
             <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
               <p className="font-semibold text-blue-800">
-                🎟 Use voucher code <span className="text-xl">FLOC26</span> to receive a 10%
-                discount
+                🎟 Use voucher code <span className="text-xl">FLOC26</span> to receive a 10% discount
               </p>
               <p>
                 Book directly at:{" "}
@@ -353,8 +352,7 @@ export default function TourismPage() {
               <ul className="list-disc ml-6 space-y-3">
                 <li>
                   <strong>Best of Lisbon Walk (Daily – Morning & Afternoon)</strong>
-                  <br />
-                  A comprehensive introduction to Lisbon’s history and culture.
+                  <br />A comprehensive introduction to Lisbon’s history and culture.
                   <br />
                   <a
                     href="https://www.insidelisbon.com/en/tours/best-of-lisbon-walking-tour"
