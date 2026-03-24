@@ -30,6 +30,11 @@ const Header = () => {
         </Link>
       </div>
 
+      <div className="bg-red-600 text-white text-center text-sm md:text-base font-semibold py-2 px-4">
+        ⚠️ Scam alert: Fraudulent travel agents are contacting potential participants. FLoC has no
+        affiliated travel agents and will never reach out about travel or accommodation.
+      </div>
+
       <header className="flex items-center justify-between z-10 p-5 bg-white">
         <div>
           <Link to="/">
