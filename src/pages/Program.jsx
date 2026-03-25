@@ -234,7 +234,7 @@ const workshops_week1 = [
     aff: "KR",
     start: 19,
     end: 19,
-    link: null,
+    link: "https://joefest26.github.io",
   },
   {
     name: "International Workshop on Logical Aspects in Multi-Agent Systems and Strategic Reasoning (LAMAS&SR)",
