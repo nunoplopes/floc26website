@@ -20,7 +20,7 @@
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.8",
+    "@biomejs/biome": "2.4.10",
     "@vitejs/plugin-react": "^6.0.1",
     "sharp": "^0.34.4",
     "svgo": "^4.0.0",
