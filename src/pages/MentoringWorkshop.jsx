@@ -1,6 +1,7 @@
 import AWS from "../assets/images/sponsors/aws.png";
 import NSF from "../assets/images/mwsponsors/nsf.png";
 import JANESTREET from "../assets/images/mwsponsors/janestreet.png";
+import SIGLOG from "../assets/images/mwsponsors/siglog.png";
 
 const MentoringWorkshop = () => {
   return (
@@ -206,34 +207,60 @@ const MentoringWorkshop = () => {
             Sponsors
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed">
-            <div className="flex flex-wrap justify-center gap-6">
-              <a
-                href="https://aws.amazon.com"
-                className="p-3 inline-flex items-center justify-center"
-              >
-                <img
-                  src={AWS}
-                  alt="AWS"
-                  className="block max-w-52 h-auto w-auto min-w-[80px] min-h-[30px]"
-                />
-              </a>
-              <a
-                href="https://www.janestreet.com"
-                className="p-3 inline-flex items-center justify-center"
-              >
-                <img
-                  src={JANESTREET}
-                  alt="Jane Street"
-                  className="block max-w-52 h-auto w-auto min-w-[80px] min-h-[30px]"
-                />
-              </a>
-              <a href="https://www.nsf.gov" className="p-3 inline-flex items-center justify-center">
-                <img
-                  src={NSF}
-                  alt="NSF"
-                  className="block max-w-52 h-auto w-auto min-w-[80px] min-h-[30px]"
-                />
-              </a>
+            <div className="mb-12">
+              <h2 className="text-center text-3xl font-bold">Gold Sponsors</h2>
+              <div className="flex flex-wrap justify-center gap-6">
+                <a
+                  href="https://aws.amazon.com"
+                  className="px-3 inline-flex items-center justify-center"
+                >
+                  <img
+                    src={AWS}
+                    alt="AWS"
+                    className="block max-w-52 h-auto w-auto min-w-[80px] min-h-[30px]"
+                  />
+                </a>
+                <a
+                  href="https://www.nsf.gov"
+                  className="px-3 inline-flex items-center justify-center"
+                >
+                  <img
+                    src={NSF}
+                    alt="NSF"
+                    className="block max-w-52 h-auto w-auto min-w-[80px] min-h-[30px]"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="mb-12">
+              <h2 className="text-center text-2xl font-bold">Bronze Sponsors</h2>
+              <div className="flex flex-wrap justify-center gap-6">
+                <a
+                  href="https://www.janestreet.com"
+                  className="p-3 inline-flex items-center justify-center"
+                >
+                  <img
+                    src={JANESTREET}
+                    alt="Jane Street"
+                    className="block max-w-52 h-auto w-auto min-w-[80px] min-h-[30px]"
+                  />
+                </a>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-center text-xl font-bold">Institutional Sponsors</h2>
+              <div className="flex flex-wrap justify-center gap-6">
+                <a
+                  href="https://siglog.org"
+                  className="p-3 inline-flex items-center justify-center"
+                >
+                  <img
+                    src={SIGLOG}
+                    alt="SIGLOG"
+                    className="block max-w-52 h-auto w-auto min-w-[80px] min-h-[30px]"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </section>
