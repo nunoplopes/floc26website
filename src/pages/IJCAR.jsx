@@ -120,8 +120,7 @@ const IJCAR = () => {
                 Abstract submission: <strong>February 6, 2026</strong>
               </li>
               <li>
-                Paper submission:
-                &nbsp;<strong>February&nbsp;15,&nbsp;2026</strong>
+                Paper submission: &nbsp;<strong>February&nbsp;15,&nbsp;2026</strong>
               </li>
               <li>
                 Rebuttal: <strong>March 31 - April 3, 2026</strong>

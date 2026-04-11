@@ -50,7 +50,7 @@ const workshops_week1 = [
     aff: "CP",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://dpsolve26.github.io",
   },
   {
     name: "Tutorial: Definite Descriptions in KR Languages (DefDesKR)",
@@ -91,7 +91,7 @@ const workshops_week1 = [
     aff: "IJCAR & FSCD",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://ifip-wg-rewriting.cs.ru.nl/events/event-2026.html",
   },
   {
     name: "12th Workshop on Intersection Types and Related Systems (ITRS)",
@@ -152,7 +152,7 @@ const workshops_week1 = [
     aff: "SAT",
     start: 18,
     end: 19,
-    link: null,
+    link: "https://proofcomplexityworkshop.gitpages.uni-jena.de",
   },
   {
     name: "International Workshop on Experimental Evaluation of Algorithms for Solving Problems with Combinatorial Explosion (RCRA)",
@@ -193,7 +193,7 @@ const workshops_week1 = [
     aff: "FSCD & LICS",
     start: 18,
     end: 19,
-    link: null,
+    link: "https://lipn.univ-paris13.fr/TLLA/2026/",
   },
   {
     name: "Tutorial: Arguing in dynamic and uncertain situations: From theoretical insights to application (ADU)",
@@ -254,7 +254,7 @@ const workshops_week1 = [
     aff: "CP",
     start: 19,
     end: 19,
-    link: null,
+    link: "https://sites.google.com/view/llm-solve-2026",
   },
   {
     name: "Tutorial: LLMs for Reasoning and Reasoning for LLMs (LLM4R)",
@@ -288,7 +288,7 @@ const workshops_week1 = [
     aff: "ICLP",
     start: 19,
     end: 19,
-    link: null,
+    link: "https://prolog-lang.org/ImprovementsForum/PIPWorkshop2026CFP.html",
   },
   {
     name: "Pragmatics of SAT (PoS)",
@@ -347,7 +347,7 @@ const workshops_week2 = [
     aff: "LICS & CAV",
     start: 24,
     end: 25,
-    link: null,
+    link: "https://acv-ws.github.io/2026/",
   },
   {
     name: "Automated Reasoning in Quantified Non-Classical Logics (ARQNL)",
@@ -606,7 +606,7 @@ const workshops_week2 = [
     aff: "CAV",
     start: 25,
     end: 25,
-    link: null,
+    link: "https://synt2026.github.io",
   },
   {
     name: "Tools for Educational Activities in Logic (TEAL)",
