@@ -41,7 +41,7 @@ const IJCAR = () => {
               Notification: <strong>April 14, 2026</strong>
             </li>
             <li>
-              Camera-ready: <strong>June 15, 2026</strong>
+              Camera-ready: <strong>May 15, 2026</strong>
             </li>
           </ul>
         </section>
@@ -129,7 +129,7 @@ const IJCAR = () => {
                 Notification: <strong>April 14, 2026</strong>
               </li>
               <li>
-                Camera-ready: <strong>June 15, 2026</strong>
+                Camera-ready: <strong>May 15, 2026</strong>
               </li>
               <li>
                 Conference: <strong>July 26-29, 2026</strong>
