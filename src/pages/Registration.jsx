@@ -121,6 +121,12 @@ const Registration = () => {
               ))}
             </tbody>
           </table>
+          <p className="mt-3 text-gray-700">
+            <strong>Note:</strong> During registration, participants are required to select the main
+            conference they will attend. Once registered, participants are welcome to attend
+            sessions of any conference taking place in the same week. This information is used
+            solely to ensure that rooms of adequate capacity are allocated for each conference.
+          </p>
 
           <h2 className="text-2xl font-semibold text-blue-800 mt-16 mb-2">Workshops</h2>
           <table className="text-sm md:text-base border border-gray-300 rounded-lg">
