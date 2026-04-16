@@ -354,7 +354,7 @@ const workshops_week2 = [
     aff: "IJCAR",
     start: 24,
     end: 24,
-    link: null,
+    link: "https://iltp.de/ARQNL-2026/",
   },
   {
     name: "Workshop on Craig Interpolation, Beth Definability, and Second-Order Quantifier Elimination (CI-BD-SOQE)",
