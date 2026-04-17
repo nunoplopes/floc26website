@@ -305,13 +305,6 @@ const workshops_week1 = [
     link: "https://qbf-workshop.github.io",
   },
   {
-    name: "Rocqshop (RocqWS)",
-    aff: "ITP",
-    start: 19,
-    end: 19,
-    link: null,
-  },
-  {
     name: "14th International Workshop on Computing with Terms and Graphs (TERMGRAPH)",
     aff: "FSCD",
     start: 19,
@@ -600,6 +593,13 @@ const workshops_week2 = [
     start: 25,
     end: 25,
     link: "https://paar2026.github.io",
+  },
+  {
+    name: "Rocqshop (RocqWS)",
+    aff: "ITP",
+    start: 25,
+    end: 25,
+    link: null,
   },
   {
     name: "Workshop on Synthesis (SYNT)",
