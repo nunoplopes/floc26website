@@ -572,7 +572,7 @@ const workshops_week2 = [
     aff: "CAV",
     start: 25,
     end: 25,
-    link: null,
+    link: "https://qav.cs.ox.ac.uk/martafest/",
   },
   {
     name: "Workshop on Counting, Sampling, and Synthesis (MC)",
