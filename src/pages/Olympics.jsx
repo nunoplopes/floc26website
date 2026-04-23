@@ -15,23 +15,38 @@ const Olympics = () => {
             <main className="max-w-6xl mx-auto px-6 py-16 space-y-16">
                 <section className="bg-white p-8 rounded-2xl shadow-lg text-center border border-gray-200">
                     <p align={"justify"}>
-                        -----FIXME-----
 
-                        The aim of the FLoC Olympic Games 2014 is to start a tradition in the spirit of the ancient
-                        Olympic Games, a Panhellenic sport festival held every four years in the sanctuary of
-                        Olympia in Greece, this time in the scientific community of computational logic. Every four
-                        years, as part of the Federated Logic Conference, the Games will gather together all the
-                        challenging disciplines from a variety of computational logic in the form of the solver
-                        competitions.
 
-                        The arena had been set up to display the competition events to a broad audience at the
-                        Vienna Summer of Logic. Big Screen events show live performances of the individual
-                        competitions. At the Award Ceremonies, the competition organizers will have the opportunity
-                        to present their competitions to the public and give away special prizes, the prestigious
-                        Kurt Gödel medals, to their successful competitors. Thus reinforces the main goal of the
-                        FLoC Olympic Games, that is, to facilitate the visibility of the competitions associated
-                        with the conferences and workshops of the Federated Logic Conference during the Vienna
-                        Summer of Logic.
+At the core of the practical success story of automated reasoning and constraint solving
+are solvers, sophisticated and complex pieces of software  which allow for tackling computationally hard
+ problems at large. Solver competitions and evaluations, organized typically annually in different subareas of
+automated reasoning and constraint solving play a significant role in this practical success. 
+Solver competitions enable research communities to showcase the current state-of-the-art, 
+document practical advancements, identify challenges from research and industry, 
+and push solver developers to not only aim for reliable and robust tools for a wide range of 
+applications, but to improve their tools beyond their current limitations.
+Omportantly, competitions are often considered the gold standard when it comes to empirical evaluations 
+and have significant impact on the research community and their empirical methods. 
+Since competitions are a driving force for new advancements in the area,
+decisions related to competition organization have a significant impact as they often establish standards
+for formats and experimental evaluations.
+Organizing a competition that yields meaningful results both for developers and users of the tools is 
+challenging and a tremendous amount of work. As such, competitions deserve proper recognition and celebration
+alongside other types of research advances in the realm of the Federated Logic Conferences.
+
+The FLoC Olympic Games, spanning back to 2014,
+ serve to provide the recognition and celebratory platform for the various competitions
+and related evaluation events organized by the various research communities represented in the FLoC program 
+every four years.
+FLoC Olympic Games 2026 continue this tradition by highlighting all of the over dozen competitions taking place
+during the two weeks of FLoC 2026. This includes the celebration of the competitions and 
+significant advances made by solver developers through special FLoC Olympic Games 2026 award ceremonies 
+during both weeks of FLoC 2026 in conjunction with the main banquets.
+In addition to promoting the variuos established competitive events in the general area of FLoC, FLoC Olympic Games 2026 
+also includes a special FLoC-wide Modelling Competition, and also highlights workshops focusing on aspects related
+to practical evaluations of automated reasoning and constraint reasoning systems.
+
+
                     </p>
                     {/*<h2 className="text-3xl font-semibold text-indigo-700 mb-6">Paper Submission</h2>*/}
                     {/*<a*/}
@@ -456,7 +471,7 @@ const Olympics = () => {
                         >
                             Matti Järvisalo
                         </a>
-                        , Helsinki University
+                         University of Helsinki
                     </li>
                     <li>
                         <a
