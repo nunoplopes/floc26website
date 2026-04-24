@@ -215,29 +215,6 @@ export default function Accommodation() {
             </div>
 
             <div className="p-4 border rounded-lg">
-              <h3 className="font-bold">NH Lisboa Campo Grande (4*)</h3>
-              <p className="text-sm mb-1">
-                <span className="font-medium text-gray-700">Rates:</span> €150 (Single room), €160
-                (Double room)
-              </p>
-              <p className="text-sm mb-1">
-                <span className="font-medium text-gray-700">Address:</span> Campo Grande, 7,
-                1700-087 Lisbon
-              </p>
-              <p className="text-sm mb-1">
-                <span className="font-medium text-gray-700">Distance:</span> 0.4 km from venue
-              </p>
-              <p className="mt-2 text-sm">
-                <a
-                  href="https://www.nh-hotels.com/en/event/federated-logistic-conference-2026"
-                  className="text-blue-600 underline"
-                >
-                  Book now
-                </a>
-              </p>
-            </div>
-
-            <div className="p-4 border rounded-lg">
               <h3 className="font-bold">VIP Executive Entrecampos Hotel (4*)</h3>
               <p className="text-sm mb-1">
                 <span className="font-medium text-gray-700">Rates:</span> €166 (Single room), €178
@@ -476,30 +453,6 @@ export default function Accommodation() {
               <p className="mt-2 text-sm">
                 <a
                   href="https://www.vinccihoteles.com/en/?cp=FLOC2026"
-                  className="text-blue-600 underline"
-                >
-                  Book now
-                </a>
-              </p>
-            </div>
-
-            <div className="p-4 border rounded-lg">
-              <h3 className="font-bold">Tivoli Oriente Lisboa Hotel (4*)</h3>
-              <p className="text-sm mb-1">
-                <span className="font-medium text-gray-700">Rates:</span> €200 (Single room), €215
-                (Double room)
-              </p>
-              <p className="text-sm mb-1">
-                <span className="font-medium text-gray-700">Address:</span> Av. D. João II, 27,
-                1990-079 Lisbon
-              </p>
-              <p className="text-sm mb-1">
-                <span className="font-medium text-gray-700">Distance:</span> 6.4 km from venue
-                (Metro: Red Line)
-              </p>
-              <p className="mt-2 text-sm">
-                <a
-                  href="https://www.nh-hotels.com/en/event/federated-logistic-conference-2026-tivoli-oriente"
                   className="text-blue-600 underline"
                 >
                   Book now
