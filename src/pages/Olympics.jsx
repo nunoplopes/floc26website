@@ -39,7 +39,7 @@ const Olympics = () => {
                     <div className="space-y-4 text-gray-700 leading-relaxed">
                         <p></p>
                         <h3 className="text-2xl font-semibold text-indigo-700 pb-0">Result Presentations</h3>
-                        Detailed results each event will be presented individually at the affiliated conferences or workshop.
+                        Detailed results each event will be presented individually at the affiliated conferences or workshops; please consult the FLoC program for details on the competition presentations as they are announced.
                         {/*We will add dates here as soon as they are confirmed.*/}
                         {/*<table>*/}
                         {/*    <thead>*/}
