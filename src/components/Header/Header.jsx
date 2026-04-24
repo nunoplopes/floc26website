@@ -18,6 +18,7 @@ const Header = () => {
     { to: "/local-transportation", label: "Local Transportation" },
     { to: "/committees", label: "Committees" },
     { to: "/program", label: "Program" },
+    { to: "/olympics", label: "Competitions" },
     { to: "/tourism", label: "Tourism" },
   ];
 

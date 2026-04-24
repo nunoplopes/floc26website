@@ -630,6 +630,119 @@ const workshops_week2 = [
   },
 ];
 
+
+const challenges_week1 = [
+  {
+    name: "LP/CP Programming Contest 2026",
+    aff: "ICLP",
+    start: 22,
+    end: 22,
+    link: "https://lpcp-contest.github.io/",
+  },
+  {
+    name: "Model Counting Competition 2026 (MCC 2026)",
+    aff: "SAT",
+    start: 22,
+    end: 22,
+    link: "https://mccompetition.org/2026/mc_description",
+  },
+  {
+    name: "MiniZinc Challenge 2026",
+    aff: "CP",
+    start: 22,
+    end: 22,
+    link: "https://www.minizinc.org/challenge/2026/",
+  },
+  {
+    name: "MaxSAT Evaluation 2026 (MSE 2026)",
+    aff: "SAT",
+    start: 22,
+    end: 22,
+    link: "https://maxsat-evaluations.github.io/2026/index.html",
+  },
+  {
+    name: "Pseudo-Boolean Competition 2026 (PB 2026)",
+    aff: "SAT",
+    start: 22,
+    end: 22,
+    link: "https://www.cril.univ-artois.fr/PB26/",
+  },
+  {
+    name: "QBFGallery 2026",
+    aff: "SAT",
+    start: 22,
+    end: 22,
+    link: "https://qbf.pages.sai.jku.at/gallery26/",
+  },
+  {
+    name: "SAT Competition 2026 (SAT Comp 2026)",
+    aff: "SAT",
+    start: 22,
+    end: 22,
+    link: "https://satcompetition.github.io/2026/",
+  },
+  {
+    name: "8th International XCSP3 Competition (xCSP3 2026)",
+    aff: "CP",
+    start: 22,
+    end: 22,
+    link: "https://xcsp.org/competitions/",
+  }
+];
+
+
+const challenges_week2 = [
+  {
+    name: "CADE ATP System Competition 2026 (CASC-J13)",
+    aff: "IJCAR",
+    start: 28,
+    end: 28,
+    link: "",
+  },
+  {
+    name: "15th Confluence Competition (CoCo 2026)",
+    aff: "IWC Workshop@FSCD/IJCAR",
+    start: 28,
+    end: 28,
+    link: "",
+  },
+  {
+    name: "ProoVer Competition 2026 (ProoVer 2026)",
+    aff: "IJCAR",
+    start: 28,
+    end: 28,
+    link: "",
+  },
+  {
+    name: "21th International Satisfiability Modulo Theories Competition (SMT-Comp 2026)",
+    aff: "IJCAR",
+    start: 28,
+    end: 28,
+    link: "",
+  },
+  {
+    name: "Reactive Synthesis Competition 2026 (SYNTCOMP 2026)",
+    aff: "IJCAR",
+    start: 28,
+    end: 28,
+    link: "",
+  },
+  {
+    name: "Termination Competition 2026 (termCOMP 2026)",
+    aff: "WST Workshop",
+    start: 25,
+    end: 25,
+    link: "",
+  },
+  {
+    name: "7th International Verification of Neural Networks Competition (VNN-COMP 2026)",
+    aff: "SAIV 2026@CAV",
+    start: 24,
+    end: 25,
+    link: "",
+  }
+];
+
 const link = ({ url, children }) => {
   return url ? (
     url.startsWith("http") ? (
@@ -790,6 +903,74 @@ const WorkshopList = ({ week1, week2 }) => {
   );
 };
 
+
+const ChallengeItem = ({ workshop }) => {
+  const content = (
+      <div className="p-4 bg-white rounded-xl border border-gray-200 hover:shadow transition">
+        <h4 className="font-semibold text-blue-900 mb-1">{workshop.name}</h4>
+        {workshop.aff && <p className="text-sm text-gray-700">Affiliated with {workshop.aff}</p>}
+        {/*<p className="text-sm text-gray-500">*/}
+        {/*  July {workshop.start}*/}
+        {/*  {workshop.start !== workshop.end && `-${workshop.end}`}*/}
+        {/*</p>*/}
+      </div>
+  );
+  return link({ url: workshop.link, children: content });
+};
+
+const Challenges = ({ week1, week2 }) => {
+  const [selectedDay, setSelectedDay] = useState("all");
+  const [selectedConference, setSelectedConference] = useState("all");
+
+  const matchesDay = (workshop) =>
+      selectedDay === "all" ||
+      (Number(selectedDay) >= workshop.start && Number(selectedDay) <= workshop.end);
+
+  const matchesConference = (workshop) =>
+      selectedConference === "all" || (workshop.aff && workshop.aff.includes(selectedConference));
+
+  const filteredWeek1 = week1.filter((w) => matchesDay(w) && matchesConference(w));
+  const filteredWeek2 = week2.filter((w) => matchesDay(w) && matchesConference(w));
+
+  return (
+      <div className="mt-20">
+        <h2 className="text-4xl font-bold text-blue-900 mb-10 text-center">List of Solving Competitions</h2>
+
+        <WorkshopDayFilter
+            selectedDay={selectedDay}
+            onDayChange={setSelectedDay}
+            selectedConference={selectedConference}
+            onConferenceChange={setSelectedConference}
+        />
+
+        {/* Week 1 */}
+        {filteredWeek1.length > 0 && (
+            <>
+              <h3 className="text-2xl font-semibold text-blue-800 mb-4">Week 1</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-16">
+                {filteredWeek1.map((w) => (
+                    <ChallengeItem key={w.name} workshop={w} />
+                ))}
+              </div>
+            </>
+        )}
+
+        {/* Week 2 */}
+        {filteredWeek2.length > 0 && (
+            <>
+              <h3 className="text-2xl font-semibold text-blue-800 mb-4">Week 2</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                {filteredWeek2.map((w) => (
+                    <ChallengeItem key={w.name} workshop={w} />
+                ))}
+              </div>
+            </>
+        )}
+      </div>
+  );
+};
+
+
 const Program = () => {
   return (
     <div className="py-16 px-4 sm:px-6 lg:px-8">
@@ -818,7 +999,9 @@ const Program = () => {
           <WeekProgram weekData={schedule.find((item) => item.title === "WEEK 2")} />
         </div>
 
+        <Challenges week1={challenges_week1} week2={challenges_week2} />
         <WorkshopList week1={workshops_week1} week2={workshops_week2} />
+
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router";
+import {Routes, Route} from "react-router";
 import Layout from "./pages/Layout";
 import About from "./pages/About";
 import SponsorsPage from "./pages/SponsorsPage";
@@ -14,31 +14,33 @@ import SpeakersId from "./components/SpeakersId";
 import Policies from "./pages/Policies";
 import CallForWorkshops from "./pages/CallForWorkshops";
 import IJCAR from "./pages/IJCAR";
+import Olympics from "./pages/Olympics.jsx";
 import MentoringWorkshop from "./pages/MentoringWorkshop";
 import NotFound from "./pages/NotFound";
 
 const App = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<Layout />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/sponsors" element={<SponsorsPage />} />
-      <Route path="/speakers" element={<Speaker />} />
-      <Route path="/speakers/:name" element={<SpeakersId />} />
-      <Route path="/committees" element={<Committe />} />
-      <Route path="/program" element={<Program />} />
-      <Route path="/venue" element={<Venue />} />
-      <Route path="/accommodation" element={<Accommodation />} />
-      <Route path="/tourism" element={<Tourism />} />
-      <Route path="/local-transportation" element={<Transportation />} />
-      <Route path="/registration" element={<Registration />} />
-      <Route path="/policies" element={<Policies />} />
-      <Route path="/call-for-workshops" element={<CallForWorkshops />} />
-      <Route path="/ijcar" element={<IJCAR />} />
-      <Route path="/mentoring-workshop" element={<MentoringWorkshop />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-  );
+    return (
+        <Routes>
+            <Route path="/" element={<Layout/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/sponsors" element={<SponsorsPage/>}/>
+            <Route path="/speakers" element={<Speaker/>}/>
+            <Route path="/speakers/:name" element={<SpeakersId/>}/>
+            <Route path="/committees" element={<Committe/>}/>
+            <Route path="/program" element={<Program/>}/>
+            <Route path="/venue" element={<Venue/>}/>
+            <Route path="/accommodation" element={<Accommodation/>}/>
+            <Route path="/tourism" element={<Tourism/>}/>
+            <Route path="/local-transportation" element={<Transportation/>}/>
+            <Route path="/registration" element={<Registration/>}/>
+            <Route path="/policies" element={<Policies/>}/>
+            <Route path="/call-for-workshops" element={<CallForWorkshops/>}/>
+            <Route path="/olympics" element={<Olympics/>}/>
+            <Route path="/ijcar" element={<IJCAR/>}/>
+            <Route path="/mentoring-workshop" element={<MentoringWorkshop/>}/>
+            <Route path="*" element={<NotFound/>}/>
+        </Routes>
+    );
 };
 
 export default App;
