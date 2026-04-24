@@ -677,37 +677,37 @@ const challenges_week2 = [
   {
     name: "CADE ATP System Competition (CASC-J13)",
     aff: "IJCAR",
-    link: null,
+    link: "https://tptp.org/CASC/J13/",
   },
   {
     name: "15th Confluence Competition (CoCo)",
     aff: "IWC Workshop@FSCD/IJCAR",
-    link: null,
+    link: "https://project-coco.uibk.ac.at/2026/",
   },
   {
     name: "ProoVer Competition (ProoVer)",
     aff: "IJCAR",
-    link: null,
+    link: "https://proover-competition.github.io/",
   },
   {
     name: "21th International Satisfiability Modulo Theories Competition (SMT-Comp)",
     aff: "IJCAR",
-    link: null,
+    link: "https://smt-comp.github.io/",
   },
   {
     name: "Reactive Synthesis Competition (SYNTCOMP)",
     aff: "IJCAR",
-    link: null,
+    link: "https://www.syntcomp.org/syntcomp-2026-call-for-benchmarks-and-solvers/",
   },
   {
     name: "Termination Competition (termCOMP)",
     aff: "WST Workshop",
-    link: null,
+    link: "https://termination-portal.org/wiki/Termination_Competition_2026",
   },
   {
     name: "7th International Verification of Neural Networks Competition (VNN-COMP)",
     aff: "SAIV@CAV",
-    link: null,
+    link: "https://vnn-comp.github.io/",
   },
 ];
 
