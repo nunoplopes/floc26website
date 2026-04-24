@@ -640,7 +640,7 @@ const challenges_week1 = [
     link: "https://lpcp-contest.github.io/",
   },
   {
-    name: "MCC 2026 (Model Counting Competition 2026)",
+    name: "Model Counting Competition 2026 (MCC 2026)",
     aff: "SAT",
     start: 22,
     end: 22,
@@ -654,14 +654,14 @@ const challenges_week1 = [
     link: "https://www.minizinc.org/challenge/2026/",
   },
   {
-    name: "MSE 2026 (MaxSAT Evaluation 2026)",
+    name: "MaxSAT Evaluation 2026 (MSE 2026)",
     aff: "SAT",
     start: 22,
     end: 22,
     link: "https://maxsat-evaluations.github.io/2026/index.html",
   },
   {
-    name: "PB 2026 (Pseudo-Boolean Competition 2026)",
+    name: "Pseudo-Boolean Competition 2026 (PB 2026)",
     aff: "SAT",
     start: 22,
     end: 22,
@@ -675,14 +675,14 @@ const challenges_week1 = [
     link: "https://qbf.pages.sai.jku.at/gallery26/",
   },
   {
-    name: "SAT Comp 2026 (SAT Competition 2026)",
+    name: "SAT Competition 2026 (SAT Comp 2026)",
     aff: "SAT",
     start: 22,
     end: 22,
     link: "https://satcompetition.github.io/2026/",
   },
   {
-    name: "xCSP3 2026 (8th International XCSP3 Competition)",
+    name: "8th International XCSP3 Competition (xCSP3 2026)",
     aff: "CP",
     start: 22,
     end: 22,
@@ -693,49 +693,49 @@ const challenges_week1 = [
 
 const challenges_week2 = [
   {
-    name: "CASC-J13 (CADE ATP System Competition 2026)",
+    name: "CADE ATP System Competition 2026 (CASC-J13)",
     aff: "IJCAR",
     start: 28,
     end: 28,
     link: "",
   },
   {
-    name: "CoCo 2026 (15th Confluence Competition)",
+    name: "15th Confluence Competition (CoCo 2026)",
     aff: "IWC Workshop@FSCD/IJCAR",
     start: 28,
     end: 28,
     link: "",
   },
   {
-    name: "ProoVer 2026 (ProoVer Competition 2026)",
+    name: "ProoVer Competition 2026 (ProoVer 2026)",
     aff: "IJCAR",
     start: 28,
     end: 28,
     link: "",
   },
   {
-    name: "SMT-Comp 2026 (21th International Satisfiability Modulo Theories Competition)",
+    name: "21th International Satisfiability Modulo Theories Competition (SMT-Comp 2026)",
     aff: "IJCAR",
     start: 28,
     end: 28,
     link: "",
   },
   {
-    name: "SYNTCOMP 2026 (Reactive Synthesis Competition 2026)",
+    name: "Reactive Synthesis Competition 2026 (SYNTCOMP 2026)",
     aff: "IJCAR",
     start: 28,
     end: 28,
     link: "",
   },
   {
-    name: "termCOMP 2026 (Termination Competition 2026)",
+    name: "Termination Competition 2026 (termCOMP 2026)",
     aff: "WST Workshop",
     start: 25,
     end: 25,
     link: "",
   },
   {
-    name: "VNN-COMP 2026 (7th International Verification of Neural Networks Competition)",
+    name: "7th International Verification of Neural Networks Competition (VNN-COMP 2026)",
     aff: "SAIV 2026@CAV",
     start: 24,
     end: 25,
@@ -934,7 +934,7 @@ const Challenges = ({ week1, week2 }) => {
 
   return (
       <div className="mt-20">
-        <h2 className="text-4xl font-bold text-blue-900 mb-10 text-center">Solving Challenges / Competitions</h2>
+        <h2 className="text-4xl font-bold text-blue-900 mb-10 text-center">List of Solving Competitions</h2>
 
         <WorkshopDayFilter
             selectedDay={selectedDay}
