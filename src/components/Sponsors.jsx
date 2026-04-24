@@ -3,9 +3,9 @@ import { sponsors } from "./event data/sponsors";
 const sponsorshipTiers = [
   { level: "Diamond", fontSize: "text-4xl", logoSize: "max-h-32" },
   { level: "Platinum", fontSize: "text-3xl", logoSize: "max-h-28" },
-  { level: "Gold", fontSize: "text-3xl", logoSize: "max-h-28 min-h-[50px]" },
+  { level: "Gold", fontSize: "text-3xl", logoSize: "max-h-28 min-h-[55px]" },
   { level: "Silver", fontSize: "text-2xl", logoSize: "max-h-24" },
-  { level: "Bronze", fontSize: "text-2xl", logoSize: "max-h-16 min-h-[35px]" },
+  { level: "Bronze", fontSize: "text-2xl", logoSize: "max-h-12" },
   { level: "Institutional", fontSize: "text-xl", logoSize: "max-h-14" },
   { level: "Secretariat", fontSize: "text-xl", logoSize: "max-h-8", nosponsor: true },
 ];

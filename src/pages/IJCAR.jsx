@@ -41,7 +41,7 @@ const IJCAR = () => {
               Notification: <strong>April 14, 2026</strong>
             </li>
             <li>
-              Camera-ready: <strong>June 15, 2026</strong>
+              Camera-ready: <strong>May 15, 2026</strong>
             </li>
           </ul>
         </section>
@@ -120,8 +120,7 @@ const IJCAR = () => {
                 Abstract submission: <strong>February 6, 2026</strong>
               </li>
               <li>
-                Paper submission:
-                &nbsp;<strong>February&nbsp;15,&nbsp;2026</strong>
+                Paper submission: &nbsp;<strong>February&nbsp;15,&nbsp;2026</strong>
               </li>
               <li>
                 Rebuttal: <strong>March 31 - April 3, 2026</strong>
@@ -130,7 +129,7 @@ const IJCAR = () => {
                 Notification: <strong>April 14, 2026</strong>
               </li>
               <li>
-                Camera-ready: <strong>June 15, 2026</strong>
+                Camera-ready: <strong>May 15, 2026</strong>
               </li>
               <li>
                 Conference: <strong>July 26-29, 2026</strong>
