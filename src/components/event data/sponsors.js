@@ -2,6 +2,7 @@ import AWS from "../../assets/images/sponsors/aws.png";
 import TURISMO from "../../assets/images/sponsors/ATL.png";
 import CADENCE from "../../assets/images/sponsors/cadence.png";
 import NVIDIA from "../../assets/images/sponsors/nvidia.svg";
+import HARMONIC from "../../assets/images/sponsors/harmonic.svg";
 import POTASSCO from "../../assets/images/sponsors/potassco.svg";
 import THE from "../../assets/images/sponsors/THE.svg";
 import IST from "../../assets/images/sponsors/IST.webp";
@@ -33,6 +34,12 @@ export const sponsors = [
     image: CADENCE,
     type: "Bronze",
     url: "https://www.cadence.com",
+  },
+  {
+    name: "Harmonic",
+    image: HARMONIC,
+    type: "Bronze",
+    url: "https://harmonic.fun",
   },
   {
     name: "Potassco",
