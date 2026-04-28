@@ -203,13 +203,6 @@ const workshops_week1 = [
     link: null,
   },
   {
-    name: "Tutorial: Learning in Argumentation (ArguLearn)",
-    aff: "KR",
-    start: 19,
-    end: 19,
-    link: null,
-  },
-  {
     name: "Correct-by-construction distributed systems and Decentralised applications: from blockchain to swarms (CbC-DS)",
     start: 19,
     end: 19,
