@@ -625,44 +625,52 @@ const workshops_week2 = [
 
 const challenges_week1 = [
   {
-    name: "LP/CP Programming Contest",
-    aff: "ICLP",
+    name: "FLoC Modeling Competition",
+    aff: "FLoC / ICLP",
     link: "https://lpcp-contest.github.io/",
+    start: null
   },
   {
     name: "MiniZinc Challenge",
     aff: "CP",
     link: "https://www.minizinc.org/challenge/2026/",
+    start: null
   },
   {
     name: "Model Counting Competition (MCC)",
     aff: "SAT",
     link: "https://mccompetition.org/2026/mc_description",
+    start: null
   },
   {
     name: "MaxSAT Evaluation (MSE)",
     aff: "SAT",
     link: "https://maxsat-evaluations.github.io/2026/index.html",
+    start: null
   },
   {
     name: "Pseudo-Boolean Competition (PB)",
     aff: "SAT",
     link: "https://www.cril.univ-artois.fr/PB26/",
+    start: null
   },
   {
     name: "QBFGallery",
     aff: "SAT",
     link: "https://qbf.pages.sai.jku.at/gallery26/",
+    start: null
   },
   {
     name: "SAT Competition (SAT Comp)",
     aff: "SAT",
     link: "https://satcompetition.github.io/2026/",
+    start: null
   },
   {
     name: "8th International XCSP3 Competition",
     aff: "CP",
     link: "https://xcsp.org/competitions/",
+    start: null
   },
 ];
 
@@ -671,36 +679,43 @@ const challenges_week2 = [
     name: "CADE ATP System Competition (CASC-J13)",
     aff: "IJCAR",
     link: "https://tptp.org/CASC/J13/",
+    start: null
   },
   {
     name: "15th Confluence Competition (CoCo)",
     aff: "IWC Workshop@FSCD/IJCAR",
     link: "https://project-coco.uibk.ac.at/2026/",
+    start: null
   },
   {
     name: "ProoVer Competition (ProoVer)",
     aff: "IJCAR",
     link: "https://proover-competition.github.io/",
+    start: 27
   },
   {
     name: "21th International Satisfiability Modulo Theories Competition (SMT-Comp)",
     aff: "IJCAR",
     link: "https://smt-comp.github.io/",
+    start: null
   },
   {
     name: "Reactive Synthesis Competition (SYNTCOMP)",
-    aff: "IJCAR",
+    aff: "CAV",
     link: "https://www.syntcomp.org/syntcomp-2026-call-for-benchmarks-and-solvers/",
+    start: null
   },
   {
     name: "Termination Competition (termCOMP)",
     aff: "WST Workshop",
     link: "https://termination-portal.org/wiki/Termination_Competition_2026",
+    start: null
   },
   {
     name: "7th International Verification of Neural Networks Competition (VNN-COMP)",
     aff: "SAIV@CAV",
     link: "https://vnn-comp.github.io/",
+    start: null
   },
 ];
 
@@ -869,6 +884,7 @@ const ChallengeItem = ({ workshop }) => {
     <div className="p-4 bg-white rounded-xl border border-gray-200 hover:shadow transition">
       <h4 className="font-semibold text-blue-900 mb-1">{workshop.name}</h4>
       {workshop.aff && <p className="text-sm text-gray-700">Affiliated with {workshop.aff}</p>}
+      {workshop.start != null && <p className="text-sm text-gray-500">July {workshop.start}</p>}
     </div>
   );
   return link({ url: workshop.link, children: content });

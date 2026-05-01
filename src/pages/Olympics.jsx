@@ -6,9 +6,9 @@ const Olympics = () => {
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
       <header className="bg-indigo-700 text-white py-16 text-center shadow-lg">
         <h1 className="text-5xl font-extrabold tracking-tight">
-          Challenges and Solving Competitions
+          FLoC Olympics 2026
         </h1>
-        <h3 className="text-lg mt-1 font-light">FLoC Olympics 2026</h3>
+        <h3 className="text-lg mt-1 font-light">Challenges and Solving Competitions</h3>
       </header>
 
       <main className="max-w-6xl mx-auto px-6 py-16 space-y-16">
@@ -83,20 +83,21 @@ const Olympics = () => {
             </p>
             <ol>
               <li>
-                <strong>Week 1 Banquet (22/07)</strong>
+                <strong>Week 1 Banquet (22/07) [click on items for more details]</strong>
                 <br />
                 <details>
-                  <summary>
-                    <a href="https://lpcp-contest.github.io">
-                      Programming Contest: LP/CP Programming Contest
-                    </a>
+                  <summary id="det">
+                    FLoC Modeling Competition
+                    {/*<a href="https://lpcp-contest.github.io">*/}
+                    {/*  FLoC Modeling Competition*/}
+                    {/*</a>*/}
                   </summary>
                   <hr />
-                  <b>LP/CP Programming Contest</b>
+                  <b>FLoC Modeling Competition</b>
                   <br />
                   <i>Organizers: Mario Alviano, Arnaud Lequen, Johannes Fichte</i>
                   <br />
-                  <i>Affiliated Event: ICLP</i>
+                  <i>Affiliated Event: FLoC / ICLP</i>
                   <br />
                   <i>
                     Webpage:{" "}
@@ -110,11 +111,14 @@ const Olympics = () => {
                   <br />
                   The LP/CP Programming Contest is a long-standing tradition of the International
                   Conference on Logic Programming (ICLP), evolving from the original Prolog
-                  programming contests of the 1990s. It challenges teams to solve complex
+                  programming contests of the 1990s.
+                  This year, the competition will feature a
+                  <b> FLoC-wide Modeling Competition</b>.
+                  It challenges teams to solve complex
                   combinatorial and logic problems using a "Model and Solve" approach. Unlike
                   traditional competitive programming, this contest emphasizes declarative
                   programming, allowing participants to leverage Prolog, Answer Set Programming
-                  (ASP), Constraint Programming (CP) and SAT/MaxSAT/SMT systems. While modern
+                  (ASP), Constraint Programming (CP) and SAT/MaxSAT/SMT systems, and other systems. While modern
                   editions permit the integration of imperative languages, the core of every
                   solution must remain predominantly declarative. It serves as a high-energy
                   showcase for the versatility and efficiency of logic-based paradigms in tackling
@@ -124,7 +128,8 @@ const Olympics = () => {
                 </details>
                 <details>
                   <summary>
-                    <a href="https://www.minizinc.org/challenge/2026/">MiniZinc Challenge 2026</a>
+                    {/*<a href="https://www.minizinc.org/challenge/2026/">MiniZinc Challenge 2026</a>*/}
+                    MiniZinc Challenge 2026
                   </summary>
                   <hr />
                   <b>MiniZinc Challenge 2026</b>
@@ -154,9 +159,10 @@ const Olympics = () => {
                 </details>
                 <details>
                   <summary>
-                    <a href="https://mccompetition.org/2026/mc_description">
-                      MCC 2026 (Model Counting Competition 2026)
-                    </a>
+                    MCC 2026: Model Counting Competition 2026
+                    {/*<a href="https://mccompetition.org/2026/mc_description">*/}
+                    {/*  MCC 2026: Model Counting Competition 2026*/}
+                    {/*</a>*/}
                   </summary>
                   <hr />
                   <b>Model Counting Competition 2026</b>
@@ -184,9 +190,10 @@ const Olympics = () => {
                 </details>
                 <details>
                   <summary>
-                    <a href="https://maxsat-evaluations.github.io/2026/index.html">
-                      MSE 2026: MaxSAT Evaluation 2026
-                    </a>
+                    MSE 2026: MaxSAT Evaluation 2026
+                    {/*<a href="https://maxsat-evaluations.github.io/2026/index.html">*/}
+                    {/*  MSE 2026: MaxSAT Evaluation 2026*/}
+                    {/*</a>*/}
                   </summary>
                   <hr />
                   <b>MaxSAT Evaluation 2026</b>
@@ -224,9 +231,10 @@ const Olympics = () => {
                 </details>
                 <details>
                   <summary>
-                    <a href="https://www.cril.univ-artois.fr/PB26/">
-                      PB 2026: Pseudo-Boolean Competition 2026
-                    </a>
+                    PB 2026: Pseudo-Boolean Competition 2026
+                    {/*<a href="https://www.cril.univ-artois.fr/PB26/">*/}
+                    {/*  PB 2026: Pseudo-Boolean Competition 2026*/}
+                    {/*</a>*/}
                   </summary>
                   <hr />
                   <b>Pseudo-Boolean Competition 2026</b>
@@ -255,14 +263,15 @@ const Olympics = () => {
                 </details>
                 <details>
                   <summary>
-                    <a href="https://satcompetition.github.io/2026/">
-                      SAT Comp 2026: SAT Competition 2026
-                    </a>
+                    SAT Comp 2026: SAT Competition 2026
+                    {/*<a href="https://satcompetition.github.io/2026/">*/}
+                    {/*  SAT Comp 2026: SAT Competition 2026*/}
+                    {/*</a>*/}
                   </summary>
                   <hr />
                   <b>SAT Competition 2026</b>
                   <br />
-                  <i>Organizers: Cayden Codel, Katalin Fazekas, Marijn Heule, Ashlin Iser</i>
+                  <i>Organizers: Katalin Fazekas, Marijn Heule, Ashlin Iser</i>
                   <br />
                   <i>Affiliated Event: SAT</i>
                   <br />
@@ -289,7 +298,8 @@ const Olympics = () => {
                 </details>
                 <details>
                   <summary>
-                    <a href="https://qbf.pages.sai.jku.at/gallery26/">QBFGallery 2026</a>
+                    QBFGallery 2026
+                    {/*<a href="https://qbf.pages.sai.jku.at/gallery26/">QBFGallery 2026</a>*/}
                   </summary>
                   <hr />
                   <b>QBFGallery 2026</b>
@@ -322,9 +332,10 @@ const Olympics = () => {
                 </details>
                 <details>
                   <summary>
-                    <a href="https://xcsp.org/competitions/">
-                      xCSP3 2026: 8th International XCSP3 Competition
-                    </a>
+                    xCSP3 2026: 8th International XCSP3 Competition
+                    {/*<a href="https://xcsp.org/competitions/">*/}
+                    {/*  xCSP3 2026: 8th International XCSP3 Competition*/}
+                    {/*</a>*/}
                   </summary>
                   <hr />
                   <b>8th International XCSP3 Competition</b>
@@ -356,12 +367,13 @@ const Olympics = () => {
               </li>
               <br />
               <li>
-                <strong>Week 2 Banquet (28/07)</strong>
+                <strong>Week 2 Banquet (28/07) [click on items for more details]</strong>
                 <details>
                   <summary>
-                    <a href="https://tptp.org/CASC/J13/">
-                      CASC-J13: CADE ATP System Competition 2026
-                    </a>
+                    CASC-J13: CADE ATP System Competition 2026
+                    {/*<a href="https://tptp.org/CASC/J13/">*/}
+                    {/*  CASC-J13: CADE ATP System Competition 2026*/}
+                    {/*</a>*/}
                   </summary>
                   <hr />
                   <b>CADE ATP System Competition 2026</b>
@@ -377,6 +389,15 @@ const Olympics = () => {
                       className="text-indigo-600 hover:underline"
                     >
                       https://tptp.org/CASC/J13/
+                    </a>
+                  </i><br/>
+                  <i>
+                    Workshop:{" "}
+                    <a
+                        href="https://tptp.org/TPTPTParty/2026/"
+                        className="text-indigo-600 hover:underline"
+                    >
+                      https://tptp.org/TPTPTParty/2026/
                     </a>
                   </i>
                   <br />
@@ -395,11 +416,12 @@ const Olympics = () => {
                 </details>
                 <details>
                   <summary>
-                    {" "}
-                    <a href="https://project-coco.uibk.ac.at/2026/">
-                      {" "}
-                      CoCo 2026: 15th Confluence Competition
-                    </a>
+                    CoCo 2026: 15th Confluence Competition
+                    {/*{" "}*/}
+                    {/*<a href="https://project-coco.uibk.ac.at/2026/">*/}
+                    {/*  {" "}*/}
+                    {/*  CoCo 2026: 15th Confluence Competition*/}
+                    {/*</a>*/}
                   </summary>
                   <hr />
                   <b>15th Confluence Competition</b>
@@ -430,9 +452,10 @@ const Olympics = () => {
                 </details>
                 <details>
                   <summary>
-                    <a href="https://proover-competition.github.io">
-                      ProoVer 2026: ProoVer Competition 2026
-                    </a>
+                    ProoVer 2026: ProoVer Competition 2026
+                    {/*<a href="https://proover-competition.github.io">*/}
+                    {/*  ProoVer 2026: ProoVer Competition 2026*/}
+                    {/*</a>*/}
                   </summary>
                   <hr />
                   <b>ProoVer Competition 2026</b>
@@ -440,6 +463,8 @@ const Olympics = () => {
                   <i>Organizers: Julie Cailler, Simon Guilloud</i>
                   <br />
                   <i>Affiliated Event: IJCAR</i>
+                  <br />
+                  <i>Results:</i> <b>July 27th, 10AM</b>
                   <br />
                   <i>
                     Webpage:{" "}
@@ -461,9 +486,10 @@ const Olympics = () => {
                 </details>
                 <details>
                   <summary>
-                    <a href="https://smt-comp.github.io">
-                      SMT-Comp 2026: 21th International Satisfiability Modulo Theories Competition
-                    </a>
+                    SMT-Comp 2026: 21th International Satisfiability Modulo Theories Competition
+                    {/*<a href="https://smt-comp.github.io">*/}
+                    {/*  SMT-Comp 2026: 21th International Satisfiability Modulo Theories Competition*/}
+                    {/*</a>*/}
                   </summary>
                   <hr />
                   <b>21th International Satisfiability Modulo Theories Competition</b>
@@ -492,9 +518,10 @@ const Olympics = () => {
                 </details>
                 <details>
                   <summary>
-                    <a href="https://www.syntcomp.org/syntcomp-2026-call-for-benchmarks-and-solvers/">
-                      SYNTCOMP 2026: Reactive Synthesis Competition 2026
-                    </a>
+                    SYNTCOMP 2026: Reactive Synthesis Competition 2026
+                    {/*<a href="https://www.syntcomp.org/syntcomp-2026-call-for-benchmarks-and-solvers/">*/}
+                    {/*  SYNTCOMP 2026: Reactive Synthesis Competition 2026*/}
+                    {/*</a>*/}
                   </summary>
                   <hr />
                   <b>Reactive Synthesis Competition 2026</b>
@@ -503,7 +530,7 @@ const Olympics = () => {
                     Organizers: Guillermo Alberto Perez, Swen Jacobs, Philipp Schlehuber-Caissier
                   </i>
                   <br />
-                  <i>Affiliated Event: IJCAR</i>
+                  <i>Affiliated Event: CAV</i>
                   <br />
                   <i>
                     Webpage:{" "}
@@ -513,6 +540,10 @@ const Olympics = () => {
                     >
                       https://www.syntcomp.org/syntcomp-2026-call-for-benchmarks-and-solvers/
                     </a>
+                    <br/>
+                    Workshop on Synthesis:{" "}
+                    <a href="https://synt2026.github.io/" className="text-indigo-600 hover:underline">
+                      https://synt2026.github.io/</a>
                   </i>
                   <br />
                   The Reactive Synthesis Competition (SYNTCOMP) is an annual event founded in 2014
@@ -529,9 +560,10 @@ const Olympics = () => {
                 </details>
                 <details>
                   <summary>
-                    <a href="https://termination-portal.org/wiki/Termination_Competition_2026">
-                      termCOMP 2026: Termination Competition 2026
-                    </a>
+                    termCOMP 2026: Termination Competition 2026
+                    {/*<a href="https://termination-portal.org/wiki/Termination_Competition_2026">*/}
+                    {/*  termCOMP 2026: Termination Competition 2026*/}
+                    {/*</a>*/}
                   </summary>
                   <hr />
                   <b>Termination Competition 2026</b>
@@ -561,9 +593,10 @@ const Olympics = () => {
                 </details>
                 <details>
                   <summary>
-                    <a href="https://vnn-comp.github.io">
-                      VNN-COMP 2026: 7th International Verification of Neural Networks Competition
-                    </a>
+                    VNN-COMP 2026: 7th International Verification of Neural Networks Competition
+                    {/*<a href="https://vnn-comp.github.io">*/}
+                    {/*  VNN-COMP 2026: 7th International Verification of Neural Networks Competition*/}
+                    {/*</a>*/}
                   </summary>
                   <hr />
                   <b>7th International Verification of Neural Networks Competition</b>
@@ -603,7 +636,8 @@ const Olympics = () => {
             <br />
             <br />
             <h3 className="text-2xl font-semibold text-indigo-700 pb-0">
-              FLoC Olympics Related Workshops
+              {/*FLoC Olympics Related Workshops*/}
+              Cross-topic Workshops on Benchmarks and Empirical Evaluations
             </h3>
             <ul>
               <li>
