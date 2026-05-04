@@ -44,6 +44,13 @@ const MentoringWorkshop = () => {
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed">
             <p>TBA</p>
+            <h3 className="text-xl font-semibold">Confirmed invited speakers</h3>
+            <ul>
+              <li>Nada Amin (Harvard University)</li>
+              <li>Jakub Gajarský (Masaryk University and University of Warsaw)</li>
+              <li>Ichiro Hasuo (NII Tokyo)</li>
+              <li>Anela Lolić (TU Wien)</li>
+            </ul>
           </div>
         </section>
 
@@ -53,6 +60,14 @@ const MentoringWorkshop = () => {
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed">
             <p>TBA</p>
+            <h3 className="text-xl font-semibold">Confirmed invited speakers</h3>
+            <ul>
+              <li>Claudia Cauli (Huawei)</li>
+              <li>Loris D’Antoni (University of California, San Diego)</li>
+              <li>Yannick Forster (Inria Paris)</li>
+              <li>Orna Grumberg (Technion)</li>
+              <li>Caterina Urban (Inria Paris)</li>
+            </ul>
           </div>
         </section>
 
