@@ -628,49 +628,49 @@ const challenges_week1 = [
     name: "FLoC Modeling Competition",
     aff: "FLoC / ICLP",
     link: "https://lpcp-contest.github.io/",
-    start: null
+    start: null,
   },
   {
     name: "MiniZinc Challenge",
     aff: "CP",
     link: "https://www.minizinc.org/challenge/2026/",
-    start: null
+    start: null,
   },
   {
     name: "Model Counting Competition (MCC)",
     aff: "SAT",
     link: "https://mccompetition.org/2026/mc_description",
-    start: null
+    start: null,
   },
   {
     name: "MaxSAT Evaluation (MSE)",
     aff: "SAT",
     link: "https://maxsat-evaluations.github.io/2026/index.html",
-    start: null
+    start: null,
   },
   {
     name: "Pseudo-Boolean Competition (PB)",
     aff: "SAT",
     link: "https://www.cril.univ-artois.fr/PB26/",
-    start: null
+    start: null,
   },
   {
     name: "QBFGallery",
     aff: "SAT",
     link: "https://qbf.pages.sai.jku.at/gallery26/",
-    start: null
+    start: null,
   },
   {
     name: "SAT Competition (SAT Comp)",
     aff: "SAT",
     link: "https://satcompetition.github.io/2026/",
-    start: null
+    start: null,
   },
   {
     name: "8th International XCSP3 Competition",
     aff: "CP",
     link: "https://xcsp.org/competitions/",
-    start: null
+    start: null,
   },
 ];
 
@@ -679,43 +679,43 @@ const challenges_week2 = [
     name: "CADE ATP System Competition (CASC-J13)",
     aff: "IJCAR",
     link: "https://tptp.org/CASC/J13/",
-    start: null
+    start: null,
   },
   {
     name: "15th Confluence Competition (CoCo)",
     aff: "IWC Workshop@FSCD/IJCAR",
     link: "https://project-coco.uibk.ac.at/2026/",
-    start: null
+    start: null,
   },
   {
     name: "ProoVer Competition (ProoVer)",
     aff: "IJCAR",
     link: "https://proover-competition.github.io/",
-    start: 27
+    start: 27,
   },
   {
     name: "21th International Satisfiability Modulo Theories Competition (SMT-Comp)",
     aff: "IJCAR",
     link: "https://smt-comp.github.io/",
-    start: null
+    start: null,
   },
   {
     name: "Reactive Synthesis Competition (SYNTCOMP)",
     aff: "CAV",
     link: "https://www.syntcomp.org/syntcomp-2026-call-for-benchmarks-and-solvers/",
-    start: null
+    start: null,
   },
   {
     name: "Termination Competition (termCOMP)",
     aff: "WST Workshop",
     link: "https://termination-portal.org/wiki/Termination_Competition_2026",
-    start: null
+    start: null,
   },
   {
     name: "7th International Verification of Neural Networks Competition (VNN-COMP)",
     aff: "SAIV@CAV",
     link: "https://vnn-comp.github.io/",
-    start: null
+    start: null,
   },
 ];
 

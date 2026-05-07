@@ -5,9 +5,7 @@ const Olympics = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
       <header className="bg-indigo-700 text-white py-16 text-center shadow-lg">
-        <h1 className="text-5xl font-extrabold tracking-tight">
-          FLoC Olympics 2026
-        </h1>
+        <h1 className="text-5xl font-extrabold tracking-tight">FLoC Olympics 2026</h1>
         <h3 className="text-lg mt-1 font-light">Challenges and Solving Competitions</h3>
       </header>
 
@@ -111,16 +109,14 @@ const Olympics = () => {
                   <br />
                   The LP/CP Programming Contest is a long-standing tradition of the International
                   Conference on Logic Programming (ICLP), evolving from the original Prolog
-                  programming contests of the 1990s.
-                  This year, the competition will feature a
-                  <b> FLoC-wide Modeling Competition</b>.
-                  It challenges teams to solve complex
+                  programming contests of the 1990s. This year, the competition will feature a
+                  <b> FLoC-wide Modeling Competition</b>. It challenges teams to solve complex
                   combinatorial and logic problems using a "Model and Solve" approach. Unlike
                   traditional competitive programming, this contest emphasizes declarative
                   programming, allowing participants to leverage Prolog, Answer Set Programming
-                  (ASP), Constraint Programming (CP) and SAT/MaxSAT/SMT systems, and other systems. While modern
-                  editions permit the integration of imperative languages, the core of every
-                  solution must remain predominantly declarative. It serves as a high-energy
+                  (ASP), Constraint Programming (CP) and SAT/MaxSAT/SMT systems, and other systems.
+                  While modern editions permit the integration of imperative languages, the core of
+                  every solution must remain predominantly declarative. It serves as a high-energy
                   showcase for the versatility and efficiency of logic-based paradigms in tackling
                   real-world puzzles.
                   <br />
@@ -390,12 +386,13 @@ const Olympics = () => {
                     >
                       https://tptp.org/CASC/J13/
                     </a>
-                  </i><br/>
+                  </i>
+                  <br />
                   <i>
                     Workshop:{" "}
                     <a
-                        href="https://tptp.org/TPTPTParty/2026/"
-                        className="text-indigo-600 hover:underline"
+                      href="https://tptp.org/TPTPTParty/2026/"
+                      className="text-indigo-600 hover:underline"
                     >
                       https://tptp.org/TPTPTParty/2026/
                     </a>
@@ -540,10 +537,14 @@ const Olympics = () => {
                     >
                       https://www.syntcomp.org/syntcomp-2026-call-for-benchmarks-and-solvers/
                     </a>
-                    <br/>
+                    <br />
                     Workshop on Synthesis:{" "}
-                    <a href="https://synt2026.github.io/" className="text-indigo-600 hover:underline">
-                      https://synt2026.github.io/</a>
+                    <a
+                      href="https://synt2026.github.io/"
+                      className="text-indigo-600 hover:underline"
+                    >
+                      https://synt2026.github.io/
+                    </a>
                   </i>
                   <br />
                   The Reactive Synthesis Competition (SYNTCOMP) is an annual event founded in 2014

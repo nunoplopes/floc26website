@@ -773,687 +773,298 @@ const IJCAR = () => {
             <h3 className="text-2xl font-semibold text-indigo-700 pb-0">Accepted Papers</h3>
             <ul className="list-disc list-inside space-y-2 text-gray-700">
               <li>
-                <b>
-                   "A Unified Formalization of Context-Free Grammar Theory"
-                </b>
+                <b>"A Unified Formalization of Context-Free Grammar Theory"</b>
                 <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Tobias Nipkow
-                 , Fabian Lehr
-                 , Moritz Roos
-                 , Akihisa Yamada
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Tobias Nipkow , Fabian Lehr , Moritz Roos ,
+                Akihisa Yamada
+              </li>
+              <li>
+                <b>"Unification of Deterministic Higher-Order Patterns"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Johannes Niederhauser , Aart Middeldorp
+              </li>
+              <li>
+                <b>"Finite Model Finding in First-order Modal Logics"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Happy Khairunnisa Sariyanto , Alexander Steen ,
+                Geoff Sutcliffe
+              </li>
+              <li>
+                <b>"Towards Term-based Verification of Diagrammatic Equivalence"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Julie Cailler , Noé Delorme , Simon Perdrix ,
+                Sophie Tourret
+              </li>
+              <li>
+                <b>"Tao’s Equational Proof Challenge Accepted"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Lydia Kondylidou , Jasmin Blanchette , Marijn
+                Heule
+              </li>
+              <li>
+                <b>"Pitts and Intuitionistic Multi-Succedent: Uniform Interpolation for KM"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Hugo Férée , Ian Shillito
               </li>
               <li>
                 <b>
-                   "Unification of Deterministic Higher-Order Patterns"
+                  "The termination of Nielsen transformations applied to word equations with length
+                  constraints"
                 </b>
                 <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Johannes Niederhauser
-                 , Aart Middeldorp
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Benjamin Przybocki , Clark Barrett
+              </li>
+              <li>
+                <b>"An Applicative Multiset Path Order"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Nao Hirokawa , Teppei Saito , Teppei Tanaka ,
+                Wataru Yachi
+              </li>
+              <li>
+                <b>"Free Set Theory -- Cut Elimination and Consistency"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Andrzej Indrzejczak
+              </li>
+              <li>
+                <b>"Checking Regular Expressions in cvc5 Proofs"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ofec Israel , Yoni Zohar , Hitarth Singh , Bruno
+                Dutertre , Andrew Reynolds , Clark Barrett , Cesare Tinelli
               </li>
               <li>
                 <b>
-                   "Finite Model Finding in First-order Modal Logics"
+                  "Completeness of Synthesis under Realizability Assumptions using Superposition"
                 </b>
                 <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Happy Khairunnisa Sariyanto
-                 , Alexander Steen
-                 , Geoff Sutcliffe
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Márton Hajdu , Petra Hozzová , Laura Kovács , Eva
+                Wagner
+              </li>
+              <li>
+                <b>"Uniform interpolation with constructive diamond"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Iris van der Giessen , Ian Shillito
+              </li>
+              <li>
+                <b>"Formally Verified Graph Generation with SAT modulo Symmetries and Lean"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Markus Kirchweger , Pablo Manrique , Stefan
+                Szeider
+              </li>
+              <li>
+                <b>"Accelerating Loops with Arrays"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Florian Frohn , Jürgen Giesl
+              </li>
+              <li>
+                <b>"A General Approach for SMT Proof Skeletons"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Joseph E. Reeves , Haniel Barbosa , Andrew
+                Reynolds , Marijn J. H. Heule
+              </li>
+              <li>
+                <b>"The ARI Infrastructure for Automated Confluence Analysis"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Nao Hirokawa , Aart Middeldorp , Teppei Saito ,
+                René Thiemann
+              </li>
+              <li>
+                <b>"Generating Theorems by Generating Proof Structures"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Christoph Wernhard
               </li>
               <li>
                 <b>
-                   "Towards Term-based Verification of Diagrammatic Equivalence"
+                  "Avoiding Big Integers: Parallel Multimodular Algebraic Verification of Arithmetic
+                  Circuits"
                 </b>
                 <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Julie Cailler
-                 , Noé Delorme
-                 , Simon Perdrix
-                 , Sophie Tourret
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Clemens Hofstadler , Daniela Kaufmann , Chen Chen
+              </li>
+              <li>
+                <b>"A Two-Watched Literal Scheme for First-Order Logic"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Yasmine Briefs , Martin Bromberger , Tobias Gehl
+                , Lorenz Leutgeb , Simon Schwarz , Christoph Weidenbach
+              </li>
+              <li>
+                <b>"A Complete Proof System for HyperLTL"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Naijun Zhan , Wen Tang , Dimitar Guelev
+              </li>
+              <li>
+                <b>"Hardware Model Checking Certification with Certifaiger and Cerbtora"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Nils Froleyks , Emily Yu
+              </li>
+              <li>
+                <b>"Implementing Fuzzy OSF Logic Unification and Normalization"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gian Carlo Milanese , Gabriella Pasi
+              </li>
+              <li>
+                <b>"A Deductive Refinement-Calculus for Differential-Algebraic Programs"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Jonathan Hellwig , Long Qian , André Platzer
+              </li>
+              <li>
+                <b>"SMT-Based Deontic Reasoning for Aqvist Logics -- System Description"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Christian Köll , Agata Ciabattoni , Dmitry
+                Rozplokhas
               </li>
               <li>
                 <b>
-                   "Tao’s Equational Proof Challenge Accepted"
+                  "Beyond Eager Encodings: A Theory-Agnostic Approach to Theory-Lemma Enumeration in
+                  SMT"
                 </b>
                 <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Lydia Kondylidou
-                 , Jasmin Blanchette
-                 , Marijn Heule
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Emanuele Civini , Gabriele Masina , Giuseppe
+                Spallitta , Roberto Sebastiani
+              </li>
+              <li>
+                <b>"A Superposition Calculus for Separation Logic"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Tanguy Bozec , Nicolas Peltier
+              </li>
+              <li>
+                <b>"Twitch: Learning Abstractions for Equational Theorem Proving"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Guy Axelrod , Moa Johansson , Nicholas Smallbone
+              </li>
+              <li>
+                <b>"Verification of Configurable SRA Systems"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Alessandro Cimatti , Alberto Griggio , Christian
+                Lidström , Gianluca Redondi , Dylan Trenti
+              </li>
+              <li>
+                <b>"How many combination properties?"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Guilherme Vicentin de Toledo , Benjamin Przybocki
+                , Yoni Zohar , Benjamin Przybocki
               </li>
               <li>
                 <b>
-                   "Pitts and Intuitionistic Multi-Succedent: Uniform Interpolation for KM"
+                  "Pgeon: Generating Tableau-Based Provers from Declarative Specifications of
+                  Logical Calculi"
                 </b>
                 <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Hugo Férée
-                 , Ian Shillito
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Romain Sidhoum , Simon Robillard , David Delahaye
+                , Romain Sidhoum
+              </li>
+              <li>
+                <b>"Proof Nets for PiL"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Matteo Acclavio , Giulia Manara
               </li>
               <li>
                 <b>
-                   "The termination of Nielsen transformations applied to word equations with length constraints"
+                  "Disproving (Positive) Almost-Sure Termination of Probabilistic Term Rewriting via
+                  Random Walks"
                 </b>
                 <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Benjamin Przybocki
-                 , Clark Barrett
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Jan-Christoph Kassing , Henri Nagel , Alexander
+                Schlecht , Jürgen Giesl
               </li>
               <li>
                 <b>
-                   "An Applicative Multiset Path Order"
+                  "Refactoring-as-Propositions: Proved Refactoring of Hybrid Systems via Proved
+                  Refinements"
                 </b>
                 <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Nao Hirokawa
-                 , Teppei Saito
-                 , Teppei Tanaka
-                 , Wataru Yachi
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Enguerrand Prebet , André Platzer
+              </li>
+              <li>
+                <b>"Complete Robust Hybrid Systems Reachability"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Noah Abou El Wafa , André Platzer , André Platzer
+              </li>
+              <li>
+                <b>"Automating proof search when equality is a logical connective"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Kaustuv Chaudhuri , Arunava Gantait , Dale Miller
+              </li>
+              <li>
+                <b>"Ordered Adjoint Logic"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Sophia Roshal , Frank Pfenning
+              </li>
+              <li>
+                <b>"grind: An SMT-Inspired Tactic for Lean 4"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Kim Morrison , Leonardo de Moura
+              </li>
+              <li>
+                <b>"Saving Craig in the Fluted Fragment"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Hongkai Yin
+              </li>
+              <li>
+                <b>"Complexity and Expressivity of the Uniform Fluted Fragment"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Hongkai Yin
+              </li>
+              <li>
+                <b>"Semantics for Dependently-Typed Higher-Order Logic"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Florian Rabe
+              </li>
+              <li>
+                <b>"Automatically Translating Proof Systems for SMT Solvers to the λΠ-calculus"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ciarán Dunne , Guillaume Burel
+              </li>
+              <li>
+                <b>"Complexity of reasoning in Kleene algebra with sum-of-letters hypotheses"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Stepan Kuznetsov
+              </li>
+              <li>
+                <b>"Learning Computation Tree Logic with Neural Networks"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Benjamin Bordais , Mustafa Yalciner , Daniel
+                Neider
+              </li>
+              <li>
+                <b>"On Constructing Most General Solutions for Parametric Constraints"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Viorica Sofronie-Stokkermans
               </li>
               <li>
                 <b>
-                   "Free Set Theory -- Cut Elimination and Consistency"
+                  "Growing HOLMS: A Verified Automated Prover for Grzegorczyk Logic in HOL Light"
                 </b>
                 <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Andrzej Indrzejczak
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Antonella Bilotta , Marco Maggesi , Cosimo Perini
+                Brogi
+              </li>
+              <li>
+                <b>"Ethos: A Fast Proof Checker for the Eunoia Logical Framework"</b>
+                <br></br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Andrew Reynolds , Hans-Jörg Schurr , Mallku
+                Soldevila , Haniel Barbosa , Cesare Tinelli , Clark Barrett
               </li>
               <li>
                 <b>
-                   "Checking Regular Expressions in cvc5 Proofs"
+                  "Program Synthesis for Non-Linear Real Arithmetic: Beyond Realizable
+                  Specifications"
                 </b>
                 <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Ofec Israel
-                 , Yoni Zohar
-                 , Hitarth Singh
-                 , Bruno Dutertre
-                 , Andrew Reynolds
-                 , Clark Barrett
-                 , Cesare Tinelli
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; S. Akshay , Supratik Chakraborty , Aniruddha
+                Joshi , R. Govind
               </li>
               <li>
-                <b>
-                   "Completeness of Synthesis under Realizability Assumptions using Superposition"
-                </b>
+                <b>"Automatic Abstraction Refinement for Hyperproperties Verification"</b>
                 <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Márton Hajdu
-                 , Petra Hozzová
-                 , Laura Kovács
-                 , Eva Wagner
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Malak Marrid , Shachar Itzhaky , Sharon Shoham ,
+                Yakir Vizel
               </li>
               <li>
-                <b>
-                   "Uniform interpolation with constructive diamond"
-                </b>
+                <b>"Toward Fast Automatic Verification of Textbook Proof Steps"</b>
                 <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Iris van der Giessen
-                 , Ian Shillito
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Adam Dingle
               </li>
-              <li>
-                <b>
-                   "Formally Verified Graph Generation with SAT modulo Symmetries and Lean"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Markus Kirchweger
-                 , Pablo Manrique
-                 , Stefan Szeider
-              </li>
-              <li>
-                <b>
-                   "Accelerating Loops with Arrays"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Florian Frohn
-                 , Jürgen Giesl
-              </li>
-              <li>
-                <b>
-                   "A General Approach for SMT Proof Skeletons"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Joseph E. Reeves
-                 , Haniel Barbosa
-                 , Andrew Reynolds
-                 , Marijn J. H. Heule
-              </li>
-              <li>
-                <b>
-                   "The ARI Infrastructure for Automated Confluence Analysis"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Nao Hirokawa
-                 , Aart Middeldorp
-                 , Teppei Saito
-                 , René Thiemann
-              </li>
-              <li>
-                <b>
-                   "Generating Theorems by Generating Proof Structures"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Christoph Wernhard
-              </li>
-              <li>
-                <b>
-                   "Avoiding Big Integers: Parallel Multimodular Algebraic Verification of Arithmetic Circuits"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Clemens Hofstadler
-                 , Daniela Kaufmann
-                 , Chen Chen
-              </li>
-              <li>
-                <b>
-                   "A Two-Watched Literal Scheme for First-Order Logic"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Yasmine Briefs
-                 , Martin Bromberger
-                 , Tobias Gehl
-                 , Lorenz Leutgeb
-                 , Simon Schwarz
-                 , Christoph Weidenbach
-              </li>
-              <li>
-                <b>
-                   "A Complete Proof System for HyperLTL"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Naijun Zhan
-                 , Wen Tang
-                 , Dimitar Guelev
-              </li>
-              <li>
-                <b>
-                   "Hardware Model Checking Certification with Certifaiger and Cerbtora"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Nils Froleyks
-                 , Emily Yu
-              </li>
-              <li>
-                <b>
-                   "Implementing Fuzzy OSF Logic Unification and Normalization"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Gian Carlo Milanese
-                 , Gabriella Pasi
-              </li>
-              <li>
-                <b>
-                   "A Deductive Refinement-Calculus for Differential-Algebraic Programs"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Jonathan Hellwig
-                 , Long Qian
-                 , André Platzer
-              </li>
-              <li>
-                <b>
-                   "SMT-Based Deontic Reasoning for Aqvist Logics -- System Description"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Christian Köll
-                 , Agata Ciabattoni
-                 , Dmitry Rozplokhas
-              </li>
-              <li>
-                <b>
-                   "Beyond Eager Encodings: A Theory-Agnostic Approach to Theory-Lemma Enumeration in SMT"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Emanuele Civini
-                 , Gabriele Masina
-                 , Giuseppe Spallitta
-                 , Roberto Sebastiani
-              </li>
-              <li>
-                <b>
-                   "A Superposition Calculus for Separation Logic"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Tanguy Bozec
-                 , Nicolas Peltier
-              </li>
-              <li>
-                <b>
-                   "Twitch: Learning Abstractions for Equational Theorem Proving"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Guy Axelrod
-                 , Moa Johansson
-                 , Nicholas Smallbone
-              </li>
-              <li>
-                <b>
-                   "Verification of Configurable SRA Systems"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Alessandro Cimatti
-                 , Alberto Griggio
-                 , Christian Lidström
-                 , Gianluca Redondi
-                 , Dylan Trenti
-              </li>
-              <li>
-                <b>
-                   "How many combination properties?"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Guilherme Vicentin de Toledo
-                 , Benjamin Przybocki
-                 , Yoni Zohar
-                 , Benjamin Przybocki
-              </li>
-              <li>
-                <b>
-                   "Pgeon: Generating Tableau-Based Provers from Declarative Specifications of Logical Calculi"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Romain Sidhoum
-                 , Simon Robillard
-                 , David Delahaye
-                 , Romain Sidhoum
-              </li>
-              <li>
-                <b>
-                   "Proof Nets for PiL"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Matteo Acclavio
-                 , Giulia Manara
-              </li>
-              <li>
-                <b>
-                   "Disproving (Positive) Almost-Sure Termination of Probabilistic Term Rewriting via Random Walks"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Jan-Christoph Kassing
-                 , Henri Nagel
-                 , Alexander Schlecht
-                 , Jürgen Giesl
-              </li>
-              <li>
-                <b>
-                   "Refactoring-as-Propositions: Proved Refactoring of Hybrid Systems via Proved Refinements"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Enguerrand Prebet
-                 , André Platzer
-              </li>
-              <li>
-                <b>
-                   "Complete Robust Hybrid Systems Reachability"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Noah Abou El Wafa
-                 , André Platzer
-                 , André Platzer
-              </li>
-              <li>
-                <b>
-                   "Automating proof search when equality is a logical connective"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Kaustuv Chaudhuri
-                 , Arunava Gantait
-                 , Dale Miller
-              </li>
-              <li>
-                <b>
-                   "Ordered Adjoint Logic"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Sophia Roshal
-                 , Frank Pfenning
-              </li>
-              <li>
-                <b>
-                   "grind: An SMT-Inspired Tactic for Lean 4"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Kim Morrison
-                 , Leonardo de Moura
-              </li>
-              <li>
-                <b>
-                   "Saving Craig in the Fluted Fragment"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Hongkai Yin
-              </li>
-              <li>
-                <b>
-                   "Complexity and Expressivity of the Uniform Fluted Fragment"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Hongkai Yin
-              </li>
-              <li>
-                <b>
-                   "Semantics for Dependently-Typed Higher-Order Logic"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Florian Rabe
-              </li>
-              <li>
-                <b>
-                   "Automatically Translating Proof Systems for SMT Solvers to the λΠ-calculus"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Ciarán Dunne
-                 , Guillaume Burel
-              </li>
-              <li>
-                <b>
-                   "Complexity of reasoning in Kleene algebra with sum-of-letters hypotheses"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Stepan Kuznetsov
-              </li>
-              <li>
-                <b>
-                   "Learning Computation Tree Logic with Neural Networks"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Benjamin Bordais
-                 , Mustafa Yalciner
-                 , Daniel Neider
-              </li>
-              <li>
-                <b>
-                   "On Constructing Most General Solutions for Parametric Constraints"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Viorica Sofronie-Stokkermans
-              </li>
-              <li>
-                <b>
-                   "Growing HOLMS: A Verified Automated Prover for Grzegorczyk Logic in HOL Light"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Antonella Bilotta
-                 , Marco Maggesi
-                 , Cosimo Perini Brogi
-              </li>
-              <li>
-                <b>
-                   "Ethos: A Fast Proof Checker for the Eunoia Logical Framework"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Andrew Reynolds
-                 , Hans-Jörg Schurr
-                 , Mallku Soldevila
-                 , Haniel Barbosa
-                 , Cesare Tinelli
-                 , Clark Barrett
-              </li>
-              <li>
-                <b>
-                   "Program Synthesis for Non-Linear Real Arithmetic: Beyond Realizable Specifications"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   S. Akshay
-                 , Supratik Chakraborty
-                 , Aniruddha Joshi
-                 , R. Govind
-              </li>
-              <li>
-                <b>
-                   "Automatic Abstraction Refinement for Hyperproperties Verification"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Malak Marrid
-                 , Shachar Itzhaky
-                 , Sharon Shoham
-                 , Yakir Vizel
-              </li>
-              <li>
-                <b>
-                   "Toward Fast Automatic Verification of Textbook Proof Steps"
-                </b>
-                <br></br>
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                &nbsp;
-                   Adam Dingle
-              </li>
-	    </ul>
+            </ul>
           </div>
         </section>
       </main>
