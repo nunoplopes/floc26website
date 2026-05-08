@@ -907,7 +907,7 @@ const IJCAR = () => {
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Jonathan Hellwig , Long Qian , André Platzer
               </li>
               <li>
-                <b>"SMT-Based Deontic Reasoning for Aqvist Logics -- System Description"</b>
+                <b>"SMT-Based Deontic Reasoning for Aqvist Logics"</b>
                 <br></br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Christian Köll , Agata Ciabattoni , Dmitry
                 Rozplokhas
