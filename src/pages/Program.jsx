@@ -43,7 +43,7 @@ const workshops_week1 = [
     aff: "CP",
     start: 18,
     end: 19,
-    link: null,
+    link: "https://satcpdp26.github.io",
   },
   {
     name: "Workshop on Models and Solvers for Dynamic Programming (DPSOLVE)",
@@ -592,7 +592,7 @@ const workshops_week2 = [
     aff: "ITP",
     start: 25,
     end: 25,
-    link: null,
+    link: "https://coq-workshop.gitlab.io/2026/",
   },
   {
     name: "Workshop on Synthesis (SYNT)",
