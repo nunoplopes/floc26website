@@ -313,6 +313,10 @@ const Registration = () => {
               will be waived; however, travel and accommodation expenses are not covered.
             </p>
             <p className="text-gray-700 mb-4">
+              The student volunteer application is <strong>closed</strong>.
+            </p>
+            {/*
+            <p className="text-gray-700 mb-4">
               The student volunteer application is open until <strong>mid-May</strong>.
             </p>
             <a
@@ -321,6 +325,7 @@ const Registration = () => {
             >
               Apply as Student Volunteer →
             </a>
+            */}
           </div>
         </section>
 
