@@ -37,7 +37,7 @@ export const sponsors = [
     url: "https://www.cadence.com",
   },
   {
-    name: "Harmonic",
+    name: "GE Aerospace",
     image: GE_AERO,
     type: "Bronze",
     url: "https://www.geaerospace.com",
