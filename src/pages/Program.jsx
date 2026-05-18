@@ -362,13 +362,6 @@ const workshops_week2 = [
     link: "https://sites.google.com/view/crest26/",
   },
   {
-    name: "Workshop on the Ergonomics of Verification Interfaces & Tools (EVIT)",
-    aff: "CAV",
-    start: 24,
-    end: 24,
-    link: "https://trustworthy-it.com/floc-cav-2026",
-  },
-  {
     name: "Workshop on Hyperproperties: Advances in Theory and Applications (HYPER)",
     aff: "CAV & CSF",
     start: 24,
