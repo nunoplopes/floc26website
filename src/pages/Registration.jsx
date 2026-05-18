@@ -97,6 +97,22 @@ const Registration = () => {
                   regRegular: "€1,080",
                   onsite: "€1,320",
                 },
+                {
+                  label: "Additional Banquet Tickets",
+                  earlyStudent: "€60",
+                  earlyRegular: "€60",
+                  regStudent: "€60",
+                  regRegular: "€60",
+                  onsite: "—",
+                },
+                {
+                  label: "Additional Banquet Tickets (children up to 12 years old)",
+                  earlyStudent: "€25",
+                  earlyRegular: "€25",
+                  regStudent: "€25",
+                  regRegular: "€25",
+                  onsite: "—",
+                },
               ].map((row, idx) => (
                 <tr key={row.label} className={idx % 2 === 0 ? "bg-white" : "bg-gray-100"}>
                   <th className="px-4 py-3 text-left font-medium border-t border-gray-300">
@@ -126,6 +142,11 @@ const Registration = () => {
             conference they will attend. Once registered, participants are welcome to attend
             sessions of any conference taking place in the same week. This information is used
             solely to ensure that rooms of adequate capacity are allocated for each conference.
+          </p>
+
+          <p className="text-gray-700">
+            <strong>Additional banquet tickets:</strong> These can also be added after registration
+            if you have already registered.
           </p>
 
           <h2 className="text-2xl font-semibold text-blue-800 mt-16 mb-2">Workshops</h2>
@@ -231,9 +252,9 @@ const Registration = () => {
             </tbody>
           </table>
           <p className="mt-2">
-            Note: The dinner takes place on day 1 of each workshop week, i.e., on 18 & 24 of July.
-            Dinners are held at restaurants with limited capacity, and tickets are sold on a
-            first-come, first-served basis until full.
+            <strong>Note:</strong>: The dinner takes place on day 1 of each workshop week, i.e., on
+            18 & 24 of July. Dinners are held at restaurants with limited capacity, and tickets are
+            sold on a first-come, first-served basis until full.
           </p>
 
           <h2 className="text-2xl font-semibold text-blue-800 mt-16 mb-2">Summer Schools</h2>
