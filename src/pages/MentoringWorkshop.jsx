@@ -45,10 +45,45 @@ const MentoringWorkshop = () => {
             <p>TBA</p>
             <h3 className="text-xl font-semibold">Confirmed invited speakers</h3>
             <ul>
-              <li>Nada Amin (Harvard University)</li>
-              <li>Jakub Gajarský (Masaryk University and University of Warsaw)</li>
-              <li>Ichiro Hasuo (NII Tokyo)</li>
-              <li>Anela Lolić (TU Wien)</li>
+              <li>
+                <a
+                  href="https://namin.seas.harvard.edu/"
+                  className="text-indigo-600 hover:underline"
+                >
+                  Nada Amin
+                </a>{" "}
+                (Harvard University)
+              </li>
+              <li>
+                <a
+                  href="https://sites.google.com/view/jakubgajarsky/"
+                  className="text-indigo-600 hover:underline"
+                >
+                  Jakub Gajarský
+                </a>{" "}
+                (Masaryk University and University of Warsaw)
+              </li>
+              <li>
+                <a
+                  href="https://group-mmm.org/~ichiro/"
+                  className="text-indigo-600 hover:underline"
+                >
+                  Ichiro Hasuo
+                </a>{" "}
+                (NII Tokyo)
+              </li>
+              <li>
+                <a href="https://www.anelalolic.com/" className="text-indigo-600 hover:underline">
+                  Anela Lolić
+                </a>{" "}
+                (TU Wien)
+              </li>
+              <li>
+                <a href="https://tommiemeyer.org.za/" className="text-indigo-600 hover:underline">
+                  Tommie Meyer
+                </a>{" "}
+                (University of Cape Town)
+              </li>
             </ul>
           </div>
         </section>
@@ -61,11 +96,54 @@ const MentoringWorkshop = () => {
             <p>TBA</p>
             <h3 className="text-xl font-semibold">Confirmed invited speakers</h3>
             <ul>
-              <li>Claudia Cauli (Huawei)</li>
-              <li>Loris D’Antoni (University of California, San Diego)</li>
-              <li>Yannick Forster (Inria Paris)</li>
-              <li>Orna Grumberg (Technion)</li>
-              <li>Caterina Urban (Inria Paris)</li>
+              <li>
+                <a href="https://claudiacauli.com/" className="text-indigo-600 hover:underline">
+                  Claudia Cauli
+                </a>{" "}
+                (Huawei)
+              </li>
+              <li>
+                <a
+                  href="https://cseweb.ucsd.edu/~ldantoni/"
+                  className="text-indigo-600 hover:underline"
+                >
+                  Loris D’Antoni
+                </a>{" "}
+                (University of California, San Diego)
+              </li>
+              <li>
+                <a href="https://yforster.de/" className="text-indigo-600 hover:underline">
+                  Yannick Forster
+                </a>{" "}
+                (Inria Paris)
+              </li>
+              <li>
+                <a
+                  href="https://orna.cswp.cs.technion.ac.il/"
+                  className="text-indigo-600 hover:underline"
+                >
+                  Orna Grumberg
+                </a>{" "}
+                (Technion)
+              </li>
+              <li>
+                <a
+                  href="https://www.uni-bremen.de/en/theorie/team/profiles/prof-dr-sebastian-siebertz"
+                  className="text-indigo-600 hover:underline"
+                >
+                  Sebastian Siebertz
+                </a>{" "}
+                (University of Bremen)
+              </li>
+              <li>
+                <a
+                  href="https://caterinaurban.github.io/"
+                  className="text-indigo-600 hover:underline"
+                >
+                  Caterina Urban
+                </a>{" "}
+                (Inria Paris)
+              </li>
             </ul>
           </div>
         </section>
