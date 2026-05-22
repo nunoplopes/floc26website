@@ -355,32 +355,6 @@ export default function Accommodation() {
 
             <div className="p-4 border rounded-lg">
               <h3 className="font-bold">
-                Holiday Inn Lisbon (4*)
-                <br />
-              </h3>
-              <p className="text-sm mb-1">
-                <span className="font-medium text-gray-700">Rates:</span> €165 (Single room), €175
-                (Double room)
-              </p>
-              <p className="text-sm mb-1">
-                <span className="font-medium text-gray-700">Address:</span> Av. António José de
-                Almeida 28 A, 1000-044 Lisbon
-              </p>
-              <p className="text-sm mb-1">
-                <span className="font-medium text-gray-700">Distance:</span> 2.0 km from venue
-              </p>
-              <p className="mt-2 text-sm">
-                <a
-                  href="https://drive.google.com/file/d/1YJpKNL_AhA8Y6H7ejBjq8Jvl0Eof6D1e/view"
-                  className="text-blue-600 underline"
-                >
-                  Book now
-                </a>
-              </p>
-            </div>
-
-            <div className="p-4 border rounded-lg">
-              <h3 className="font-bold">
                 VIP Executive Picoas Hotel (4*)
                 <br />
               </h3>
