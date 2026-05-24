@@ -57,7 +57,7 @@ const workshops_week1 = [
     aff: "KR",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://defdeskr.github.io/kr26tutorial/",
   },
   {
     name: "Tutorial: The Evolving Landscape of Answer Set Programming: From Fundamentals to Recent Advancements (ELASP)",
@@ -179,7 +179,7 @@ const workshops_week1 = [
     aff: "KR",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://cer.iit.demokritos.gr/talks/kr26-tutorial/",
   },
   {
     name: "Tribute to Gilles Dowek (TGD)",
@@ -498,7 +498,7 @@ const workshops_week2 = [
     aff: "CAV",
     start: 25,
     end: 25,
-    link: null,
+    link: "https://sites.google.com/view/aimacs2026/home",
   },
   {
     name: "Automated Reasoning for Future Space Logistics (AR4Space)",
