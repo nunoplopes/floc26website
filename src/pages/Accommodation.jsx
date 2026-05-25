@@ -132,6 +132,16 @@ export default function Accommodation() {
             </a>
             .
           </p>
+          <div className="mt-4 bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded-md text-yellow-800">
+            <p className="text-base leading-relaxed">
+              ⚠️ <strong>Allow extra time at the airport.</strong> Passport control queues for both
+              arrivals and departures on non-Schengen routes can be quite long (sometimes over 2
+              hours) due to the new EES biometric checks. Arrive at the airport at least{" "}
+              <strong>3 hours before your flight</strong>. Note that if you are connecting through
+              another Schengen country, this does not apply since passport control will be handled
+              there, not in Portugal.
+            </p>
+          </div>
         </Section>
 
         <Section title="Hotels with Reduced Rates" icon={FaHotel}>
