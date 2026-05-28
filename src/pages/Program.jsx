@@ -64,7 +64,7 @@ const workshops_week1 = [
     aff: "KR",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://sites.google.com/unical.it/aspkr2026",
   },
   {
     name: "Workshop on End-user Logic Programming (EULP)",
@@ -200,7 +200,7 @@ const workshops_week1 = [
     aff: "KR",
     start: 19,
     end: 19,
-    link: null,
+    link: "https://www.irit.fr/aidal/events/kr-2026-tutorial/",
   },
   {
     name: "Correct-by-construction distributed systems and Decentralised applications: from blockchain to swarms (CbC-DS)",
@@ -220,7 +220,7 @@ const workshops_week1 = [
     aff: "KR",
     start: 19,
     end: 19,
-    link: null,
+    link: "https://menaleemhuis.github.io/KR_TutorialOntologyEmbeddings.html",
   },
   {
     name: "A Celebration of Joseph Y. Halpern's Contributions to Logic, Knowledge, and Reasoning (JoeFest)",
@@ -254,7 +254,7 @@ const workshops_week1 = [
     aff: "KR",
     start: 19,
     end: 19,
-    link: null,
+    link: "https://sites.google.com/view/llm4r/",
   },
   {
     name: "Mentoring Workshop - 1st week (MW1)",
