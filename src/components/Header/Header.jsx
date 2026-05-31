@@ -27,7 +27,7 @@ const Header = () => {
       <div className="bg-yellow-400 text-black text-center text-sm md:text-base font-semibold py-2 px-4">
         📢{" "}
         <Link to="/registration" className="underline hover:text-blue-800 transition">
-          Registration is now open! Early bird rates end on 15 May.
+          Early bird registration for workshops ends on June 1st.
         </Link>
       </div>
 

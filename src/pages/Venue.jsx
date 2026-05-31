@@ -218,6 +218,22 @@ const Venue = () => {
           </div>
         </div>
       </div>
+
+      <div className="bg-white rounded-xl shadow-lg p-6 mt-6">
+        <h3 className="text-xl font-semibold text-gray-900 mb-3">Printing Services</h3>
+
+        <p className="text-gray-600 mb-3">
+          If you need to print posters or other materials, the nearest print shop is{" "}
+          <a
+            href="https://maps.app.goo.gl/7XdXsJhxgceBMbFK9"
+            className="text-blue-600 hover:underline"
+          >
+            CopyCenter
+          </a>{" "}
+          (Av. das Forças Armadas, 63), located across the street from the venue. Please note that
+          the shop is closed for lunch between 13h and 14h.
+        </p>
+      </div>
     </div>
   );
 };

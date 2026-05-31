@@ -43,7 +43,7 @@ const workshops_week1 = [
     aff: "CP",
     start: 18,
     end: 19,
-    link: null,
+    link: "https://satcpdp26.github.io",
   },
   {
     name: "Workshop on Models and Solvers for Dynamic Programming (DPSOLVE)",
@@ -57,14 +57,14 @@ const workshops_week1 = [
     aff: "KR",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://defdeskr.github.io/kr26tutorial/",
   },
   {
     name: "Tutorial: The Evolving Landscape of Answer Set Programming: From Fundamentals to Recent Advancements (ELASP)",
     aff: "KR",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://sites.google.com/unical.it/aspkr2026",
   },
   {
     name: "Workshop on End-user Logic Programming (EULP)",
@@ -179,7 +179,7 @@ const workshops_week1 = [
     aff: "KR",
     start: 18,
     end: 18,
-    link: null,
+    link: "https://cer.iit.demokritos.gr/talks/kr26-tutorial/",
   },
   {
     name: "Tribute to Gilles Dowek (TGD)",
@@ -200,7 +200,7 @@ const workshops_week1 = [
     aff: "KR",
     start: 19,
     end: 19,
-    link: null,
+    link: "https://www.irit.fr/aidal/events/kr-2026-tutorial/",
   },
   {
     name: "Correct-by-construction distributed systems and Decentralised applications: from blockchain to swarms (CbC-DS)",
@@ -220,7 +220,7 @@ const workshops_week1 = [
     aff: "KR",
     start: 19,
     end: 19,
-    link: null,
+    link: "https://menaleemhuis.github.io/KR_TutorialOntologyEmbeddings.html",
   },
   {
     name: "A Celebration of Joseph Y. Halpern's Contributions to Logic, Knowledge, and Reasoning (JoeFest)",
@@ -244,7 +244,7 @@ const workshops_week1 = [
   },
   {
     name: "LLMs meet Constraint Solving (LLM-Solve)",
-    aff: "CP",
+    aff: "SAT & CP",
     start: 19,
     end: 19,
     link: "https://sites.google.com/view/llm-solve-2026",
@@ -254,7 +254,7 @@ const workshops_week1 = [
     aff: "KR",
     start: 19,
     end: 19,
-    link: null,
+    link: "https://sites.google.com/view/llm4r/",
   },
   {
     name: "Mentoring Workshop - 1st week (MW1)",
@@ -360,13 +360,6 @@ const workshops_week2 = [
     start: 24,
     end: 24,
     link: "https://sites.google.com/view/crest26/",
-  },
-  {
-    name: "Workshop on the Ergonomics of Verification Interfaces & Tools (EVIT)",
-    aff: "CAV",
-    start: 24,
-    end: 24,
-    link: "https://trustworthy-it.com/floc-cav-2026",
   },
   {
     name: "Workshop on Hyperproperties: Advances in Theory and Applications (HYPER)",
@@ -505,7 +498,7 @@ const workshops_week2 = [
     aff: "CAV",
     start: 25,
     end: 25,
-    link: null,
+    link: "https://sites.google.com/view/aimacs2026/home",
   },
   {
     name: "Automated Reasoning for Future Space Logistics (AR4Space)",
@@ -592,7 +585,7 @@ const workshops_week2 = [
     aff: "ITP",
     start: 25,
     end: 25,
-    link: null,
+    link: "https://coq-workshop.gitlab.io/2026/",
   },
   {
     name: "Workshop on Synthesis (SYNT)",

@@ -132,6 +132,16 @@ export default function Accommodation() {
             </a>
             .
           </p>
+          <div className="mt-4 bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded-md text-yellow-800">
+            <p className="text-base leading-relaxed">
+              ⚠️ <strong>Allow extra time at the airport.</strong> Passport control queues for both
+              arrivals and departures on non-Schengen routes can be quite long (sometimes over 2
+              hours) due to the new EES biometric checks. Arrive at the airport at least{" "}
+              <strong>3 hours before your flight</strong>. Note that if you are connecting through
+              another Schengen country, this does not apply since passport control will be handled
+              there, not in Portugal.
+            </p>
+          </div>
         </Section>
 
         <Section title="Hotels with Reduced Rates" icon={FaHotel}>
@@ -350,32 +360,6 @@ export default function Accommodation() {
                   grupos.hal@bhc.pt
                 </a>{" "}
                 with the code &ldquo;FLoC&rdquo;
-              </p>
-            </div>
-
-            <div className="p-4 border rounded-lg">
-              <h3 className="font-bold">
-                Holiday Inn Lisbon (4*)
-                <br />
-              </h3>
-              <p className="text-sm mb-1">
-                <span className="font-medium text-gray-700">Rates:</span> €165 (Single room), €175
-                (Double room)
-              </p>
-              <p className="text-sm mb-1">
-                <span className="font-medium text-gray-700">Address:</span> Av. António José de
-                Almeida 28 A, 1000-044 Lisbon
-              </p>
-              <p className="text-sm mb-1">
-                <span className="font-medium text-gray-700">Distance:</span> 2.0 km from venue
-              </p>
-              <p className="mt-2 text-sm">
-                <a
-                  href="https://drive.google.com/file/d/1YJpKNL_AhA8Y6H7ejBjq8Jvl0Eof6D1e/view"
-                  className="text-blue-600 underline"
-                >
-                  Book now
-                </a>
               </p>
             </div>
 
