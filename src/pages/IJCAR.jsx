@@ -938,10 +938,10 @@ const IJCAR = () => {
                 Lidström , Gianluca Redondi , Dylan Trenti
               </li>
               <li>
-                <b>"How many combination properties?"</b>
+                <b>"Bringing closure to theory combination properties"</b>
                 <br></br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Guilherme Vicentin de Toledo , Benjamin Przybocki
-                , Yoni Zohar , Benjamin Przybocki
+                , Yoni Zohar
               </li>
               <li>
                 <b>
