@@ -237,12 +237,6 @@ const workshops_week1 = [
     link: "https://strategic-reasoning.github.io/lamassr26/",
   },
   {
-    name: "Logic for Explainable AI Systems (LEX-AI)",
-    start: 19,
-    end: 19,
-    link: null,
-  },
-  {
     name: "LLMs meet Constraint Solving (LLM-Solve)",
     aff: "SAT & CP",
     start: 19,
