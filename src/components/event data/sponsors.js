@@ -2,6 +2,7 @@ import AWS from "../../assets/images/sponsors/aws.png";
 import TURISMO from "../../assets/images/sponsors/ATL.png";
 import CADENCE from "../../assets/images/sponsors/cadence.png";
 import NVIDIA from "../../assets/images/sponsors/nvidia.svg";
+import NDEA from "../../assets/images/sponsors/ndea.svg";
 import GE_AERO from "../../assets/images/sponsors/GE_Aerospace.png";
 import HARMONIC from "../../assets/images/sponsors/harmonic.svg";
 import POTASSCO from "../../assets/images/sponsors/potassco.svg";
@@ -29,6 +30,12 @@ export const sponsors = [
     image: TURISMO,
     type: "Silver",
     url: "https://www.visitlisboa.com",
+  },
+  {
+    name: "Ndea",
+    image: NDEA,
+    type: "Silver",
+    url: "https://ndea.com",
   },
   {
     name: "Cadence",
