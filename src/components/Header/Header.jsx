@@ -24,12 +24,14 @@ const Header = () => {
 
   return (
     <>
+      {/*
       <div className="bg-yellow-400 text-black text-center text-sm md:text-base font-semibold py-2 px-4">
         📢{" "}
         <Link to="/registration" className="underline hover:text-blue-800 transition">
           Early bird registration for workshops ends on June 1st.
         </Link>
       </div>
+      */}
 
       <div className="bg-red-600 text-white text-center text-sm md:text-base font-semibold py-2 px-4">
         ⚠️ Scam alert: Fraudulent travel agents are contacting potential participants. FLoC has no

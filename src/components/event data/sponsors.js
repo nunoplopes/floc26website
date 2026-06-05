@@ -4,6 +4,7 @@ import CADENCE from "../../assets/images/sponsors/cadence.png";
 import NVIDIA from "../../assets/images/sponsors/nvidia.svg";
 import NDEA from "../../assets/images/sponsors/ndea.svg";
 import GE_AERO from "../../assets/images/sponsors/GE_Aerospace.png";
+import GOOGLE from "../../assets/images/sponsors/google.png";
 import HARMONIC from "../../assets/images/sponsors/harmonic.svg";
 import POTASSCO from "../../assets/images/sponsors/potassco.svg";
 import THE from "../../assets/images/sponsors/THE.svg";
@@ -48,6 +49,12 @@ export const sponsors = [
     image: GE_AERO,
     type: "Bronze",
     url: "https://www.geaerospace.com",
+  },
+  {
+    name: "Google",
+    image: GOOGLE,
+    type: "Bronze",
+    url: "https://www.google.com",
   },
   {
     name: "Harmonic",
