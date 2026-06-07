@@ -338,16 +338,6 @@ const IJCAR = () => {
           </ul>
         </section>
 
-        <section className="bg-white p-8 rounded-2xl shadow-lg text-center border border-gray-200">
-          <h2 className="text-3xl font-semibold text-indigo-700 mb-6">Paper Submission</h2>
-          <a
-            href="https://submissions.floc26.org/ijcar/"
-            className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl font-medium transition transform hover:scale-105"
-          >
-            Submit via HotCrp
-          </a>
-        </section>
-
         <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-4">
           <h2 className="text-3xl font-semibold text-indigo-700 mb-4 border-b border-indigo-200 pb-2">
             Call for Papers
@@ -1096,6 +1086,17 @@ const IJCAR = () => {
             </ul>
           </div>
         </section>
+
+        <section className="bg-white p-8 rounded-2xl shadow-lg text-center border border-gray-200">
+          <h2 className="text-3xl font-semibold text-indigo-700 mb-6">Paper Submission</h2>
+          <a
+            href="https://submissions.floc26.org/ijcar/"
+            className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl font-medium transition transform hover:scale-105"
+          >
+            Submit via HotCrp
+          </a>
+        </section>
+
       </main>
     </div>
   );
