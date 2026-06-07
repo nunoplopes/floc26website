@@ -13,12 +13,35 @@ const IJCAR = () => {
       </header>
 
       <main className="max-w-6xl mx-auto px-6 py-16 space-y-16">
+
+        <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-4">
+          <h2 className="text-3xl font-semibold text-indigo-700 mb-4 border-b border-indigo-200 pb-2">
+            Invited Talks
+          </h2>
+          <div className="space-y-4 text-gray-700 leading-relaxed">
+            <ul className="list-inside space-y-2 text-gray-700">
+	      <li>
+		<b>"A Type-Theoretic Framework for Meta-Programming: Lessons Learned from Writing Meta-Theoretic Proofs as Programs"</b>
+                <br></br>
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Brigitte Pientka
+	      </li>
+	      <li>
+		<b>
+		  "Polynomial-time Deduction with Orthologic"
+		</b>
+                <br></br>
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Viktor Kunčak
+	      </li>
+	    </ul>
+	  </div>
+	</section>
+
         <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
           <h2 className="text-3xl font-semibold text-indigo-700 mb-6 border-b border-indigo-200 pb-2">
             Accepted Papers
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed">
-            <ul className="list-disc list-inside space-y-2 text-gray-700">
+            <ul className="list-inside space-y-2 text-gray-700">
               <li>
                 <b>"A Unified Formalization of Context-Free Grammar Theory"</b>
                 <br></br>
@@ -68,7 +91,7 @@ const IJCAR = () => {
                 Wataru Yachi
               </li>
               <li>
-                <b>"Free Set Theory -- Cut Elimination and Consistency"</b>
+                <b>"Free Set Theory - Cut Elimination and Consistency"</b>
                 <br></br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Andrzej Indrzejczak
               </li>
@@ -336,16 +359,6 @@ const IJCAR = () => {
               Camera-ready: <strong>May 23, 2026</strong>
             </li>
           </ul>
-        </section>
-
-        <section className="bg-white p-8 rounded-2xl shadow-lg text-center border border-gray-200">
-          <h2 className="text-3xl font-semibold text-indigo-700 mb-6">Paper Submission</h2>
-          <a
-            href="https://submissions.floc26.org/ijcar/"
-            className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl font-medium transition transform hover:scale-105"
-          >
-            Submit via HotCrp
-          </a>
         </section>
 
         <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-4">
@@ -1096,6 +1109,17 @@ const IJCAR = () => {
             </ul>
           </div>
         </section>
+
+        <section className="bg-white p-8 rounded-2xl shadow-lg text-center border border-gray-200">
+          <h2 className="text-3xl font-semibold text-indigo-700 mb-6">Paper Submission</h2>
+          <a
+            href="https://submissions.floc26.org/ijcar/"
+            className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-xl font-medium transition transform hover:scale-105"
+          >
+            Submit via HotCrp
+          </a>
+        </section>
+
       </main>
     </div>
   );
