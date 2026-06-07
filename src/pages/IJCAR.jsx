@@ -13,9 +13,7 @@ const InvitedTalkItem = ({ title, speaker, children }) => {
       >
         {title}
       </b>
-      <div className="mt-1">
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {speaker}
-      </div>
       
       {/* Conditional rendering: only renders if isOpen is true */}
       {isOpen && (
