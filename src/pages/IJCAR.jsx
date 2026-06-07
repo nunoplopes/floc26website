@@ -24,6 +24,20 @@ const IJCAR = () => {
 		<b>"A Type-Theoretic Framework for Meta-Programming: Lessons Learned from Writing Meta-Theoretic Proofs as Programs"</b>
                 <br></br>
 		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Brigitte Pientka
+<br></br>
+<p className="text-gray-500">
+Meta-programming is the practice of writing programs that generate and analyze code representations. It enables programmers to automate repetitive and error-prone tasks and to exploit domain-specific knowledge when generating code. As a result, meta-programming plays a central role across a wide range of applications, from splicing in optimized code that exploits memory layout, to generating representations of quantum circuits from classical programs, to writing meta-theoretic proofs as programs that transform derivation trees.
+</p>
+<p className="text-gray-500">
+A fundamental question across all forms of meta-programming is how to design abstractions that support the correct generation, composition, and analysis of code representations. This question is challenging for two main reasons. First, it is important to distinguish between code as data (static structure) and the programs that generate and manipulate it (dynamic behavior). Second, representing code requires managing variables and scope, a task that is inherently error-prone and often exposes low-level implementation details.
+</p>
+<p className="text-gray-500">
+In this talk, I discuss how advances in logical frameworks have informed the design of modern meta-programming languages. In particular, I revisit the development of the Beluga framework where formal systems are specified in the logical framework LF, using higher-order abstract syntax (HOAS) to represent binding constructs. On top of the LF layer sits a functional language where programmers write meta-theoretic proofs as transformations over HOAS representations. A key insight enabling recursive analysis and manipulation at the functional programming level is to treat HOAS objects together with their accompanying contexts - so-called contextual objects.
+</p>
+<p className="text-gray-500">
+Over the past decade, this separation between static syntactic representations and dynamic program behaviour together with the use of contextual objects, has guided the development of a range of meta-programming systems.
+In particular, these ideas have informed the design of polymorphic and dependently typed meta-programming languages, and more recently, have been extended to support the generation, analysis, and evaluation of concurrent processes within a functional programming setting. These developments illustrate how ideas originating in automated reasoning - particularly techniques for representing and manipulating contextual objects - are having a broad impact beyond their original domain.
+</p>
 	      </li>
 	      <li>
 		<b>
@@ -31,6 +45,10 @@ const IJCAR = () => {
 		</b>
                 <br></br>
 		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Viktor Kunčak
+<br></br>
+<p className="text-gray-500">
+Orthologic is a non-classical logic that supports arbitrary conjunction, disjunction and negation operators and is interpreted over ortholattices. If a formula is provable in orthologic, it is also provable in classical logic. I present a complete proof system (formalized in Rocq) and an efficient polynomial-time algorithm for provability in orthologic.  We evaluated and deployed orthologic on boolean circuits, program verifiers, proof assistant kernels, and type systems. Joint work with Simon Guilloud.
+</p>
 	      </li>
 	    </ul>
 	  </div>
