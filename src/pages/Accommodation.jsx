@@ -389,6 +389,29 @@ export default function Accommodation() {
 
             <div className="p-4 border rounded-lg">
               <h3 className="font-bold">
+                Lumen Hotel (4*)
+                <br />
+              </h3>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Rates:</span> 5% discount on best rate
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Address:</span> Rua Sousa Martins 20,
+                1050-217 Lisbon
+              </p>
+              <p className="text-sm mb-1">
+                <span className="font-medium text-gray-700">Distance:</span> 2.5 km from venue
+              </p>
+              <p className="mt-2 text-sm">
+                <a href="https://www.lumenhotel.pt/en" className="text-blue-600 underline">
+                  Book now
+                </a>{" "}
+                with the code &ldquo;FLOC26&rdquo;
+              </p>
+            </div>
+
+            <div className="p-4 border rounded-lg">
+              <h3 className="font-bold">
                 Hotel Vincci Liberdade (4*)
                 <br />
               </h3>

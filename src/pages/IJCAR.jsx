@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 // Reusable component to handle the hide/show state for individual abstracts
 const InvitedTalkItem = ({ title, speaker, url, children }) => {
@@ -7,21 +7,16 @@ const InvitedTalkItem = ({ title, speaker, url, children }) => {
   return (
     <li>
       {/* Clicking the title toggles the abstract */}
-      <b 
-        onClick={() => setIsOpen(!isOpen)} 
+      <b
+        onClick={() => setIsOpen(!isOpen)}
         className="cursor-pointer hover:text-indigo-800 hover:underline select-none block transition-colors duration-150"
       >
         {title}
       </b>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-	<a href={url}>{speaker}</a>
-      
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href={url}>{speaker}</a>
       {/* Conditional rendering: only renders if isOpen is true */}
-      {isOpen && (
-        <div className="mt-4 pl-5 border-l-2 border-indigo-200 space-y-4">
-          {children}
-        </div>
-      )}
+      {isOpen && <div className="mt-4 pl-5 border-l-2 border-indigo-200 space-y-4">{children}</div>}
     </li>
   );
 };
@@ -29,7 +24,6 @@ const InvitedTalkItem = ({ title, speaker, url, children }) => {
 const IJCAR = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans scroll-smooth">
-      
       {/* Main Header */}
       <header className="bg-indigo-700 text-white py-16 text-center shadow-lg">
         <h1 className="text-5xl font-extrabold tracking-tight">IJCAR 2026</h1>
@@ -47,27 +41,42 @@ const IJCAR = () => {
         <div className="max-w-6xl mx-auto px-6 text-center">
           <ul className="flex items-center space-x-1 sm:space-x-8 overflow-x-auto py-4 text-sm sm:text-base font-medium text-gray-600 whitespace-nowrap scrollbar-none">
             <li>
-              <a href="#invited-talks" className="hover:text-indigo-600 px-3 py-2 rounded-md transition-colors duration-150">
+              <a
+                href="#invited-talks"
+                className="hover:text-indigo-600 px-3 py-2 rounded-md transition-colors duration-150"
+              >
                 Invited Talks
               </a>
             </li>
             <li>
-              <a href="#accepted-papers" className="hover:text-indigo-600 px-3 py-2 rounded-md transition-colors duration-150">
+              <a
+                href="#accepted-papers"
+                className="hover:text-indigo-600 px-3 py-2 rounded-md transition-colors duration-150"
+              >
                 Accepted Papers
               </a>
             </li>
             <li>
-              <a href="#important-dates" className="hover:text-indigo-600 px-3 py-2 rounded-md transition-colors duration-150">
+              <a
+                href="#important-dates"
+                className="hover:text-indigo-600 px-3 py-2 rounded-md transition-colors duration-150"
+              >
                 Dates
               </a>
             </li>
             <li>
-              <a href="#call-for-papers" className="hover:text-indigo-600 px-3 py-2 rounded-md transition-colors duration-150">
+              <a
+                href="#call-for-papers"
+                className="hover:text-indigo-600 px-3 py-2 rounded-md transition-colors duration-150"
+              >
                 Call for Papers
               </a>
             </li>
             <li>
-              <a href="#submission" className="hover:text-indigo-600 px-3 py-2 rounded-md transition-colors duration-150">
+              <a
+                href="#submission"
+                className="hover:text-indigo-600 px-3 py-2 rounded-md transition-colors duration-150"
+              >
                 Submission
               </a>
             </li>
@@ -77,32 +86,61 @@ const IJCAR = () => {
 
       {/* Main Content (With scroll margin adjustments so sticky nav doesn't block headers) */}
       <main className="max-w-6xl mx-auto px-6 py-16 space-y-16 [&>section]:scroll-mt-20">
-
         {/* Invited Talks Section */}
-        <section id="invited-talks" className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-4">
+        <section
+          id="invited-talks"
+          className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-4"
+        >
           <h2 className="text-3xl font-semibold text-indigo-700 mb-4 border-b border-indigo-200 pb-2">
             Invited Talks
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed">
             <ul className="list-inside space-y-6 text-gray-700">
-              
               {/* Talk 1 */}
               <InvitedTalkItem
                 title='"A Type-Theoretic Framework for Meta-Programming: Lessons Learned from Writing Meta-Theoretic Proofs as Programs"'
                 speaker="Brigitte Pientka"
-		url="https://www.cs.mcgill.ca/~bpientka"
+                url="https://www.cs.mcgill.ca/~bpientka"
               >
                 <p className="text-gray-500">
-                  Meta-programming is the practice of writing programs that generate and analyze code representations. It enables programmers to automate repetitive and error-prone tasks and to exploit domain-specific knowledge when generating code. As a result, meta-programming plays a central role across a wide range of applications, from splicing in optimized code that exploits memory layout, to generating representations of quantum circuits from classical programs, to writing meta-theoretic proofs as programs that transform derivation trees.
+                  Meta-programming is the practice of writing programs that generate and analyze
+                  code representations. It enables programmers to automate repetitive and
+                  error-prone tasks and to exploit domain-specific knowledge when generating code.
+                  As a result, meta-programming plays a central role across a wide range of
+                  applications, from splicing in optimized code that exploits memory layout, to
+                  generating representations of quantum circuits from classical programs, to writing
+                  meta-theoretic proofs as programs that transform derivation trees.
                 </p>
                 <p className="text-gray-500">
-                  A fundamental question across all forms of meta-programming is how to design abstractions that support the correct generation, composition, and analysis of code representations. This question is challenging for two main reasons. First, it is important to distinguish between code as data (static structure) and the programs that generate and manipulate it (dynamic behavior). Second, representing code requires managing variables and scope, a task that is inherently error-prone and often exposes low-level implementation details.
+                  A fundamental question across all forms of meta-programming is how to design
+                  abstractions that support the correct generation, composition, and analysis of
+                  code representations. This question is challenging for two main reasons. First, it
+                  is important to distinguish between code as data (static structure) and the
+                  programs that generate and manipulate it (dynamic behavior). Second, representing
+                  code requires managing variables and scope, a task that is inherently error-prone
+                  and often exposes low-level implementation details.
                 </p>
                 <p className="text-gray-500">
-                  In this talk, I discuss how advances in logical frameworks have informed the design of modern meta-programming languages. In particular, I revisit the development of the Beluga framework where formal systems are specified in the logical framework LF, using higher-order abstract syntax (HOAS) to represent binding constructs. On top of the LF layer sits a functional language where programmers write meta-theoretic proofs as transformations over HOAS representations. A key insight enabling recursive analysis and manipulation at the functional programming level is to treat HOAS objects together with their accompanying contexts - so-called contextual objects.
+                  In this talk, I discuss how advances in logical frameworks have informed the
+                  design of modern meta-programming languages. In particular, I revisit the
+                  development of the Beluga framework where formal systems are specified in the
+                  logical framework LF, using higher-order abstract syntax (HOAS) to represent
+                  binding constructs. On top of the LF layer sits a functional language where
+                  programmers write meta-theoretic proofs as transformations over HOAS
+                  representations. A key insight enabling recursive analysis and manipulation at the
+                  functional programming level is to treat HOAS objects together with their
+                  accompanying contexts - so-called contextual objects.
                 </p>
                 <p className="text-gray-500">
-                  Over the past decade, this separation between static syntactic representations and dynamic program behaviour together with the use of contextual objects, has guided the development of a range of meta-programming systems. In particular, these ideas have informed the design of polymorphic and dependently typed meta-programming languages, and more recently, have been extended to support the generation, analysis, and evaluation of concurrent processes within a functional programming setting. These developments illustrate how ideas originating in automated reasoning - particularly techniques for representing and manipulating contextual objects - are having a broad impact beyond their original domain.
+                  Over the past decade, this separation between static syntactic representations and
+                  dynamic program behaviour together with the use of contextual objects, has guided
+                  the development of a range of meta-programming systems. In particular, these ideas
+                  have informed the design of polymorphic and dependently typed meta-programming
+                  languages, and more recently, have been extended to support the generation,
+                  analysis, and evaluation of concurrent processes within a functional programming
+                  setting. These developments illustrate how ideas originating in automated
+                  reasoning - particularly techniques for representing and manipulating contextual
+                  objects - are having a broad impact beyond their original domain.
                 </p>
               </InvitedTalkItem>
 
@@ -110,19 +148,27 @@ const IJCAR = () => {
               <InvitedTalkItem
                 title='"Polynomial-time Deduction with Orthologic"'
                 speaker="Viktor Kunčak"
-		url="https://lara.epfl.ch/~kuncak"
+                url="https://lara.epfl.ch/~kuncak"
               >
                 <p className="text-gray-500">
-                  Orthologic is a non-classical logic that supports arbitrary conjunction, disjunction and negation operators and is interpreted over ortholattices. If a formula is provable in orthologic, it is also provable in classical logic. I present a complete proof system (formalized in Rocq) and an efficient polynomial-time algorithm for provability in orthologic. We evaluated and deployed orthologic on boolean circuits, program verifiers, proof assistant kernels, and type systems. Joint work with Simon Guilloud.
+                  Orthologic is a non-classical logic that supports arbitrary conjunction,
+                  disjunction and negation operators and is interpreted over ortholattices. If a
+                  formula is provable in orthologic, it is also provable in classical logic. I
+                  present a complete proof system (formalized in Rocq) and an efficient
+                  polynomial-time algorithm for provability in orthologic. We evaluated and deployed
+                  orthologic on boolean circuits, program verifiers, proof assistant kernels, and
+                  type systems. Joint work with Simon Guilloud.
                 </p>
               </InvitedTalkItem>
-
             </ul>
           </div>
         </section>
 
         {/* Accepted Papers Section */}
-        <section id="accepted-papers" className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+        <section
+          id="accepted-papers"
+          className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200"
+        >
           <h2 className="text-3xl font-semibold text-indigo-700 mb-6 border-b border-indigo-200 pb-2">
             Accepted Papers
           </h2>
@@ -131,7 +177,8 @@ const IJCAR = () => {
               <li>
                 <b>"A Unified Formalization of Context-Free Grammar Theory"</b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Tobias Nipkow , Fabian Lehr , Moritz Roos , Akihisa Yamada
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Tobias Nipkow , Fabian Lehr , Moritz Roos ,
+                Akihisa Yamada
               </li>
               <li>
                 <b>"Unification of Deterministic Higher-Order Patterns"</b>
@@ -141,17 +188,20 @@ const IJCAR = () => {
               <li>
                 <b>"Finite Model Finding in First-order Modal Logics"</b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Happy Khairunnisa Sariyanto , Alexander Steen , Geoff Sutcliffe
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Happy Khairunnisa Sariyanto , Alexander Steen ,
+                Geoff Sutcliffe
               </li>
               <li>
                 <b>"Towards Term-based Verification of Diagrammatic Equivalence"</b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Julie Cailler , Noé Delorme , Simon Perdrix , Sophie Tourret
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Julie Cailler , Noé Delorme , Simon Perdrix ,
+                Sophie Tourret
               </li>
               <li>
                 <b>"Tao’s Equational Proof Challenge Accepted"</b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Lydia Kondylidou , Jasmin Blanchette , Marijn Heule
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Lydia Kondylidou , Jasmin Blanchette , Marijn
+                Heule
               </li>
               <li>
                 <b>"Pitts and Intuitionistic Multi-Succedent: Uniform Interpolation for KM"</b>
@@ -159,14 +209,18 @@ const IJCAR = () => {
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Hugo Férée , Ian Shillito
               </li>
               <li>
-                <b>"The termination of Nielsen transformations applied to word equations with length constraints"</b>
+                <b>
+                  "The termination of Nielsen transformations applied to word equations with length
+                  constraints"
+                </b>
                 <br></br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Benjamin Przybocki , Clark Barrett
               </li>
               <li>
                 <b>"An Applicative Multiset Path Order"</b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Nao Hirokawa , Teppei Saito , Teppei Tanaka , Wataru Yachi
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Nao Hirokawa , Teppei Saito , Teppei Tanaka ,
+                Wataru Yachi
               </li>
               <li>
                 <b>"Free Set Theory - Cut Elimination and Consistency"</b>
@@ -176,12 +230,16 @@ const IJCAR = () => {
               <li>
                 <b>"Checking Regular Expressions in cvc5 Proofs"</b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ofec Israel , Yoni Zohar , Hitarth Singh , Bruno Dutertre , Andrew Reynolds , Clark Barrett , Cesare Tinelli
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Ofec Israel , Yoni Zohar , Hitarth Singh , Bruno
+                Dutertre , Andrew Reynolds , Clark Barrett , Cesare Tinelli
               </li>
               <li>
-                <b>"Completeness of Synthesis under Realizability Assumptions using Superposition"</b>
+                <b>
+                  "Completeness of Synthesis under Realizability Assumptions using Superposition"
+                </b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Márton Hajdu , Petra Hozzová , Laura Kovács , Eva Wagner
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Márton Hajdu , Petra Hozzová , Laura Kovács , Eva
+                Wagner
               </li>
               <li>
                 <b>"Uniform interpolation with constructive diamond"</b>
@@ -191,7 +249,8 @@ const IJCAR = () => {
               <li>
                 <b>"Formally Verified Graph Generation with SAT modulo Symmetries and Lean"</b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Markus Kirchweger , Pablo Manrique , Stefan Szeider
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Markus Kirchweger , Pablo Manrique , Stefan
+                Szeider
               </li>
               <li>
                 <b>"Accelerating Loops with Arrays"</b>
@@ -201,12 +260,14 @@ const IJCAR = () => {
               <li>
                 <b>"A General Approach for SMT Proof Skeletons"</b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Joseph E. Reeves , Haniel Barbosa , Andrew Reynolds , Marijn J. H. Heule
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Joseph E. Reeves , Haniel Barbosa , Andrew
+                Reynolds , Marijn J. H. Heule
               </li>
               <li>
                 <b>"The ARI Infrastructure for Automated Confluence Analysis"</b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Nao Hirokawa , Aart Middeldorp , Teppei Saito , René Thiemann
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Nao Hirokawa , Aart Middeldorp , Teppei Saito ,
+                René Thiemann
               </li>
               <li>
                 <b>"Generating Theorems by Generating Proof Structures"</b>
@@ -214,14 +275,18 @@ const IJCAR = () => {
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Christoph Wernhard
               </li>
               <li>
-                <b>"Avoiding Big Integers: Parallel Multimodular Algebraic Verification of Arithmetic Circuits"</b>
+                <b>
+                  "Avoiding Big Integers: Parallel Multimodular Algebraic Verification of Arithmetic
+                  Circuits"
+                </b>
                 <br></br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Clemens Hofstadler , Daniela Kaufmann , Chen Chen
               </li>
               <li>
                 <b>"A Two-Watched Literal Scheme for First-Order Logic"</b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Yasmine Briefs , Martin Bromberger , Tobias Gehl , Lorenz Leutgeb , Simon Schwarz , Christoph Weidenbach
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Yasmine Briefs , Martin Bromberger , Tobias Gehl
+                , Lorenz Leutgeb , Simon Schwarz , Christoph Weidenbach
               </li>
               <li>
                 <b>"A Complete Proof System for HyperLTL"</b>
@@ -246,12 +311,17 @@ const IJCAR = () => {
               <li>
                 <b>"SMT-Based Deontic Reasoning for Aqvist Logics"</b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Christian Köll , Agata Ciabattoni , Dmitry Rozplokhas
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Christian Köll , Agata Ciabattoni , Dmitry
+                Rozplokhas
               </li>
               <li>
-                <b>"Beyond Eager Encodings: A Theory-Agnostic Approach to Theory-Lemma Enumeration in SMT"</b>
+                <b>
+                  "Beyond Eager Encodings: A Theory-Agnostic Approach to Theory-Lemma Enumeration in
+                  SMT"
+                </b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Emanuele Civini , Gabriele Masina , Giuseppe Spallitta , Roberto Sebastiani
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Emanuele Civini , Gabriele Masina , Giuseppe
+                Spallitta , Roberto Sebastiani
               </li>
               <li>
                 <b>"A Superposition Calculus for Separation Logic"</b>
@@ -266,15 +336,20 @@ const IJCAR = () => {
               <li>
                 <b>"Verification of Configurable SRA Systems"</b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Alessandro Cimatti , Alberto Griggio , Christian Lidström , Gianluca Redondi , Dylan Trenti
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Alessandro Cimatti , Alberto Griggio , Christian
+                Lidström , Gianluca Redondi , Dylan Trenti
               </li>
               <li>
                 <b>"Bringing closure to theory combination properties"</b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Guilherme Vicentin de Toledo , Benjamin Przybocki , Yoni Zohar
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Guilherme Vicentin de Toledo , Benjamin Przybocki
+                , Yoni Zohar
               </li>
               <li>
-                <b>"Pgeon: Generating Tableau-Based Provers from Declarative Specifications of Logical Calculi"</b>
+                <b>
+                  "Pgeon: Generating Tableau-Based Provers from Declarative Specifications of
+                  Logical Calculi"
+                </b>
                 <br></br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Romain Sidhoum , Simon Robillard , David Delahaye
               </li>
@@ -284,12 +359,19 @@ const IJCAR = () => {
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Matteo Acclavio , Giulia Manara
               </li>
               <li>
-                <b>"Disproving (Positive) Almost-Sure Termination of Probabilistic Term Rewriting via Random Walks"</b>
+                <b>
+                  "Disproving (Positive) Almost-Sure Termination of Probabilistic Term Rewriting via
+                  Random Walks"
+                </b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Jan-Christoph Kassing , Henri Nagel , Alexander Schlecht , Jürgen Giesl
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Jan-Christoph Kassing , Henri Nagel , Alexander
+                Schlecht , Jürgen Giesl
               </li>
               <li>
-                <b>"Refactoring-as-Propositions: Proved Refactoring of Hybrid Systems via Proved Refinements"</b>
+                <b>
+                  "Refactoring-as-Propositions: Proved Refactoring of Hybrid Systems via Proved
+                  Refinements"
+                </b>
                 <br></br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Enguerrand Prebet , André Platzer
               </li>
@@ -341,7 +423,8 @@ const IJCAR = () => {
               <li>
                 <b>"Learning Computation Tree Logic with Neural Networks"</b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Benjamin Bordais , Mustafa Yalciner , Daniel Neider
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Benjamin Bordais , Mustafa Yalciner , Daniel
+                Neider
               </li>
               <li>
                 <b>"On Constructing Most General Solutions for Parametric Constraints"</b>
@@ -349,24 +432,33 @@ const IJCAR = () => {
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Viorica Sofronie-Stokkermans
               </li>
               <li>
-                <b>"Growing HOLMS: A Verified Automated Prover for Grzegorczyk Logic in HOL Light"</b>
+                <b>
+                  "Growing HOLMS: A Verified Automated Prover for Grzegorczyk Logic in HOL Light"
+                </b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Antonella Bilotta , Marco Maggesi , Cosimo Perini Brogi
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Antonella Bilotta , Marco Maggesi , Cosimo Perini
+                Brogi
               </li>
               <li>
                 <b>"Ethos: A Fast Proof Checker for the Eunoia Logical Framework"</b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Andrew Reynolds , Hans-Jörg Schurr , Mallku Soldevila , Haniel Barbosa , Cesare Tinelli , Clark Barrett
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Andrew Reynolds , Hans-Jörg Schurr , Mallku
+                Soldevila , Haniel Barbosa , Cesare Tinelli , Clark Barrett
               </li>
               <li>
-                <b>"Program Synthesis for Non-Linear Real Arithmetic: Beyond Realizable Specifications"</b>
+                <b>
+                  "Program Synthesis for Non-Linear Real Arithmetic: Beyond Realizable
+                  Specifications"
+                </b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; S. Akshay , Supratik Chakraborty , Aniruddha Joshi , R. Govind
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; S. Akshay , Supratik Chakraborty , Aniruddha
+                Joshi , R. Govind
               </li>
               <li>
                 <b>"Automatic Abstraction Refinement for Hyperproperties Verification"</b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Malak Marrid , Shachar Itzhaky , Sharon Shoham , Yakir Vizel
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Malak Marrid , Shachar Itzhaky , Sharon Shoham ,
+                Yakir Vizel
               </li>
               <li>
                 <b>"Toward Fast Automatic Verification of Textbook Proof Steps"</b>
@@ -378,30 +470,46 @@ const IJCAR = () => {
         </section>
 
         {/* Dates Section */}
-        <section id="important-dates" className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+        <section
+          id="important-dates"
+          className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200"
+        >
           <h2 className="text-3xl font-semibold text-indigo-700 mb-6 border-b border-indigo-200 pb-2">
             Dates
           </h2>
           <ul className="list-inside space-y-2 text-gray-700">
-            <li>Abstract submission: <strong>February 6, 2026</strong></li>
-            <li>Paper submission: &nbsp;<strong>February&nbsp;15,&nbsp;2026</strong></li>
-            <li>Rebuttal: <strong>March 31 - April 3, 2026</strong> (AoE)</li>
-            <li>Notification: <strong>April 14, 2026</strong></li>
-            <li>Camera-ready: <strong>May 23, 2026</strong></li>
+            <li>
+              Abstract submission: <strong>February 6, 2026</strong>
+            </li>
+            <li>
+              Paper submission: &nbsp;<strong>February&nbsp;15,&nbsp;2026</strong>
+            </li>
+            <li>
+              Rebuttal: <strong>March 31 - April 3, 2026</strong> (AoE)
+            </li>
+            <li>
+              Notification: <strong>April 14, 2026</strong>
+            </li>
+            <li>
+              Camera-ready: <strong>May 23, 2026</strong>
+            </li>
           </ul>
         </section>
 
         {/* Call for Papers Section */}
-        <section id="call-for-papers" className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-4">
+        <section
+          id="call-for-papers"
+          className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-4"
+        >
           <h2 className="text-3xl font-semibold text-indigo-700 mb-4 border-b border-indigo-200 pb-2">
             Call for Papers
           </h2>
           <div className="space-y-4 text-gray-700 leading-relaxed">
             <p>
-              The{' '}
+              The{" "}
               <a href="https://ijcar.org" className="text-indigo-600 hover:underline">
                 International Joint Conference on Automated Reasoning (IJCAR)
-              </a>{' '}
+              </a>{" "}
               is the premier international venue on all aspects of automated reasoning. It is held
               biannually as a merger of leading events in automated reasoning:
             </p>
@@ -417,7 +525,10 @@ const IJCAR = () => {
                 </a>
               </li>
               <li>
-                <a href="https://tableaux-conf.github.io/web" className="text-indigo-600 hover:underline">
+                <a
+                  href="https://tableaux-conf.github.io/web"
+                  className="text-indigo-600 hover:underline"
+                >
                   TABLEAUX – Conference on Analytic Tableaux and Related Methods Topics
                 </a>
               </li>
@@ -458,12 +569,24 @@ const IJCAR = () => {
             <h3 className="text-2xl font-semibold text-indigo-700 pb-0">Dates</h3>
             <p className="text-.5xl">All times are &ldquo;Anywhere-on-Earth&rdquo; (AoE).</p>
             <ul className="list-inside space-y-2 text-gray-700">
-              <li>Abstract submission: <strong>February 6, 2026</strong></li>
-              <li>Paper submission: &nbsp;<strong>February&nbsp;15,&nbsp;2026</strong></li>
-              <li>Rebuttal: <strong>March 31 - April 3, 2026</strong></li>
-              <li>Notification: <strong>April 14, 2026</strong></li>
-              <li>Camera-ready: <strong>May 23, 2026</strong></li>
-              <li>Conference: <strong>July 26-29, 2026</strong></li>
+              <li>
+                Abstract submission: <strong>February 6, 2026</strong>
+              </li>
+              <li>
+                Paper submission: &nbsp;<strong>February&nbsp;15,&nbsp;2026</strong>
+              </li>
+              <li>
+                Rebuttal: <strong>March 31 - April 3, 2026</strong>
+              </li>
+              <li>
+                Notification: <strong>April 14, 2026</strong>
+              </li>
+              <li>
+                Camera-ready: <strong>May 23, 2026</strong>
+              </li>
+              <li>
+                Conference: <strong>July 26-29, 2026</strong>
+              </li>
             </ul>
             <h3 className="text-2xl font-semibold text-indigo-700 pb-0">Co-located Events</h3>
             <p>
@@ -477,7 +600,7 @@ const IJCAR = () => {
               journal or conference. The following paper categories are welcome:
             </p>
             <p>
-              <b>Regular papers</b> describing solid new research results which can be up to{' '}
+              <b>Regular papers</b> describing solid new research results which can be up to{" "}
               <b>15 pages</b> in LNCS style, including figures but excluding references and
               appendices. Where applicable, regular papers are supported by experimental validation.
               Submissions reporting on case studies in an industrial context are strongly invited as
@@ -506,7 +629,10 @@ const IJCAR = () => {
               via HotCRP:
             </p>
             <p>
-              <a href="https://submissions.floc26.org/ijcar" className="text-indigo-600 hover:underline">
+              <a
+                href="https://submissions.floc26.org/ijcar"
+                className="text-indigo-600 hover:underline"
+              >
                 https://submissions.floc26.org/ijcar
               </a>
             </p>
@@ -533,16 +659,25 @@ const IJCAR = () => {
             </p>
             <h3 className="text-2xl font-semibold text-indigo-700 pb-0">Proceedings</h3>
             <p>
-              The IJCAR 2026 proceedings will be published in the Springer series{' '}
-              <a href="https://link.springer.com/series/1244" className="text-indigo-600 hover:underline">
+              The IJCAR 2026 proceedings will be published in the Springer series{" "}
+              <a
+                href="https://link.springer.com/series/1244"
+                className="text-indigo-600 hover:underline"
+              >
                 Lecture Notes in Artificial Intelligence
-              </a>{' '}
+              </a>{" "}
               (
-              <a href="https://link.springer.com/series/1244" className="text-indigo-600 hover:underline">
+              <a
+                href="https://link.springer.com/series/1244"
+                className="text-indigo-600 hover:underline"
+              >
                 LNAI
-              </a>{' '}
-              /{' '}
-              <a href="https://link.springer.com/series/558" className="text-indigo-600 hover:underline">
+              </a>{" "}
+              /{" "}
+              <a
+                href="https://link.springer.com/series/558"
+                className="text-indigo-600 hover:underline"
+              >
                 LNCS
               </a>
               ) as Gold Open Access, and is planned to be available online during the conference. At
@@ -554,8 +689,11 @@ const IJCAR = () => {
               The papers delivered to us will be processed according to the regular workﬂow, meaning
               Springer will generate both full-text HTML and PDF versions of the papers, to be made
               available in SpringerLink, and the full book will be available in PDF and ePub
-              formats. The papers will be published under the{' '}
-              <a href="https://creativecommons.org/licenses/by/4.0/" className="text-indigo-600 hover:underline">
+              formats. The papers will be published under the{" "}
+              <a
+                href="https://creativecommons.org/licenses/by/4.0/"
+                className="text-indigo-600 hover:underline"
+              >
                 CC-BY-4.0-license
               </a>
               .
@@ -563,18 +701,24 @@ const IJCAR = () => {
             <h3 className="text-2xl font-semibold text-indigo-700 pb-0">Awards</h3>
             <h4 className="text-1.5xl font-semibold text-indigo-700 pb-0">Herbrand Award</h4>
             <p>
-              The{' '}
-              <a href="https://cadeinc.org/Herbrand-Award" className="text-indigo-600 hover:underline">
+              The{" "}
+              <a
+                href="https://cadeinc.org/Herbrand-Award"
+                className="text-indigo-600 hover:underline"
+              >
                 Herbrand Award 2026
-              </a>{' '}
+              </a>{" "}
               for distinguished contributions to automated reasoning is presented.
             </p>
             <h4 className="text-1.5xl font-semibold text-indigo-700 pb-0">Bill McCune Award</h4>
             <p>
-              The{' '}
-              <a href="https://cadeinc.org/McCune-Award" className="text-indigo-600 hover:underline">
+              The{" "}
+              <a
+                href="https://cadeinc.org/McCune-Award"
+                className="text-indigo-600 hover:underline"
+              >
                 Bill McCune Award 2026
-              </a>{' '}
+              </a>{" "}
               is presented for a PhD thesis defended in 2025.
             </p>
             <h4 className="text-1.5xl font-semibold text-indigo-700 pb-0">Best Paper Award</h4>
@@ -590,19 +734,28 @@ const IJCAR = () => {
             <h3 className="text-2xl font-semibold text-indigo-700 pb-0">Program Chairs</h3>
             <ul className="list-inside space-y-2 text-gray-700">
               <li>
-                <a href="https://cca.informatik.uni-freiburg.de/biere" className="text-indigo-600 hover:underline">
+                <a
+                  href="https://cca.informatik.uni-freiburg.de/biere"
+                  className="text-indigo-600 hover:underline"
+                >
                   Armin Biere
                 </a>
                 , University of Freiburg
               </li>
               <li>
-                <a href="https://home.uni-leipzig.de/clu" className="text-indigo-600 hover:underline">
+                <a
+                  href="https://home.uni-leipzig.de/clu"
+                  className="text-indigo-600 hover:underline"
+                >
                   Carsten Lutz
                 </a>
                 , Universität Leipzig
               </li>
               <li>
-                <a href="https://sites.google.com/view/saranegri/home" className="text-indigo-600 hover:underline">
+                <a
+                  href="https://sites.google.com/view/saranegri/home"
+                  className="text-indigo-600 hover:underline"
+                >
                   Sara Negri
                 </a>
                 , Università degli Studi di Genova
@@ -611,7 +764,10 @@ const IJCAR = () => {
             <h3 className="text-2xl font-semibold text-indigo-700 pb-0">Program Committee</h3>
             <ul className="list-inside space-y-2 text-gray-700">
               <li>
-                <a href="https://informatics.tuwien.ac.at/people/agata-ciabattoni" className="text-indigo-600 hover:underline">
+                <a
+                  href="https://informatics.tuwien.ac.at/people/agata-ciabattoni"
+                  className="text-indigo-600 hover:underline"
+                >
                   Agata Ciabattoni
                 </a>
                 , TU Wien
@@ -1091,7 +1247,10 @@ const IJCAR = () => {
           </div>
         </section>
 
-        <section id="submission" className="bg-white p-8 rounded-2xl shadow-lg text-center border border-gray-200">
+        <section
+          id="submission"
+          className="bg-white p-8 rounded-2xl shadow-lg text-center border border-gray-200"
+        >
           <h2 className="text-3xl font-semibold text-indigo-700 mb-6">Paper Submission</h2>
           <a
             href="https://submissions.floc26.org/ijcar/"
@@ -1100,7 +1259,6 @@ const IJCAR = () => {
             Submit via HotCrp
           </a>
         </section>
-
       </main>
     </div>
   );
