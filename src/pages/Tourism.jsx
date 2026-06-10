@@ -274,106 +274,135 @@ export default function TourismPage() {
         </Section>
 
         <Section title="Packaged Tours" icon={FaSuitcaseRolling}>
-          <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
-            <p>
-              We are pleased to partner with <strong>Inside Tours Lisbon</strong> to offer FLoC
-              participants an exclusive opportunity to explore Lisbon and its surroundings.
-            </p>
-
-            <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
-              <p className="font-semibold text-blue-800">
-                🎟 Use voucher code <span className="text-xl">FLOC26</span> to receive a 10% discount
-              </p>
+          <div className="space-y-8 text-gray-700 text-lg leading-relaxed">
+            <div>
               <p>
-                Book directly at:{" "}
-                <a href="https://www.insidetours.com/en/" className="text-blue-600 underline">
-                  insidetours.com/en/
-                </a>
+                We are pleased to partner with <strong>Inside Tours Lisbon</strong> to offer FLoC
+                participants an exclusive opportunity to explore Lisbon and its surroundings.
               </p>
+
+              <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mt-4">
+                <p className="font-semibold text-blue-800">
+                  🎟 Use voucher code <span className="text-xl">FLOC26</span> to receive a 10%
+                  discount
+                </p>
+                <p>
+                  Book directly at:{" "}
+                  <a href="https://www.insidetours.com/en/" className="text-blue-600 underline">
+                    insidetours.com/en/
+                  </a>
+                </p>
+              </div>
+
+              <p className="mt-4">
+                For tailor-made requests, please contact{" "}
+                <a href="mailto:toursfloc@the.pt" className="text-blue-600 underline">
+                  toursfloc@the.pt
+                </a>
+                .
+              </p>
+
+              <div className="mt-6">
+                <h3 className="text-xl font-semibold mb-2">
+                  Recommended Day Trips (Small Groups – Max 8)
+                </h3>
+                <ul className="list-disc ml-6 space-y-3">
+                  <li>
+                    <strong>Sintra, Cascais & Pena Palace (Daily)</strong>
+                    <br />
+                    Explore magical Sintra, visit stunning Pena Palace, and enjoy the Atlantic
+                    coastline.
+                    <br />
+                    <a
+                      href="https://www.insidelisbon.com/en/tours/sintra-cascais-estoril-tour"
+                      className="text-blue-600 underline"
+                    >
+                      View Tour
+                    </a>
+                  </li>
+                  <li>
+                    <strong>Óbidos, Fátima, Nazaré & Batalha (Daily)</strong>
+                    <br />
+                    Perfect for history and cultural heritage lovers.
+                    <br />
+                    <a
+                      href="https://www.insidelisbon.com/en/tours/obidos-fatima-nazare-day-tour"
+                      className="text-blue-600 underline"
+                    >
+                      View Tour
+                    </a>
+                  </li>
+                  <li>
+                    <strong>Arrábida Wine Tour (Daily except Sundays)</strong>
+                    <br />
+                    Nature, coastal scenery, wineries, and wine tastings.
+                    <br />
+                    <a
+                      href="https://www.insidelisbon.com/en/tours/arrabida-wine-tour"
+                      className="text-blue-600 underline"
+                    >
+                      View Tour
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="mt-6">
+                <h3 className="text-xl font-semibold mb-2">
+                  Walking Tours in Lisbon (Max 14 per Guide)
+                </h3>
+                <ul className="list-disc ml-6 space-y-3">
+                  <li>
+                    <strong>Best of Lisbon Walk (Daily – Morning & Afternoon)</strong>
+                    <br />A comprehensive introduction to Lisbon’s history and culture.
+                    <br />
+                    <a
+                      href="https://www.insidelisbon.com/en/tours/best-of-lisbon-walking-tour"
+                      className="text-blue-600 underline"
+                    >
+                      View Tour
+                    </a>
+                  </li>
+                  <li>
+                    <strong>Food & Wine Walk (Daily – Morning & Afternoon)</strong>
+                    <br />
+                    Discover Portugal through its flavors and traditions.
+                    <br />
+                    <a
+                      href="https://www.insidelisbon.com/en/tours/food-and-wine-walking-tour"
+                      className="text-blue-600 underline"
+                    >
+                      View Tour
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
 
-            <p className="mt-2">
-              For tailor-made requests, please contact{" "}
-              <a href="mailto:toursfloc@the.pt" className="text-blue-600 underline">
-                toursfloc@the.pt
-              </a>
-              .
-            </p>
-
             <div>
-              <h3 className="text-xl font-semibold mb-2">
-                Recommended Day Trips (Small Groups – Max 8)
-              </h3>
-              <ul className="list-disc ml-6 space-y-3">
-                <li>
-                  <strong>Sintra, Cascais & Pena Palace (Daily)</strong>
-                  <br />
-                  Explore magical Sintra, visit stunning Pena Palace, and enjoy the Atlantic
-                  coastline.
-                  <br />
-                  <a
-                    href="https://www.insidelisbon.com/en/tours/sintra-cascais-estoril-tour"
-                    className="text-blue-600 underline"
-                  >
-                    View Tour
-                  </a>
-                </li>
-                <li>
-                  <strong>Óbidos, Fátima, Nazaré & Batalha (Daily)</strong>
-                  <br />
-                  Perfect for history and cultural heritage lovers.
-                  <br />
-                  <a
-                    href="https://www.insidelisbon.com/en/tours/obidos-fatima-nazare-day-tour"
-                    className="text-blue-600 underline"
-                  >
-                    View Tour
-                  </a>
-                </li>
-                <li>
-                  <strong>Arrábida Wine Tour (Daily except Sundays)</strong>
-                  <br />
-                  Nature, coastal scenery, wineries, and wine tastings.
-                  <br />
-                  <a
-                    href="https://www.insidelisbon.com/en/tours/arrabida-wine-tour"
-                    className="text-blue-600 underline"
-                  >
-                    View Tour
-                  </a>
-                </li>
-              </ul>
-            </div>
+              <p>
+                We are also pleased to partner with <strong>Boost Portugal</strong>, offering a
+                variety of guided experiences in Lisbon and Sintra.
+              </p>
 
-            <div>
-              <h3 className="text-xl font-semibold mb-2">
-                Walking Tours in Lisbon (Max 14 per Guide)
-              </h3>
-              <ul className="list-disc ml-6 space-y-3">
-                <li>
-                  <strong>Best of Lisbon Walk (Daily – Morning & Afternoon)</strong>
-                  <br />A comprehensive introduction to Lisbon’s history and culture.
-                  <br />
+              <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-4 mt-4">
+                <p className="font-semibold text-emerald-800">
+                  🚐 Discover Lisbon & Sintra with Boost Portugal
+                </p>
+                <p className="mt-2">
+                  Choose from a wide range of experiences showcasing Lisbon’s historic
+                  neighborhoods, viewpoints, monuments, and the palaces and landscapes of Sintra.
+                </p>
+                <p className="mt-3">
+                  Book directly at:{" "}
                   <a
-                    href="https://www.insidelisbon.com/en/tours/best-of-lisbon-walking-tour"
+                    href="https://boostportugal.ventrata.site/en"
                     className="text-blue-600 underline"
                   >
-                    View Tour
+                    boostportugal.ventrata.site/en
                   </a>
-                </li>
-                <li>
-                  <strong>Food & Wine Walk (Daily – Morning & Afternoon)</strong>
-                  <br />
-                  Discover Portugal through its flavors and traditions.
-                  <br />
-                  <a
-                    href="https://www.insidelisbon.com/en/tours/food-and-wine-walking-tour"
-                    className="text-blue-600 underline"
-                  >
-                    View Tour
-                  </a>
-                </li>
-              </ul>
+                </p>
+              </div>
             </div>
           </div>
         </Section>

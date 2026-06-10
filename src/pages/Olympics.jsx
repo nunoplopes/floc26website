@@ -1,6 +1,3 @@
-import { useState } from "react";
-import { Link } from "react-router";
-
 const Olympics = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
