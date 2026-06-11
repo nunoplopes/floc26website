@@ -206,7 +206,7 @@ const workshops_week1 = [
     name: "Correct-by-construction distributed systems and Decentralised applications: from blockchain to swarms (CbC-DS)",
     start: 19,
     end: 19,
-    link: null,
+    link: "https://cbc-ds.github.io",
   },
   {
     name: "Diagrams in Logic and Computation (DIALOCO)",
