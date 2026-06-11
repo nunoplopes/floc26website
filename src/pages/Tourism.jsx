@@ -326,7 +326,7 @@ export default function TourismPage() {
                     Perfect for history and cultural heritage lovers.
                     <br />
                     <a
-                      href="https://www.insidelisbon.com/en/tours/obidos-fatima-nazare-day-tour"
+                      href="https://www.insidelisbon.com/en/tours/obidos-fatima-nazare"
                       className="text-blue-600 underline"
                     >
                       View Tour
