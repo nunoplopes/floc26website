@@ -423,8 +423,8 @@ const IJCAR = () => {
               <li>
                 <b>"Learning Computation Tree Logic with Neural Networks"</b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Benjamin Bordais , Mustafa Yalciner , Daniel
-                Neider
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Benjamin Bordais , Daniel Neider ,
+		Mustafa Yalciner
               </li>
               <li>
                 <b>"On Constructing Most General Solutions for Parametric Constraints"</b>
