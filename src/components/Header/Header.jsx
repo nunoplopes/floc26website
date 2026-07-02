@@ -24,6 +24,12 @@ const Header = () => {
 
   return (
     <>
+      <div className="bg-blue-600 text-white text-center text-sm md:text-base font-semibold py-2 px-4">
+        📅 The program is now available at{" "}
+        <a href="https://program.floc26.org" className="underline hover:text-blue-200 transition">
+          program.floc26.org
+        </a>
+      </div>
       {/*
       <div className="bg-yellow-400 text-black text-center text-sm md:text-base font-semibold py-2 px-4">
         📢{" "}
