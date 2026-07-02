@@ -47,8 +47,8 @@ const MentoringWorkshop = () => {
       speaker: "Jakub Gajarský",
       affiliation: "Masaryk University and University of Warsaw, Poland",
       homepage: "https://sites.google.com/view/jakubgajarsky/",
-      title: "How to Give a Talk",
-      details: "TBA",
+      title: "How to Present Your Work Without Losing the Audience",
+      details: "As researchers presenting our work at conferences and workshops, we routinely face the challenge of condensing complex ideas into a short presentation. Unfortunately, this often leads to dense slides and too many new notions introduced in rapid succession. Consequently, listeners can become quickly overwhelmed, losing focus within the first few minutes. I will discuss how to properly prepare a talk so that it is accessible to a large part of the audience while still effectively getting your message across.",
       type: "talk",
     },
     {
