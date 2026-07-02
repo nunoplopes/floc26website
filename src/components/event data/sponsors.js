@@ -1,6 +1,5 @@
 import AWS from "../../assets/images/sponsors/aws.png";
 import TURISMO from "../../assets/images/sponsors/ATL.png";
-import VISIT_PORTUGAL from "../../assets/images/sponsors/visit-portugal.svg";
 import CADENCE from "../../assets/images/sponsors/cadence.png";
 import NVIDIA from "../../assets/images/sponsors/nvidia.svg";
 import NDEA from "../../assets/images/sponsors/ndea.svg";
@@ -26,12 +25,6 @@ export const sponsors = [
     image: NVIDIA,
     type: "Gold",
     url: "https://www.nvidia.com",
-  },
-  {
-    name: "Visit Portugal",
-    image: VISIT_PORTUGAL,
-    type: "Gold",
-    url: "https://www.visitportugal.com/en",
   },
   {
     name: "Associação de Turismo de Lisboa",
