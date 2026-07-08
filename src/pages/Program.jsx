@@ -268,14 +268,14 @@ const workshops_week1 = [
     aff: "ICLP",
     start: 19,
     end: 19,
-    link: "https://prolog-lang.org/Education/PrologEducationWS2026CFP.html",
+    link: "https://prolog-lang.org/Education/PrologEducationWS2026.html",
   },
   {
     name: "Third Annual Workshop on Prolog Improvement Proposals (PIPs)",
     aff: "ICLP",
     start: 19,
     end: 19,
-    link: "https://prolog-lang.org/ImprovementsForum/PIPWorkshop2026CFP.html",
+    link: "https://prolog-lang.org/Education/PrologEducationWS2026.html",
   },
   {
     name: "Pragmatics of SAT (PoS)",
