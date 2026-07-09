@@ -48,7 +48,8 @@ const MentoringWorkshop = () => {
       affiliation: "Masaryk University and University of Warsaw, Poland",
       homepage: "https://sites.google.com/view/jakubgajarsky/",
       title: "How to Present Your Work Without Losing the Audience",
-      details: "As researchers presenting our work at conferences and workshops, we routinely face the challenge of condensing complex ideas into a short presentation. Unfortunately, this often leads to dense slides and too many new notions introduced in rapid succession. Consequently, listeners can become quickly overwhelmed, losing focus within the first few minutes. I will discuss how to properly prepare a talk so that it is accessible to a large part of the audience while still effectively getting your message across.",
+      details:
+        "As researchers presenting our work at conferences and workshops, we routinely face the challenge of condensing complex ideas into a short presentation. Unfortunately, this often leads to dense slides and too many new notions introduced in rapid succession. Consequently, listeners can become quickly overwhelmed, losing focus within the first few minutes. I will discuss how to properly prepare a talk so that it is accessible to a large part of the audience while still effectively getting your message across.",
       type: "talk",
     },
     {
@@ -84,7 +85,8 @@ const MentoringWorkshop = () => {
       affiliation: "University of Oxford, UK",
       homepage: "https://www.cs.ox.ac.uk/people/sandra.kiefer/",
       title: "On the Relativity of Expertise",
-      details: "Topics in our research field are inherently complex, and staying up to date with progress is a constant challenge. Crucially, research environments are also shaped by a wealth of tacit knowledge and implicit standards. In my talk, I will argue that it is important to reflect on and communicate about learning journeys—what we have learnt, how we have learnt it, and what we should perhaps unlearn. I will explore how we can have these conversations in a way that builds a sense of belonging to the community. Along the way, I will share my thoughts on the role of relativity and subjectivity in the process. The talk builds on my Women in Logic 2024 presentation 'Constructive Interactions' and integrates the results from a subsequent survey I conducted.",
+      details:
+        "Topics in our research field are inherently complex, and staying up to date with progress is a constant challenge. Crucially, research environments are also shaped by a wealth of tacit knowledge and implicit standards. In my talk, I will argue that it is important to reflect on and communicate about learning journeys—what we have learnt, how we have learnt it, and what we should perhaps unlearn. I will explore how we can have these conversations in a way that builds a sense of belonging to the community. Along the way, I will share my thoughts on the role of relativity and subjectivity in the process. The talk builds on my Women in Logic 2024 presentation 'Constructive Interactions' and integrates the results from a subsequent survey I conducted.",
       type: "talk",
     },
     {
@@ -93,7 +95,8 @@ const MentoringWorkshop = () => {
       title: "Ask a question!",
       details: (
         <p>
-          Panelists: Neha Rino (University of Warwick), Vincent Moreau (Tallinn University of Technology), Yoàv Montacute (NII Tokyo).
+          Panelists: Neha Rino (University of Warwick), Vincent Moreau (Tallinn University of
+          Technology), Yoàv Montacute (NII Tokyo).
           <br />
           Submit your questions anonymously via{" "}
           <a href="https://onlinequestions.org/" className="text-indigo-600 hover:underline">

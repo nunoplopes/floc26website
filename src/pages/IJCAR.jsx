@@ -42,6 +42,14 @@ const IJCAR = () => {
           <ul className="flex items-center space-x-1 sm:space-x-8 overflow-x-auto py-4 text-sm sm:text-base font-medium text-gray-600 whitespace-nowrap scrollbar-none">
             <li>
               <a
+                href="https://program.floc26.org/IJCAR-index"
+                className="hover:text-indigo-600 px-3 py-2 rounded-md transition-colors duration-150"
+              >
+                Program
+              </a>
+            </li>
+            <li>
+              <a
                 href="#invited-talks"
                 className="hover:text-indigo-600 px-3 py-2 rounded-md transition-colors duration-150"
               >
@@ -50,10 +58,18 @@ const IJCAR = () => {
             </li>
             <li>
               <a
-                href="#accepted-papers"
+                href="#awards"
                 className="hover:text-indigo-600 px-3 py-2 rounded-md transition-colors duration-150"
               >
-                Accepted Papers
+                Awards
+              </a>
+            </li>
+            <li>
+              <a
+                href="#competitions"
+                className="hover:text-indigo-600 px-3 py-2 rounded-md transition-colors duration-150"
+              >
+                Competitions
               </a>
             </li>
             <li>
@@ -423,8 +439,8 @@ const IJCAR = () => {
               <li>
                 <b>"Learning Computation Tree Logic with Neural Networks"</b>
                 <br></br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Benjamin Bordais , Daniel Neider ,
-		Mustafa Yalciner
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Benjamin Bordais , Daniel Neider , Mustafa
+                Yalciner
               </li>
               <li>
                 <b>"On Constructing Most General Solutions for Parametric Constraints"</b>
@@ -467,6 +483,72 @@ const IJCAR = () => {
               </li>
             </ul>
           </div>
+        </section>
+
+        {/* Awards Section */}
+        <section id="awards" className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+          <h2 className="text-3xl font-semibold text-indigo-700 mb-6 border-b border-indigo-200 pb-2">
+            Awards
+          </h2>
+          <ul className="list-inside space-y-2 text-gray-700">
+            <li>
+              <a
+                href="https://cadeinc.org/Herbrand-Award"
+                className="text-indigo-600 hover:underline"
+              >
+                Herbrand Award
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://cadeinc.org/McCune-Award"
+                className="text-indigo-600 hover:underline"
+              >
+                Bill McCune PhD Award
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://cadeinc.org/WoodyBledsoeAward"
+                className="text-indigo-600 hover:underline"
+              >
+                Woody Bledsoe Travel Awards
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Competitions Section */}
+        <section
+          id="competitions"
+          className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200"
+        >
+          <h2 className="text-3xl font-semibold text-indigo-700 mb-6 border-b border-indigo-200 pb-2">
+            Competitions
+          </h2>
+          <ul className="list-inside space-y-2 text-gray-700">
+            <li>
+              <a href="https://tptp.org/CASC/30" className="text-indigo-600 hover:underline">
+                CASC
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://proover-competition.github.io"
+                className="text-indigo-600 hover:underline"
+              >
+                ProoVer
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://termination-portal.org/wiki/Termination_Competition_2026"
+                className="text-indigo-600 hover:underline"
+              >
+                termCOMP
+              </a>
+            </li>
+          </ul>
         </section>
 
         {/* Dates Section */}
@@ -728,8 +810,13 @@ const IJCAR = () => {
             </p>
             <h4 className="text-1.5xl font-semibold text-indigo-700 pb-0">Student Travel Award</h4>
             <p>
-              Woody Bledsoe Travel Awards will be available to support selected students in
-              attending the conference.
+              <a
+                href="https://cadeinc.org/WoodyBledsoeAward"
+                className="text-indigo-600 hover:underline"
+              >
+                Woody Bledsoe Travel Awards
+              </a>{" "}
+              will be available to support selected students in attending the conference.
             </p>
             <h3 className="text-2xl font-semibold text-indigo-700 pb-0">Program Chairs</h3>
             <ul className="list-inside space-y-2 text-gray-700">

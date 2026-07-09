@@ -268,14 +268,14 @@ const workshops_week1 = [
     aff: "ICLP",
     start: 19,
     end: 19,
-    link: "https://prolog-lang.org/Education/PrologEducationWS2026CFP.html",
+    link: "https://prolog-lang.org/Education/PrologEducationWS2026.html",
   },
   {
     name: "Third Annual Workshop on Prolog Improvement Proposals (PIPs)",
     aff: "ICLP",
     start: 19,
     end: 19,
-    link: "https://prolog-lang.org/ImprovementsForum/PIPWorkshop2026CFP.html",
+    link: "https://prolog-lang.org/Education/PrologEducationWS2026.html",
   },
   {
     name: "Pragmatics of SAT (PoS)",
@@ -735,7 +735,7 @@ const WeekProgram = ({ weekData }) => {
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-full">
       <div className="bg-gradient-to-r from-blue-900 to-blue-800 p-6">
         <div className="flex items-center gap-4">
-          <div className={("w-3 h-12 rounded-full", weekData.barColor)} />
+          <div className={`w-3 h-12 rounded-full ${weekData.barColor}`} />
           <div>
             <h3 className="text-2xl font-semibold text-white mb-1">{weekData.title}</h3>
             <p className="text-blue-100 text-base">
