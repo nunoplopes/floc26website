@@ -95,8 +95,10 @@ const MentoringWorkshop = () => {
       title: "Ask a question!",
       details: (
         <p>
-          Panelists: Neha Rino (University of Warwick), Vincent Moreau (Tallinn University of
-          Technology), Yoàv Montacute (NII Tokyo).
+          <strong>
+            Panelists: Neha Rino (University of Warwick), Vincent Moreau (Tallinn University of
+            Technology), Yoàv Montacute (NII Tokyo).
+          </strong>
           <br />
           Submit your questions anonymously via{" "}
           <a href="https://onlinequestions.org/" className="text-indigo-600 hover:underline">
@@ -130,7 +132,7 @@ const MentoringWorkshop = () => {
       title: "Ask a question!",
       details: (
         <p>
-          Panelists: Nada Amin, Tommie Meyer, Ichiro Hasuo, Sandra Kiefer.
+          <strong>Panelists: Nada Amin, Tommie Meyer, Ichiro Hasuo, Sandra Kiefer.</strong>
           <br />
           Submit your questions anonymously via{" "}
           <a href="https://onlinequestions.org/" className="text-indigo-600 hover:underline">
@@ -235,8 +237,10 @@ const MentoringWorkshop = () => {
       title: "Ask a question!",
       details: (
         <p>
-          Panelists: Sarah Salinger (TU Wien), Elisaveta Pertseva (Stanford University), Arthur
-          Correnson (CISPA).
+          <strong>
+            Panelists: Sarah Salinger (TU Wien), Elisaveta Pertseva (Stanford University), Arthur
+            Correnson (CISPA).
+          </strong>
           <br />
           Submit your questions anonymously via{" "}
           <a href="https://onlinequestions.org/" className="text-indigo-600 hover:underline">
@@ -270,8 +274,10 @@ const MentoringWorkshop = () => {
       title: "Ask a question!",
       details: (
         <p>
-          Panelists: Claudia Cauli, Caterina Urban, Loris D'Antoni, Orna Grumberg, Christine
-          Rizkallah.
+          <strong>
+            Panelists: Claudia Cauli, Caterina Urban, Loris D'Antoni, Orna Grumberg, Christine
+            Rizkallah.
+          </strong>
           <br />
           Submit your questions anonymously via{" "}
           <a href="https://onlinequestions.org/" className="text-indigo-600 hover:underline">
@@ -284,19 +290,32 @@ const MentoringWorkshop = () => {
     },
   ];
 
-  const [expandedRows, setExpandedRows] = useState(new Set());
+  const [expandedRows, setExpandedRows] = useState({
+    week1: new Set([10, 13]),
+    week2: new Set([10, 13]),
+  });
 
-  const toggleRow = (index) => {
-    const next = new Set(expandedRows);
-
-    if (next.has(index)) {
-      next.delete(index);
-    } else {
-      next.add(index);
+  const toggleRow = (tableName, index) => {
+    if (index === 10 || index === 13) {
+      return; // Keep these rows permanently expanded
     }
 
-    setExpandedRows(next);
+    setExpandedRows((prev) => {
+      const nextSet = new Set(prev[tableName]);
+
+      if (nextSet.has(index)) {
+        nextSet.delete(index);
+      } else {
+        nextSet.add(index);
+      }
+
+      return {
+        ...prev,
+        [tableName]: nextSet,
+      };
+    });
   };
+
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
       <header className="bg-indigo-700 text-white py-16 text-center shadow-lg">
@@ -357,18 +376,22 @@ const MentoringWorkshop = () => {
                           <td className="border px-4 py-2 w-50">{item.speaker}</td>
                         )}
 
-                        <td className="border px-4 py-2">
-                          <button
-                            type="button"
-                            onClick={() => toggleRow(index)}
-                            className="text-left text-indigo-600 font-semibold hover:underline w-full"
-                          >
-                            {item.title}
-                          </button>
-                        </td>
+                        {item.type === "talk" ? (
+                          <td className="border px-4 py-2">
+                            <button
+                              type="button"
+                              onClick={() => toggleRow("week1", index)}
+                              className="text-left text-indigo-600 font-semibold hover:underline w-full"
+                            >
+                              {item.title}
+                            </button>
+                          </td>
+                        ) : (
+                          <td className="border px-4 py-2 ">{item.title}</td>
+                        )}
                       </tr>
 
-                      {expandedRows.has(index) && (
+                      {expandedRows.week1.has(index) && (
                         <tr key={`details-${index}`}>
                           <td colSpan={3} className="text-left border px-4 py-4 bg-indigo-50">
                             {item.details}
@@ -409,19 +432,22 @@ const MentoringWorkshop = () => {
                           <td className="border px-4 py-2 w-50">{item.speaker}</td>
                         )}
 
-                        <td className="border px-4 py-2">
-                          <button
-                            type="button"
-                            onClick={() => toggleRow(index)}
-                            className="text-left font-semibold text-indigo-600 hover:underline w-full"
-                          >
-                            {item.title}
-                          </button>
-                          <br />
-                        </td>
+                        {item.type === "talk" ? (
+                          <td className="border px-4 py-2">
+                            <button
+                              type="button"
+                              onClick={() => toggleRow("week2", index)}
+                              className="text-left text-indigo-600 font-semibold hover:underline w-full"
+                            >
+                              {item.title}
+                            </button>
+                          </td>
+                        ) : (
+                          <td className="border px-4 py-2 ">{item.title}</td>
+                        )}
                       </tr>
 
-                      {expandedRows.has(index) && (
+                      {expandedRows.week2.has(index) && (
                         <tr key={`details-${index}`}>
                           <td colSpan={3} className="text-left border px-4 py-4 bg-indigo-50">
                             {item.details}
