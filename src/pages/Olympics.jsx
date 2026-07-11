@@ -629,9 +629,54 @@ const Olympics = () => {
             <p></p>
             <h3 className="text-2xl font-semibold text-indigo-700 pb-0"> Live Events</h3>
             Some competitions will take place during FLoC. The evaluation progress and results will
-            be presented live and on-site. The Programming Contest 2026 will host a live modeling
-            contest.
+            be presented live and on-site.
             <br />
+            <ul>
+              <li>
+                <details>
+                  <summary>FLoC Modeling Contest 2026</summary>
+                  <hr />
+                  <b>FLoC Modeling Contest 2026</b>
+                  <br />
+                  The Programming Contest 2026 will host a live modeling contest. See:{" "}
+                  <a
+                    href="https://lpcp-contest.github.io/"
+                    className="text-indigo-600 hover:underline"
+                  >
+                    https://lpcp-contest.github.io/
+                  </a>
+                  <hr />
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>MiniZinc Derby</summary>
+                  <hr />
+                  <b>MiniZinc Derby along the MiniZinc Challenge</b>
+                  <br />
+                  <i>Organizers: Peter J. Stuckey, Guido Tack, Jip J. Dekker, Jason Nguyen</i>
+                  <br />
+                  <i>
+                    Webpage:{" "}
+                    <a
+                      href="https://www.minizinc.org/challenge/2026/"
+                      className="text-indigo-600 hover:underline"
+                    >
+                      https://www.minizinc.org/challenge/2026/
+                    </a>
+                  </i>
+                  <br />
+                  Place your bets on the MiniZinc Derby! Throughout Week 1, the MiniZinc Challenge
+                  results will be revealed as a series of live races. Head to&nbsp;
+                  <a href="https://derby.minizinc.dev" className="text-indigo-600 hover:underline">
+                    {" "}
+                    derby.minizinc.dev{" "}
+                  </a>
+                  &nbsp;to call the winners and climb the leaderboard.
+                  <hr />
+                </details>
+              </li>
+            </ul>
             <br />
             <h3 className="text-2xl font-semibold text-indigo-700 pb-0">
               {/*FLoC Olympics Related Workshops*/}
