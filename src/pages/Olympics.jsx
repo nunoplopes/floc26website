@@ -676,11 +676,37 @@ const Olympics = () => {
                   <hr />
                 </details>
               </li>
+              <li>
+                <details>
+                  <summary>termCOMP Live Run</summary>
+                  <hr />
+                  <b>termCOMP Live Run</b>
+                  <br />
+                  <i>Organizers: Florian Frohn</i>
+                  <br />
+                  <i>
+                    Webpage:{" "}
+                    <a
+                      href="https://termination-portal.org/wiki/Termination_Competition_2026"
+                      className="text-indigo-600 hover:underline"
+                    >
+                      https://termination-portal.org/wiki/Termination_Competition_2026
+                    </a>
+                  </i>
+                  <br />
+                  Like every year, termCOMP '26 features a live run, which is executed during the
+                  second workshop slot (July 24/25). Watch the live results with real-time updates
+                  during the coffee break! This year, we use a small subset of the Termination
+                  Problems Database (the benchmark collection of termCOMP), augmented with many new,
+                  secret benchmarks that were not available for testing beforehand.
+                  <hr />
+                </details>
+              </li>
             </ul>
             <br />
             <h3 className="text-2xl font-semibold text-indigo-700 pb-0">
               {/*FLoC Olympics Related Workshops*/}
-              Cross-topic Workshops on Benchmarks and Empirical Evaluations
+              Workshops on Benchmarks and Empirical Evaluations
             </h3>
             <ul>
               <li>
