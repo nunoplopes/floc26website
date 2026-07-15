@@ -1,3 +1,9 @@
+const cellStyle = {
+  textAlign: "left",
+  verticalAlign: "top",
+  paddingRight: "2rem",
+};
+
 const Olympics = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
@@ -50,21 +56,118 @@ const Olympics = () => {
             Detailed results each event will be presented individually at the affiliated conferences
             or workshops; please consult the FLoC program for details on the competition
             presentations as they are announced.
+            <br />
+            <br />
             {/*We will add dates here as soon as they are confirmed.*/}
-            {/*<table>*/}
-            {/*    <thead>*/}
-            {/*    <tr>*/}
-            {/*        <th>Short name</th>*/}
-            {/*        <th>Community</th>*/}
-            {/*        <th>Full name</th>*/}
-            {/*        <th>Organizers</th>*/}
-            {/*        <th>Description</th>*/}
-            {/*        <th>Webpage</th>*/}
-            {/*    </tr>*/}
-            {/*    </thead>*/}
-            {/*    <tbody>*/}
-            {/*    </tbody>*/}
-            {/*</table>*/}
+            <b>Week 1:</b>
+            <br />
+            <br />
+            <table>
+              <thead>
+                <tr>
+                  <th style={cellStyle}>Competition</th>
+                  <th style={cellStyle}>When</th>
+                  <th style={cellStyle}>Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th style={cellStyle}>FLoC Modeling Competition</th>
+                  <th style={cellStyle}>Banquet</th>
+                  <th style={cellStyle}></th>
+                </tr>
+                <tr>
+                  <th style={cellStyle}>MiniZinc Challenge 2026</th>
+                  <th style={cellStyle}>Jul 23 (Thu) 10:30</th>
+                  <th style={cellStyle}>
+                    <a
+                      className="text-indigo-600 hover:underline"
+                      href="https://cp2026.a4cp.org/schedule.html#thursday"
+                    >
+                      CP
+                    </a>
+                  </th>
+                </tr>
+                <tr>
+                  <th style={cellStyle}>MCC 2026: Model Counting Competition 2026</th>
+                  <th style={cellStyle}>Jul 23 (Thu) 13:30</th>
+                  <th style={cellStyle}>
+                    <th style={cellStyle}>
+                      <a
+                        className="text-indigo-600 hover:underline"
+                        href="https://program.floc26.org/SAT-2026-07-23"
+                      >
+                        SAT
+                      </a>
+                    </th>
+                  </th>
+                </tr>
+                <tr>
+                  <th style={cellStyle}>MSE 2026: MaxSAT Evaluation 2026</th>
+                  <th style={cellStyle}>Jul 23 (Thu) 13:30</th>
+                  <th style={cellStyle}>
+                    <a
+                      className="text-indigo-600 hover:underline"
+                      href="https://program.floc26.org/SAT-2026-07-23"
+                    >
+                      SAT
+                    </a>
+                  </th>
+                </tr>
+                <tr>
+                  <th style={cellStyle}>PB 2026: Pseudo-Boolean Competition 2026</th>
+                  <th style={cellStyle}>Jul 23 (Thu) 13:30</th>
+                  <th style={cellStyle}>
+                    <a
+                      className="text-indigo-600 hover:underline"
+                      href="https://program.floc26.org/SAT-2026-07-23"
+                    >
+                      SAT
+                    </a>
+                  </th>
+                </tr>
+                <tr>
+                  <th style={cellStyle}>SAT Comp 2026: SAT Competition 2026</th>
+                  <th style={cellStyle}>Jul 23 (Thu) 13:30</th>
+                  <th style={cellStyle}>
+                    <a
+                      className="text-indigo-600 hover:underline"
+                      href="https://program.floc26.org/SAT-2026-07-23"
+                    >
+                      SAT
+                    </a>
+                  </th>
+                </tr>
+                <tr>
+                  <th style={cellStyle}>QBFGallery 2026</th>
+                  <th style={cellStyle}>Jul 23 (Thu) 13:30</th>
+                  <th style={cellStyle}>
+                    <a
+                      className="text-indigo-600 hover:underline"
+                      href="https://program.floc26.org/SAT-2026-07-23"
+                    >
+                      SAT
+                    </a>
+                  </th>
+                </tr>
+                <tr>
+                  <th style={cellStyle}>xCSP3 2026: 8th International XCSP3 Competition</th>
+                  <th style={cellStyle}>Jul 23 (Thu) 10:30</th>
+                  <th style={cellStyle}>
+                    <a
+                      className="text-indigo-600 hover:underline"
+                      href="https://cp2026.a4cp.org/schedule.html#thursday"
+                    >
+                      CP
+                    </a>
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+            <b>Week 2:</b>
+            <br />
+            TBA
             <br />
             <br />
             <br />
