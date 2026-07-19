@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AWS from "../assets/images/sponsors/aws.png";
+import NSF from "../assets/images/mwsponsors/nsf.svg";
 import JANESTREET from "../assets/images/mwsponsors/janestreet.png";
 import SIGLOG from "../assets/images/mwsponsors/siglog.png";
 
@@ -651,6 +652,16 @@ const MentoringWorkshop = () => {
                     src={AWS}
                     alt="AWS"
                     className="block max-w-52 h-auto w-auto min-w-[80px] min-h-[30px]"
+                  />
+                </a>
+                <a
+                  href="https://www.nsf.gov/"
+                  className="px-3 inline-flex items-center justify-center"
+                >
+                  <img
+                    src={NSF}
+                    alt="NSF"
+                    className="block max-w-100 h-auto w-auto min-w-[110px] min-h-[80px]"
                   />
                 </a>
               </div>
