@@ -110,6 +110,13 @@ const Venue = () => {
             Receptions, Banquets & Dinners
           </h2>
 
+          <div className="max-w-3xl mx-auto mb-12 rounded-lg bg-blue-50 border border-blue-100 p-4 text-center text-gray-700">
+            <p>
+              <strong>Event start times:</strong> Receptions begin at <strong>18h</strong>, banquets
+              at <strong>19h</strong>, and workshop dinners at <strong>19h</strong>.
+            </p>
+          </div>
+
           {/* Week 1 Section */}
           <div className="mb-12">
             <h3 className="text-2xl font-bold mb-6 border-b pb-2 border-gray-300">Week 1</h3>

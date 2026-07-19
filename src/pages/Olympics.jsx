@@ -1,3 +1,9 @@
+const cellStyle = {
+  textAlign: "left",
+  verticalAlign: "top",
+  paddingRight: "2rem",
+};
+
 const Olympics = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
@@ -50,21 +56,118 @@ const Olympics = () => {
             Detailed results each event will be presented individually at the affiliated conferences
             or workshops; please consult the FLoC program for details on the competition
             presentations as they are announced.
+            <br />
+            <br />
             {/*We will add dates here as soon as they are confirmed.*/}
-            {/*<table>*/}
-            {/*    <thead>*/}
-            {/*    <tr>*/}
-            {/*        <th>Short name</th>*/}
-            {/*        <th>Community</th>*/}
-            {/*        <th>Full name</th>*/}
-            {/*        <th>Organizers</th>*/}
-            {/*        <th>Description</th>*/}
-            {/*        <th>Webpage</th>*/}
-            {/*    </tr>*/}
-            {/*    </thead>*/}
-            {/*    <tbody>*/}
-            {/*    </tbody>*/}
-            {/*</table>*/}
+            <b>Week 1:</b>
+            <br />
+            <br />
+            <table>
+              <thead>
+                <tr>
+                  <th style={cellStyle}>Competition</th>
+                  <th style={cellStyle}>When</th>
+                  <th style={cellStyle}>Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th style={cellStyle}>FLoC Modeling Competition</th>
+                  <th style={cellStyle}>Banquet</th>
+                  <th style={cellStyle}></th>
+                </tr>
+                <tr>
+                  <th style={cellStyle}>MiniZinc Challenge 2026</th>
+                  <th style={cellStyle}>Jul 23 (Thu) 10:30</th>
+                  <th style={cellStyle}>
+                    <a
+                      className="text-indigo-600 hover:underline"
+                      href="https://cp2026.a4cp.org/schedule.html#thursday"
+                    >
+                      CP
+                    </a>
+                  </th>
+                </tr>
+                <tr>
+                  <th style={cellStyle}>MCC 2026: Model Counting Competition 2026</th>
+                  <th style={cellStyle}>Jul 23 (Thu) 13:30</th>
+                  <th style={cellStyle}>
+                    <th style={cellStyle}>
+                      <a
+                        className="text-indigo-600 hover:underline"
+                        href="https://program.floc26.org/SAT-2026-07-23"
+                      >
+                        SAT
+                      </a>
+                    </th>
+                  </th>
+                </tr>
+                <tr>
+                  <th style={cellStyle}>MSE 2026: MaxSAT Evaluation 2026</th>
+                  <th style={cellStyle}>Jul 23 (Thu) 13:30</th>
+                  <th style={cellStyle}>
+                    <a
+                      className="text-indigo-600 hover:underline"
+                      href="https://program.floc26.org/SAT-2026-07-23"
+                    >
+                      SAT
+                    </a>
+                  </th>
+                </tr>
+                <tr>
+                  <th style={cellStyle}>PB 2026: Pseudo-Boolean Competition 2026</th>
+                  <th style={cellStyle}>Jul 23 (Thu) 13:30</th>
+                  <th style={cellStyle}>
+                    <a
+                      className="text-indigo-600 hover:underline"
+                      href="https://program.floc26.org/SAT-2026-07-23"
+                    >
+                      SAT
+                    </a>
+                  </th>
+                </tr>
+                <tr>
+                  <th style={cellStyle}>SAT Comp 2026: SAT Competition 2026</th>
+                  <th style={cellStyle}>Jul 23 (Thu) 13:30</th>
+                  <th style={cellStyle}>
+                    <a
+                      className="text-indigo-600 hover:underline"
+                      href="https://program.floc26.org/SAT-2026-07-23"
+                    >
+                      SAT
+                    </a>
+                  </th>
+                </tr>
+                <tr>
+                  <th style={cellStyle}>QBFGallery 2026</th>
+                  <th style={cellStyle}>Jul 23 (Thu) 13:30</th>
+                  <th style={cellStyle}>
+                    <a
+                      className="text-indigo-600 hover:underline"
+                      href="https://program.floc26.org/SAT-2026-07-23"
+                    >
+                      SAT
+                    </a>
+                  </th>
+                </tr>
+                <tr>
+                  <th style={cellStyle}>xCSP3 2026: 8th International XCSP3 Competition</th>
+                  <th style={cellStyle}>Jul 23 (Thu) 10:30</th>
+                  <th style={cellStyle}>
+                    <a
+                      className="text-indigo-600 hover:underline"
+                      href="https://cp2026.a4cp.org/schedule.html#thursday"
+                    >
+                      CP
+                    </a>
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+            <b>Week 2:</b>
+            <br />
+            TBA
             <br />
             <br />
             <br />
@@ -629,13 +732,84 @@ const Olympics = () => {
             <p></p>
             <h3 className="text-2xl font-semibold text-indigo-700 pb-0"> Live Events</h3>
             Some competitions will take place during FLoC. The evaluation progress and results will
-            be presented live and on-site. The Programming Contest 2026 will host a live modeling
-            contest.
+            be presented live and on-site.
             <br />
+            <ul>
+              <li>
+                <details>
+                  <summary>FLoC Modeling Contest 2026</summary>
+                  <hr />
+                  <b>FLoC Modeling Contest 2026</b>
+                  <br />
+                  The Programming Contest 2026 will host a live modeling contest. See:{" "}
+                  <a
+                    href="https://lpcp-contest.github.io/"
+                    className="text-indigo-600 hover:underline"
+                  >
+                    https://lpcp-contest.github.io/
+                  </a>
+                  <hr />
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>MiniZinc Derby</summary>
+                  <hr />
+                  <b>MiniZinc Derby along the MiniZinc Challenge</b>
+                  <br />
+                  <i>Organizers: Peter J. Stuckey, Guido Tack, Jip J. Dekker, Jason Nguyen</i>
+                  <br />
+                  <i>
+                    Webpage:{" "}
+                    <a
+                      href="https://www.minizinc.org/challenge/2026/"
+                      className="text-indigo-600 hover:underline"
+                    >
+                      https://www.minizinc.org/challenge/2026/
+                    </a>
+                  </i>
+                  <br />
+                  Place your bets on the MiniZinc Derby! Throughout Week 1, the MiniZinc Challenge
+                  results will be revealed as a series of live races. Head to&nbsp;
+                  <a href="https://derby.minizinc.dev" className="text-indigo-600 hover:underline">
+                    {" "}
+                    derby.minizinc.dev{" "}
+                  </a>
+                  &nbsp;to call the winners and climb the leaderboard.
+                  <hr />
+                </details>
+              </li>
+              <li>
+                <details>
+                  <summary>termCOMP Live Run</summary>
+                  <hr />
+                  <b>termCOMP Live Run</b>
+                  <br />
+                  <i>Organizers: Florian Frohn</i>
+                  <br />
+                  <i>
+                    Webpage:{" "}
+                    <a
+                      href="https://termination-portal.org/wiki/Termination_Competition_2026"
+                      className="text-indigo-600 hover:underline"
+                    >
+                      https://termination-portal.org/wiki/Termination_Competition_2026
+                    </a>
+                  </i>
+                  <br />
+                  Like every year, termCOMP '26 features a live run, which is executed during the
+                  second workshop slot (July 24/25). Watch the live results with real-time updates
+                  during the coffee break! This year, we use a small subset of the Termination
+                  Problems Database (the benchmark collection of termCOMP), augmented with many new,
+                  secret benchmarks that were not available for testing beforehand.
+                  <hr />
+                </details>
+              </li>
+            </ul>
             <br />
             <h3 className="text-2xl font-semibold text-indigo-700 pb-0">
               {/*FLoC Olympics Related Workshops*/}
-              Cross-topic Workshops on Benchmarks and Empirical Evaluations
+              Workshops on Benchmarks and Empirical Evaluations
             </h3>
             <ul>
               <li>

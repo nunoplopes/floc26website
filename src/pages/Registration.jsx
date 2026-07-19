@@ -30,15 +30,15 @@ const Registration = () => {
                 </th>
                 <th
                   colSpan={2}
-                  className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400"
+                  className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400 text-gray-400"
                 >
-                  Early (until 15/May)
+                  Early (until 15/May) <span className="block text-xs font-normal">(closed)</span>
                 </th>
                 <th
                   colSpan={2}
-                  className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400"
+                  className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400 text-gray-400"
                 >
-                  Late (until 13/July)
+                  Late (until 13/July) <span className="block text-xs font-normal">(closed)</span>
                 </th>
                 <th
                   rowSpan={2}
@@ -48,16 +48,16 @@ const Registration = () => {
                 </th>
               </tr>
               <tr className="bg-gray-100">
-                <th className="px-4 py-2 text-center font-medium border-b border-l-2 border-gray-400">
+                <th className="px-4 py-2 text-center font-medium border-b border-l-2 border-gray-400 text-gray-400">
                   Student
                 </th>
-                <th className="px-4 py-2 text-center font-medium border-b border-gray-400 border-l border-gray-200">
+                <th className="px-4 py-2 text-center font-medium border-b border-gray-400 border-l border-gray-200 text-gray-400">
                   Regular
                 </th>
-                <th className="px-4 py-2 text-center font-medium border-b border-l-2 border-gray-400">
+                <th className="px-4 py-2 text-center font-medium border-b border-l-2 border-gray-400 text-gray-400">
                   Student
                 </th>
-                <th className="px-4 py-2 text-center font-medium border-b border-gray-400 border-l border-gray-200">
+                <th className="px-4 py-2 text-center font-medium border-b border-gray-400 border-l border-gray-200 text-gray-400">
                   Regular
                 </th>
               </tr>
@@ -118,16 +118,16 @@ const Registration = () => {
                   <th className="px-4 py-3 text-left font-medium border-t border-gray-300">
                     {row.label}
                   </th>
-                  <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">
+                  <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400 text-gray-400">
                     {row.earlyStudent}
                   </td>
-                  <td className="px-4 py-3 text-center border-t border-gray-400 border-l border-gray-200">
+                  <td className="px-4 py-3 text-center border-t border-gray-400 border-l border-gray-200 text-gray-400">
                     {row.earlyRegular}
                   </td>
-                  <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">
+                  <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400 text-gray-400">
                     {row.regStudent}
                   </td>
-                  <td className="px-4 py-3 text-center border-t border-gray-400 border-l border-gray-200">
+                  <td className="px-4 py-3 text-center border-t border-gray-400 border-l border-gray-200 text-gray-400">
                     {row.regRegular}
                   </td>
                   <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">
@@ -149,6 +149,11 @@ const Registration = () => {
             if you have already registered.
           </p>
 
+          <p className="text-amber-800 bg-amber-50 border border-amber-200 rounded-lg px-4 py-3 max-w-3xl">
+            <strong>Please note:</strong> Onsite registrations may not include banquet access, as
+            seating is limited.
+          </p>
+
           <h2 className="text-2xl font-semibold text-blue-800 mt-16 mb-2">Workshops</h2>
           <table className="text-sm md:text-base border border-gray-300 rounded-lg">
             <thead className="bg-gray-100">
@@ -161,15 +166,15 @@ const Registration = () => {
                 </th>
                 <th
                   colSpan={2}
-                  className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400"
+                  className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400 text-gray-400"
                 >
-                  Early (until 1/June)
+                  Early (until 1/June) <span className="block text-xs font-normal">(closed)</span>
                 </th>
                 <th
                   colSpan={2}
-                  className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400"
+                  className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400 text-gray-400"
                 >
-                  Late (until 13/July)
+                  Late (until 13/July) <span className="block text-xs font-normal">(closed)</span>
                 </th>
                 <th
                   rowSpan={2}
@@ -179,16 +184,16 @@ const Registration = () => {
                 </th>
               </tr>
               <tr className="bg-gray-100">
-                <th className="px-4 py-2 text-center font-medium border-b border-l-2 border-gray-400">
+                <th className="px-4 py-2 text-center font-medium border-b border-l-2 border-gray-400 text-gray-400">
                   Student
                 </th>
-                <th className="px-4 py-2 text-center font-medium border-b border-gray-400 border-l border-gray-200">
+                <th className="px-4 py-2 text-center font-medium border-b border-gray-400 border-l border-gray-200 text-gray-400">
                   Regular
                 </th>
-                <th className="px-4 py-2 text-center font-medium border-b border-l-2 border-gray-400">
+                <th className="px-4 py-2 text-center font-medium border-b border-l-2 border-gray-400 text-gray-400">
                   Student
                 </th>
-                <th className="px-4 py-2 text-center font-medium border-b border-gray-400 border-l border-gray-200">
+                <th className="px-4 py-2 text-center font-medium border-b border-gray-400 border-l border-gray-200 text-gray-400">
                   Regular
                 </th>
               </tr>
@@ -232,16 +237,16 @@ const Registration = () => {
                   <th className="px-4 py-3 text-left font-medium border-t border-gray-300">
                     {row.label}
                   </th>
-                  <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">
+                  <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400 text-gray-400">
                     {row.earlyStudent}
                   </td>
-                  <td className="px-4 py-3 text-center border-t border-gray-400 border-l border-gray-200">
+                  <td className="px-4 py-3 text-center border-t border-gray-400 border-l border-gray-200 text-gray-400">
                     {row.earlyRegular}
                   </td>
-                  <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">
+                  <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400 text-gray-400">
                     {row.regStudent}
                   </td>
-                  <td className="px-4 py-3 text-center border-t border-gray-400 border-l border-gray-200">
+                  <td className="px-4 py-3 text-center border-t border-gray-400 border-l border-gray-200 text-gray-400">
                     {row.regRegular}
                   </td>
                   <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">
@@ -261,28 +266,34 @@ const Registration = () => {
           <table className="text-sm md:text-base border border-gray-300 rounded-lg">
             <thead className="bg-gray-100">
               <tr>
-                <th className="px-4 py-3 text-left font-semibold border-b border-gray-300">
+                <th className="px-4 py-3 text-left font-semibold border-b border-gray-300 text-gray-400">
                   Category
                 </th>
-                <th className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400">
-                  Early (until 1/June)
+                <th className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400 text-gray-400">
+                  Early (until 1/June) <span className="block text-xs font-normal">(closed)</span>
                 </th>
-                <th className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400">
-                  Late (until 6/July)
+                <th className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400 text-gray-400">
+                  Late (until 6/July) <span className="block text-xs font-normal">(closed)</span>
                 </th>
-                <th className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400">
-                  Onsite
+                <th className="px-4 py-3 text-center font-semibold border-b border-l-2 border-gray-400 text-gray-400">
+                  Onsite <span className="block text-xs font-normal">(closed)</span>
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th className="px-4 py-3 text-left font-medium border-t border-gray-300">
+                <th className="px-4 py-3 text-left font-medium border-t border-gray-300 text-gray-400">
                   All summer schools
                 </th>
-                <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">€200</td>
-                <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">€250</td>
-                <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400">€300</td>
+                <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400 text-gray-400">
+                  €200
+                </td>
+                <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400 text-gray-400">
+                  €250
+                </td>
+                <td className="px-4 py-3 text-center border-t border-l-2 border-gray-400 text-gray-400">
+                  €300
+                </td>
               </tr>
             </tbody>
           </table>
