@@ -185,13 +185,13 @@ const Olympics = () => {
                 <br />
                 <details>
                   <summary id="det">
-                    FLoC Modeling Competition
+                    FLoC Modeling Contest
                     {/*<a href="https://lpcp-contest.github.io">*/}
                     {/*  FLoC Modeling Competition*/}
                     {/*</a>*/}
                   </summary>
                   <hr />
-                  <b>FLoC Modeling Competition</b>
+                  <b>FLoC Modeling Contest</b>
                   <br />
                   <i>Organizers: Mario Alviano, Arnaud Lequen, Johannes Fichte</i>
                   <br />
@@ -737,7 +737,16 @@ const Olympics = () => {
             <ul>
               <li>
                 <details>
-                  <summary>FLoC Modeling Contest 2026</summary>
+                  <summary>
+                    FLoC Modeling Contest 2026 (Tuesday, Jul 21, 7pm-9pm Room 2.01,{" "}
+                    <a
+                      href="https://lpcp-contest.github.io/"
+                      className="text-indigo-600 hover:underline"
+                    >
+                      https://lpcp-contest.github.io/
+                    </a>
+                    )
+                  </summary>
                   <hr />
                   <b>FLoC Modeling Contest 2026</b>
                   <br />
@@ -748,6 +757,8 @@ const Olympics = () => {
                   >
                     https://lpcp-contest.github.io/
                   </a>
+                  <br />
+                  See you in room 2.01 at 7pm. Free registration on site. Just bring your laptops.
                   <hr />
                 </details>
               </li>
