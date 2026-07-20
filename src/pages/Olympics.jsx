@@ -738,7 +738,7 @@ const Olympics = () => {
               <li>
                 <details>
                   <summary>
-                    FLoC Modeling Contest 2026 (Tuesday, Jul 21, 7pm-9pm Room 2.01,{" "}
+                    FLoC Modeling Contest 2026 (Tuesday, Jul 21, 7pm-9pm Room C2.01,{" "}
                     <a
                       href="https://lpcp-contest.github.io/"
                       className="text-indigo-600 hover:underline"
@@ -758,7 +758,7 @@ const Olympics = () => {
                     https://lpcp-contest.github.io/
                   </a>
                   <br />
-                  See you in room 2.01 at 7pm. Free registration on site. Just bring your laptops.
+                  See you in room C2.01 at 7pm. Free registration on site. Just bring your laptops.
                   <hr />
                 </details>
               </li>
