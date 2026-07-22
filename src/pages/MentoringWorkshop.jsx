@@ -29,6 +29,7 @@ const MentoringWorkshop = () => {
       details:
         "Logical analysis in formal methods (FM) require mathematically rigorous modeling of the target system. This may be easy for conventional software (where programs can serve as models), but not so for emerging ICT systems such as cyber-physical and statistical ML systems. When faced with a novel application domain such as automated driving (AD)—it is a jungle with all the hard-to-model nuisances such as physical components, ML-based E2E controllers, human drivers and pedestrians, and regulations—cutting out an 'FM angle' from it is therefore challenging yet important. I will share my experience of doing so in this talk. I will also make a (perhaps biased) case on the roles of category theory, a subfield of FM that seems quite the opposite of practical application, in this “reality-math matching” problem.",
       type: "talk",
+      slides: "/public/mwslides/mw1-hasuo.pdf",
     },
     {
       time: "10:10",
@@ -52,6 +53,7 @@ const MentoringWorkshop = () => {
       details:
         "As researchers presenting our work at conferences and workshops, we routinely face the challenge of condensing complex ideas into a short presentation. Unfortunately, this often leads to dense slides and too many new notions introduced in rapid succession. Consequently, listeners can become quickly overwhelmed, losing focus within the first few minutes. I will discuss how to properly prepare a talk so that it is accessible to a large part of the audience while still effectively getting your message across.",
       type: "talk",
+      slides: "/public/mwslides/mw1-gajarsky.pdf",
     },
     {
       time: "11:30",
@@ -62,6 +64,7 @@ const MentoringWorkshop = () => {
       details:
         "This talk explores how proof systems are formed, and how intermediate inference steps that are not sound in isolation can still contribute to correct reasoning when embedded in an appropriate structure. We also briefly reflect on how similar patterns appear in the development of ideas in research, where intermediate reasoning is often only validated within a broader structural context.",
       type: "talk",
+      slides: "/public/mwslides/mw1-lolic.pdf",
     },
     {
       time: "12:00",
@@ -70,8 +73,9 @@ const MentoringWorkshop = () => {
       homepage: "https://tommiemeyer.org.za/",
       title: "How to Manage Your Supervisor",
       details:
-        "In this talk I will argue that, contrary to popular belief, PhD supervisors are human too. I will then proceed to provide some pointers on how to manipulate them to enable you to complete your PhD thesis in time. ",
+        "In this talk I will argue that, contrary to popular belief, PhD supervisors are human too. I will then proceed to provide some pointers on how to manipulate them to enable you to complete your PhD thesis in time.",
       type: "talk",
+      slides: "/public/mwslides/mw1-meyer.pdf",
     },
     {
       time: "12:30",
@@ -395,7 +399,17 @@ const MentoringWorkshop = () => {
                       {expandedRows.week1.has(index) && (
                         <tr key={`details-${index}`}>
                           <td colSpan={3} className="text-left border px-4 py-4 bg-indigo-50">
-                            {item.details}
+                            <p>{item.details}</p>
+                            {item.slides && (
+                              <p>
+                                <a
+                                  href={item.slides}
+                                  className="text-indigo-600 hover:underline font-semibold"
+                                >
+                                  Download slides
+                                </a>
+                              </p>
+                            )}
                           </td>
                         </tr>
                       )}
@@ -451,7 +465,17 @@ const MentoringWorkshop = () => {
                       {expandedRows.week2.has(index) && (
                         <tr key={`details-${index}`}>
                           <td colSpan={3} className="text-left border px-4 py-4 bg-indigo-50">
-                            {item.details}
+                            <p>{item.details}</p>
+                            {item.slides && (
+                              <p>
+                                <a
+                                  href={item.slides}
+                                  className="text-indigo-600 hover:underline font-semibold"
+                                >
+                                  Download slides
+                                </a>
+                              </p>
+                            )}
                           </td>
                         </tr>
                       )}
