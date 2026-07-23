@@ -66,6 +66,14 @@ const IJCAR = () => {
             </li>
             <li>
               <a
+                href="#proceedings"
+                className="hover:text-indigo-600 px-3 py-2 rounded-md transition-colors duration-150"
+              >
+                Proceedings
+              </a>
+            </li>
+            <li>
+              <a
                 href="#awards"
                 className="hover:text-indigo-600 px-3 py-2 rounded-md transition-colors duration-150"
               >
@@ -491,6 +499,31 @@ const IJCAR = () => {
               </li>
             </ul>
           </div>
+        </section>
+
+        {/* Proceedings Section */}
+        <section id="proceedings" className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+          <h2 className="text-3xl font-semibold text-indigo-700 mb-6 border-b border-indigo-200 pb-2">
+            Proceedings
+          </h2>
+          <ul className="list-inside space-y-2 text-gray-700">
+            <li>
+              <a
+                href="https://link.springer.com/book/10.1007/978-3-032-32589-1"
+                className="text-indigo-600 hover:underline"
+              >
+                Proceedings (Part 1)
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://link.springer.com/book/10.1007/978-3-032-32592-1"
+                className="text-indigo-600 hover:underline"
+              >
+                Proceedings (Part 2)
+              </a>
+            </li>
+          </ul>
         </section>
 
         {/* Awards Section */}
