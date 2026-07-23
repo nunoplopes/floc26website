@@ -58,6 +58,14 @@ const IJCAR = () => {
             </li>
             <li>
               <a
+                href="#accepted-papers"
+                className="hover:text-indigo-600 px-3 py-2 rounded-md transition-colors duration-150"
+              >
+                Accepted Papers
+              </a>
+            </li>
+            <li>
+              <a
                 href="#awards"
                 className="hover:text-indigo-600 px-3 py-2 rounded-md transition-colors duration-150"
               >
