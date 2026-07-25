@@ -502,7 +502,10 @@ const IJCAR = () => {
         </section>
 
         {/* Proceedings Section */}
-        <section id="proceedings" className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+        <section
+          id="proceedings"
+          className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200"
+        >
           <h2 className="text-3xl font-semibold text-indigo-700 mb-6 border-b border-indigo-200 pb-2">
             Proceedings
           </h2>

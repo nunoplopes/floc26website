@@ -2,6 +2,7 @@ import AWS from "../../assets/images/sponsors/aws.png";
 import TURISMO from "../../assets/images/sponsors/ATL.png";
 import CADENCE from "../../assets/images/sponsors/cadence.png";
 import NVIDIA from "../../assets/images/sponsors/nvidia.svg";
+import VOLTAI from "../../assets/images/sponsors/voltai.svg";
 import NDEA from "../../assets/images/sponsors/ndea.svg";
 import GE_AERO from "../../assets/images/sponsors/GE_Aerospace.png";
 import GOOGLE from "../../assets/images/sponsors/google.png";
@@ -37,6 +38,12 @@ export const sponsors = [
     image: NDEA,
     type: "Silver",
     url: "https://ndea.com",
+  },
+  {
+    name: "Voltai",
+    image: VOLTAI,
+    type: "Silver",
+    url: "https://www.voltai.com",
   },
   {
     name: "Cadence",
