@@ -101,7 +101,7 @@ const MentoringWorkshop = () => {
       details: (
         <p>
           <strong>
-            Panelists: Neha Rino (University of Warwick), Vincent Moreau (Tallinn University of
+            Panellists: Neha Rino (University of Warwick), Vincent Moreau (Tallinn University of
             Technology), Yoàv Montacute (NII Tokyo).
           </strong>
           <br />
@@ -137,7 +137,7 @@ const MentoringWorkshop = () => {
       title: "Ask a question!",
       details: (
         <p>
-          <strong>Panelists: Nada Amin, Tommie Meyer, Ichiro Hasuo, Sandra Kiefer.</strong>
+          <strong>Panellists: Nada Amin, Tommie Meyer, Ichiro Hasuo, Sandra Kiefer.</strong>
           <br />
           Submit your questions anonymously via{" "}
           <a href="https://onlinequestions.org/" className="text-indigo-600 hover:underline">
@@ -243,7 +243,7 @@ const MentoringWorkshop = () => {
       details: (
         <p>
           <strong>
-            Panelists: Sarah Salinger (TU Wien), Elisaveta Pertseva (Stanford University), Arthur
+            Panellists: Sarah Salinger (TU Wien), Elisaveta Pertseva (Stanford University), Arthur
             Correnson (CISPA).
           </strong>
           <br />
@@ -280,8 +280,8 @@ const MentoringWorkshop = () => {
       details: (
         <p>
           <strong>
-            Panelists: Claudia Cauli, Caterina Urban, Loris D'Antoni, Orna Grumberg, Christine
-            Rizkallah.
+            Panellists: Claudia Cauli, Caterina Urban, Loris D'Antoni, Orna Grumberg, Christine
+            Rizkallah, Sebastian Siebertz.
           </strong>
           <br />
           Submit your questions anonymously via{" "}
