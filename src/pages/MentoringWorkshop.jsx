@@ -174,6 +174,7 @@ const MentoringWorkshop = () => {
       details:
         "Program verification emerged in the late 1960s as a way to determine whether a program satisfies a given specification by translating the problem into a logical question. A decade later, model checking introduced the possibility of automating this verification process. Since the general verification problem is undecidable, early model-checking techniques focused on finite-state systems and propositional temporal properties, where automatic analysis is feasible. Despite its remarkable success, extending model checking to realistic software systems and richer classes of properties remains an active area of research. Recently, Constrained Horn Clauses (CHCs) have emerged as a powerful framework for reasoning about program correctness, particularly with respect to safety properties. In this presentation, we introduce CHCs and illustrate how they can be applied for proving safety properties and beyond.",
       type: "talk",
+      slides: "/mwslides/mw2-grumberg.pptx",
     },
     {
       time: "10:10",
@@ -218,6 +219,7 @@ const MentoringWorkshop = () => {
       details:
         "Privilege escalations are complex attack paths through which a user gains unintended access to a resource. The user chains together multiple operations—each one legitimate and authorized in isolation, such as creating new users; updating, attaching, or detaching policies; or assuming roles—until these assemble into a path that reaches a privilege they were never meant to have. At Huawei Cloud, we developed an SMT-based bounded model checking procedure that detects escalation paths of up to 5 steps, directly from a customer's account. Unsurprisingly, for large customers with thousands of deeply intertwined entities, the state space explodes as the search goes deeper. To make this scale, we applied sound state-space reductions. The soundness proof comes down to simulation, a well-known abstract technique I never expected to use at industrial scale. Thanks to this work, Huawei Cloud customers can now find 5-step privilege escalations in sub-second runtimes.",
       type: "talk",
+      slides: "/mwslides/mw2-cauli.pdf",
     },
     {
       time: "12:30",
@@ -235,6 +237,7 @@ const MentoringWorkshop = () => {
       details:
         "A lot of researchers struggle with finding their “next big idea,” and can get stuck waiting around until they see the whole path before starting anything new. In this talk, I’ll reflect on my own research journey (which started with automata theory and ended up spanning synthesis, networks, personalized education, and LLMs) and how many of the directions that shaped my work emerged not from following a fixed master plan, but from pursuing small ideas that gradually changed where I thought I was going. My goal is to share a perspective on how research directions actually develop in practice—and why consistently exploring and working through interesting questions often matters more than trying to predict the final destination from the start.",
       type: "talk",
+      slides: "/mwslides/mw2-dantoni.pptx",
     },
     {
       time: "14:30",
