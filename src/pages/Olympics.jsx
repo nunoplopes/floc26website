@@ -51,6 +51,20 @@ const Olympics = () => {
 
         <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-4">
           <div className="space-y-4 text-gray-700 leading-relaxed">
+            <h3 className="text-2xl font-semibold text-indigo-700 pb-0">FLoC Competition Awards</h3>
+            Find the{" "}
+            <a
+              href="competitions/FLoC_Competition_Awards.pdf"
+              className="text-indigo-600 hover:underline"
+            >
+              presentation of the Special Awards here
+            </a>
+            .
+          </div>
+        </section>
+
+        <section className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 space-y-4">
+          <div className="space-y-4 text-gray-700 leading-relaxed">
             <br />
             <h3 className="text-2xl font-semibold text-indigo-700 pb-0">
               Special Award Ceremonies
