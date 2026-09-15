@@ -1,7 +1,7 @@
 import { useState } from "react";
-import LOGO from "../../assets/images/logo.svg";
-import { Link } from "react-router";
 import { HiMenu, HiX } from "react-icons/hi";
+import { Link } from "react-router";
+import LOGO from "../../assets/images/logo.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,6 +20,7 @@ const Header = () => {
     { to: "/program", label: "Program" },
     { to: "/olympics", label: "Competitions" },
     { to: "/tourism", label: "Tourism" },
+    { to: "/photos", label: "Photos" },
   ];
 
   return (

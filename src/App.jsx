@@ -1,22 +1,23 @@
-import { Routes, Route } from "react-router";
-import Layout from "./pages/Layout";
-import About from "./pages/About";
-import SponsorsPage from "./pages/SponsorsPage";
-import Speaker from "./pages/Speaker";
-import Committe from "./pages/Committe";
-import Program from "./pages/Program";
-import Registration from "./pages/Registration";
-import Accommodation from "./pages/Accommodation";
-import Venue from "./pages/Venue";
-import Transportation from "./pages/Transportation";
-import Tourism from "./pages/Tourism";
+import { Route, Routes } from "react-router";
 import SpeakersId from "./components/SpeakersId";
-import Policies from "./pages/Policies";
+import About from "./pages/About";
+import Accommodation from "./pages/Accommodation";
 import CallForWorkshops from "./pages/CallForWorkshops";
+import Committe from "./pages/Committe";
 import IJCAR from "./pages/IJCAR";
-import Olympics from "./pages/Olympics.jsx";
+import Layout from "./pages/Layout";
 import MentoringWorkshop from "./pages/MentoringWorkshop";
 import NotFound from "./pages/NotFound";
+import Olympics from "./pages/Olympics.jsx";
+import Photos from "./pages/Photos";
+import Policies from "./pages/Policies";
+import Program from "./pages/Program";
+import Registration from "./pages/Registration";
+import Speaker from "./pages/Speaker";
+import SponsorsPage from "./pages/SponsorsPage";
+import Tourism from "./pages/Tourism";
+import Transportation from "./pages/Transportation";
+import Venue from "./pages/Venue";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
       <Route path="/policies" element={<Policies />} />
       <Route path="/call-for-workshops" element={<CallForWorkshops />} />
       <Route path="/olympics" element={<Olympics />} />
+      <Route path="/photos" element={<Photos />} />
       <Route path="/ijcar" element={<IJCAR />} />
       <Route path="/mentoring-workshop" element={<MentoringWorkshop />} />
       <Route path="*" element={<NotFound />} />
