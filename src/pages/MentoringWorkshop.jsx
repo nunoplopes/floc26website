@@ -3,6 +3,10 @@ import AWS from "../assets/images/sponsors/aws.png";
 import NSF from "../assets/images/mwsponsors/nsf.svg";
 import JANESTREET from "../assets/images/mwsponsors/janestreet.png";
 import SIGLOG from "../assets/images/mwsponsors/siglog.png";
+import GROUP1M from "../assets/images/mwphotos/week1-morning-1280.jpg";
+import GROUP1A from "../assets/images/mwphotos/week1-afternoon-1280.jpg";
+import GROUP2M from "../assets/images/mwphotos/week2-morning-1280.jpg";
+import GROUP2A from "../assets/images/mwphotos/week2-afternoon-1280.jpg";
 
 const MentoringWorkshop = () => {
   const week1 = [
@@ -208,6 +212,7 @@ const MentoringWorkshop = () => {
       details:
         "I will give a personally biased overview of projects in the space of interest for FLoC where proof assistants were used as more than proof checkers, covering amongst others results around Hilbert's tenth problem, the fifth busy beaver value, and computability. I will complement this by some general observations how to write up results of research projects involving proof assistants, trying to start an interactive discussion on how this differs to writing papers in general. I hope that the discussions scales to other tool use such as SAT or SMT solvers, and that the talk also sheds light on the question what makes a good research paper.",
       type: "talk",
+      slides: "https://yforster.de/downloads/papers-about-using-proof-assistants-lmw26.pdf",
     },
     {
       time: "12:00",
@@ -421,6 +426,18 @@ const MentoringWorkshop = () => {
                 </tbody>
               </table>
             </div>
+            <div>
+              <img
+                src={GROUP1M}
+                alt="Group photo week 1, morning session"
+                className="block w-full mt-2"
+              />
+              <img
+                src={GROUP1A}
+                alt="Group photo week 1, morning session"
+                className="block w-full mt-2"
+              />
+            </div>
           </div>
         </section>
 
@@ -486,6 +503,19 @@ const MentoringWorkshop = () => {
                   ))}
                 </tbody>
               </table>
+            </div>
+
+            <div>
+              <img
+                src={GROUP2M}
+                alt="Group photo week 2, morning session"
+                className="block w-full mt-2"
+              />
+              <img
+                src={GROUP2A}
+                alt="Group photo week 2, morning session"
+                className="block w-full mt-2"
+              />
             </div>
 
             <h3 className="text-xl font-semibold">All invited speakers</h3>
